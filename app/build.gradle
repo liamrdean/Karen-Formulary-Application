@@ -3,6 +3,10 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        release {
+        }
+    }
     compileSdk 34
 
     defaultConfig {

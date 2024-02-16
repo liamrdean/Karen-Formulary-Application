@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#afbb68"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txDrugName"
+            style="text"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:gravity="center"
+            android:text="DRUG NAME"
+            app:autoSizeMaxTextSize="20dp"
+            app:autoSizeMinTextSize="12dp"
+            app:fontFamily="sans-serif-black" />
+
+
+        <TextView
+            android:id="@+id/txDrugDescription"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center"
+            android:text="DRUG DESCRIPTION PLACEHOLDER" />
+
+        <TextView
+            android:id="@+id/txDosage"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:gravity="center"
+            android:text="DOSAGE PLACEHOLDER" />
+
+        <TextView
+            android:id="@+id/txAlergyWarning"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:gravity="center"
+            android:text="Allergy Warning"
+            app:fontFamily="sans-serif-black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:text="Treatment Placeholder 1: " />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="355dp"
+                    android:layout_height="153dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="33dp"
+                    android:layout_marginTop="-6dp"
+                    android:layout_marginEnd="23dp"
+                    android:src="@drawable/drugtreatmentex1" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="411dp">
+
+                <ExpandableListView
+                    android:id="@+id/expandableListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@android:color/black"
+                    android:dividerHeight="0.5dp"
+                    android:indicatorLeft="?android:attr/expandableListPreferredChildIndicatorLeft"
+
+                />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
