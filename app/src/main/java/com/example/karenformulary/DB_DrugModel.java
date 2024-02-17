@@ -4,12 +4,17 @@ package com.example.karenformulary;
  * This is the java file that models the SQLite database structure for the drugs
  */
 
+// EN is short for English, KA is short for Karen
 public class DB_DrugModel {
     // For when we have not manually assigned an id
     public static final int blankId = -1;
 
     private int drugId;
     private String drugName;
+
+    private DrugInfo infoEN;
+    private DrugInfo infoKA;
+
     private String description_English;
     private String description_Karen;
 
@@ -30,16 +35,23 @@ public class DB_DrugModel {
     public DB_DrugModel(String drugName, String description_English, String description_Karen) {
         this.drugId = blankId;
         this.drugName = drugName;
-        this.description_English = description_English;
-        this.description_Karen = description_Karen;
+        this.infoEN = new DrugInfo(description_English);
+        this.infoKA = new DrugInfo(description_Karen);
     }
 
     public DB_DrugModel(int drugId, String drugName, String description_English,
                         String description_Karen) {
         this.drugId = drugId;
         this.drugName = drugName;
-        this.description_English = description_English;
-        this.description_Karen = description_Karen;
+        this.infoEN = new DrugInfo(description_English);
+        this.infoKA = new DrugInfo(description_Karen);
+    }
+
+    public DB_DrugModel(int drugId, String drugName, DrugInfo infoEN, DrugInfo infoKA) {
+        this.drugId = drugId;
+        this.drugName = drugName;
+        this.infoEN = infoEN;
+        this.infoKA = infoKA;
     }
 
     // This is what gets called by the array list generator thing, so deal with it manually
@@ -48,7 +60,7 @@ public class DB_DrugModel {
         // English
         return  "id = " + drugId + "\n" +
                 "name = '" + drugName + "'\n" +
-                "description = '" + getDescription(MainActivity.isKaren);
+                this.getInfo(MainActivity.isKaren).toString();
 
         /* Legacy/default
         return "DB_DrugModel{" +
@@ -62,12 +74,15 @@ public class DB_DrugModel {
 
     // Just toString but new lines between items
     public String toStringVerbose() {
-        return "DB_DrugModel{\n" +
+        String out = "DB_DrugModel{\n" +
                 "  drugId=" + drugId + '\n' +
-                "  drugName='" + drugName + "\'\n" +
-                "  description_English='" + description_English + "\'\n" +
-                "  description_Karen='" + description_Karen + "\'\n" +
-                '}';
+                "  drugName='" + drugName + "\'\n"
+                +"\nEN:\n"
+                + infoEN.toString()
+                +"\nKA:\n"
+                + infoKA.toString();
+        out += '}';
+        return out;
     }
 
     // Getters and setters
@@ -87,28 +102,17 @@ public class DB_DrugModel {
         this.drugName = drugName;
     }
 
-    public String getDescription_English() {
-        return description_English;
-    }
-
-    public void setDescription_English(String description_English) {
-        this.description_English = description_English;
-    }
-
-    public String getDescription_Karen() {
-        return description_Karen;
-    }
-
-    public void setDescription_Karen(String description_Karen) {
-        this.description_Karen = description_Karen;
-    }
-
     // Return if the description, langauge dependent
     public String getDescription(boolean inKaren) {
         if (inKaren) {
-            return getDescription_Karen();
+            return infoKA.description;
         } else {
-            return getDescription_English();
+            return infoEN.description;
         }
     }
+
+    public DrugInfo getInfo(boolean inKaren) {
+        return (inKaren) ? infoKA : infoEN;
+    }
+
 }

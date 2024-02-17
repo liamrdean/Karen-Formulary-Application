@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     ListView lv_display;
     /// END DEMO_UI
 
-    // The boolean repersenting the current language selection
+    // The boolean representing the current language selection
     public static boolean isKaren = false;
     public static DB_Helper dbHelper;
     // Since the database will only be updated during initialization, we can store all drugs once
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                 if (dbHelper == null) { return; }
 
                 List<DB_DrugModel> drugModels;
-                // Basically a if number: parse number else: parse name and dispay handles the rest
+                // Basically a if number: parse number else: parse name and display handles the rest
                 try {
                     // Try getting by the id field
                     int id = Integer.parseInt(en_drugId.getText().toString());
@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
             // No drugs returned, display an error message
             Log.i("DB_DEMO", "display got no models");
 
-            // This could simply just change it to be the default, but thats boring & no feedback
+            // This could simply just change it to be the default, but that is boring & no feedback
             String[] errorArray = {(isKaren) ? "No matching drugs but in karen" : "No matching drugs!"};
             List<String> errorList = Arrays.asList(errorArray);
             arrayAdapter = new ArrayAdapter<String>(MainActivity.this, layout, errorList);
