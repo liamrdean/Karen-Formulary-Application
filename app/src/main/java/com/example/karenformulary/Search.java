@@ -20,6 +20,10 @@ public class Search {
         inputFile = new File("inputFile.txt"); // need to add this
     }
 
+    public String[] getDictionary(){
+        return dictionary;
+    }
+
     public void buildFromFile(){
         try{
             Scanner input = new Scanner(inputFile);
