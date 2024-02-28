@@ -9,156 +9,210 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import java.io.BufferedReader;
+import com.opencsv.CSVReader;
+import com.opencsv.CSVReaderBuilder;
+
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 
 
 public class DB_Helper extends SQLiteOpenHelper {
-
+    /* Constants */
+    // Change version only when you want the to overwrite previous versions.
+    public static final int DATABASE_VERSION = 1;
     public static final String TABLE_ID_TO_DRUG = "TABLE_ID_TO_DRUG";
-    // This repersents each column name. This labels should match the one in the CSV file.
-    // This also means stuff happens
-    public enum ColNames {
-        ID("DRUG_ID"),
-        NAME("DRUG_NAME"),
-        DESC_EN("DESCRIPTION_EN"),
-        DESC_KA("DESCRIPTION_KA"),
-        FOOD_EN("FOOD_EN"),
-        FOOD_KA("FOOD_KA"),
-        PREG_EN("PREGNANCY_EN"),
-        PREG_KA("PREGNANCY_KA")
-        ;
-
-        String label;
-        ColNames(String label) {
-            this.label = label;
-        }
-    }
+    public static final String COL_ID_STRING = "DRUG_ID";
+    public static String COL_NAME_STRING;
+    public static final String DRUG_CSV_FILE = "small.csv";
+    // String constants _{EN|KA}\\z
+    // Regex to get either _EN or _KA at the end of a string
+    // .*(_KA)|(_EN)\z
+    public static final String KAREN_SUFFIX = "KA";
+    public static final String ENGLISH_SUFFIX = "EN";
+    public static final String LANGUAGE_SUFFIX_REGEX = "(_KA\\z)|(_EN\\z)";
 
     private final MainActivity mainActivity;
 
+    /* Dynamic column names*/
+    public static List<String> sqlColStrings;
+    public static HashMap<String, Integer> headerToIndex;
+    // Despite the name, no _EN or _KA should be in this, just the names before _EN or _KA
+    public static String[] languageIndependentHeaders;
+
+    /*
+     * Headers: DRUG_ID, [ NAME, ...{*_EN *_KA} ]
+     * Constant headers: Drug id, name
+     * Language dependent: others
+     *      get(STRING);
+     *          - Based off language return the data
+     *          - Return a direct Map?
+     */
+
+    // ASSUMES THAT THIS IS CALLED FROM THE MAIN ACTIVITY
     public DB_Helper(@Nullable Context context) {
-        super(context, "drugDB", null, 1);
+        super(context, "drugDB", null, DB_Helper.DATABASE_VERSION);
         this.mainActivity = (MainActivity) context;
     }
 
-    // Temporary placement
+    // Remove the language suffixes from a string
+    public String removeLanguageSuffix(String s) {
+        String[] array = s.split(LANGUAGE_SUFFIX_REGEX);
+        if (array.length == 0) {
+            return s;
+        } else {
+            return array[0];
+        }
+    }
+
+    // Return s + CURRENT_LANGUAGE_SUFFIX
+    public static String addCurrentLanguageSuffix(String s) {
+        return addLanguageSuffix(s, MainActivity.isKaren);
+    }
+
+    public static String addLanguageSuffix(String s, boolean inKaren) {
+        StringBuilder res = new StringBuilder(s);
+        if (inKaren) {
+            res.append(KAREN_SUFFIX);
+        } else {
+            res.append(ENGLISH_SUFFIX);
+        }
+        return res.toString();
+    }
+
+    // Load the headers from a CSV file
+    private void loadCSVHeaders(@NonNull CSVReader csvReader) throws IOException {
+        String[] drugHeaders = csvReader.readNext();
+        // Process the headers
+        sqlColStrings = new ArrayList<>();
+        headerToIndex = new HashMap<>();
+        // Ensure that the id column is included
+        sqlColStrings.add(COL_ID_STRING);
+        headerToIndex.put(COL_ID_STRING, 0);
+
+        // Process the name string
+        //COL_NAME_STRING = drugHeaders[0].trim();
+        headerToIndex.put(COL_NAME_STRING, 1);
+
+        // This hash set will contain each name
+        HashSet<String> headerSet = new HashSet<>();
+        // Process the CSV headers into the sql columns & create the languageDependency list
+        for (int i = 1; i < drugHeaders.length; i++) {
+            if (!drugHeaders[i].isEmpty()) {
+                String s = drugHeaders[i].trim();
+                sqlColStrings.add(s);
+                headerToIndex.put(s, i + 1); // 1 is for the drug name column, so do i + 1
+                /*
+                // TEMP
+                String[] a = s.split(LANGUAGE_SUFFIX_REGEX);
+                if (a.length != 0) {
+                    headerSet.add(a[0]);
+                }
+                */
+                String noLanguage = removeLanguageSuffix(s);
+                if (noLanguage != null && !noLanguage.isEmpty()) {
+                    headerSet.add(s);
+                }
+            }
+        }
+
+        languageIndependentHeaders = headerSet.toArray(new String[0]);
+    }
+
+
     // Load the data base from a much easier to manage csv file.
     // MUST BE CALLED AFTER OPENING A WRITABLE DATABASE OR IN onCreate()!
-    private boolean loadCSV(SQLiteDatabase db) {
-        String csvFile = "test.csv";
+    private void loadCSV(SQLiteDatabase db, @NonNull CSVReader csvReader) throws IOException {
+        //Map<String, String> values = new CSVReaderHeaderAware(inputCSVReader).readMap();
+        /*
+        CSVReaderHeaderAware headerAware = new CSVReaderHeaderAware(inputCSVReader);
+        Log.i("SDEMOP:", headerAware.readMap().get("MEDICATION"));
+        Log.i("SDEMOP:", headerAware.readMap().get("MEDICATION"));
+        Log.i("SDEMOP:", headerAware.readMap().get("MEDICATION"));
+        */
 
-        Log.i("DEMOCSV", "CSV");
-        InputStream inStream = null;
+        Log.i("DEMOP", "Starting parse");
+
+        // Load each line into the database
+        String[] values;
+        while ((values = csvReader.readNext()) != null) {
+            Log.i("DEMOP adding", Arrays.toString(values));
+            ContentValues cv = new ContentValues(sqlColStrings.size() - 1);
+
+            // Put all but the auto-assigned id in. That is why i starts at 1
+            for (int i = 1; i < sqlColStrings.size() - 1; i++) {
+                String val = values[i - 1].trim();
+                cv.put(sqlColStrings.get(i), val);
+            }
+
+            // Insert into the database
+            if (-1 == db.insert(TABLE_ID_TO_DRUG, null, cv)) {
+                Log.w("SQL_CSV_PARSER", "Failed to add drug " + values[0]);
+            }
+        }
+    }
+
+    // This is called the first time a database is accessed.
+    // There should only be code to create a new database.
+    @Override
+    public void onCreate(SQLiteDatabase db) {
+        InputStream inStream;
+        /*
+         * This does in order:
+         *   Load the headers from the CSV file
+         *   Create the table(s) in the database
+         *   Read the database and load it into the table(s)
+         */
 
         try {
             assert this.mainActivity != null;
             Resources resources = this.mainActivity.getResources();
             if (resources == null) {
-                return false;
+                return;
             }
 
             AssetManager manager = resources.getAssets();
             if (manager == null) {
-                return false;
+                return;
             }
 
-            inStream = manager.open(csvFile);
-            BufferedReader buffer = new BufferedReader(new InputStreamReader(inStream));
+            inStream = manager.open(DRUG_CSV_FILE);
+            InputStreamReader inputCSVReader = new InputStreamReader(inStream);
+            CSVReader csvReader = new CSVReaderBuilder(inputCSVReader).build();
+            loadCSVHeaders(csvReader);
 
-            // Do this to shed the labels at the top of the CSV file
-            String line = buffer.readLine();
-            ColNames[] colNames = ColNames.values();
-
-            // Ensure that the column names match with the CSV file
-            // This is done to ensure that the data will match correctly
-            if (line != null) {
-                String[] csvColNames = line.split(",");
-                Log.i("DEMOC", Arrays.toString(csvColNames));
-                for(int i = 1; i < colNames.length; i++) {
-                    String name = csvColNames[i-1].trim();
-                    String colName = colNames[i].label;
-                    if (!colName.equals(name)) {
-                        Log.w("SQL CSV", "THE CSV COLUMN '" + name +
-                                "' does not equal '" + colName + "'");
-                        return false;
-                    }
-                }
+            /*
+             * Generate the SQL table from the CSV headers
+             */
+            StringBuilder tableBuilder = new StringBuilder("CREATE TABLE " + TABLE_ID_TO_DRUG +
+                    " (" + COL_ID_STRING + " INTEGER PRIMARY KEY AUTOINCREMENT");
+            // Add the rest of the columns
+            for (int i = 1; i < sqlColStrings.size(); i++) {
+                tableBuilder.append(", ").append(sqlColStrings.get(i)).append(" TEXT");
             }
+            tableBuilder.append(");");
+            Log.i("DEMOP SQL", tableBuilder.toString());
+            db.execSQL(tableBuilder.toString());
 
-            // Load each line into the database
-            while ((line = buffer.readLine()) != null) {
-                String[] values = line.split(",");
-                Log.i("DEMOC", Arrays.toString(values));
-                if (values.length != colNames.length - 1) {
-                    // Ensure that there are as many items as columns (minus ID)
-                    Log.d("SQL_CSV", "Skipping Bad CSV Row");
-                    continue;
-                }
-                ContentValues cv = new ContentValues(colNames.length - 1);
-                /*
-                 * Put all but the id in. Assumes that the order of columns in the csv matches the
-                 * order in this file
-                 */
-                for (int i = 1; i < colNames.length; i++) {
-                    String val = values[i-1].trim();
-                    if (val.equals(DrugInfo.nullId)) {
-                        // The cast is weird but it makes android studio be quite so...
-                        cv.put(colNames[i].label, (String) null);
-                    } else {
-                        cv.put(colNames[i].label, values[i - 1].trim());
-                    }
-                }
+            // Initialize the stuff into the DB
+            loadCSV(db, csvReader);
 
-                if (-1 == db.insert(TABLE_ID_TO_DRUG, null, cv)) {
-                    Log.w("SQL_CSV_PARSER", "Failed to add " + values[0]);
-                }
-            }
-
-            return true;
+        } catch (FileNotFoundException e) {
+            Log.w("DB onCreate:", "FileNotFoundException");
+            e.printStackTrace();
         } catch (IOException e) {
+            Log.w("DB onCreate:", "IOException");
             e.printStackTrace();
-            Log.e("SQL_CSV", "Failed to load csv file " + e);
-        } catch (NullPointerException e) {
-            e.printStackTrace();
-            Log.e("SQL_CSV", "" + e);
         }
-
-        return false;
-    }
-
-
-    // This is called the first time a database is accessed. There should only be code to create a new database.
-    @Override
-    public void onCreate(SQLiteDatabase db) {
-        // create table (ID, DRUG_NAME)
-        /* LEGACY
-        String createTableStatement = "CREATE TABLE " + TABLE_ID_TO_DRUG + " (" + COL_DRUG_ID +
-                " INTEGER PRIMARY KEY AUTOINCREMENT, " + COL_DRUG_NAME + " TEXT, "
-                + COL_DESC_ENGLISH + " TEXT, " + COL_DESC_KAREN + " TEXT);";
-        */
-
-        // Procedurally create the table creation statement
-        StringBuilder createTableStatement = new StringBuilder("CREATE TABLE " + TABLE_ID_TO_DRUG +
-                " (" + ColNames.ID.label + " INTEGER PRIMARY KEY AUTOINCREMENT");
-        // Add the rest of the columns
-        ColNames[] colNames = ColNames.values();
-        for (int i = 1; i < colNames.length; i++) {
-            createTableStatement.append(", ").append(colNames[i].label).append(" TEXT");
-        }
-        createTableStatement.append(");");
-
-        db.execSQL(createTableStatement.toString());
-
-        // Initialize the stuff into the DB
-        loadCSV(db);
     }
 
     /*
@@ -170,10 +224,6 @@ public class DB_Helper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
         this.onCreate(db);
     }
-
-    // Add a drug to the database
-
-
 
     /* ========================================================================================== *
      * Getters
@@ -191,7 +241,7 @@ public class DB_Helper extends SQLiteOpenHelper {
 
         //select * from table where information
         String idQuery = "SELECT * FROM " + TABLE_ID_TO_DRUG + " WHERE " +
-                ColNames.ID.label + " == " + id + ";";
+                COL_ID_STRING + " == " + id + ";";
 
         return extractDrugModels(idQuery);
     }
@@ -202,7 +252,7 @@ public class DB_Helper extends SQLiteOpenHelper {
         if (input == null || input.length() == 0) { return null; }
 
         String nameQuery = "SELECT * FROM " + TABLE_ID_TO_DRUG + " WHERE " +
-                ColNames.NAME.label + " LIKE '%" + input + "%';";
+                COL_NAME_STRING + " LIKE '%" + input + "%';";
 
         return extractDrugModels(nameQuery);
     }
@@ -225,8 +275,12 @@ public class DB_Helper extends SQLiteOpenHelper {
                 // The columns have to be hard coded...
                 int drugId = cursor.getInt(0);
                 String drugName = cursor.getString(1);
-                DrugInfo infoEN = new DrugInfo(cursor.getString(2));
-                DrugInfo infoKA = new DrugInfo(cursor.getString(3));
+                //DrugInfo infoEN = new DrugInfo(cursor.getString(2));
+                //DrugInfo infoKA = new DrugInfo(cursor.getString(3));
+
+                DrugInfo infoEN = new DrugInfo(cursor, false);
+                DrugInfo infoKA = new DrugInfo(cursor, true);
+
 
                 Log.w("DB_DEMO", "got name " + drugName);
 
@@ -240,6 +294,15 @@ public class DB_Helper extends SQLiteOpenHelper {
         cursor.close();
         db.close();
         return returnList;
+    }
+
+    // Return the index of a header given it's string value
+    public static int getHeaderIndex(String header){
+        Integer i = headerToIndex.get(header);
+        if (i == null) {
+            return -1;
+        }
+        return i;
     }
 
 }

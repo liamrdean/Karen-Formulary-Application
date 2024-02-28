@@ -4,6 +4,8 @@ package com.example.karenformulary;
  * This is the java file that models the SQLite database structure for the drugs
  */
 
+import java.util.HashMap;
+
 // EN is short for English, KA is short for Karen
 public class DB_DrugModel {
     // For when we have not manually assigned an id
@@ -30,21 +32,6 @@ public class DB_DrugModel {
     public DB_DrugModel(int drugId, String drugName) {
         this.drugId = drugId;
         this.drugName = drugName;
-    }
-
-    public DB_DrugModel(String drugName, String description_English, String description_Karen) {
-        this.drugId = blankId;
-        this.drugName = drugName;
-        this.infoEN = new DrugInfo(description_English);
-        this.infoKA = new DrugInfo(description_Karen);
-    }
-
-    public DB_DrugModel(int drugId, String drugName, String description_English,
-                        String description_Karen) {
-        this.drugId = drugId;
-        this.drugName = drugName;
-        this.infoEN = new DrugInfo(description_English);
-        this.infoKA = new DrugInfo(description_Karen);
     }
 
     public DB_DrugModel(int drugId, String drugName, DrugInfo infoEN, DrugInfo infoKA) {
@@ -86,30 +73,6 @@ public class DB_DrugModel {
     }
 
     // Getters and setters
-    public int getDrugId() {
-        return drugId;
-    }
-
-    public String getDrugName() {
-        return drugName;
-    }
-
-    public void setDrugId(int drugId) {
-        this.drugId = drugId;
-    }
-
-    public void setDrugName(String drugName) {
-        this.drugName = drugName;
-    }
-
-    // Return if the description, langauge dependent
-    public String getDescription(boolean inKaren) {
-        if (inKaren) {
-            return infoKA.description;
-        } else {
-            return infoEN.description;
-        }
-    }
 
     public DrugInfo getInfo(boolean inKaren) {
         return (inKaren) ? infoKA : infoEN;
