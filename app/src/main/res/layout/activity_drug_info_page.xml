@@ -92,7 +92,7 @@
                     android:dividerHeight="0.5dp"
                     android:indicatorLeft="?android:attr/expandableListPreferredChildIndicatorLeft"
 
-                />
+                    />
 
             </RelativeLayout>
 
