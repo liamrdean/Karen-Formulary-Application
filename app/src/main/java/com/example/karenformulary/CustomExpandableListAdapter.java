@@ -1,12 +1,19 @@
 package com.example.karenformulary;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.Icon;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.core.content.res.ResourcesCompat;
+
+import java.io.File;
 import java.util.HashMap;
 import java.util.List;
 
@@ -72,6 +79,7 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
         return convertView;
     }
 
+    private static int counterTemp = 0;
     @Override
     public View getChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
 
@@ -83,9 +91,18 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
             convertView = inflater.inflate(R.layout.list_item,null);
 
         }
+        Log.i("DEMO", "ConvertView = " + convertView.getClass() + " view by id " +  convertView.findViewById(R.id.expandedListItem).getClass());
+        counterTemp++;
 
-        TextView expandedListTextView  = convertView.findViewById(R.id.expandedListItem);
-        expandedListTextView.setText(expandedListText);
+        if (counterTemp % 4 == 0) {
+            ImageView expandedListImageView = convertView.findViewById(R.id.expandedListItem);
+            Drawable drawable = ResourcesCompat.getDrawable(mContext.getResources(), R.drawable.placeholder, null);
+            expandedListImageView.setImageDrawable(drawable);
+        } else {
+            TextView expandedListTextView  = convertView.findViewById(R.id.expandedListItem);
+            expandedListTextView.setText(expandedListText);
+        }
+
         return convertView;
     }
 

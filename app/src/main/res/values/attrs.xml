@@ -1,0 +1,7 @@
+<resources>
+    <declare-styleable name="ImageTextView">
+        <attr name="showText" format="boolean" />
+        <attr name="isImage" format="boolean"/>
+        <attr name="data" format="string"/>
+    </declare-styleable>
+</resources>
