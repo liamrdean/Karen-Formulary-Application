@@ -11,59 +11,60 @@ public class ExpandableListDataPump {
         HashMap<String, List<String>> expandableListDetail = new HashMap<>();
 
         List<String> Note = new ArrayList<>();
-        Note.add("India");
-        Note.add("Pakistan");
-        Note.add("Australia");
-        Note.add("Viet Nam");
-        Note.add("South Africa");
+        Note.add("note 1");
+        Note.add("$note 2");
+        Note.add("note 3");
+        Note.add("note 4");
+        Note.add("note 5");
 
         List<String> Food = new ArrayList<>();
-        Food.add("Brazil");
-        Food.add("Spain");
-        Food.add("Germany");
-        Food.add("Netherlands");
-        Food.add("Italy");
+        Food.add("food 1");
+        Food.add("food 2");
+        Food.add("food 3");
+        Food.add("food 4");
+        Food.add("food 5");
 
         List<String> BeCareful = new ArrayList<>();
-        BeCareful.add("United States");
-        BeCareful.add("Spain");
-        BeCareful.add("Argentina");
-        BeCareful.add("France");
-        BeCareful.add("Russia");
+        BeCareful.add("BeCareful 1");
+        BeCareful.add("BeCareful 2");
+        BeCareful.add("BeCareful 3");
+        BeCareful.add("BeCareful 4");
+        BeCareful.add("BeCareful 5");
 
         List<String> DoNotGive = new ArrayList<>();
-        DoNotGive.add("United States");
-        DoNotGive.add("Spain");
-        DoNotGive.add("Argentina");
-        DoNotGive.add("France");
-        DoNotGive.add("Russia");
+        DoNotGive.add("DoNotGive 1");
+        DoNotGive.add("DoNotGive 2");
+        DoNotGive.add("DoNotGive 3");
+        DoNotGive.add("DoNotGive 4");
+        DoNotGive.add("DoNotGive 5");
 
         List<String> SideEffects = new ArrayList<>();
-        SideEffects.add("Spain");
-        SideEffects.add("Argentina");
-        SideEffects.add("France");
-        SideEffects.add("Russia");
+        SideEffects.add("SideEffects 1");
+        SideEffects.add("SideEffects 2");
+        SideEffects.add("SideEffects 3");
+        SideEffects.add("SideEffects 4");
+        SideEffects.add("SideEffects 5");
 
         List<String> Interactions = new ArrayList<>();
-        Interactions.add("United States");
-        Interactions.add("Spain");
-        Interactions.add("Argentina");
-        Interactions.add("France");
-        Interactions.add("Russia");
+        Interactions.add("Interactions 1");
+        Interactions.add("Interactions 2");
+        Interactions.add("Interactions 3");
+        Interactions.add("Interactions 4");
+        Interactions.add("Interactions 5");
 
         List<String> Pregnancy = new ArrayList<>();
-        Pregnancy.add("United States");
-        Pregnancy.add("Spain");
-        Pregnancy.add("Argentina");
-        Pregnancy.add("France");
-        Pregnancy.add("Russia");
+        Pregnancy.add("Pregnancy 1");
+        Pregnancy.add("Pregnancy 2");
+        Pregnancy.add("Pregnancy 3");
+        Pregnancy.add("Pregnancy 4");
+        Pregnancy.add("Pregnancy 5");
 
         List<String> BreastFeeding = new ArrayList<>();
-        BreastFeeding.add("United States");
-        BreastFeeding.add("Spain");
-        BreastFeeding.add("Argentina");
-        BreastFeeding.add("France");
-        BreastFeeding.add("Russia");
+        BreastFeeding.add("BreastFeeding 1");
+        BreastFeeding.add("BreastFeeding 2");
+        BreastFeeding.add("BreastFeeding 3");
+        BreastFeeding.add("BreastFeeding 4");
+        BreastFeeding.add("BreastFeeding 5");
 
         expandableListDetail.put("Note",Note);
         expandableListDetail.put("Food",Food);

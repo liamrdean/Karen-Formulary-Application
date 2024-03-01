@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="8dp">
 
-    <TextView
+    <com.example.karenformulary.ImageTextView
         android:id="@+id/expandedListItem"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Item"
-        />
+        android:layout_height="50dp"
+        android:text="Text in list_item.xml"
+        custom:isImage="false"
+        custom:data="PLACEHOLDER. If you are reading this an error has occurred. Please report it."/>
 
 </RelativeLayout>
+

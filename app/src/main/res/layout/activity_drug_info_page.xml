@@ -9,17 +9,11 @@
     android:background="#afbb68"
     tools:context=".MainActivity">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        <com.example.karenformulary.ImageTextView
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            custom:data="abc123"
-            custom:isImage="true"
-            custom:showText="true"/>
+
 
         <TextView
             android:id="@+id/txDrugName"
@@ -89,6 +83,13 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="411dp">
+
+<!--                <com.example.karenformulary.ImageTextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    custom:data="abc123"-->
+<!--                    custom:isImage="true"-->
+<!--                    custom:showText="true" />-->
 
                 <ExpandableListView
                     android:id="@+id/expandableListView"

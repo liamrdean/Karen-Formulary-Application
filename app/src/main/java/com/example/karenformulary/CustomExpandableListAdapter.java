@@ -47,6 +47,7 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
 
     @Override
     public Object getChild(int groupPosition, int childPosition) {
+        Log.i("DEMOCHA", "getChildView " + String.format("0x%x 0x%x", groupPosition, childPosition));
         return this.expandableListDetail.get(this.expandableListTitle.get(groupPosition)).get(childPosition);
     }
 
@@ -79,10 +80,9 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
         return convertView;
     }
 
-    private static int counterTemp = 0;
     @Override
     public View getChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
-
+        Log.i("DEMOCHB", "getChildView " + String.format("0x%x 0x%x", groupPosition, childPosition));
         String expandedListText = (String) getChild(groupPosition,childPosition);
         if (convertView == null) {
 
@@ -91,17 +91,11 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
             convertView = inflater.inflate(R.layout.list_item,null);
 
         }
-        Log.i("DEMO", "ConvertView = " + convertView.getClass() + " view by id " +  convertView.findViewById(R.id.expandedListItem).getClass());
-        counterTemp++;
 
-        if (counterTemp % 4 == 0) {
-            ImageView expandedListImageView = convertView.findViewById(R.id.expandedListItem);
-            Drawable drawable = ResourcesCompat.getDrawable(mContext.getResources(), R.drawable.placeholder, null);
-            expandedListImageView.setImageDrawable(drawable);
-        } else {
-            TextView expandedListTextView  = convertView.findViewById(R.id.expandedListItem);
-            expandedListTextView.setText(expandedListText);
-        }
+        ImageTextView expandedListTextView = convertView.findViewById(R.id.expandedListItem);
+        Log.i("DEMO", "View class is" + convertView.getClass() + " " + expandedListTextView.getClass());
+        expandedListTextView.setData(expandedListText);
+
 
         return convertView;
     }
