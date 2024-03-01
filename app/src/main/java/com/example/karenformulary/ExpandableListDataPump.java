@@ -12,11 +12,12 @@ public class ExpandableListDataPump {
 
         List<String> Note = new ArrayList<>();
         Note.add("note 1");
-        Note.add("$note 2");
+        Note.add("note 2");
+        //*
         Note.add("note 3");
         Note.add("note 4");
         Note.add("note 5");
-
+        //*/
         List<String> Food = new ArrayList<>();
         Food.add("food 1");
         Food.add("food 2");
@@ -53,11 +54,13 @@ public class ExpandableListDataPump {
         Interactions.add("Interactions 5");
 
         List<String> Pregnancy = new ArrayList<>();
-        Pregnancy.add("Pregnancy 1");
-        Pregnancy.add("Pregnancy 2");
-        Pregnancy.add("Pregnancy 3");
+        Pregnancy.add("$.Pregnancy 1");
+        Pregnancy.add("$,Pregnancy 2");
+        //*
+        Pregnancy.add("$|Pregnancy 3");
         Pregnancy.add("Pregnancy 4");
         Pregnancy.add("Pregnancy 5");
+        //*/
 
         List<String> BreastFeeding = new ArrayList<>();
         BreastFeeding.add("BreastFeeding 1");

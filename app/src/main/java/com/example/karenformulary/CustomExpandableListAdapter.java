@@ -1,19 +1,14 @@
 package com.example.karenformulary;
 
 import android.content.Context;
-import android.graphics.drawable.Drawable;
-import android.graphics.drawable.Icon;
+import android.graphics.Color;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.core.content.res.ResourcesCompat;
-
-import java.io.File;
 import java.util.HashMap;
 import java.util.List;
 
@@ -47,7 +42,6 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
 
     @Override
     public Object getChild(int groupPosition, int childPosition) {
-        Log.i("DEMOCHA", "getChildView " + String.format("0x%x 0x%x", groupPosition, childPosition));
         return this.expandableListDetail.get(this.expandableListTitle.get(groupPosition)).get(childPosition);
     }
 
@@ -82,7 +76,7 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
 
     @Override
     public View getChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
-        Log.i("DEMOCHB", "getChildView " + String.format("0x%x 0x%x", groupPosition, childPosition));
+        Log.i("DEMOC", String.format("Child %d %d", groupPosition, childPosition));
         String expandedListText = (String) getChild(groupPosition,childPosition);
         if (convertView == null) {
 
@@ -93,10 +87,8 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
         }
 
         ImageTextView expandedListTextView = convertView.findViewById(R.id.expandedListItem);
-        Log.i("DEMO", "View class is" + convertView.getClass() + " " + expandedListTextView.getClass());
         expandedListTextView.setData(expandedListText);
-
-
+        expandedListTextView.setBackgroundColor(Color.parseColor("#0000FF"));
         return convertView;
     }
 

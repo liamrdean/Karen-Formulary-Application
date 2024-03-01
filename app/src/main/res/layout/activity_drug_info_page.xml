@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:custom="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#afbb68"
     tools:context=".MainActivity">
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -84,13 +84,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="411dp">
 
-<!--                <com.example.karenformulary.ImageTextView-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="50dp"-->
-<!--                    custom:data="abc123"-->
-<!--                    custom:isImage="true"-->
-<!--                    custom:showText="true" />-->
-
                 <ExpandableListView
                     android:id="@+id/expandableListView"
                     android:layout_width="match_parent"
@@ -99,7 +92,7 @@
                     android:dividerHeight="0.5dp"
                     android:indicatorLeft="?android:attr/expandableListPreferredChildIndicatorLeft"
 
-                    />
+                />
 
             </RelativeLayout>
 
