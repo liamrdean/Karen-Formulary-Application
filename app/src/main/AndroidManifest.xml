@@ -25,6 +25,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- Add this line to declare ZscoreActivity -->
+        <activity android:name=".ZscoreActivity" />
     </application>
 
 </manifest>
