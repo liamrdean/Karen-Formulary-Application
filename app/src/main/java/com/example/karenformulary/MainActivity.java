@@ -10,6 +10,8 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     Button button3;
+    // This controls if the data is in karen or not
+    public static boolean isKaren;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
