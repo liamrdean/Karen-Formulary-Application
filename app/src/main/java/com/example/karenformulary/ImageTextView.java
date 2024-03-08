@@ -93,9 +93,6 @@ public class ImageTextView extends View {
 
 
             maybeInitImage();
-//            Log.i("DEMO", "pre data");
-//            this.setData(s);
-//            Log.i("DEMO", "Post data");
         } finally {
             a.recycle();
         }
@@ -156,12 +153,10 @@ public class ImageTextView extends View {
 
 
     private void drawText(Canvas canvas, String text) {
-//        Log.i("DEMO", "Drawing with" + text + " in as " + isImage );
         if (text == null || text.isEmpty()) {
-            text = "[[[[[[[[[";
+            text = "ERROR: NULL TEXT IN ImageTextView.java.drawText";
         }
         String s = text;
-        Log.i("DEMODRAW", "Drawing" + s + canvas.getClipBounds());
         canvas.drawText(
                 s,
                 -textBounds.left,
@@ -170,9 +165,6 @@ public class ImageTextView extends View {
     }
 
     private void drawImage(Canvas canvas, String text) {
-//        Log.i("DEMO", "Drawing with" + text + " in as " + isImage );
-
-        Log.i("DEMODRAW", "Drawing" + canvas.getClipBounds());
         if (bitmap == null) {
             Log.w("DEMO", "Called draw image while bitmap is null");
             return;
@@ -204,14 +196,12 @@ public class ImageTextView extends View {
 
     @Override
     protected void onDraw (Canvas canvas) {
-        super.onDraw(canvas); // Aparently draws the background
+        super.onDraw(canvas); // Apparently draws the background
 
         if(!calculatedMeasure) {
             calculateMeasureAndRedraw();
         }
 
-
-        Log.i("DEMO_DRAW", "drawing" + canvas.getClipBounds().toString());
 
         if (tempIsImageTest()) {
             isImage = true;

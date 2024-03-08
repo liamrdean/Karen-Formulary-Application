@@ -6,10 +6,20 @@ import java.util.List;
 
 public class ExpandableListDataPump {
 
-    public static HashMap<String , List<String>> getData() {
+    public static HashMap<String , List<String>> getData(String drugName) {
 
         HashMap<String, List<String>> expandableListDetail = new HashMap<>();
 
+        // Procedural way of doing this
+        // For each header, add stuff as a list of strings returned from the drug model, if there is nothing else, do not deal with it
+
+
+        // Add the stuff gotten from the drug model
+
+
+
+
+/*
         List<String> Note = new ArrayList<>();
         Note.add("note 1");
         Note.add("note 2");
@@ -17,7 +27,7 @@ public class ExpandableListDataPump {
         Note.add("note 3");
         Note.add("note 4");
         Note.add("note 5");
-        //*/
+
         List<String> Food = new ArrayList<>();
         Food.add("food 1");
         Food.add("food 2");
@@ -56,11 +66,10 @@ public class ExpandableListDataPump {
         List<String> Pregnancy = new ArrayList<>();
         Pregnancy.add("$.Pregnancy 1");
         Pregnancy.add("$,Pregnancy 2");
-        //*
         Pregnancy.add("$|Pregnancy 3");
         Pregnancy.add("Pregnancy 4");
         Pregnancy.add("Pregnancy 5");
-        //*/
+
 
         List<String> BreastFeeding = new ArrayList<>();
         BreastFeeding.add("BreastFeeding 1");
@@ -77,6 +86,7 @@ public class ExpandableListDataPump {
         expandableListDetail.put("Interactions",Interactions);
         expandableListDetail.put("Pregnancy",Pregnancy);
         expandableListDetail.put("Breast Feeding",BreastFeeding);
+        */
 
         return expandableListDetail;
     }

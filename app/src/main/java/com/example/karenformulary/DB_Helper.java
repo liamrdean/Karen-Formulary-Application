@@ -32,13 +32,12 @@ public class DB_Helper extends SQLiteOpenHelper {
     public static final int DATABASE_VERSION = 1;
     public static final String TABLE_ID_TO_DRUG = "TABLE_ID_TO_DRUG";
     public static final String COL_ID_STRING = "DRUG_ID";
-    public static String COL_NAME_STRING;
+    public static String COL_NAME_STRING = "DRUG_NAME";
     public static final String DRUG_CSV_FILE = "small.csv";
     // String constants _{EN|KA}\\z
     // Regex to get either _EN or _KA at the end of a string
-    // .*(_KA)|(_EN)\z
-    public static final String KAREN_SUFFIX = "KA";
-    public static final String ENGLISH_SUFFIX = "EN";
+    public static final String KAREN_SUFFIX = "_KA";
+    public static final String ENGLISH_SUFFIX = "_EN";
     public static final String LANGUAGE_SUFFIX_REGEX = "(_KA\\z)|(_EN\\z)";
 
     private final MainActivity mainActivity;
@@ -47,7 +46,11 @@ public class DB_Helper extends SQLiteOpenHelper {
     public static List<String> sqlColStrings;
     public static HashMap<String, Integer> headerToIndex;
     // Despite the name, no _EN or _KA should be in this, just the names before _EN or _KA
-    public static String[] languageIndependentHeaders;
+    public static String[] languageIndependentHeaders; // Internal column names
+    // The display names of the headers (This is what is displayed to the user)
+    public static List<String> drugDisplayHeaders;
+
+    private CSVReader csvReader;
 
     /*
      * Headers: DRUG_ID, [ NAME, ...{*_EN *_KA} ]
@@ -62,6 +65,32 @@ public class DB_Helper extends SQLiteOpenHelper {
     public DB_Helper(@Nullable Context context) {
         super(context, "drugDB", null, DB_Helper.DATABASE_VERSION);
         this.mainActivity = (MainActivity) context;
+
+        InputStream inStream;
+
+
+        // Load the CSV headers
+        try {
+            assert this.mainActivity != null;
+            Resources resources = this.mainActivity.getResources();
+            if (resources == null) {
+                return;
+            }
+
+            AssetManager manager = resources.getAssets();
+            if (manager == null) {
+                return;
+            }
+
+            inStream = manager.open(DRUG_CSV_FILE);
+            InputStreamReader inputCSVReader = new InputStreamReader(inStream);
+            csvReader = new CSVReaderBuilder(inputCSVReader).build();
+            loadCSVHeaders(csvReader);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
     }
 
     // Remove the language suffixes from a string
@@ -92,16 +121,22 @@ public class DB_Helper extends SQLiteOpenHelper {
     // Load the headers from a CSV file
     private void loadCSVHeaders(@NonNull CSVReader csvReader) throws IOException {
         String[] drugHeaders = csvReader.readNext();
+        String[] displayHeaders = csvReader.readNext();
         // Process the headers
         sqlColStrings = new ArrayList<>();
+        drugDisplayHeaders = new ArrayList<>();
         headerToIndex = new HashMap<>();
         // Ensure that the id column is included
-        sqlColStrings.add(COL_ID_STRING);
         headerToIndex.put(COL_ID_STRING, 0);
+        sqlColStrings.add(COL_ID_STRING);
+        drugDisplayHeaders.add("ERROR: USER SHOULD NOT BE ABLE TO SEE DRUG ID");
+
 
         // Process the name string
         //COL_NAME_STRING = drugHeaders[0].trim();
         headerToIndex.put(COL_NAME_STRING, 1);
+        sqlColStrings.add(COL_NAME_STRING);
+        drugDisplayHeaders.add("ERROR: Display of the drug name column should never appear");
 
         // This hash set will contain each name
         HashSet<String> headerSet = new HashSet<>();
@@ -111,6 +146,9 @@ public class DB_Helper extends SQLiteOpenHelper {
                 String s = drugHeaders[i].trim();
                 sqlColStrings.add(s);
                 headerToIndex.put(s, i + 1); // 1 is for the drug name column, so do i + 1
+                String displayHeader = displayHeaders[i].trim();
+                drugDisplayHeaders.add(displayHeader);
+
                 /*
                 // TEMP
                 String[] a = s.split(LANGUAGE_SUFFIX_REGEX);
@@ -118,14 +156,18 @@ public class DB_Helper extends SQLiteOpenHelper {
                     headerSet.add(a[0]);
                 }
                 */
-                String noLanguage = removeLanguageSuffix(s);
+                String noLanguage = this.removeLanguageSuffix(s);
                 if (noLanguage != null && !noLanguage.isEmpty()) {
-                    headerSet.add(s);
+                    headerSet.add(noLanguage);
                 }
             }
         }
 
         languageIndependentHeaders = headerSet.toArray(new String[0]);
+        for (String name : DB_Helper.languageIndependentHeaders) {
+            Log.i("DEMO", "Getting header " + name);
+        }
+
     }
 
 
@@ -149,7 +191,7 @@ public class DB_Helper extends SQLiteOpenHelper {
             ContentValues cv = new ContentValues(sqlColStrings.size() - 1);
 
             // Put all but the auto-assigned id in. That is why i starts at 1
-            for (int i = 1; i < sqlColStrings.size() - 1; i++) {
+            for (int i = 1; i < sqlColStrings.size(); i++) {
                 String val = values[i - 1].trim();
                 cv.put(sqlColStrings.get(i), val);
             }
@@ -187,7 +229,7 @@ public class DB_Helper extends SQLiteOpenHelper {
 
             inStream = manager.open(DRUG_CSV_FILE);
             InputStreamReader inputCSVReader = new InputStreamReader(inStream);
-            CSVReader csvReader = new CSVReaderBuilder(inputCSVReader).build();
+            csvReader = new CSVReaderBuilder(inputCSVReader).build();
             loadCSVHeaders(csvReader);
 
             /*
@@ -246,15 +288,39 @@ public class DB_Helper extends SQLiteOpenHelper {
         return extractDrugModels(idQuery);
     }
 
-    // Return all drugs with names similar to input
-    ///  TEMP matching *input* (* is wildcard)
-    public List<DB_DrugModel> getDrugByName(String input) {
-        if (input == null || input.length() == 0) { return null; }
+    private DB_DrugModel fillInDrugModel(Cursor cursor) {
+        int i = 0;
+        int drugId = cursor.getInt(i++);
+        String drugName = cursor.getString(i++);
 
-        String nameQuery = "SELECT * FROM " + TABLE_ID_TO_DRUG + " WHERE " +
-                COL_NAME_STRING + " LIKE '%" + input + "%';";
+        HashMap<String, String> infoEN = new HashMap<>();
+        HashMap<String, String> infoKA = new HashMap<>();
 
-        return extractDrugModels(nameQuery);
+        for(; i < cursor.getColumnCount(); i++) {
+            String s = cursor.getString(i);
+            Log.i("DEMOload",  i + "/" + cursor.getColumnCount() + "=" + s);
+            Log.i("DEMOOO", Arrays.toString(sqlColStrings.toArray()));
+
+            if (s != null && !s.isEmpty()) {
+                String colWithLang = sqlColStrings.get(i);
+                String col = removeLanguageSuffix(colWithLang);
+                Log.i("DEMOload" + i, colWithLang + " " + Boolean.toString(colWithLang.endsWith(KAREN_SUFFIX)));
+
+                // Insert based on language
+                if (colWithLang.endsWith(KAREN_SUFFIX)) {
+                    Log.i("DEMOload" + i, "KA add " + s);
+                    infoKA.put(col, s);
+                } else {
+                    Log.i("DEMOload" + i, "EN add " + s);
+                    infoEN.put(col, s);
+                }
+            }
+
+        }
+
+
+        DB_DrugModel drugModel = new DB_DrugModel(drugId, drugName, infoEN, infoKA);
+        return drugModel;
     }
 
     // This will run the sql statement, then parse the results into the return List
@@ -273,10 +339,14 @@ public class DB_Helper extends SQLiteOpenHelper {
             // return list. Do this while we can move to a new line
             do {
                 // The columns have to be hard coded...
+                /*
                 int drugId = cursor.getInt(0);
                 String drugName = cursor.getString(1);
-                //DrugInfo infoEN = new DrugInfo(cursor.getString(2));
-                //DrugInfo infoKA = new DrugInfo(cursor.getString(3));
+                DrugInfo infoEN = new DrugInfo(cursor.getString(2));
+                DrugInfo infoKA = new DrugInfo(cursor.getString(3));
+
+
+
 
                 DrugInfo infoEN = new DrugInfo(cursor, false);
                 DrugInfo infoKA = new DrugInfo(cursor, true);
@@ -284,11 +354,12 @@ public class DB_Helper extends SQLiteOpenHelper {
 
                 Log.w("DB_DEMO", "got name " + drugName);
 
-                DB_DrugModel drugModel = new DB_DrugModel(drugId, drugName, infoEN, infoKA);
+                DB_DrugModel drugModel = new DB_DrugModel(drugId, drugName);
                 returnList.add(drugModel);
+                */
+                returnList.add(fillInDrugModel(cursor));
             } while(cursor.moveToNext());
         } // else. Failure do not add anything to the list
-
 
         // We are done with the database, allow others to use.
         cursor.close();
@@ -304,5 +375,17 @@ public class DB_Helper extends SQLiteOpenHelper {
         }
         return i;
     }
+
+    // Return all drugs with names similar to input
+    ///  TEMP matching *input* (* is wildcard)
+    public List<DB_DrugModel> getDrugsByName(String input) {
+        if (input == null || input.length() == 0) { return null; }
+
+        String nameQuery = "SELECT * FROM " + TABLE_ID_TO_DRUG + " WHERE " +
+                COL_NAME_STRING + " LIKE '%" + input + "%';";
+
+        return extractDrugModels(nameQuery);
+    }
+
 
 }

@@ -1,5 +1,6 @@
-DRUG_NAME, DESCRIPTION_EN, DESCRIPTION_KA, FOOD_EN, FOOD_KA, PREGNANCY_EN, PREGNANCY_KA,
-Dihydrogen Monoxide, Cures dehydration, 1ကရင်, Everything,,This is preg EN: should show up even in KA,,
-Funny gas, "Quite ""humorous"", according to some $path$", , idk, idk in Karen, don't?, don't? in Karen,
-Microplastics, Tasty!, Tasty in Karen, Already present!, Already present in Karen!,,,
-Placebex, The strongest of all drugs, Same but in Karen, not needed, not needed in Karen, nope, bad idea,
+DRUG_NAME, DOSAGE_EN, DOSAGE_KA,  DESCRIPTION_EN, DESCRIPTION_KA, FOOD_EN, FOOD_KA, PREGNANCY_EN, PREGNANCY_KA,
+Medication,Dosage, Dosage in KA, Description, Description in KA, Food, Food in KA, Pregnancy, Pregnancy in KA
+Dihydrogen Monoxide, 2ml,, Cures dehydration, 1ကရင်, ,This is Food Ka and should show up even in EN,This is preg: EN should show up even in KA,,
+Funny gas, 5 tons,,"Quite ""humorous"", according to some $path$", , idk, idk in Karen, abc, cab,
+Microplastics, 1 daily,, Tasty!, Tasty in Karen, Already present!, Already present in Karen!,,,
+Placebex, at least 0,inKaren at least 0, The strongest of all drugs, Same but in Karen, not needed, not needed in Karen, nope, bad idea,
