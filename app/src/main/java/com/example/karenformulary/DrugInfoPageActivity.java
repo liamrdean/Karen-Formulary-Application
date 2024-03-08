@@ -11,6 +11,7 @@ import android.widget.TextView;
 import org.w3c.dom.Text;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
@@ -34,11 +35,15 @@ public class DrugInfoPageActivity extends AppCompatActivity {
         dosageTextView = findViewById(R.id.txDosage);
         allergyWarning = findViewById(R.id.txAlergyWarning);
 
-        // For now hard coded to placebex
-        String drugName = "Placebex";
+        // For now hard coded to Dihydrogen Monoxide
+        String drugName = "Dihydrogen Monoxide";
         expandableListDetail = ExpandableListDataPump.getData(drugName);
 
+//        expandableListTitle = new ArrayList<>(expandableListDetail.keySet());
         expandableListTitle = new ArrayList<>(expandableListDetail.keySet());
+        // This is stupid very stupid, but it will ensure that the order is always the same so....
+
+
 
         expandableListAdapter = new CustomExpandableListAdapter
                 (this,expandableListTitle,expandableListDetail);

@@ -5,13 +5,18 @@ package com.example.karenformulary;
  */
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 // EN is short for English, KA is short for Karen
 public class DB_DrugModel {
     // For when we have not manually assigned an id
     public static final int blankId = -1;
+    // The string used to indicate the beginning and end of a image path
+    public static final String imageDelimiter = "$";
 
     private int drugId;
     private String drugName;
@@ -92,8 +97,19 @@ public class DB_DrugModel {
     }
     */
 
-    public List<String> getData(String data) {
-        if (data.equals(DB_Helper.COL_NAME_STRING)) {
+
+    public Set<String> getDataFields() {
+        Set<String> mergedSet = new HashSet<>();
+        mergedSet.addAll(tempnameinfoEN.keySet());
+        mergedSet.addAll(tempnameinfoKA.keySet());
+
+        return mergedSet;
+    }
+
+    // Returns data in a list (Pre split to deal with images)
+    // The key must be a String in DB_Helper.languageIndependentHeaders
+    public List<String> getData(String key) {
+        if (key.equals(DB_Helper.COL_NAME_STRING)) {
             // They are just asking for the name of this drug, return it.
             List<String> output = new ArrayList<>();
             output.add(this.drugName);
@@ -101,11 +117,35 @@ public class DB_DrugModel {
         }
 
 
+        HashMap<String, String> map = (MainActivity.isKaren) ? tempnameinfoKA : tempnameinfoEN;
+        HashMap<String, String> other = (MainActivity.isKaren) ? tempnameinfoEN : tempnameinfoKA;
+        return getDataFromMap(key, map, other);
+    }
 
+    // Get the value from map with key. If map does not have key, try with other.
+    // If neither have it returns null
+    // returns null if data is empty
+    // splits the data with imageDelimiter
+    private List<String> getDataFromMap(String key, HashMap<String, String> map, HashMap<String, String> other) {
+        String s;
 
+        if (!map.containsKey(key)) {
+            if (other.containsKey(key)) {
+                s = other.get(key);
+            } else {
+                return null;
+            }
+        } else {
+             s = map.get(key);
+        }
 
+        if (s == null) {
+            return null;
+        }
 
-        return null;
+        String[] arr = s.split(imageDelimiter);
+
+        return Arrays.asList(arr);
     }
 
 }

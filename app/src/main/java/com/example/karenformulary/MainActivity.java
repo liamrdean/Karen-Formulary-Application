@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button button3;
     // This controls if the data is in karen or not
-    public static boolean isKaren;
+    public static boolean isKaren = true;
     public static DB_Helper dbHelper;
 
     @Override

@@ -1,8 +1,12 @@
 package com.example.karenformulary;
 
+import android.util.Log;
+
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Set;
 
 public class ExpandableListDataPump {
 
@@ -12,6 +16,37 @@ public class ExpandableListDataPump {
 
         // Procedural way of doing this
         // For each header, add stuff as a list of strings returned from the drug model, if there is nothing else, do not deal with it
+        // Grab the drugs
+        List<DB_DrugModel> drugModels = MainActivity.dbHelper.getDrugsByName(drugName);
+
+        if (drugModels == null || drugModels.size() == 0) {
+            Log.w("ListDataPump", "Drug model list is null or has no models!");
+        }
+
+        if (drugModels.size() != 1) {
+            Log.w("ListDataPump", "Drug model does not have just 1 model, assuming 1st!");
+        }
+
+        // Assume the first drug model
+        DB_DrugModel model = drugModels.get(0);
+        String[] columnsInModel = (String[]) model.getDataFields().toArray(new String[0]);
+        Arrays.sort(columnsInModel);
+        Log.i("ELDP", model.toString());
+        Log.i("ELDP", Arrays.toString(columnsInModel));
+
+        for (String column : columnsInModel) {
+            Log.i("ELDP", column);
+            // Get the display name of the column / section / header whatever its called
+            String columnWithLang = DB_Helper.addCurrentLanguageSuffix(column);
+            int columnIndex = DB_Helper.getHeaderIndex(columnWithLang);
+            String displayName = DB_Helper.drugDisplayHeaders.get(columnIndex);
+
+            // Get the contents of the column / section / header whatever its called
+            List<String> modelData = model.getData(column);
+
+            expandableListDetail.put(displayName, modelData);
+
+        }
 
 
         // Add the stuff gotten from the drug model

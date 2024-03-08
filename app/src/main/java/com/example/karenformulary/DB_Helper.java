@@ -164,9 +164,6 @@ public class DB_Helper extends SQLiteOpenHelper {
         }
 
         languageIndependentHeaders = headerSet.toArray(new String[0]);
-        for (String name : DB_Helper.languageIndependentHeaders) {
-            Log.i("DEMO", "Getting header " + name);
-        }
 
     }
 
