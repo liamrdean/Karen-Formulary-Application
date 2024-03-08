@@ -33,12 +33,16 @@ public class DB_Helper extends SQLiteOpenHelper {
     public static final String TABLE_ID_TO_DRUG = "TABLE_ID_TO_DRUG";
     public static final String COL_ID_STRING = "DRUG_ID";
     public static String COL_NAME_STRING = "DRUG_NAME";
+    public static final String COL_DOSAGE_DISPLAY_STRING = "DOSAGE";
+    public static final String COL_DESCRIPTION_DISPLAY_STRING = "DESCRIPTION";
     public static final String DRUG_CSV_FILE = "small.csv";
     // String constants _{EN|KA}\\z
     // Regex to get either _EN or _KA at the end of a string
     public static final String KAREN_SUFFIX = "_KA";
     public static final String ENGLISH_SUFFIX = "_EN";
     public static final String LANGUAGE_SUFFIX_REGEX = "(_KA\\z)|(_EN\\z)";
+
+
 
     private final MainActivity mainActivity;
 
@@ -48,7 +52,7 @@ public class DB_Helper extends SQLiteOpenHelper {
     // Despite the name, no _EN or _KA should be in this, just the names before _EN or _KA
     public static String[] languageIndependentHeaders; // Internal column names
     // The display names of the headers (This is what is displayed to the user)
-    public static List<String> drugDisplayHeaders;
+    public static HashMap<String, String> drugDisplayHeaders;
 
     private CSVReader csvReader;
 
@@ -124,30 +128,38 @@ public class DB_Helper extends SQLiteOpenHelper {
         String[] displayHeaders = csvReader.readNext();
         // Process the headers
         sqlColStrings = new ArrayList<>();
-        drugDisplayHeaders = new ArrayList<>();
+        drugDisplayHeaders = new HashMap<>();
         headerToIndex = new HashMap<>();
         // Ensure that the id column is included
         headerToIndex.put(COL_ID_STRING, 0);
         sqlColStrings.add(COL_ID_STRING);
-        drugDisplayHeaders.add("ERROR: USER SHOULD NOT BE ABLE TO SEE DRUG ID");
+        drugDisplayHeaders.put(COL_ID_STRING, "ERROR: USER SHOULD NOT BE ABLE TO SEE DRUG ID");
 
 
         // Process the name string
         //COL_NAME_STRING = drugHeaders[0].trim();
         headerToIndex.put(COL_NAME_STRING, 1);
         sqlColStrings.add(COL_NAME_STRING);
-        drugDisplayHeaders.add("ERROR: Display of the drug name column should never appear");
+        drugDisplayHeaders.put(COL_NAME_STRING, "ERROR: Display of the drug name column should never appear");
 
         // This hash set will contain each name
         HashSet<String> headerSet = new HashSet<>();
         // Process the CSV headers into the sql columns & create the languageDependency list
         for (int i = 1; i < drugHeaders.length; i++) {
             if (!drugHeaders[i].isEmpty()) {
-                String s = drugHeaders[i].trim();
+                String s = drugHeaders[i].trim().toUpperCase();
                 sqlColStrings.add(s);
                 headerToIndex.put(s, i + 1); // 1 is for the drug name column, so do i + 1
-                String displayHeader = displayHeaders[i].trim();
-                drugDisplayHeaders.add(displayHeader);
+                String displayHeader = displayHeaders[i].trim().toUpperCase();
+
+                // When given a discription or a dosage column use the pre defined display values since they should not be seen
+                if (displayHeader.startsWith(COL_DOSAGE_DISPLAY_STRING)) {
+                    drugDisplayHeaders.put(s, COL_DOSAGE_DISPLAY_STRING);
+                } else if (displayHeader.startsWith(COL_DESCRIPTION_DISPLAY_STRING)) {
+                    drugDisplayHeaders.put(s, COL_DESCRIPTION_DISPLAY_STRING);
+                } else {
+                    drugDisplayHeaders.put(s, displayHeader);
+                }
 
                 /*
                 // TEMP

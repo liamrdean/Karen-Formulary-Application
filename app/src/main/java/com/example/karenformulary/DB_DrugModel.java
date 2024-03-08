@@ -4,6 +4,8 @@ package com.example.karenformulary;
  * This is the java file that models the SQLite database structure for the drugs
  */
 
+import android.util.Log;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -144,6 +146,8 @@ public class DB_DrugModel {
         }
 
         String[] arr = s.split(imageDelimiter);
+
+        Log.i("ELDS", Arrays.toString(arr));
 
         return Arrays.asList(arr);
     }

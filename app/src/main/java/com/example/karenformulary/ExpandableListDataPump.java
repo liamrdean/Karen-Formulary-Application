@@ -37,13 +37,14 @@ public class ExpandableListDataPump {
         for (String column : columnsInModel) {
             Log.i("ELDP", column);
             // Get the display name of the column / section / header whatever its called
-            String columnWithLang = DB_Helper.addCurrentLanguageSuffix(column);
-            int columnIndex = DB_Helper.getHeaderIndex(columnWithLang);
-            String displayName = DB_Helper.drugDisplayHeaders.get(columnIndex);
+            String columnWithLanguage = DB_Helper.addCurrentLanguageSuffix(column);
+            String displayName = DB_Helper.drugDisplayHeaders.get(columnWithLanguage);
 
             // Get the contents of the column / section / header whatever its called
             List<String> modelData = model.getData(column);
 
+
+            Log.i("ELDSinsert", column + " " + columnWithLanguage + " " + displayName + " " + modelData.toString());
             expandableListDetail.put(displayName, modelData);
 
         }
