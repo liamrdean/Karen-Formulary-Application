@@ -26,6 +26,12 @@
             app:autoSizeMinTextSize="12dp"
             app:fontFamily="sans-serif-black" />
 
+        <TextView
+            android:id="@+id/txDosage"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:gravity="center"
+            android:text="DOSAGE PLACEHOLDER" />
 
         <TextView
             android:id="@+id/txDrugDescription"
@@ -33,13 +39,6 @@
             android:layout_height="31dp"
             android:gravity="center"
             android:text="DRUG DESCRIPTION PLACEHOLDER" />
-
-        <TextView
-            android:id="@+id/txDosage"
-            android:layout_width="match_parent"
-            android:layout_height="29dp"
-            android:gravity="center"
-            android:text="DOSAGE PLACEHOLDER" />
 
         <TextView
             android:id="@+id/txAlergyWarning"

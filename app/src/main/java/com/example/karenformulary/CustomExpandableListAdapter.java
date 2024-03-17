@@ -86,7 +86,11 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
 
         }
 
+
         ImageTextView expandedListTextView = convertView.findViewById(R.id.expandedListItem);
+
+        // If the child is odd, it MUST be an image, let it know
+        expandedListTextView.setIsImage(childPosition % 2 == 1);
         expandedListTextView.setData(expandedListText);
         expandedListTextView.setBackgroundColor(Color.parseColor("#0000FF"));
         return convertView;

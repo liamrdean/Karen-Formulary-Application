@@ -12,6 +12,10 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
 
+import java.io.IOException;
+import java.io.InputStream;
+
+
 public class ImageTextView extends View {
     /* TODO
      * Dynamic heights
@@ -21,8 +25,12 @@ public class ImageTextView extends View {
 
     private Context mContext;
     private boolean isImage = false;
-    private int viewHeight = -1;
-    private int viewWidth = -1;
+    private Dim measureDimension = new Dim(-1, -1);
+    private Dim drawDimension = new Dim(-1, -1);
+    private Dim maxDimensions = new Dim(-1, -1);
+    private Dim minDimensions = new Dim(-1, -1);
+
+
     // This makes a draw call call calculatedMeasure if it has not been called already
     // thus preventing bad drawings (out of bounds)
     private boolean calculatedMeasure = false;
@@ -45,34 +53,77 @@ public class ImageTextView extends View {
         return tempIsImageTest(this.data);
     }
     private static boolean tempIsImageTest(String data) {
-        return data != null && data.charAt(0) == '$';
+        return data != null;// && data.charAt(0) == '$';
     }
 
-    // If this should be an image, init it
+    // If this should be an image, init it, else set bitmap to null
     private void maybeInitImage() {
-        if (!(isImage = tempIsImageTest(data))){
-            Log.i("DEMO", "Not image " + data);
+        if (!isImage) {
+            bitmap = null;
+            return;
+        }
+        Log.w("TESTimg", "Creating bitmap with data = \"" + this.data + "\"");
+
+
+        InputStream inStream = null;
+
+
+//        bitmap = BitmapFactory.decodeStream(inStream);
+
+        // TEMP
+        // VERY TEMPORARY IMAGE LOADING I DON'T WANT TO BUILD A FULL IMAGE LOADER
+        /*
+        Log.i("kljlkj", this.data);
+        int res = R.drawable.placeholder;
+        switch(data.charAt(0)) {
+            case '.':
+                res = R.drawable.psmall;
+                break;
+            case ',':
+                res = R.drawable.pmedium;
+                break;
+            case '1':
+                // Load the CSV headers
+
+                break;
+            default:
+                res = R.drawable.placeholder;
+        }
+
+
+        if (data.charAt(0) != '1') {
+            bitmap = BitmapFactory.decodeResource(mContext.getResources(), res);
+        } else if (inStream != null) {
+        }
+        */
+
+        if (data.charAt(0) == '.') {
+            bitmap = BitmapFactory.decodeResource(mContext.getResources(), R.drawable.placeholder);
             return;
         }
 
-        if (isImage) {
-            Log.w("DEMO", "Creating bitmap");
+        try {
+            Log.i("TESTimg", "Trying " + data);
 
-            // TEMP
-            // VERY TEMPORARY IMAGE LOADING I DON'T WANT TO BUILD A FULL IMAGE LOADER
-            int res = R.drawable.placeholder;
-            if (data.length() > 1) {
-                switch(data.charAt(1)) {
-                    case '.':
-                        res = R.drawable.psmall;
-                        break;
-                    case ',':
-                        res = R.drawable.pmedium;
-                }
-            }
-            bitmap =  BitmapFactory.decodeResource(mContext.getResources(), res);
+            StringBuilder filePathBuilder = new StringBuilder("Drug_Images/");
+            // Add drug name
+            filePathBuilder.append("Dihydrogen Monoxide/");
 
+            // Add data
+            filePathBuilder.append(data);
+
+            // Grab the picture
+            filePathBuilder.append(".png");
+
+            Log.i("TESTimg", "opening = '" + filePathBuilder.toString());
+
+            inStream = MainActivity.assetManager.open(filePathBuilder.toString());
+            Log.i("TESTimg", "path = '" + filePathBuilder.toString() + "' ?= " + Boolean.toString(inStream != null));
+        } catch (IOException e) {
+            e.printStackTrace();
+            return;
         }
+        bitmap = BitmapFactory.decodeStream(inStream);
     }
 
     public ImageTextView(Context context, AttributeSet attrs) {
@@ -92,11 +143,10 @@ public class ImageTextView extends View {
             data = s;
 
 
-            maybeInitImage();
+
         } finally {
             a.recycle();
         }
-
 
         InitPaints();
     }
@@ -109,8 +159,7 @@ public class ImageTextView extends View {
     }
 
     private void InitData() {
-        viewHeight = -1;
-        viewWidth = -1;
+        drawDimension.set(-1, -1);
         calculatedMeasure = false;
         maybeInitImage();
         calculateMeasureAndRedraw();
@@ -124,6 +173,10 @@ public class ImageTextView extends View {
             textHeight = textPaint.getTextSize();
         }
         textPaint.setTextSize(textHeight);
+    }
+
+    public void setIsImage(boolean b) {
+        this.isImage = b;
     }
 
     public void setData(String newData){
@@ -151,12 +204,13 @@ public class ImageTextView extends View {
         return true;
     }
 
-
     private void drawText(Canvas canvas, String text) {
         if (text == null || text.isEmpty()) {
             text = "ERROR: NULL TEXT IN ImageTextView.java.drawText";
         }
         String s = text;
+        Log.i("DEMOdimDrT", "@ " + -textBounds.left + " " + -textBounds.top);
+        Log.i("DEMOdimDrT", "Canvas height " + canvas.getHeight());
         canvas.drawText(
                 s,
                 -textBounds.left,
@@ -169,28 +223,35 @@ public class ImageTextView extends View {
             Log.w("DEMO", "Called draw image while bitmap is null");
             return;
         }
-
+        /*
         int bmWidth = bitmap.getWidth();
         int bmHeight = bitmap.getHeight();
 
-        Rect dst = new Rect(0, 0, bmWidth, bmHeight);
+        Rect origdst = new Rect(0, 0, bmWidth, bmHeight);
 
-        if (viewWidth < bmWidth) {
-            dst = new Rect(0, 0, viewWidth, viewHeight);
+
+        if (measureDimension.getWidthInt() < bmWidth) {
+            origdst = new Rect(0, 0, measureDimension.getWidthInt(), measureDimension.getHeightInt());
         }
 
         // If the image is smaller, center it
-        if (viewWidth > bmWidth) {
-            Log.w("DEMODK", viewWidth + " " + viewHeight + " " + bmWidth + " " + bmHeight);
-            int xOff = (int) Math.ceil((viewWidth - bmWidth) / 2.0);
-            int yOff = (int) Math.ceil((viewHeight - bmHeight) / 2.0);
-            dst.left = xOff;
-            dst.right += xOff;
+        if (measureDimension.getWidthInt() > bmWidth) {
+            Log.w("DEMODK", measureDimension.getWidthInt() + " " + measureDimension.getHeightInt() + " " + bmWidth + " " + bmHeight);
+            int xOff = (int) Math.ceil((measureDimension.getWidthInt() - bmWidth) / 2.0);
+            int yOff = (int) Math.ceil((measureDimension.getHeightInt() - bmHeight) / 2.0);
+            origdst.left = xOff;
+            origdst.right += xOff;
 
         }
+        */
 
-        Log.i("DEMODK", dst.toString());
-        // Since src is null, draws entire bitmap :)
+        Dim imageOffset = measureDimension.getOtherInCenter(drawDimension);
+        Rect dst = Dim.toRect(imageOffset, drawDimension);
+
+
+        Log.i("DEMODKrect", "got " + dst.toString()  + " from offset " + imageOffset.toString() + " size " + drawDimension);
+        // Since src is null, draws entire bitmap
+       // canvas.drawBitmap(bitmap, null, origdst, null);
         canvas.drawBitmap(bitmap, null, dst, null);
     }
 
@@ -202,10 +263,11 @@ public class ImageTextView extends View {
             calculateMeasureAndRedraw();
         }
 
-
+        /*
         if (tempIsImageTest()) {
             isImage = true;
         }
+        */
 
         if (isImage) {
             drawImage(canvas, data);
@@ -216,12 +278,13 @@ public class ImageTextView extends View {
 
 
     private void calculateMeasureAndRedraw() {
-        calculateMeasure();
+        calculateMeasure(-1, -1);
         callRedraw();
     }
 
 
-    private void calculateMeasure() {
+    // Ignores width and height if they are negative
+    private void calculateMeasure(int targetWidth, int targetHeight) {
         if (isImage && bitmap == null) {
             return;
         }
@@ -230,31 +293,36 @@ public class ImageTextView extends View {
         }
 
         if (!isImage) {
-            /*
-            if (data == null) {
-                data = "Testing|";
-            }*/
             textPaint.getTextBounds(data, 0, data.length(), textBounds);
         }
+        Log.i("DEMOdimMe", textBounds.toString());
 
-        if (this.viewWidth < 0) {
+        Log.i("DEMOdimMe", "drawDimWInt = " + this.drawDimension.getWInt() + " drawDimHInt = " + this.drawDimension.getHInt());
+
+        if (this.drawDimension.getWidthInt() < 0) {
             if (isImage) {
-                viewWidth = bitmap.getWidth();
+                drawDimension.setWidth(bitmap.getWidth());
             } else {
                 //                Log.i("DEMOme", textBounds.toString());
-                viewWidth = textBounds.right  - textBounds.left;
+                drawDimension.setWidth(textBounds.right  - textBounds.left);
             }
         }
 
-        if (this.viewHeight < 0) {
+        if (this.drawDimension.getHeight() < 0) {
             if (isImage) {
-                viewHeight = bitmap.getHeight();
+                drawDimension.setHeight(bitmap.getHeight());
             } else {
                 // Since we want at least text height, ceiling the value
                 // Bottom - top since decreases going down
-                Log.i("DEMO", textBounds.toString());
-                viewHeight = textBounds.bottom - textBounds.top;
+                Log.i("DEMOdimA", "Setting width to " + textBounds.bottom + "-" + textBounds.top + "=" + (textBounds.bottom - textBounds.top));
+                drawDimension.setHeight(textBounds.bottom - textBounds.top);
             }
+        }
+
+        if (isImage) {
+            Dim imageDim = new Dim(bitmap.getWidth(), bitmap.getHeight());
+            imageDim.shrinkWidthTo(measureDimension);
+            drawDimension.set(imageDim);
         }
 
         /*
@@ -292,13 +360,12 @@ public class ImageTextView extends View {
         Log.i("DEMOme", MeasureSpec.toString(widthMeasureSpec) + " " + MeasureSpec.toString(heightMeasureSpec));
         if(isImage){Log.i("DEMOmeme", MeasureSpec.toString(widthMeasureSpec) + " " + MeasureSpec.toString(heightMeasureSpec));}
 
-        calculateMeasure();
-        Log.i("DEMOmei", "calc " + String.format("%d wide by %d tall", viewWidth, viewHeight));
 
         int newWidth = MeasureSpec.getSize(widthMeasureSpec);
         int newHeight = MeasureSpec.getSize(heightMeasureSpec);
         int widthMode = MeasureSpec.getMode(widthMeasureSpec);
         int heightMode = MeasureSpec.getMode(heightMeasureSpec);
+        measureDimension.set(newWidth, 999999);
 
         // Rest of code assumes (widthMode = EXACTLY && heightMode == UNSPECIFIED) is true
         // so check that it is
@@ -313,20 +380,201 @@ public class ImageTextView extends View {
             return;
         }
 
+        calculateMeasure(newWidth, -1);
+        Log.i("DEMOmei", "calc " + String.format("%d wide by %d tall", drawDimension.getWidthInt(), drawDimension.getHeightInt()));
         // Scale height to maintain ratio with width, which will change to a known amount
+        /*
         if (isImage) {
            // viewHeight = (int) Math.ceil((double) (viewHeight * newWidth) / (double) viewWidth);
         }
         viewWidth = newWidth;
+        */
 
+        Log.i("DEMOmei", "Ended up with " + String.format("%d wide by %d tall", drawDimension.getWidthInt(), drawDimension.getHeightInt()));
 
-        // Must do or get an error
-        Log.i("DEMOmei", "Ended up with " + String.format("%d wide by %d tall", viewWidth, viewHeight));
+        // Must do this or get an error
+        Log.i("DEMOdimMe", drawDimension.getWidthInt() + " " + drawDimension.getHeightInt());
 
-        setMeasuredDimension(viewWidth, viewHeight);
+        measureDimension.set(newWidth, drawDimension.getHeight());
+        setMeasuredDimension(measureDimension.getWidthInt(), measureDimension.getHeightInt());
         callRedraw();
     }
 
+    // Dimension class. Would use Rect but I don't like the implementation.
+    private static class Dim {
+        private double w;
+        private double h;
+
+        // Use -1 to specify that we don't care
+        public Dim() {
+            this.w = -1;
+            this.h = -1;
+        }
+
+        public Dim(int width, int height) {
+            this.w = (double) width;
+            this.h = (double) height;
+        }
+
+        public Dim(double width, double height) {
+            this.w = width;
+            this.h = height;
+        }
+
+        public double getWidth() {return w;}
+        public double getW() {return w;}
+        public double getHeight() {return h;}
+        public double getH() {return h;}
+        // Get but return ints
+        public int getWidthInt() {return (int) Math.ceil(this.w);}
+        public int getWInt() {return (int) Math.ceil(this.w);}
+        public int getHeightInt() {return (int) Math.ceil(this.h);}
+        public int getHInt() {return (int) Math.ceil(this.h);}
+
+        public void set(double width, double height) {this.w = width; this.h = height;}
+        public void set(Dim other) {this.w = other.w; this.h = other.h;}
+        public void setWidth(double width) {this.w = width;}
+        public void setW(double w) {this.w = w;}
+        public void setHeight(double height) {this.h = height;}
+        public void setH(double h) {this.h = h;}
+
+        @Override
+        public String toString() {
+            return String.format("(%f, %f)", w, h);
+        }
+
+        // Shrink selfs width to fit in the other dimension
+        public void shrinkWidthTo(Dim other) {
+            this.shrinkWidthTo(other.getWidth(), other.getHeight());
+        }
+
+        public void shrinkWidthTo(double otherWidth, double otherHeight) {
+            if (this.w < otherWidth) {
+                return;
+            }
+
+            String pString = "Start this=" + this.toString() + " other=" + (new Dim(otherWidth, otherHeight));
+
+            //double ratioW = this.w / otherWidth;
+
+            if (otherWidth != 0) {
+                h *= otherWidth / w;
+            }
+            w = otherWidth;
+
+            //h *= ratioW;
+            //w *= ratioW;
+            pString += " now=" + this.toString();
+            Log.i("DEMODKdim", pString);
+        }
+
+        // Shrink selfs width to fit in the other dimension
+        public void shrinkHeightTo(Dim other) {
+            this.shrinkHeightTo(other.getWidth(), other.getHeight());
+        }
+
+        public void shrinkHeightTo(double otherWidth, double otherHeight) {
+            if (otherHeight != 0) {
+                w = otherWidth * h / otherHeight;
+            }
+            h = otherHeight;
+        }
+
+        public void shrinkTo(Dim other) {
+            this.shrinkTo(other.getWidth(), other.getHeight());
+        }
+
+        public void shrinkTo(double otherWidth, double otherHeight) {
+            double ratioW = this.w / otherWidth;
+            double ratioH = this.h / otherHeight;
+
+            w *= ratioW;
+            h *= ratioH;
+
+            /*
+            if (otherWidth > 0) {
+                w *= this.w / otherWidth;
+            }
+            if (w < 0) {
+                w = otherWidth;
+            }
+
+            if (otherHeight > 0) {
+                h *= this.h / otherHeight;
+            }
+            if (h < 0) {
+                h = otherHeight;
+            }
+            */
+        }
+
+        // Compares width, on tie compares height, if that ties returns a. Else returns dim with larger dim
+        public static Dim max(Dim a, Dim b) {
+            if (a.w == b.w) {
+                if (a.h >= b.h) {
+                    return a;
+                } else if (a.h < b.h) {
+                    return b;
+                }
+            } else if (a.w > b.w) {
+                return a;
+            }
+            // else a.w is less than b.w
+            return b;
+        }
+
+        // Just does width comparisons for now
+        public static Dim min(Dim a, Dim b) {
+            if (a.w == b.w) {
+                if (a.h <= b.h) {
+                    return a;
+                } else if (a.h < b.h) {
+                    return b;
+                }
+            } else if (a.w < b.w) {
+                return a;
+            }
+            // else a.w is less than b.w
+            return b;
+        }
+
+        // Line up the centers, so that the center of other is the same as the center of this.
+        // Returns the offset so that other is centered.
+        public Dim getOtherInCenter(Dim other) {
+            double width = (w - other.w) / 2.0;
+            double height = (h - other.h) / 2.0;
+
+            if (w < 0 || other.w < 0) {
+                width = -1;
+            }
+            if (h < 0 || other.h < 0) {
+                height = -1;
+            }
+
+            return new Dim(width, height);
+        }
+
+        public static Rect toRect(Dim offset, Dim size) {
+            return new Rect(offset.getWidthInt(), offset.getHeightInt(),
+                    offset.getWidthInt() + size.getWidthInt(), offset.getHeightInt() +size.getHeightInt());
+        }
+    }
+
+    public void setMaxDimensions(double width, double height) {
+        maxDimensions.set(width, height);
+    }
+
+    public void setMinDimensions(double width, double height) {
+        minDimensions.set(width, height);
+    }
+
+    public void setDrawDimensions(double width, double height) {
+        drawDimension.set(width, height);
+    }
+
+    public void setMeasureDimension(double width, double height) {
+        measureDimension.set(width, height);
+    }
 }
 
 

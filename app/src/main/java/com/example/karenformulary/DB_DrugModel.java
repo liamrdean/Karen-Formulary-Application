@@ -18,7 +18,8 @@ public class DB_DrugModel {
     // For when we have not manually assigned an id
     public static final int blankId = -1;
     // The string used to indicate the beginning and end of a image path
-    public static final String imageDelimiter = "$";
+    public static final char imageDelimiter = '$';
+    public static final String imageDelimiterRegex = "\\$";
 
     private int drugId;
     private String drugName;
@@ -145,11 +146,20 @@ public class DB_DrugModel {
             return null;
         }
 
-        String[] arr = s.split(imageDelimiter);
+        String[] arr = s.split(imageDelimiterRegex);
+
+        // Since having $$ means that there is a null or empty entry in the array, remove those while adding to the list
+        List<String> list = new ArrayList<>();
+        for (int i = 0; i < arr.length; i++) {
+            String item = arr[i].trim();
+            if (item != null && !item.isEmpty()) {
+                list.add(item);
+            }
+        }
 
         Log.i("ELDS", Arrays.toString(arr));
 
-        return Arrays.asList(arr);
+        return list;//Arrays.asList(arr);
     }
 
 }

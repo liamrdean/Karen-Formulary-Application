@@ -44,7 +44,7 @@ public class DB_Helper extends SQLiteOpenHelper {
 
 
 
-    private final MainActivity mainActivity;
+    public static MainActivity mainActivity;
 
     /* Dynamic column names*/
     public static List<String> sqlColStrings;

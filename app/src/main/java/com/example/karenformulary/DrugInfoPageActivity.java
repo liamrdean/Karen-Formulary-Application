@@ -39,19 +39,20 @@ public class DrugInfoPageActivity extends AppCompatActivity {
         expandableListDetail = ExpandableListDataPump.getData(drugName);
 
 
-        //expandableListTitle = new ArrayList<>(expandableListDetail.keySet());
         // This is stupid. Very stupid, but it will ensure that the order is always the same so....
-        //*
+
         Log.i("ELDS1", expandableListDetail.keySet().toString());
         List<String> expandableListTitleSet = new ArrayList<>(expandableListDetail.keySet());
         Log.i("ELDS2", expandableListTitleSet.toString());
 
         nameTextView.setText(drugName);
 
-
+        // Place the dosage into the dosage text view (For now just grabs the first one)
         List<String> details = expandableListDetail.get(DB_Helper.COL_DOSAGE_DISPLAY_STRING);
         dosageTextView.setText(details.get(0));
         expandableListTitleSet.remove(DB_Helper.COL_DOSAGE_DISPLAY_STRING);
+
+        // Place the description into the description text view (For now just grabs the first one)
         details = expandableListDetail.get(DB_Helper.COL_DESCRIPTION_DISPLAY_STRING);
         descriptionTextView.setText(details.get(0));
         expandableListTitleSet.remove(DB_Helper.COL_DESCRIPTION_DISPLAY_STRING);
@@ -64,11 +65,10 @@ public class DrugInfoPageActivity extends AppCompatActivity {
             }
         }
 
-       Log.i("ELDS", expandableListTitle.toString());
-
-        //*/
-
+        Log.i("ELDS", expandableListTitle.toString());
         // End of stupidity
+
+
 
         expandableListAdapter = new CustomExpandableListAdapter
                 (this, expandableListTitle,expandableListDetail);
