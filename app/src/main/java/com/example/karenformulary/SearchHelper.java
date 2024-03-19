@@ -29,7 +29,7 @@ public class SearchHelper {
             Scanner input = new Scanner(inputFile);
             String entry;
             root = new TrieNode("\0",false);
-            dictionary = new String[4]; // number would need to be changed for this, but we do know it
+            dictionary = new String[96]; // number would need to be changed for this, but we do know it
             int counter = 0;
             TrieNode current;
             while(input.hasNextLine()){

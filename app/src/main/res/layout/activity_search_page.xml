@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<!-- Relative Layout -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"> 
+  
+    <!-- List View from which data is to be searched -->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" /> 
+</RelativeLayout>

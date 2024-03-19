@@ -31,8 +31,9 @@ public class SearchPageActivity extends AppCompatActivity {
 
 		// Add items to Array List 
         SearchHelper searchHelper = new SearchHelper();
+		searchHelper.buildFromFile();
         
-        mylist = searchHelper.dictionary;
+        mylist = new ArrayList<String>(searchHelper.dictionary);
 	
 		// Set adapter to ListView 
 		adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, mylist); 
@@ -52,23 +53,18 @@ public class SearchPageActivity extends AppCompatActivity {
 
 		// attach setOnQueryTextListener 
 		// to search view defined above 
-		searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() { 
+		searchView.setOnQueryTextListener( new SearchView.OnQueryTextListener() { 
 			// Override onQueryTextSubmit method which is call when submit query is searched 
 			@Override
 			public boolean onQueryTextSubmit(String query) { 
-				// If the list contains the search query than filter the adapter 
-				// using the filter method with the query as its argument 
-				if (list.contains(query)) { 
+				if (searchHelper.search(query))) { 
 					adapter.getFilter().filter(query); 
 				} else { 
-					// Search query not found in List View 
-					Toast.makeText(MainActivity.this, "Not found", Toast.LENGTH_LONG).show(); 
+					// Display from autofill?
 				} 
 				return false; 
 			} 
 
-			// This method is overridden to filter the adapter according 
-			// to a search query when the user is typing search 
 			@Override
 			public boolean onQueryTextChange(String newText) { 
 				adapter.getFilter().filter(newText); 
