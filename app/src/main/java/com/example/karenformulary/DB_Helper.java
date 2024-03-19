@@ -44,7 +44,7 @@ public class DB_Helper extends SQLiteOpenHelper {
 
 
 
-    public static MainActivity mainActivity;
+    public static ActivityMain activityMain;
 
     /* Dynamic column names*/
     public static List<String> sqlColStrings;
@@ -68,15 +68,15 @@ public class DB_Helper extends SQLiteOpenHelper {
     // ASSUMES THAT THIS IS CALLED FROM THE MAIN ACTIVITY
     public DB_Helper(@Nullable Context context) {
         super(context, "drugDB", null, DB_Helper.DATABASE_VERSION);
-        this.mainActivity = (MainActivity) context;
+        this.activityMain = (ActivityMain) context;
 
         InputStream inStream;
 
 
         // Load the CSV headers
         try {
-            assert this.mainActivity != null;
-            Resources resources = this.mainActivity.getResources();
+            assert this.activityMain != null;
+            Resources resources = this.activityMain.getResources();
             if (resources == null) {
                 return;
             }
@@ -109,7 +109,7 @@ public class DB_Helper extends SQLiteOpenHelper {
 
     // Return s + CURRENT_LANGUAGE_SUFFIX
     public static String addCurrentLanguageSuffix(String s) {
-        return addLanguageSuffix(s, MainActivity.isKaren);
+        return addLanguageSuffix(s, ActivityMain.isKaren);
     }
 
     public static String addLanguageSuffix(String s, boolean inKaren) {
@@ -225,8 +225,8 @@ public class DB_Helper extends SQLiteOpenHelper {
          */
 
         try {
-            assert this.mainActivity != null;
-            Resources resources = this.mainActivity.getResources();
+            assert this.activityMain != null;
+            Resources resources = this.activityMain.getResources();
             if (resources == null) {
                 return;
             }

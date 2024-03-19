@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class DrugInfoPageActivity extends AppCompatActivity {
+public class ActivityDrugInfoPage extends AppCompatActivity {
 
     public static String drugName = "";
 
@@ -38,16 +38,16 @@ public class DrugInfoPageActivity extends AppCompatActivity {
 
         // For now hard coded to Dihydrogen Monoxide
         //drugName = "Dihydrogen Monoxide";
-        postSettingDrugName();
+        this.postSettingDrugName();
     }
 
     public String getDrugName() {return drugName;}
-    public void setDrugName(String newName) {
+    public static void setDrugName(String newName) {
         drugName = newName;
-        postSettingDrugName();
+        //postSettingDrugName();
     }
 
-    private void postSettingDrugName() {
+    public void postSettingDrugName() {
         if (drugName == null || drugName.isEmpty()) {
             return;
         }
@@ -91,7 +91,7 @@ public class DrugInfoPageActivity extends AppCompatActivity {
 
         // TEMP
         // Testing code
-        List<DB_DrugModel> models = MainActivity.dbHelper.getAllDrugs();
+        List<DB_DrugModel> models = ActivityMain.dbHelper.getAllDrugs();
         for (DB_DrugModel model : models) {
             Log.i("DEMOload", model.toString());
         }

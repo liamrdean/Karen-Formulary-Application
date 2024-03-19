@@ -14,10 +14,10 @@
         android:theme="@style/Theme.KarenFormulary"
         tools:targetApi="31">
         <activity
-            android:name=".DrugInfoPageActivity"
+            android:name=".ActivityDrugInfoPage"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ActivityMain"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

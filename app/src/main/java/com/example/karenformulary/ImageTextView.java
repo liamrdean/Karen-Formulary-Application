@@ -14,7 +14,6 @@ import android.view.View;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 
@@ -24,9 +23,6 @@ public class ImageTextView extends View {
      * Actually center please thanks :)
      * Figure out more about OnDraw such as determining the canvas size and such
      */
-
-
-
 
     private Context mContext;
     private boolean isImage = false;
@@ -97,7 +93,7 @@ public class ImageTextView extends View {
 
             Log.i("TESTimg", "opening = '" + filePathBuilder.toString());
 
-            inStream = MainActivity.assetManager.open(filePathBuilder.toString());
+            inStream = ActivityMain.assetManager.open(filePathBuilder.toString());
             Log.i("TESTimg", "path = '" + filePathBuilder.toString() + "' ?= " + Boolean.toString(inStream != null));
         } catch (IOException e) {
             e.printStackTrace();

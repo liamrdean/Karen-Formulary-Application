@@ -10,13 +10,13 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class ActivityMain extends AppCompatActivity {
 
     Button button3;
     // This controls if the data is in karen or not
     public static boolean isKaren = false;
     public static DB_Helper dbHelper;
-    public static MainActivity mainActivity;
+    public static ActivityMain activityMain;
     public static AssetManager assetManager;
 
     @Override
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        this.mainActivity = this;
+        this.activityMain = this;
 
 
         Log.i("jklfdsa", "Getting resources");
@@ -39,7 +39,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //Go to the Drug info Page
-                Intent intent = new Intent(MainActivity.this, DrugInfoPageActivity.class);
+                ActivityDrugInfoPage.setDrugName("Dihydrogen Monoxide");
+                Intent intent = new Intent(ActivityMain.this, ActivityDrugInfoPage.class);
                 startActivity(intent);
 
             }

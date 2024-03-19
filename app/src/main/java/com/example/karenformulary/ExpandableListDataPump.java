@@ -2,11 +2,9 @@ package com.example.karenformulary;
 
 import android.util.Log;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Set;
 
 public class ExpandableListDataPump {
 
@@ -17,7 +15,7 @@ public class ExpandableListDataPump {
         // Procedural way of doing this
         // For each header, add stuff as a list of strings returned from the drug model, if there is nothing else, do not deal with it
         // Grab the drugs
-        List<DB_DrugModel> drugModels = MainActivity.dbHelper.getDrugsByName(drugName);
+        List<DB_DrugModel> drugModels = ActivityMain.dbHelper.getDrugsByName(drugName);
 
         if (drugModels == null || drugModels.size() == 0) {
             Log.w("ListDataPump", "Drug model list is null or has no models!");

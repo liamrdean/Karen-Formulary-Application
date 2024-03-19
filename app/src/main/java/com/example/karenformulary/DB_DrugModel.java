@@ -6,7 +6,6 @@ package com.example.karenformulary;
 
 import android.util.Log;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -66,7 +65,7 @@ public class DB_DrugModel {
                 "EN NAMES \n" + tempnameinfoEN.toString() + "\n" +
                 "KA NAMES \n" + tempnameinfoKA.toString() + "\n";
 
-//                this.getInfo(MainActivity.isKaren).toString();
+//                this.getInfo(ActivityMain.isKaren).toString();
 
         /* Legacy/default
         return "DB_DrugModel{" +
@@ -121,8 +120,8 @@ public class DB_DrugModel {
         }
 
 
-        HashMap<String, String> map = (MainActivity.isKaren) ? tempnameinfoKA : tempnameinfoEN;
-        HashMap<String, String> other = (MainActivity.isKaren) ? tempnameinfoEN : tempnameinfoKA;
+        HashMap<String, String> map = (ActivityMain.isKaren) ? tempnameinfoKA : tempnameinfoEN;
+        HashMap<String, String> other = (ActivityMain.isKaren) ? tempnameinfoEN : tempnameinfoKA;
         return getDataFromMap(key, map, other);
     }
 
