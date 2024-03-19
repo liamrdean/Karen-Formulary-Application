@@ -14,6 +14,8 @@ import java.util.List;
 
 public class DrugInfoPageActivity extends AppCompatActivity {
 
+    public static String drugName = "";
+
     ExpandableListView expandableListView;
     ExpandableListAdapter expandableListAdapter;
     TextView nameTextView;
@@ -35,9 +37,21 @@ public class DrugInfoPageActivity extends AppCompatActivity {
         allergyWarning = findViewById(R.id.txAlergyWarning);
 
         // For now hard coded to Dihydrogen Monoxide
-        String drugName = "Dihydrogen Monoxide";
-        expandableListDetail = ExpandableListDataPump.getData(drugName);
+        //drugName = "Dihydrogen Monoxide";
+        postSettingDrugName();
+    }
 
+    public String getDrugName() {return drugName;}
+    public void setDrugName(String newName) {
+        drugName = newName;
+        postSettingDrugName();
+    }
+
+    private void postSettingDrugName() {
+        if (drugName == null || drugName.isEmpty()) {
+            return;
+        }
+        expandableListDetail = ExpandableListDataPump.getData(drugName);
 
         // This is stupid. Very stupid, but it will ensure that the order is always the same so....
 

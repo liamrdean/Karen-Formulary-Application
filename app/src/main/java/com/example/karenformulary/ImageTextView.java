@@ -201,6 +201,7 @@ public class ImageTextView extends View {
         fullTextBounds = new Rect(textBounds.left, textBounds.top, textBounds.right, textBounds.bottom);
         // Android is dumb and does not understand newlines, have to do this garbage instead.
         Log.i("DEMOfTB", "Length " + textData.length);
+        // NOTE may be going one too far, like reading one past the
         for (int i = 0; i < textData.length; i++) {
             if (textData[i] == null) {
                 textData[i] = "ERROR: NULL TEXT IN ImageTextView.java.drawText";
