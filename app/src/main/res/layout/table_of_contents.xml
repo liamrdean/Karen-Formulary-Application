@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityTOC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#afbb68">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            app:autoSizeMaxTextSize="30dp"
+            app:fontFamily="sans-serif-black" />
+
+        <Button
+            android:id="@+id/fullPDF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Essential Drug Formulary 2021 edition" />
+
+        <Button
+            android:id="@+id/intro2021"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INTRODUCTION TO 2021 EDITION" />
+
+        <Button
+            android:id="@+id/intro2013"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INTRODUCTION TO 2013 EDITION" />
+
+        <Button
+            android:id="@+id/generalGuidelines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GENERAL GUIDELINES ON HOW TO USE THE FORMULARY" />
+
+        <Button
+            android:id="@+id/drugsInPregnancy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DRUGS IN PREGNANCY" />
+
+        <Button
+            android:id="@+id/g6pd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DRUGS AND G6PD DEFICIENCY" />
+
+        <Button
+            android:id="@+id/drugListGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DRUGS LIST BY GROUP" />
+
+        <Button
+            android:id="@+id/aboutFerrous"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ABOUT FERROUS (IRON), VITAMINS AND MULTIVITAMINS" />
+
+        <Button
+            android:id="@+id/comboTreatment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="COMBINATION TREATMENT FOR GENITO-URINARY DISEASES" />
+
+        <Button
+            android:id="@+id/pphDrugs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DRUGS USED FOR POST PARTUM HAEMORRAGE (PPH) and MISSED or INCOMPLETE ABORTION" />
+
+        <Button
+            android:id="@+id/aboutAntiRetroviral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ABOUT ANTI-RETROVIRAL DRUGS" />
+
+        <Button
+            android:id="@+id/comboAntibiotics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="USE OF ANTIBIOTICS IN COMBINATION" />
+
+        <Button
+            android:id="@+id/tbDrugs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DRUGS FOR THE TREATMENT OF NEW CASES OF TB" />
+
+        <Button
+            android:id="@+id/antiseptics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ANTISEPTICS - DISINFECTANTS" />
+
+        <Button
+            android:id="@+id/woundCare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WOUND CARE / ABSCESS CARE" />
+
+        <Button
+            android:id="@+id/ivFluids"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="IV FLUIDS" />
+
+        <Button
+            android:id="@+id/malaria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MALARIA PROTOCOLS" />
+
+        <Button
+            android:id="@+id/vaccination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VACCINATION SCHEDULE (Thailand, Burma)" />
+
+
+    </LinearLayout>
+</ScrollView>

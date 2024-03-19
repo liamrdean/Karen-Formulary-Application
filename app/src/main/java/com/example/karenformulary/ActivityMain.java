@@ -7,10 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class ActivityMain extends AppCompatActivity {
 
     Button druginfopageBTN;
     Button zscoreBTN;
+    Button viewformularyBTN;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //Go to the Drug info Page
-                Intent intent = new Intent(MainActivity.this, DrugInfoPageActivity.class);
+                Intent intent = new Intent(ActivityMain.this, ActivityDrugInfoPage.class);
                 startActivity(intent);
 
             }
@@ -34,7 +35,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //Go to the Drug info Page
-                Intent intent = new Intent(MainActivity.this, ZscoreActivity.class);
+                Intent intent = new Intent(ActivityMain.this, ActivityZscore.class);
+                startActivity(intent);
+
+            }
+        });
+
+        viewformularyBTN = (Button)findViewById(R.id.viewformularyBTN);
+        viewformularyBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Go to the Drug info Page
+                Intent intent = new Intent(ActivityMain.this, ActivityTOC.class);
                 startActivity(intent);
 
             }
