@@ -14,19 +14,97 @@
         android:theme="@style/Theme.KarenFormulary"
         tools:targetApi="31">
         <activity
-            android:name=".DrugInfoPageActivity"
-            android:exported="false" />
+            android:name=".ActivityTOC"
+            android:exported="false"
+            android:label="Formulary Table of Contents" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ActivityFullPDF"
+            android:exported="false"
+            android:label="Full Essential Drug Formulary" />
+        <activity
+            android:name=".ActivityIntro2021"
+            android:exported="false"
+            android:label="Introduction to 2021 Edition" />
+        <activity
+            android:name=".ActivityIntro2013"
+            android:exported="false"
+            android:label="Introduction to 2013 Edition" />
+        <activity
+            android:name=".ActivityGeneralGuidelines"
+            android:exported="false"
+            android:label="GENERAL GUIDELINES ON HOW TO USE THE FORMULARY" />
+        <activity
+            android:name=".ActivityDrugsInPregnancy"
+            android:exported="false"
+            android:label="DRUGS IN PREGNANCY" />
+        <activity
+            android:name=".ActivityG6PD"
+            android:exported="false"
+            android:label="DRUGS AND G6PD DEFICIENCY" />
+        <activity
+            android:name=".ActivityDrugListGroup"
+            android:exported="false"
+            android:label="DRUGS LIST BY GROUP" />
+        <activity
+            android:name=".ActivityAboutFerrous"
+            android:exported="false"
+            android:label="ABOUT FERROUS (IRON), VITAMINS AND MULTIVITAMINS" />
+        <activity
+            android:name=".ActivityComboTreatment"
+            android:exported="false"
+            android:label="COMBINATION TREATMENT FOR GENITO-URINARY DISEASES" />
+        <activity
+            android:name=".ActivityPPHDrugs"
+            android:exported="false"
+            android:label="DRUGS USED FOR POST PARTUM HAEMORRAGE (PPH) and MISSED or INCOMPLETE ABORTION" />
+        <activity
+            android:name=".ActivityAntiRetroviral"
+            android:exported="false"
+            android:label="ABOUT ANTI-RETROVIRAL DRUGS" />
+        <activity
+            android:name=".ActivityComboAntibiotics"
+            android:exported="false"
+            android:label="USE OF ANTIBIOTICS IN COMBINATION" />
+        <activity
+            android:name=".ActivityTBDrugs"
+            android:exported="false"
+            android:label="DRUGS FOR THE TREATMENT OF NEW CASES OF TB" />
+        <activity
+            android:name=".ActivityAntiseptic"
+            android:exported="false"
+            android:label="ANTISEPTICS - DISINFECTANTS" />
+        <activity
+            android:name=".ActivityWoundCare"
+            android:exported="false"
+            android:label="WOUND CARE / ABSCESS CARE" />
+        <activity
+            android:name=".ActivityIV"
+            android:exported="false"
+            android:label="IV FLUIDS" />
+        <activity
+            android:name=".ActivityMalaria"
+            android:exported="false"
+            android:label="MALARIA PROTOCOLS" />
+        <activity
+            android:name=".ActivityVaccination"
+            android:exported="false"
+            android:label="VACCINATION SCHEDULE (Thailand, Burma)" />
+        <activity
+            android:name=".ActivityDrugInfoPage"
+            android:exported="false"
+            android:label="Drug Information Page" />
+        <activity
+            android:name=".ActivityMain"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <!-- Add this line to declare ZscoreActivity -->
-        <activity android:name=".ZscoreActivity" />
+        </activity> <!-- Add this line to declare ActivityZscore -->
+        <activity
+            android:name=".ActivityZscore"
+            android:label="Z-SCORE FIELD TABLES" />
     </application>
 
 </manifest>

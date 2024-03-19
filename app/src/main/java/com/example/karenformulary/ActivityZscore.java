@@ -3,18 +3,22 @@ package com.example.karenformulary;
 
 import android.os.Bundle;
 import android.util.Log;
-
+import android.view.MenuItem;
+//import android.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
 import androidx.appcompat.app.AppCompatActivity;
+//import androidx.appcompat.widget.Toolbar;
 
 import com.github.barteksc.pdfviewer.PDFView;
 
-
-public class ZscoreActivity extends AppCompatActivity {
+public class ActivityZscore extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.zscore);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         PDFView pdfView = findViewById(R.id.pdfview);
         try {
@@ -40,9 +44,16 @@ public class ZscoreActivity extends AppCompatActivity {
                             page9 - 1, page10 - 1, page11 - 1, page12 - 1, page13 - 1, page14 - 1) // Index starts from 0, so subtract 1
                     .load();
         } catch (Exception e) {
-            Log.e("ZscoreActivity", "Error loading PDF: " + e.getMessage());
+            Log.e("ActivityZscore", "Error loading PDF: " + e.getMessage());
             e.printStackTrace();
         }
 
     }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
+    }
+
 }

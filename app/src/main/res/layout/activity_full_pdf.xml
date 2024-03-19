@@ -4,20 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActivityZscore">
+    tools:context=".ActivityFullPDF">
 
     <com.github.barteksc.pdfviewer.PDFView
-        android:id="@+id/pdfview"
+        android:id="@+id/pdfviewTOC"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <!--<androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme" />-->
     </com.github.barteksc.pdfviewer.PDFView>
 
 
