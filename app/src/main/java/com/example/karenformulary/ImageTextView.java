@@ -14,6 +14,8 @@ import android.view.View;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.lang.reflect.Array;
+import java.util.Arrays;
 
 
 public class ImageTextView extends View {
@@ -23,12 +25,16 @@ public class ImageTextView extends View {
      * Figure out more about OnDraw such as determining the canvas size and such
      */
 
+
+
+
     private Context mContext;
     private boolean isImage = false;
     private Dim measureDimension = new Dim(-1, -1);
     private Dim drawDimension = new Dim(-1, -1);
     private Dim maxDimensions = new Dim(-1, -1);
     private Dim minDimensions = new Dim(-1, -1);
+    private String[] textData;
 
 
     // This makes a draw call call calculatedMeasure if it has not been called already
@@ -39,7 +45,10 @@ public class ImageTextView extends View {
     private String data = "a";
     private Paint textPaint;
     private float textHeight = 100;
+    // Single line of text
     private Rect textBounds = new Rect(0,0,0,0);
+    // Full line of text
+    private Rect fullTextBounds = new Rect(0, 0, 0, 0);
 
     // Things for image
     private Bitmap bitmap;
@@ -67,36 +76,7 @@ public class ImageTextView extends View {
 
         InputStream inStream = null;
 
-
-//        bitmap = BitmapFactory.decodeStream(inStream);
-
         // TEMP
-        // VERY TEMPORARY IMAGE LOADING I DON'T WANT TO BUILD A FULL IMAGE LOADER
-        /*
-        Log.i("kljlkj", this.data);
-        int res = R.drawable.placeholder;
-        switch(data.charAt(0)) {
-            case '.':
-                res = R.drawable.psmall;
-                break;
-            case ',':
-                res = R.drawable.pmedium;
-                break;
-            case '1':
-                // Load the CSV headers
-
-                break;
-            default:
-                res = R.drawable.placeholder;
-        }
-
-
-        if (data.charAt(0) != '1') {
-            bitmap = BitmapFactory.decodeResource(mContext.getResources(), res);
-        } else if (inStream != null) {
-        }
-        */
-
         if (data.charAt(0) == '.') {
             bitmap = BitmapFactory.decodeResource(mContext.getResources(), R.drawable.placeholder);
             return;
@@ -175,10 +155,23 @@ public class ImageTextView extends View {
         textPaint.setTextSize(textHeight);
     }
 
+    public void WithData(String newData) {
+        if (newData.charAt(0) == DB_DrugModel.imageDelimiter) {
+            this.setIsImage(true);
+            newData = newData.substring(1);
+        } else {
+            this.setIsImage(false);
+        }
+        this.data = newData;
+        this.InitData();
+        this.maybeInitImage();
+    }
+
     public void setIsImage(boolean b) {
         this.isImage = b;
     }
 
+    // Handles image name conversion
     public void setData(String newData){
         this.data = newData;
         this.InitData();
@@ -204,75 +197,57 @@ public class ImageTextView extends View {
         return true;
     }
 
-    private void drawText(Canvas canvas, String text) {
-        if (text == null || text.isEmpty()) {
-            text = "ERROR: NULL TEXT IN ImageTextView.java.drawText";
+    private void drawText(Canvas canvas) {
+        fullTextBounds = new Rect(textBounds.left, textBounds.top, textBounds.right, textBounds.bottom);
+        // Android is dumb and does not understand newlines, have to do this garbage instead.
+        Log.i("DEMOfTB", "Length " + textData.length);
+        for (int i = 0; i < textData.length; i++) {
+            if (textData[i] == null) {
+                textData[i] = "ERROR: NULL TEXT IN ImageTextView.java.drawText";
+                continue;
+            }
+            Log.i("DEMOfTB", textData[i]);
+            Dim dim = new Dim(textBounds.right-textBounds.left,textBounds.bottom-textBounds.top);
+            Log.i("DEMOdimDrT", "@ " + -textBounds.left + " " + -textBounds.top);
+            Log.i("DEMOdimDrT", "Canvas height " + canvas.getHeight() + " '" + textData[i] + "'");
+            canvas.drawText(
+                    textData[i],
+                    textBounds.left,
+                    textBounds.height() * i - textBounds.top,
+                    textPaint);
+
+            Log.i("DEMOfTB", "Before " + fullTextBounds.toString());
+            fullTextBounds.bottom += textBounds.height();
+            Log.i("DEMOfTB", "After " + fullTextBounds.toString());
+
         }
-        String s = text;
-        Log.i("DEMOdimDrT", "@ " + -textBounds.left + " " + -textBounds.top);
-        Log.i("DEMOdimDrT", "Canvas height " + canvas.getHeight());
-        canvas.drawText(
-                s,
-                -textBounds.left,
-                -textBounds.top,
-                textPaint);
+        fullTextBounds.bottom += 100;
     }
 
     private void drawImage(Canvas canvas, String text) {
         if (bitmap == null) {
-            Log.w("DEMO", "Called draw image while bitmap is null");
             return;
         }
-        /*
-        int bmWidth = bitmap.getWidth();
-        int bmHeight = bitmap.getHeight();
 
-        Rect origdst = new Rect(0, 0, bmWidth, bmHeight);
-
-
-        if (measureDimension.getWidthInt() < bmWidth) {
-            origdst = new Rect(0, 0, measureDimension.getWidthInt(), measureDimension.getHeightInt());
-        }
-
-        // If the image is smaller, center it
-        if (measureDimension.getWidthInt() > bmWidth) {
-            Log.w("DEMODK", measureDimension.getWidthInt() + " " + measureDimension.getHeightInt() + " " + bmWidth + " " + bmHeight);
-            int xOff = (int) Math.ceil((measureDimension.getWidthInt() - bmWidth) / 2.0);
-            int yOff = (int) Math.ceil((measureDimension.getHeightInt() - bmHeight) / 2.0);
-            origdst.left = xOff;
-            origdst.right += xOff;
-
-        }
-        */
-
+        // Center the image in the given width
         Dim imageOffset = measureDimension.getOtherInCenter(drawDimension);
         Rect dst = Dim.toRect(imageOffset, drawDimension);
 
-
-        Log.i("DEMODKrect", "got " + dst.toString()  + " from offset " + imageOffset.toString() + " size " + drawDimension);
         // Since src is null, draws entire bitmap
-       // canvas.drawBitmap(bitmap, null, origdst, null);
         canvas.drawBitmap(bitmap, null, dst, null);
     }
 
     @Override
     protected void onDraw (Canvas canvas) {
         super.onDraw(canvas); // Apparently draws the background
-
         if(!calculatedMeasure) {
             calculateMeasureAndRedraw();
         }
-
-        /*
-        if (tempIsImageTest()) {
-            isImage = true;
-        }
-        */
-
+        Log.i("DEMOfTB", "IsImage " + Boolean.toString(isImage));
         if (isImage) {
             drawImage(canvas, data);
         } else {
-            drawText(canvas, data);
+            drawText(canvas);
         }
     }
 
@@ -293,7 +268,50 @@ public class ImageTextView extends View {
         }
 
         if (!isImage) {
+            /*
+             * Get width of text
+             * Store as old Data, have textData as well, so that can set properly
+             * Write substring to that point + \n
+             * Repeat until string empty
+             *
+             */
+
+            float[] b = new float[3];
+            int start = 0;
+            int numChars = textPaint.breakText(data, true, (float) measureDimension.getWidth(), b);
+            Log.i("CalcMeTEST", "Setting '" + data + "' got " + numChars +" " + Arrays.toString(b));
+            String string = data;
+            String output = "";
+            StringBuilder stringBuilder = new StringBuilder();
+
+            if (numChars != 0) {
+                while ((!string.isEmpty())) {
+                    Log.i("CalcMeTEST", "start = " + start + " a = " + numChars);
+                    Log.i("CalcMeTEST", "string " + string);
+
+                    stringBuilder.append(string.substring(0, numChars));
+                    string = string.substring(numChars);
+                    Log.i("CalcMeTEST", "string " + string);
+                    stringBuilder.append("\n");
+                    // stringBuilder.append(data.substring(a + 1));
+                    // start += numChars;
+                    numChars = textPaint.breakText(string, true, (float) measureDimension.getWidth(), b);
+                }
+            } else {
+                stringBuilder.append(data);
+            }
+
+            output = stringBuilder.toString();
+
+            Log.i("CalcMeTEST", "\noutput = " + output);
+            textData = output.split("\n");
+            Log.i("CalcMeTEST", Arrays.toString(textData));
+
             textPaint.getTextBounds(data, 0, data.length(), textBounds);
+            fullTextBounds.set(textBounds.left, textBounds.top, textBounds.right, textBounds.bottom);
+            fullTextBounds.bottom += textData.length * textBounds.height();
+
+            Log.i("CalcMeTEST", textBounds.toString() + " " +fullTextBounds.toString());
         }
         Log.i("DEMOdimMe", textBounds.toString());
 
@@ -315,7 +333,7 @@ public class ImageTextView extends View {
                 // Since we want at least text height, ceiling the value
                 // Bottom - top since decreases going down
                 Log.i("DEMOdimA", "Setting width to " + textBounds.bottom + "-" + textBounds.top + "=" + (textBounds.bottom - textBounds.top));
-                drawDimension.setHeight(textBounds.bottom - textBounds.top);
+                drawDimension.setHeight(fullTextBounds.bottom - fullTextBounds.top);
             }
         }
 

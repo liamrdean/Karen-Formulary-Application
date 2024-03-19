@@ -6,6 +6,7 @@ package com.example.karenformulary;
 
 import android.util.Log;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -152,12 +153,27 @@ public class DB_DrugModel {
         List<String> list = new ArrayList<>();
         for (int i = 0; i < arr.length; i++) {
             String item = arr[i].trim();
+
+            if (item == null) {
+                Log.i("TESTaaa", "Arr[" + i + "] = " + item + " not null");
+            } else {
+                Log.i("TESTaaa", "Arr[" + i + "] = " + item + " " + Boolean.toString(item.isEmpty()) + " is null");
+            }
+
+            // This is an image
+            if (i % 2 == 1) {
+                item = "$" + item;
+            }
+
             if (item != null && !item.isEmpty()) {
                 list.add(item);
             }
+
+
         }
 
         Log.i("ELDS", Arrays.toString(arr));
+        Log.i("TESTaaa", list.toString());
 
         return list;//Arrays.asList(arr);
     }
