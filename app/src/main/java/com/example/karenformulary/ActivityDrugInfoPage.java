@@ -102,4 +102,10 @@ public class ActivityDrugInfoPage extends AppCompatActivity {
             Log.i("DEMOload", model.toString());
         }
     }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
+    }
 }

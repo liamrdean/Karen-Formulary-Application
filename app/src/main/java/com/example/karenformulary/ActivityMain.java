@@ -19,12 +19,16 @@ public class ActivityMain extends AppCompatActivity {
     public static ActivityMain activityMain;
     public static AssetManager assetManager;
 
+    Button druginfopageBTN;
+    Button zscoreBTN;
+    Button viewformularyBTN;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        this.activityMain = this;
+                this.activityMain = this;
 
 
         Log.i("jklfdsa", "Getting resources");
@@ -34,15 +38,37 @@ public class ActivityMain extends AppCompatActivity {
 
         dbHelper = new DB_Helper(this);
 
-        button3 = (Button)findViewById(R.id.button3);
-        button3.setOnClickListener(new View.OnClickListener() {
+
+        druginfopageBTN = (Button)findViewById(R.id.druginfopageBTN);
+        druginfopageBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //Go to the Drug info Page
-                ActivityDrugInfoPage.setDrugName("Dihydrogen Monoxide");
-                Intent intent = new Intent(ActivityMain.this, ActivityDrugInfoPage.class);
+                Intent intent = new Intent(ActivityMain.this, SearchPageActivity.class);
                 startActivity(intent);
 
+            }
+        });
+
+
+        zscoreBTN = (Button)findViewById(R.id.zscoreBTN);
+        zscoreBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Go to the Drug info Page
+                Intent intent = new Intent(ActivityMain.this, ActivityZscore.class);
+                startActivity(intent);
+
+            }
+        });
+
+        viewformularyBTN = (Button)findViewById(R.id.viewformularyBTN);
+        viewformularyBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Go to the Drug info Page
+                Intent intent = new Intent(ActivityMain.this, ActivityTOC.class);
+                startActivity(intent);
             }
         });
     }
