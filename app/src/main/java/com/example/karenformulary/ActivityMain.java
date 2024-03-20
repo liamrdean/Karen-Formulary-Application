@@ -23,7 +23,7 @@ public class ActivityMain extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //Go to the Drug info Page
-                Intent intent = new Intent(ActivityMain.this, ActivityDrugInfoPage.class);
+                Intent intent = new Intent(MainActivity.this, SearchPageActivity.class);
                 startActivity(intent);
 
             }

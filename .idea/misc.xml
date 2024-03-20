@@ -8,11 +8,15 @@
         <entry key="app/src/main/res/layout/activity_drug_info_page.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_full_pdf.xml" value="0.25833333333333336" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_search_page.xml" value="0.19701086956521738" />
         <entry key="app/src/main/res/layout/druginfopage.xml" value="0.25" />
         <entry key="app/src/main/res/layout/list_group.xml" value="0.2853470437017995" />
         <entry key="app/src/main/res/layout/list_item.xml" value="0.375" />
         <entry key="app/src/main/res/layout/table_of_contents.xml" value="0.1" />
         <entry key="app/src/main/res/layout/zscore.xml" value="0.22" />
+        <entry key="app/src/main/res/menu/menu.xml" value="0.271875" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.338" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.338" />
       </map>
     </option>
   </component>
