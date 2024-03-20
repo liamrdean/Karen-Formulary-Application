@@ -45,7 +45,7 @@ public class SearchHelper {
                     int newIndex = (int)(entry.charAt(i)) - (int)('a');
                     if (entry.charAt(i) == ' '){
                         newIndex = 26;
-                    } else if (entry.charAt(i) == '\n'){
+                    } else if (newIndex < 0 || newIndex > 26 ){
                         newIndex = 27;
                     }
                     if(current.getChild(newIndex) == null){
@@ -74,6 +74,7 @@ public class SearchHelper {
     }
 
     public boolean search(String guess){
+        guess.toLowerCase();
         boolean found = false;
         TrieNode current;
         current = root;
@@ -82,7 +83,7 @@ public class SearchHelper {
             int index = (int)(guess.charAt(i)) - (int)('a');
             if (guess.charAt(i) == ' '){
                 index = 26;
-            } else if (guess.charAt(i) == '-'){
+            } else if (index < 0 || index > 26){
                 index = 27;
             }
             if(current.getChild(index) == null){
@@ -110,7 +111,8 @@ public class SearchHelper {
      * will go by the shortest word close to it
      */
     public String[] autofill(String guess){
-        String[] results = new String[10]; // could change the number of results easily 
+        guess.toLowerCase();
+        String[] results = new String[10]; // could change the number of results easily
         int resultsIndex = 0;
         TrieNode current;
         current = root;
@@ -119,7 +121,7 @@ public class SearchHelper {
             int index = (int)(guess.charAt(i)) - (int)('a');
             if (guess.charAt(i) == ' '){
                 index = 26;
-            } else if (guess.charAt(i) == '-'){
+            } else if (index < 0 || index > 26){
                 index = 27;
             }
             if(current.getChild(index) == null){
