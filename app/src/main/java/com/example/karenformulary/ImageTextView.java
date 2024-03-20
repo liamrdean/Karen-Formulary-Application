@@ -83,8 +83,9 @@ public class ImageTextView extends View {
 
             StringBuilder filePathBuilder = new StringBuilder("Drug_Images/");
             // Add drug name
-            filePathBuilder.append("Dihydrogen Monoxide/");
-
+            // TODO Make the paths be friendly to all OS's
+            filePathBuilder.append(ActivityDrugInfoPage.drugName);
+            filePathBuilder.append("/");
             // Add data
             filePathBuilder.append(data);
 
@@ -386,12 +387,45 @@ public class ImageTextView extends View {
         // so check that it is
         if (widthMode != MeasureSpec.EXACTLY) {
             Log.w("ImgTxtView", "ImageTextView.onMeasure: expected width mode EXACTLY got "
-                    + getNameOfMeasureSpecMode(widthMode));
+                    + getNameOfMeasureSpecMode(widthMode) + " with " + newWidth);
+
+            setMeasuredDimension(newWidth, 0);
             return;
         }
         if (heightMode != MeasureSpec.UNSPECIFIED) {
             Log.w("ImgTxtView", "ImageTextView.onMeasure: expected height mode Unspecified got "
-                    + getNameOfMeasureSpecMode(widthMode));
+                    + getNameOfMeasureSpecMode(heightMode) + " with " + newHeight);
+            switch (heightMode) {
+                case MeasureSpec.AT_MOST:
+                    Log.i("ImgTxtView", "At most case");
+                    measureDimension.set(newWidth, newHeight);
+                    calculateMeasure(newWidth, -1);
+                    Log.i("ImgTxtView", "Calculated " + drawDimension.toString());
+                    int trueHeight = Math.min(drawDimension.getHeightInt(), newHeight);
+                    Log.i("ImgTxtView", "Setting to " + newWidth + " " + trueHeight);
+                    measureDimension.set(newWidth, trueHeight);
+
+                    setMeasuredDimension(newWidth, trueHeight);
+                    callRedraw();
+
+                    break;
+                case MeasureSpec.EXACTLY:
+                    Log.i("ImgTxtView", "exactly case");
+
+                    //setMeasuredDimension(newWidth, newHeight);
+                    measureDimension.set(newWidth, newHeight);
+                    calculateMeasure(newWidth, -1);
+                    Log.i("ImgTxtView", "Calculated " + drawDimension.toString());
+
+                    setMeasuredDimension(newWidth, newHeight);
+                    callRedraw();
+
+                    break;
+                default:
+                    setMeasuredDimension(0, 0);
+                    Log.w("ImgTxtView", "UNKOWN CASE!!! ");
+
+            }
             return;
         }
 

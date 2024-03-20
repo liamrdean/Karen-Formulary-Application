@@ -20,8 +20,8 @@ public class ActivityDrugInfoPage extends AppCompatActivity {
     ExpandableListAdapter expandableListAdapter;
     TextView nameTextView;
     TextView dosageTextView;
-    TextView allergyWarning;
     TextView descriptionTextView;
+    ImageTextView treatmentTableImageTextView;
 
     List<String> expandableListTitle;
     HashMap<String,List<String>> expandableListDetail;
@@ -34,7 +34,7 @@ public class ActivityDrugInfoPage extends AppCompatActivity {
         nameTextView = findViewById(R.id.txDrugName);
         dosageTextView = findViewById(R.id.txDosage);
         descriptionTextView = findViewById(R.id.txDrugDescription);
-        allergyWarning = findViewById(R.id.txAlergyWarning);
+        treatmentTableImageTextView = findViewById(R.id.imageTextViewTreatmentTable);
 
         // For now hard coded to Dihydrogen Monoxide
         //drugName = "Dihydrogen Monoxide";
@@ -70,6 +70,11 @@ public class ActivityDrugInfoPage extends AppCompatActivity {
         details = expandableListDetail.get(DB_Helper.COL_DESCRIPTION_DISPLAY_STRING);
         descriptionTextView.setText(details.get(0));
         expandableListTitleSet.remove(DB_Helper.COL_DESCRIPTION_DISPLAY_STRING);
+
+        // Bad but will work for now
+        //treatmentTableImageTextView.setData("$1");
+        treatmentTableImageTextView.WithData("$1");
+
 
         expandableListTitle = new ArrayList<>();
         for (int i = 2; i < DB_Helper.sqlColStrings.size(); i++) {
