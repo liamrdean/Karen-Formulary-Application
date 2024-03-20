@@ -20,28 +20,41 @@ public class SearchHelper {
    
     private TrieNode root;
     private File inputFile;
-    public String[] dictionary;
+    public String[] dictionary = new String[96];
 
     public SearchHelper(){
         inputFile = new File("inputFile.txt");
     }
-    
+
     public void buildFromFile(){
         try{
             Scanner input = new Scanner(inputFile);
             String entry;
             root = new TrieNode("\0",false);
-            dictionary = new String[96]; // number would need to be changed for this, but we do know it
+            // dictionary = {"Acyclovir", "Adrenaline", "Albendazole"};
+            // dictionary = new String[96]; // number would need to be changed for this, but we do know it
+
             int counter = 0;
             TrieNode current;
             while(input.hasNextLine()){
                 entry = input.nextLine();
                 entry.toLowerCase();
-                current = root; 
-                dictionary[counter] = entry;
-                counter++;
+                current = root;
+                if (entry != null){
+                    dictionary[counter] = entry;
+                    counter++;
+                } else {
+                    // System.out.println("null entry");
+                }
+                // System.out.println("a" + dictionary[counter-1]);
+                // if (dictionary == null){
+                //     System.out.println("dictionary null\n");
+                // }else {
+                //     System.out.println("dictionary is not null\n");
+                // }
+
                 for(int i =0; i < entry.length(); i++){
-                    // making sure we get the right index 
+                    // making sure we get the right index
                     int newIndex = (int)(entry.charAt(i)) - (int)('a');
                     if (entry.charAt(i) == ' '){
                         newIndex = 26;
@@ -66,11 +79,17 @@ public class SearchHelper {
                 }
 
             }
+
+            // if (dictionary == null){
+            //     System.out.println("b dictionary is null\n");
+            // }else {
+            //     System.out.println("b dictionary is not null\n");
+            // }
         }
         catch (Exception FileNotFoundException){
             System.out.println("you screwed up");
         }
-        
+
     }
 
     public boolean search(String guess){
@@ -100,14 +119,14 @@ public class SearchHelper {
                 } else {
                     current = current.getChild(index);
                     //System.out.println("next");
-                }  
+                }
             }
         }
         return found;
     }
 
     /**
-     * Autofill will search for the inital guess and return everything that follows 
+     * Autofill will search for the inital guess and return everything that follows
      * will go by the shortest word close to it
      */
     public String[] autofill(String guess){
@@ -125,7 +144,7 @@ public class SearchHelper {
                 index = 27;
             }
             if(current.getChild(index) == null){
-                //System.out.println("null");
+                System.out.println("Could not find\n");
                 break;
                 //System.out.println("bad guess");
             } else{
@@ -142,13 +161,13 @@ public class SearchHelper {
                 currentChildren.add(tempchildren[i]);
             }
         }
-        
+
         // while results isn't full
-            // search all children nodes for valid words
-            // add any words to results 
-            // create new list of valid children nodes from existing
-            // replace list
-            // if list == null break 
+        // search all children nodes for valid words
+        // add any words to results
+        // create new list of valid children nodes from existing
+        // replace list
+        // if list == null break
         while(resultsIndex<results.length){
             if(!currentChildren.isEmpty()) {
                 TrieNode temp = currentChildren.remove(0);
@@ -166,7 +185,7 @@ public class SearchHelper {
                 resultsIndex = results.length;
                 break;
             }
-            
+
         }
 
 
@@ -181,9 +200,9 @@ public class SearchHelper {
             int distance = levenshtein (guess, dictionary[i], guess.length(), dictionary[i].length());
             System.out.println(guess + " : "+ dictionary[i] + " : " + distance);
         }
-       // for each in dicitonary perform the levenstien calculation 
+        // for each in dicitonary perform the levenstien calculation
 
-        return null; 
+        return null;
     }
 
     public int levenshtein (String guess, String entry, int m, int n){
@@ -197,15 +216,15 @@ public class SearchHelper {
             return levenshtein(guess, entry, m - 1, n - 1);
         }
         return 1 + Math.min(
-            levenshtein(guess, entry, m, n - 1),
-            Math.min(
-                levenshtein(guess, entry, m - 1, n),
-                levenshtein(guess, entry, m - 1, n - 1)
-            )
+                levenshtein(guess, entry, m, n - 1),
+                Math.min(
+                        levenshtein(guess, entry, m - 1, n),
+                        levenshtein(guess, entry, m - 1, n - 1)
+                )
         );
     }
 
-    
+
     class TrieNode {
         private String value;
         private boolean word;
