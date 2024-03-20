@@ -1,6 +1,8 @@
 package com.example.karenformulary;
 
 import android.content.Context;
+import android.graphics.Color;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -74,7 +76,7 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
 
     @Override
     public View getChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
-
+        Log.i("DEMOC", String.format("Child %d %d", groupPosition, childPosition));
         String expandedListText = (String) getChild(groupPosition,childPosition);
         if (convertView == null) {
 
@@ -84,8 +86,12 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
 
         }
 
-        TextView expandedListTextView  = convertView.findViewById(R.id.expandedListItem);
-        expandedListTextView.setText(expandedListText);
+
+        ImageTextView expandedListTextView = convertView.findViewById(R.id.expandedListItem);
+
+        // Sets data, handles setting if this is an image
+        expandedListTextView.WithData(expandedListText);
+        expandedListTextView.setBackgroundColor(Color.parseColor("#0000FF"));
         return convertView;
     }
 

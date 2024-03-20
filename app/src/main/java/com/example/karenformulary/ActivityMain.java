@@ -3,11 +3,21 @@ package com.example.karenformulary;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.res.AssetManager;
+import android.content.res.Resources;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
 public class ActivityMain extends AppCompatActivity {
+
+    Button button3;
+    // This controls if the data is in karen or not
+    public static boolean isKaren = false;
+    public static DB_Helper dbHelper;
+    public static ActivityMain activityMain;
+    public static AssetManager assetManager;
 
     Button druginfopageBTN;
     Button zscoreBTN;
@@ -17,6 +27,17 @@ public class ActivityMain extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+                this.activityMain = this;
+
+
+        Log.i("jklfdsa", "Getting resources");
+        Resources resources = this.getResources();
+        assetManager = resources.getAssets();
+
+
+        dbHelper = new DB_Helper(this);
+
 
         druginfopageBTN = (Button)findViewById(R.id.druginfopageBTN);
         druginfopageBTN.setOnClickListener(new View.OnClickListener() {
@@ -48,7 +69,6 @@ public class ActivityMain extends AppCompatActivity {
                 //Go to the Drug info Page
                 Intent intent = new Intent(ActivityMain.this, ActivityTOC.class);
                 startActivity(intent);
-
             }
         });
     }
