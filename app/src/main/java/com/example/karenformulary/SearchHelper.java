@@ -1,3 +1,5 @@
+package com.example.karenformulary;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -18,9 +20,9 @@ public class SearchHelper {
    
     private TrieNode root;
     private File inputFile;
-    private String[] dictionary;
+    public String[] dictionary;
 
-    public Search(){
+    public SearchHelper(){
         inputFile = new File("inputFile.txt");
     }
     

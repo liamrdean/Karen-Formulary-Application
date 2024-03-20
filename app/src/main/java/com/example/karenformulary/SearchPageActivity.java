@@ -1,16 +1,22 @@
-   import android.os.Bundle; 
-import android.support.v4.view.MenuItemCompat; 
-import android.support.v7.app.AppCompatActivity; 
-import android.view.Menu; 
+package com.example.karenformulary;
+
+import android.os.Bundle;
+import android.util.Log;
+import android.view.Menu;
 import android.view.MenuInflater; 
 import android.view.MenuItem; 
 import android.widget.ArrayAdapter; 
 import android.widget.ListView; 
 import android.widget.SearchView; 
-import android.widget.Toast; 
-import java.util.ArrayList; 
+import android.widget.Toast;
 
-public class SearchPageActivity extends AppCompatActivity { 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.MenuItemCompat;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class SearchPageActivity extends AppCompatActivity {
 
 	// List View object 
 	ListView listView; 
@@ -19,7 +25,9 @@ public class SearchPageActivity extends AppCompatActivity {
 	ArrayAdapter<String> adapter; 
 
 	// Define array List for List View data 
-	ArrayList<String> mylist; 
+	ArrayList<String> mylist;
+
+	SearchHelper searchHelper = new SearchHelper();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) { 
@@ -30,34 +38,43 @@ public class SearchPageActivity extends AppCompatActivity {
 		listView = findViewById(R.id.listView); 
 
 		// Add items to Array List 
-        SearchHelper searchHelper = new SearchHelper();
+        //SearchHelper searchHelper = new SearchHelper();
 		searchHelper.buildFromFile();
-        
-        mylist = new ArrayList<String>(searchHelper.dictionary);
+
+		if (searchHelper.dictionary == null) {
+			searchHelper.dictionary = new String[0];
+			Log.i("search", "Dictionary is null");
+		}
+		else {
+			Log.i("search", "Dictionary is not null");
+		}
+
+        mylist = new ArrayList<String>(Arrays.asList(searchHelper.dictionary));
 	
 		// Set adapter to ListView 
 		adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, mylist); 
 		
 		listView.setAdapter(adapter); 
-		listView.setOnItemClickListener(messageClickedHandler);
+		//listView.setOnItemClickListener(messageClickedHandler);
 	} 
 
-	private OnItemClickListener messageClickedHandler = new OnItemClickListener() {
-		public void onItemClick(AdapterView parent, View v, int position, long id) {
-			// set up drug page here
-		}
-	}
+//	private OnItemClickListener messageClickedHandler = new OnItemClickListener() {
+//		public void onItemClick(AdapterView parent, View v, int position, long id) {
+//			// set up drug page here
+//		}
+//	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) { 
 		// Inflate menu with items using MenuInflator 
 		MenuInflater inflater = getMenuInflater(); 
-		inflater.inflate(R.menu.menu, menu); 
+		// FIXED THIS
+		inflater.inflate(R.menu.menu, menu);
 
 		// Initialise menu item search bar 
 		// with id and take its object 
 		MenuItem searchViewItem = menu.findItem(R.id.search_bar); 
-		SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchViewItem); 
+		SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchViewItem);
 
 		// attach setOnQueryTextListener 
 		// to search view defined above 
@@ -65,7 +82,7 @@ public class SearchPageActivity extends AppCompatActivity {
 			// Override onQueryTextSubmit method which is call when submit query is searched 
 			@Override
 			public boolean onQueryTextSubmit(String query) { 
-				if (searchHelper.search(query))) { 
+				if (searchHelper.search(query)) {
 					adapter.getFilter().filter(query); 
 				} else { 
 					adapter.clear();

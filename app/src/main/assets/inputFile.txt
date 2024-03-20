@@ -1,0 +1,96 @@
+Acyclovir
+Adrenaline
+Albendazole
+Aluminium Hydroxide
+Amitryptyline
+Amlodipine
+Amoxicillin
+Ampicillin 
+Artemether Lumefantrine
+Artesunate
+Aspirin
+Atenolol
+Atropine
+Azithromycin
+Benzathine Penicillin
+Benzyl Benzoate Lotion
+Buscopan
+Carbamazepine
+Cefalexin
+Ceftriaxone
+Cetirizine
+Chloraphenicol eye drops
+Chloroquine
+Chlorpheniramine ORAL
+Chlorpheniramine IV IM
+Ciprofloxacin
+Clindamicin
+Clindamicin with Artesunate
+Cloxacillin 
+Clotrimoxazole cream
+Co amoxiclav
+Co trimoxazole
+Dapsone
+Dexamethasone
+Dextrose
+Diazepam 
+Diclofenac
+Dihydroartemisinin+Piperaquine DP
+Doxycycline
+Doxycycline with Aresunate
+Enalapril tab
+Ergometrine
+Erythromycin
+Ferrous Iron Ferrous Sulphate
+Fluconazole
+Fluoxetine
+Folic Acid
+Furosemide PO
+Furosemide IV
+Gentamicin
+Gentamicin Eye Drops
+Gliclazide
+Glipizide
+Griseofulvin
+Hydrochlorothiazide
+Ibuprofen
+Indomethacin
+Itraconazole
+Ivermectin
+Ketamine
+Lidocaine
+Lidocaine Adrenaline
+Loratadine
+Mebendazole
+Mefloquine
+Meloxicam
+Metformin
+Methyldopa
+Metoclopramide Tab
+Metoclopramide IV
+Metronidazole
+Misoprostol
+Nitrofurantoin
+Norfloxacin
+Ofloxacin
+Omeprazole
+ORS
+Oxytocin
+Paracetamol Oral
+Penicillin V
+Phenobarbitone
+Phenytoin
+Praziquantel
+Prednisolone
+Primaquine
+Quinine
+Sertraline
+Silver Sulfadiazine cream
+Sodium Valproate
+Spironolactone
+Tafenoquine
+Terramycin eye ointment
+Tramadol
+Vitamin A
+Vitamin B
+Zinc
