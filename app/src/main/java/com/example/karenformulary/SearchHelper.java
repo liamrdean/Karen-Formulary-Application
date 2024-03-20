@@ -80,7 +80,7 @@ public class SearchHelper {
             int index = (int)(guess.charAt(i)) - (int)('a');
             if (guess.charAt(i) == ' '){
                 index = 26;
-            } else if (guess.charAt(i) == '\n'){
+            } else if (guess.charAt(i) == '-'){
                 index = 27;
             }
             if(current.getChild(index) == null){
@@ -117,7 +117,7 @@ public class SearchHelper {
             int index = (int)(guess.charAt(i)) - (int)('a');
             if (guess.charAt(i) == ' '){
                 index = 26;
-            } else if (guess.charAt(i) == '\n'){
+            } else if (guess.charAt(i) == '-'){
                 index = 27;
             }
             if(current.getChild(index) == null){
