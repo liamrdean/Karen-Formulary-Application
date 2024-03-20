@@ -17,6 +17,9 @@
             android:name=".DrugInfoPageActivity"
             android:exported="false" />
         <activity
+            android:name=".SearchPageActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
