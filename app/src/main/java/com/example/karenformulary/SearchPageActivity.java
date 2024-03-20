@@ -1,13 +1,17 @@
 package com.example.karenformulary;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater; 
-import android.view.MenuItem; 
-import android.widget.ArrayAdapter; 
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ListView; 
-import android.widget.SearchView; 
+import android.widget.SearchView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -48,6 +52,7 @@ public class SearchPageActivity extends AppCompatActivity {
 		searchHelper.dictionary = null;
 		searchHelper.dictionary = javawhy;
 		*/
+		listView.setOnItemClickListener(messageClickedHandler);
 
 
 		if (searchHelper.dictionary == null) {
@@ -76,11 +81,16 @@ public class SearchPageActivity extends AppCompatActivity {
 		return true;
 	}
 
-//	private OnItemClickListener messageClickedHandler = new OnItemClickListener() {
-//		public void onItemClick(AdapterView parent, View v, int position, long id) {
-//			// set up drug page here
-//		}
-//	}
+	private AdapterView.OnItemClickListener messageClickedHandler = new AdapterView.OnItemClickListener() {
+		@Override
+		public void onItemClick(AdapterView parent, View v, int position, long id) {
+			// set up drug page here
+			Log.i("Click", "Click!");
+			ActivityDrugInfoPage.setDrugName((String) parent.getItemAtPosition(position));
+			Intent intent = new Intent(ActivityMain.activityMain, ActivityDrugInfoPage.class);
+			startActivity(intent);
+		}
+	};
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) { 
