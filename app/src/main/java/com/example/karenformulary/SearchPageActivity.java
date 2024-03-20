@@ -41,19 +41,28 @@ public class SearchPageActivity extends AppCompatActivity {
         //SearchHelper searchHelper = new SearchHelper();
 		searchHelper.buildFromFile();
 
+		// Quick fix
+//		String[] javawhy = new String[]{"jgh"};
+//		searchHelper.dictionary = null;
+//		searchHelper.dictionary = javawhy;
+
+
 		if (searchHelper.dictionary == null) {
 			searchHelper.dictionary = new String[0];
 			Log.i("search", "Dictionary is null");
 		}
 		else {
-			Log.i("search", "Dictionary is not null");
+			Log.i("search", "Dictionary is not null" + Arrays.toString(searchHelper.dictionary));
 		}
 
         mylist = new ArrayList<String>(Arrays.asList(searchHelper.dictionary));
-	
+
+
+
 		// Set adapter to ListView 
 		adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, mylist); 
-		
+		Log.i("search", "adapter is null ?= " + Boolean.toString(adapter == null));
+
 		listView.setAdapter(adapter); 
 		//listView.setOnItemClickListener(messageClickedHandler);
 	} 
