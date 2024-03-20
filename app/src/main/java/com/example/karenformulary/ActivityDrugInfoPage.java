@@ -78,6 +78,7 @@ public class ActivityDrugInfoPage extends AppCompatActivity {
 
         expandableListTitle = new ArrayList<>();
         for (int i = 2; i < DB_Helper.sqlColStrings.size(); i++) {
+            Log.i("DispHead", DB_Helper.drugDisplayHeaders.toString());
             String dispHeader = DB_Helper.drugDisplayHeaders.get(DB_Helper.sqlColStrings.get(i));
             if (expandableListTitleSet.contains(dispHeader)) {
                 expandableListTitle.add(dispHeader);

@@ -153,12 +153,13 @@ public class DB_Helper extends SQLiteOpenHelper {
                 String s = drugHeaders[i].trim().toUpperCase();
                 sqlColStrings.add(s);
                 headerToIndex.put(s, i + 1); // 1 is for the drug name column, so do i + 1
-                String displayHeader = displayHeaders[i].trim().toUpperCase();
+                String displayHeader = displayHeaders[i].trim();
+                String DISPLAY_HEADER = displayHeader.toUpperCase();
 
                 // When given a discription or a dosage column use the pre defined display values since they should not be seen
-                if (displayHeader.startsWith(COL_DOSAGE_DISPLAY_STRING)) {
+                if (DISPLAY_HEADER.startsWith(COL_DOSAGE_DISPLAY_STRING)) {
                     drugDisplayHeaders.put(s, COL_DOSAGE_DISPLAY_STRING);
-                } else if (displayHeader.startsWith(COL_DESCRIPTION_DISPLAY_STRING)) {
+                } else if (DISPLAY_HEADER.startsWith(COL_DESCRIPTION_DISPLAY_STRING)) {
                     drugDisplayHeaders.put(s, COL_DESCRIPTION_DISPLAY_STRING);
                 } else {
                     drugDisplayHeaders.put(s, displayHeader);
