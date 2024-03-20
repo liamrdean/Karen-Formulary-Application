@@ -27,6 +27,9 @@ import java.util.List;
 
 
 public class DB_Helper extends SQLiteOpenHelper {
+
+    public static String[] drugNames = new String[0];
+
     /* Constants */
     // Change version only when you want the to overwrite previous versions.
     public static final int DATABASE_VERSION = 1;
@@ -195,10 +198,13 @@ public class DB_Helper extends SQLiteOpenHelper {
 
         // Load each line into the database
         String[] values;
+        List<String> list = new ArrayList<>();
+        drugNames = new String[0];
         while ((values = csvReader.readNext()) != null) {
             Log.i("DEMOP adding", Arrays.toString(values));
             ContentValues cv = new ContentValues(sqlColStrings.size() - 1);
 
+            list.add(values[0].trim());
             // Put all but the auto-assigned id in. That is why i starts at 1
             for (int i = 1; i < sqlColStrings.size(); i++) {
                 String val = values[i - 1].trim();
@@ -210,6 +216,10 @@ public class DB_Helper extends SQLiteOpenHelper {
                 Log.w("SQL_CSV_PARSER", "Failed to add drug " + values[0]);
             }
         }
+
+        // Create the list of names
+        drugNames = list.toArray(drugNames);
+        Log.i("InTeam", "Testing " + Arrays.toString(drugNames));
     }
 
     // This is called the first time a database is accessed.
