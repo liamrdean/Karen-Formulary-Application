@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?> 
 <!-- Relative Layout -->
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/relativelayout"
+<RelativeLayout 
+xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"> 
+    android:layout_height="match_parent"
+    tools:context=".SearchPageActivity">
   
     <!-- List View from which data is to be searched -->
     <ListView

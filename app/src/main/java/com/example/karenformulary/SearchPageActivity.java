@@ -24,7 +24,7 @@ public class SearchPageActivity extends AppCompatActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) { 
 		super.onCreate(savedInstanceState); 
-		setContentView(R.layout.activity_main); 
+		setContentView(R.layout.activity_search_page); 
 
 		// initialise ListView with id 
 		listView = findViewById(R.id.listView); 
@@ -37,8 +37,16 @@ public class SearchPageActivity extends AppCompatActivity {
 	
 		// Set adapter to ListView 
 		adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, mylist); 
+		
 		listView.setAdapter(adapter); 
+		listView.setOnItemClickListener(messageClickedHandler);
 	} 
+
+	private OnItemClickListener messageClickedHandler = new OnItemClickListener() {
+		public void onItemClick(AdapterView parent, View v, int position, long id) {
+			// set up drug page here
+		}
+	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) { 
@@ -60,7 +68,8 @@ public class SearchPageActivity extends AppCompatActivity {
 				if (searchHelper.search(query))) { 
 					adapter.getFilter().filter(query); 
 				} else { 
-					// Display from autofill?
+					adapter.clear();
+					adapter.addAll(searchHelper.autofill(query));
 				} 
 				return false; 
 			} 
