@@ -32,7 +32,8 @@ public class SearchPageActivity extends AppCompatActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) { 
 		super.onCreate(savedInstanceState); 
-		setContentView(R.layout.activity_search_page); 
+		setContentView(R.layout.activity_search_page);
+		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 		// initialise ListView with id 
 		listView = findViewById(R.id.listView); 
@@ -42,9 +43,9 @@ public class SearchPageActivity extends AppCompatActivity {
 		searchHelper.buildFromFile();
 
 		// Quick fix
-//		String[] javawhy = new String[]{"jgh"};
-//		searchHelper.dictionary = null;
-//		searchHelper.dictionary = javawhy;
+		String[] javawhy = new String[]{"jgh"};
+		searchHelper.dictionary = null;
+		searchHelper.dictionary = javawhy;
 
 
 		if (searchHelper.dictionary == null) {
@@ -65,7 +66,13 @@ public class SearchPageActivity extends AppCompatActivity {
 
 		listView.setAdapter(adapter); 
 		//listView.setOnItemClickListener(messageClickedHandler);
-	} 
+	}
+
+	@Override
+	public boolean onSupportNavigateUp() {
+		finish();
+		return true;
+	}
 
 //	private OnItemClickListener messageClickedHandler = new OnItemClickListener() {
 //		public void onItemClick(AdapterView parent, View v, int position, long id) {
