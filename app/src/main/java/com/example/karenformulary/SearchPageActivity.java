@@ -43,9 +43,11 @@ public class SearchPageActivity extends AppCompatActivity {
 		searchHelper.buildFromFile();
 
 		// Quick fix
+		/*
 		String[] javawhy = new String[]{"jgh"};
 		searchHelper.dictionary = null;
 		searchHelper.dictionary = javawhy;
+		*/
 
 
 		if (searchHelper.dictionary == null) {

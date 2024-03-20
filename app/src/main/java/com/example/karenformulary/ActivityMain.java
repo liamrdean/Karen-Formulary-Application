@@ -34,9 +34,9 @@ public class ActivityMain extends AppCompatActivity {
         Log.i("jklfdsa", "Getting resources");
         Resources resources = this.getResources();
         assetManager = resources.getAssets();
-
-
         dbHelper = new DB_Helper(this);
+        // Force dbHelper to call onCreate or onUpgrade
+        dbHelper.getWritableDatabase().close();
 
 
         druginfopageBTN = (Button)findViewById(R.id.druginfopageBTN);

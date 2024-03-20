@@ -1,8 +1,9 @@
 package com.example.karenformulary;
 
+import android.util.Log;
+
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
+import java.util.Arrays;
 import java.util.ArrayList;
 
 //package search_function;
@@ -27,12 +28,53 @@ public class SearchHelper {
     }
 
     public void buildFromFile(){
+        dictionary = DB_Helper.dictonary;
+        Log.i("searchidk", Arrays.toString(dictionary));
+
+        TrieNode current;
+        for (int counter = 0; counter < dictionary.length; counter++) {
+            current = root;
+            String entry = dictionary[counter].toLowerCase();
+
+            for(int i =0; i < entry.length(); i++){
+                // making sure we get the right index
+                int newIndex = (int)(entry.charAt(i)) - (int)('a');
+                if (entry.charAt(i) == ' '){
+                    newIndex = 26;
+                } else if (newIndex < 0 || newIndex > 26 ){
+                    newIndex = 27;
+                }
+                if(current != null && current.getChild(newIndex) == null){
+                    if (i == entry.length() -1 ){
+                        TrieNode newNode = new TrieNode(entry,true);
+                        //System.out.println( entry.charAt(i)+ ", new entry");
+                        current.setChild(newIndex, newNode);
+                        current = newNode;
+                    } else {
+                        TrieNode newNode = new TrieNode(null,false);
+                        //System.out.println( entry.charAt(i));
+                        current.setChild(newIndex, newNode);
+                        current = newNode;
+                    }
+                } else if (current != null){
+                    current = current.getChild(newIndex);
+                }
+            }
+
+        }
+
+        /*
         try{
             Scanner input = new Scanner(inputFile);
             String entry;
             root = new TrieNode("\0",false);
             // dictionary = {"Acyclovir", "Adrenaline", "Albendazole"};
             // dictionary = new String[96]; // number would need to be changed for this, but we do know it
+
+
+
+
+
 
             int counter = 0;
             TrieNode current;
@@ -90,6 +132,7 @@ public class SearchHelper {
             System.out.println("you screwed up");
         }
 
+        */
     }
 
     public boolean search(String guess){
@@ -105,10 +148,10 @@ public class SearchHelper {
             } else if (index < 0 || index > 26){
                 index = 27;
             }
-            if(current.getChild(index) == null){
+            if(current != null && current.getChild(index) == null){
                 //System.out.println("null");
                 break;
-            } else{
+            } else if (current != null){
                 if (i == guess.length() -1){
                     if(current.getChild(index).getWord() == true){
                         //System.out.println("found");

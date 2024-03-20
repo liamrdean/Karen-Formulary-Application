@@ -28,7 +28,7 @@ import java.util.List;
 
 public class DB_Helper extends SQLiteOpenHelper {
 
-    public static String[] drugNames = new String[0];
+    public static String[] dictonary = new String[0];
 
     /* Constants */
     // Change version only when you want the to overwrite previous versions.
@@ -44,6 +44,7 @@ public class DB_Helper extends SQLiteOpenHelper {
     public static final String KAREN_SUFFIX = "_KA";
     public static final String ENGLISH_SUFFIX = "_EN";
     public static final String LANGUAGE_SUFFIX_REGEX = "(_KA\\z)|(_EN\\z)";
+    private SQLiteDatabase database;
 
 
 
@@ -97,6 +98,12 @@ public class DB_Helper extends SQLiteOpenHelper {
             e.printStackTrace();
         }
 
+        if (database != null) {
+            Log.i("DB_HELPER", "calling on create");
+            this.onCreate(database);
+        } else {
+            Log.i("DB_HELPER", "Not calling on create");
+        }
 
     }
 
@@ -200,7 +207,9 @@ public class DB_Helper extends SQLiteOpenHelper {
         // Load each line into the database
         String[] values;
         List<String> list = new ArrayList<>();
-        drugNames = new String[0];
+        Log.i("InTeam", "Testing " + Arrays.toString(dictonary));
+
+        dictonary = null;
         while ((values = csvReader.readNext()) != null) {
             Log.i("DEMOP adding", Arrays.toString(values));
             ContentValues cv = new ContentValues(sqlColStrings.size() - 1);
@@ -219,14 +228,16 @@ public class DB_Helper extends SQLiteOpenHelper {
         }
 
         // Create the list of names
-        drugNames = list.toArray(drugNames);
-        Log.i("InTeam", "Testing " + Arrays.toString(drugNames));
+        dictonary = list.toArray(new String[0]);
+        Log.i("InTeam", "Testing " + Arrays.toString(dictonary) + list.toString());
     }
 
     // This is called the first time a database is accessed.
     // There should only be code to create a new database.
     @Override
     public void onCreate(SQLiteDatabase db) {
+        Log.i("DB_HELPER", "onCreate has been called");
+        this.database = db;
         InputStream inStream;
         /*
          * This does in order:
@@ -239,13 +250,17 @@ public class DB_Helper extends SQLiteOpenHelper {
             assert this.activityMain != null;
             Resources resources = this.activityMain.getResources();
             if (resources == null) {
+                Log.w("DB_HELPER", "Resources is null");
                 return;
             }
 
             AssetManager manager = resources.getAssets();
             if (manager == null) {
+
+                Log.w("DB_HELPER", "AssetManager is null");
                 return;
             }
+            Log.i("DB_HELPER", "Good resources");
 
             inStream = manager.open(DRUG_CSV_FILE);
             InputStreamReader inputCSVReader = new InputStreamReader(inStream);
@@ -284,7 +299,8 @@ public class DB_Helper extends SQLiteOpenHelper {
      */
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
-        this.onCreate(db);
+        Log.i("DB_HELPER", "onUpgrade has been called");
+        database = db; this.onCreate(db);
     }
 
     /* ========================================================================================== *
