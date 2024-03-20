@@ -12,7 +12,7 @@ Aspirin
 Atenolol
 Atropine
 Azithromycin
-Benzathine_Penicillin
+Benzathine Penicillin
 Benzyl Benzoate Lotion
 Buscopan
 Carbamazepine
@@ -32,10 +32,10 @@ Co amoxiclav
 Co trimoxazole
 Dapsone
 Dexamethasone
-Dextrose 50
+Dextrose
 Diazepam 
 Diclofenac
-Dihydroartemisinin+Piperaquine DP
+Dihydroartemisinin Piperaquine DP
 Doxycycline
 Doxycycline with Aresunate
 Enalapril tab
@@ -92,5 +92,5 @@ Tafenoquine
 Terramycin eye ointment
 Tramadol
 Vitamin A
-Vitamin B1
+Vitamin B
 Zinc
