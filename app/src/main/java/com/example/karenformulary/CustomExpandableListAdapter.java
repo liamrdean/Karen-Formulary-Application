@@ -91,7 +91,7 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
 
         // Sets data, handles setting if this is an image
         expandedListTextView.WithData(expandedListText);
-        expandedListTextView.setBackgroundColor(Color.parseColor("#0000FF"));
+        //expandedListTextView.setBackgroundColor(Color.parseColor("#0000FF"));
         return convertView;
     }
 

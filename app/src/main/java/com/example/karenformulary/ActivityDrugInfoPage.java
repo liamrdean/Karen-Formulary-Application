@@ -35,11 +35,13 @@ public class ActivityDrugInfoPage extends AppCompatActivity {
         dosageTextView = findViewById(R.id.txDosage);
         descriptionTextView = findViewById(R.id.txDrugDescription);
         treatmentTableImageTextView = findViewById(R.id.imageTextViewTreatmentTable);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         // For now hard coded to Dihydrogen Monoxide
         //drugName = "Dihydrogen Monoxide";
         this.postSettingDrugName();
     }
+
 
     public String getDrugName() {return drugName;}
     public static void setDrugName(String newName) {

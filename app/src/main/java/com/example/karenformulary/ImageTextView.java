@@ -40,7 +40,7 @@ public class ImageTextView extends View {
     // Text related variables
     private String data = "a";
     private Paint textPaint;
-    private float textHeight = 100;
+    private float textHeight = 50;
     // Single line of text
     private Rect textBounds = new Rect(0,0,0,0);
     // Full line of text
