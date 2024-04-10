@@ -19,7 +19,7 @@ public class ActivityMain extends AppCompatActivity {
     public static ActivityMain activityMain;
     public static AssetManager assetManager;
 
-    Button druginfopageBTN;
+    Button drugsearchBTN;
     Button zscoreBTN;
     Button viewformularyBTN;
 
@@ -39,8 +39,8 @@ public class ActivityMain extends AppCompatActivity {
         dbHelper.getWritableDatabase().close();
 
 
-        druginfopageBTN = (Button)findViewById(R.id.druginfopageBTN);
-        druginfopageBTN.setOnClickListener(new View.OnClickListener() {
+        drugsearchBTN = (Button)findViewById(R.id.drugsearchBTN);
+        drugsearchBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //Go to the Drug info Page
