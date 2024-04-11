@@ -1,5 +1,5 @@
-DRUG_NAME,DOSAGE_EN,DOSAGE_KA,DESCRIPTION_EN,DESCRIPTION_KA,NOTE_EN,FOOD_EN,BE_CAREFUL_EN,DO_NOT_GIVE_EN,SIDE_EFFECTS_EN,INTERACTIONS_EN,PREGANCY_EN,TESTING_KA,FOOD_KA,
-Medication,DOSAGE,DOSAGE_KA,DESCRIPTION,DESCRIPTION_KA,Note,Food,Be Careful,Do not give,Side Effects,Interactions,Pregancy,Text for testing Karen:ကရင်,Food in Karen (no internal data so should fallback to English),
+DRUG_NAME,DOSAGE_EN,DOSAGE_KA,DESCRIPTION_EN,DESCRIPTION_KA,NOTE_EN,FOOD_EN,BE_CAREFUL_EN,DO_NOT_GIVE_EN,SIDE_EFFECTS_EN,INTERACTIONS_EN,PREGNANCY_EN,TESTING_KA,FOOD_KA,
+Medication,DOSAGE,DOSAGE_KA,DESCRIPTION,DESCRIPTION_KA,Note,Food,Be Careful,Do not give,Side Effects,Interactions,Pregnancy,Text for testing Karen:ကရင်,Food in Karen (no internal data so should fallback to English),
 Acyclovir,1 tab = 200 or 400 or 800 mg ,Acyclovir dosage but in Karen ကရင်, "Anti-viral: to treat Herpes Virus Diseases (Herpes Simplex, Herpes Zoster).",Acyclovir description but in Karen, "Treatment need to be started very soon after the symptoms.
 If started later than 24 hours in Varicella or 72 hours in Herpes Zoster, the
 treatment does not work: do not give",Can be taken with or without food.,"High doses (800 mg 5 times a day) can give confusion and hallucinations:

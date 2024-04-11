@@ -24,6 +24,21 @@ public class ImageTextView extends View {
      * Figure out more about OnDraw such as determining the canvas size and such
      */
 
+    /* TODO
+     * - [ ] Last line not printed (Works fine with single line though)
+     *   - [ ]Happens when a line is cut off, need to adjust the calc measure to take this into account.
+     *   - [ ] Have the width calc and division happen in some function, then store and access when needed
+     *
+     * EXAMPLE: Acyclovir BE CAREFUL
+     *
+     * "High doses (800 mg 5 times a day) can give confusion and hallucinations:\n
+     * you need to let the patient know."
+     *
+     * Output as:
+     * High doses (800 mg 5 times a day) can give\n confusion and hallucinations:\n
+     * you need to le
+     */
+
     private Context mContext;
     private boolean isImage = false;
     private Dim measureDimension = new Dim(-1, -1);
@@ -45,6 +60,7 @@ public class ImageTextView extends View {
     private Rect textBounds = new Rect(0,0,0,0);
     // Full line of text
     private Rect fullTextBounds = new Rect(0, 0, 0, 0);
+    private float fullLineHeight = 0;
 
     // Things for image
     private Bitmap bitmap;
@@ -211,7 +227,7 @@ public class ImageTextView extends View {
             canvas.drawText(
                     textData[i],
                     textBounds.left,
-                    textBounds.height() * i - textBounds.top,
+                    this.fullLineHeight * i - textBounds.top,//textBounds.height() * i - textBounds.top,
                     textPaint);
 
             Log.i("DEMOfTB", "Before " + fullTextBounds.toString());
@@ -306,8 +322,14 @@ public class ImageTextView extends View {
             Log.i("CalcMeTEST", Arrays.toString(textData));
 
             textPaint.getTextBounds(data, 0, data.length(), textBounds);
+            Paint.FontMetrics fontMetrics = new Paint.FontMetrics();
+            float linespacing = textPaint.getFontMetrics(fontMetrics);
+            this.fullLineHeight = fontMetrics.bottom - fontMetrics.top + fontMetrics.leading;
+            Log.i("ImgTxtView", "Testing stuff " + fontMetrics.bottom  + "top " + fontMetrics.top + " spacing:" + linespacing + " test " +fullLineHeight);
+
+
             fullTextBounds.set(textBounds.left, textBounds.top, textBounds.right, textBounds.bottom);
-            fullTextBounds.bottom += textData.length * textBounds.height();
+            fullTextBounds.bottom += textData.length * fullLineHeight;
 
             Log.i("CalcMeTEST", textBounds.toString() + " " +fullTextBounds.toString());
         }
