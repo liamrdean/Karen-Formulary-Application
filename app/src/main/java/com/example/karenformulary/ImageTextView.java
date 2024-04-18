@@ -564,21 +564,6 @@ public class ImageTextView extends View {
             w *= ratioW;
             h *= ratioH;
 
-            /*
-            if (otherWidth > 0) {
-                w *= this.w / otherWidth;
-            }
-            if (w < 0) {
-                w = otherWidth;
-            }
-
-            if (otherHeight > 0) {
-                h *= this.h / otherHeight;
-            }
-            if (h < 0) {
-                h = otherHeight;
-            }
-            */
         }
 
         // Compares width, on tie compares height, if that ties returns a. Else returns dim with larger dim
@@ -649,54 +634,3 @@ public class ImageTextView extends View {
         measureDimension.set(width, height);
     }
 }
-
-
-/* This is old code from OnMeasure, I put enough thought into it I don't want to throw it away */
-//        // If unspecified leave as is. AKA: don't care.
-//        switch (widthMode) {
-//            case MeasureSpec.AT_MOST:
-//                // Run the exact calcs given but only if
-//                viewWidth = Math.min(newWidth, viewWidth);
-//                break;
-//            case MeasureSpec.EXACTLY:
-//
-//                //*
-//                int oldWidth = viewWidth;
-//                viewWidth = newWidth;
-//                // if nothing we can do to maintain ratio.
-//                switch (heightMode) {
-//                    case MeasureSpec.EXACTLY:
-//                        break;
-//                }
-//
-//                viewHeight = (int) Math.ceil(oldWidth * newHeight / (double)(newWidth));
-//                viewWidth = newWidth;
-//                break;
-//            case MeasureSpec.UNSPECIFIED:
-//                break; // Just leave it, the appropriate value has been calculated
-//        }
-//
-//        switch (heightMode) {
-//            case MeasureSpec.AT_MOST:
-//                // Run the exact calcs given but only if
-//                viewHeight = Math.min(newHeight, viewHeight);
-//                break;
-//            case MeasureSpec.EXACTLY:
-//                viewHeight = newHeight;
-//                break;
-//            case MeasureSpec.UNSPECIFIED:
-//                break; // Just leave it, the appropriate value has been calculated
-//        }
-//
-//
-//        //*
-//        // Handle when parent wants an exact width &| height
-//        if (MeasureSpec.getMode(widthMeasureSpec) == MeasureSpec.EXACTLY) {
-//            viewWidth = MeasureSpec.getSize(widthMeasureSpec);
-//        }
-//        if (MeasureSpec.getMode(heightMeasureSpec) == MeasureSpec.EXACTLY) {
-//            viewHeight = MeasureSpec.getSize(heightMeasureSpec);
-//        }
-//
-//        Log.i("DEMOme", "Setting to " + viewWidth + " x " + viewHeight );
-

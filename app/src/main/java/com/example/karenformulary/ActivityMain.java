@@ -41,7 +41,6 @@ public class ActivityMain extends AppCompatActivity {
         // Force dbHelper to call onCreate or onUpgrade
         dbHelper.getWritableDatabase().close();
 
-
         drugsearchBTN = (Button)findViewById(R.id.drugsearchBTN);
         drugsearchBTN.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,7 +51,6 @@ public class ActivityMain extends AppCompatActivity {
 
             }
         });
-
 
         zscoreBTN = (Button)findViewById(R.id.zscoreBTN);
         zscoreBTN.setOnClickListener(new View.OnClickListener() {
@@ -80,23 +78,10 @@ public class ActivityMain extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 languageSwitchChangeHandler(isChecked);
-//                // on below line we are checking
-//                // if switch is checked or not.
-//                if (isChecked) {
-//                    // on below line we are setting text
-//                    // if switch is checked.
-//                    Log.i("SWITCH TEST", "Checked");
-//                } else {
-//                    // on below line we are setting text
-//                    // if switch is unchecked.
-//                    Log.i("SWITCH TEST", "Unchecked");
-//                }
             }
         });
         // Always match the switch's state
         languageSwitchChangeHandler(languageSW.isChecked());
-
-
     }
 
     // Though simple, wanted to abstract so that this can be called anywhere and always have same

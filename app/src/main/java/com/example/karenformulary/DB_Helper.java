@@ -133,7 +133,7 @@ public class DB_Helper extends SQLiteOpenHelper {
     }
 
     // Load the headers from a CSV file
-    private void loadCSVHeaders(@NonNull CSVReader csvReader) throws IOException {
+    public void loadCSVHeaders(@NonNull CSVReader csvReader) throws IOException {
         String[] drugHeaders = csvReader.readNext();
         String[] displayHeaders = csvReader.readNext();
         // Process the headers
@@ -406,6 +406,4 @@ public class DB_Helper extends SQLiteOpenHelper {
 
         return extractDrugModels(nameQuery);
     }
-
-
 }
