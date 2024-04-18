@@ -218,6 +218,8 @@ public class DB_Helper extends SQLiteOpenHelper {
             // Put all but the auto-assigned id in. That is why i starts at 1
             for (int i = 1; i < sqlColStrings.size(); i++) {
                 String val = values[i - 1].trim();
+                // Since % is a special character in SQL, replace it with the delimited version
+                val = val.replace("%", "[%]");
                 cv.put(sqlColStrings.get(i), val);
             }
 
@@ -334,6 +336,9 @@ public class DB_Helper extends SQLiteOpenHelper {
 
         for(; i < cursor.getColumnCount(); i++) {
             String s = cursor.getString(i);
+            // Replace SQL delimited '%' ("[%]") with "%"
+            s = s.replace("[%]", "%");
+
             Log.i("DEMOload",  i + "/" + cursor.getColumnCount() + "=" + s);
             Log.i("DEMOOO", Arrays.toString(sqlColStrings.toArray()));
 
@@ -353,8 +358,6 @@ public class DB_Helper extends SQLiteOpenHelper {
             }
 
         }
-
-
         DB_DrugModel drugModel = new DB_DrugModel(drugId, drugName, infoEN, infoKA);
         return drugModel;
     }
@@ -374,25 +377,6 @@ public class DB_Helper extends SQLiteOpenHelper {
             // Loop through result set (cursor) and create new customer objects. Put them into
             // return list. Do this while we can move to a new line
             do {
-                // The columns have to be hard coded...
-                /*
-                int drugId = cursor.getInt(0);
-                String drugName = cursor.getString(1);
-                DrugInfo infoEN = new DrugInfo(cursor.getString(2));
-                DrugInfo infoKA = new DrugInfo(cursor.getString(3));
-
-
-
-
-                DrugInfo infoEN = new DrugInfo(cursor, false);
-                DrugInfo infoKA = new DrugInfo(cursor, true);
-
-
-                Log.w("DB_DEMO", "got name " + drugName);
-
-                DB_DrugModel drugModel = new DB_DrugModel(drugId, drugName);
-                returnList.add(drugModel);
-                */
                 returnList.add(fillInDrugModel(cursor));
             } while(cursor.moveToNext());
         } // else. Failure do not add anything to the list

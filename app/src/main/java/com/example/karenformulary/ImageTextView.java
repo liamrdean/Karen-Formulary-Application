@@ -39,6 +39,8 @@ public class ImageTextView extends View {
      * you need to le
      */
 
+    public static int defaultTextColor = Color.argb(255, 0, 0, 0);
+
     private Context mContext;
     private boolean isImage = false;
     private Dim measureDimension = new Dim(-1, -1);
@@ -161,7 +163,7 @@ public class ImageTextView extends View {
     // Do this once instead of every draw which is very slow
     private void InitPaints() {
         textPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        textPaint.setColor(Color.argb(255, 255, 0, 0));
+        textPaint.setColor(defaultTextColor);
         if (textHeight <  1) {
             textHeight = textPaint.getTextSize();
         }
