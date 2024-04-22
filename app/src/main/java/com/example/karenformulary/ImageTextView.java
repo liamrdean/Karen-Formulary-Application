@@ -1,667 +1,247 @@
 package com.example.karenformulary;
 
 import android.content.Context;
-import android.content.res.TypedArray;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Paint;
-import android.graphics.Rect;
 import android.util.AttributeSet;
-import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Arrays;
+public class ImageTextView extends LinearLayout {
 
+    private Context myContext;
+    private TextView textView;
 
-public class ImageTextView extends View {
-    /* TODO
-     * Dynamic heights
-     * Actually center please thanks :)
-     * Figure out more about OnDraw such as determining the canvas size and such
-     */
+    // The text/img path data
+    private String data;
 
-    /* TODO
-     * - [ ] Last line not printed (Works fine with single line though)
-     *   - [ ]Happens when a line is cut off, need to adjust the calc measure to take this into account.
-     *   - [ ] Have the width calc and division happen in some function, then store and access when needed
-     *
-     * EXAMPLE: Acyclovir BE CAREFUL
-     *
-     * "High doses (800 mg 5 times a day) can give confusion and hallucinations:\n
-     * you need to let the patient know."
-     *
-     * Output as:
-     * High doses (800 mg 5 times a day) can give\n confusion and hallucinations:\n
-     * you need to le
-     */
-
-    public static int defaultTextColor = Color.argb(255, 0, 0, 0);
-
-    private Context mContext;
-    private boolean isImage = false;
-    private Dim measureDimension = new Dim(-1, -1);
-    private Dim drawDimension = new Dim(-1, -1);
-    private Dim maxDimensions = new Dim(-1, -1);
-    private Dim minDimensions = new Dim(-1, -1);
-    private String[] textData;
-
-
-    // This makes a draw call call calculatedMeasure if it has not been called already
-    // thus preventing bad drawings (out of bounds)
-    private boolean calculatedMeasure = false;
-
-    // Text related variables
-    private String data = "a";
-    private Paint textPaint;
-    private float textHeight = 50;
-    // Single line of text
-    private Rect textBounds = new Rect(0,0,0,0);
-    // Full line of text
-    private Rect fullTextBounds = new Rect(0, 0, 0, 0);
-    private float fullLineHeight = 0;
-
-    // Things for image
-    private Bitmap bitmap;
-    // Total height and width of this view (is in pixels).
-    // NOTE: if < 0: is treated like null
-
-
-
-    private static int count = 0; // DEBUG
-    private boolean tempIsImageTest() {
-        return tempIsImageTest(this.data);
-    }
-    private static boolean tempIsImageTest(String data) {
-        return data != null;// && data.charAt(0) == '$';
-    }
-
-    public static Bitmap getImageBitmap(String data) {
-        InputStream inStream = null;
-        Bitmap bitmap = null;
-
-        try {
-            Log.i("TESTimg", "Trying " + data);
-
-            StringBuilder filePathBuilder = new StringBuilder("Drug_Images/");
-            // Add drug name
-            // TODO Make the paths be friendly to all OS's
-            filePathBuilder.append(ActivityDrugInfoPage.drugName);
-            filePathBuilder.append("/");
-            // Add data
-            filePathBuilder.append(data);
-
-            // Grab the picture
-            filePathBuilder.append(".png");
-
-            Log.i("TESTimg", "opening = '" + filePathBuilder.toString());
-
-            inStream = ActivityMain.assetManager.open(filePathBuilder.toString());
-            Log.i("TESTimg", "path = '" + filePathBuilder.toString() + "' ?= " + Boolean.toString(inStream != null));
-            bitmap = BitmapFactory.decodeStream(inStream);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        return bitmap;
-    }
-
-
-    // If this should be an image, init it, else set bitmap to null
-    private void maybeInitImage() {
-        if (!isImage) {
-            bitmap = null;
-            return;
-        }
-        Log.w("TESTimg", "Creating bitmap with data = \"" + this.data + "\"");
-
-
-        InputStream inStream = null;
-
-        // TEMP
-        if (data.charAt(0) == '.') {
-            bitmap = BitmapFactory.decodeResource(mContext.getResources(), R.drawable.placeholder);
-            return;
-        }
-
-        try {
-            Log.i("TESTimg", "Trying " + data);
-
-            StringBuilder filePathBuilder = new StringBuilder("Drug_Images/");
-            // Add drug name
-            // TODO Make the paths be friendly to all OS's
-            filePathBuilder.append(ActivityDrugInfoPage.drugName);
-            filePathBuilder.append("/");
-            // Add data
-            filePathBuilder.append(data);
-
-            // Grab the picture
-            filePathBuilder.append(".png");
-
-            Log.i("TESTimg", "opening = '" + filePathBuilder.toString());
-
-            inStream = ActivityMain.assetManager.open(filePathBuilder.toString());
-            Log.i("TESTimg", "path = '" + filePathBuilder.toString() + "' ?= " + Boolean.toString(inStream != null));
-        } catch (IOException e) {
-            e.printStackTrace();
-            return;
-        }
-        bitmap = BitmapFactory.decodeStream(inStream);
+    public ImageTextView(Context context) {
+        this(context, null);
     }
 
     public ImageTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        count++;
-        Log.i("DEMOC", "Creating a new ImageTxtview number " + count);
+        myContext = context;
+        createTextView();
+    }
 
-        mContext = context;
-        TypedArray a = context.getTheme().obtainStyledAttributes(
-                attrs,
-                R.styleable.ImageTextView,
-                0, 0);
+    public void setText(String text) {
+        setData(text);
+    }
+    int j = 0;
 
-        try {
-            isImage = a.getBoolean(R.styleable.ImageTextView_isImage, false);
-            String s = a.getString(R.styleable.ImageTextView_data);
-            data = s;
-
-
-
-        } finally {
-            a.recycle();
+    public void setData(String newData) {
+        data = newData;
+        if (textView != null) {
+            textView.setText(data);
         }
-
-        InitPaints();
     }
 
-    // Basically redraws. Basically.
-    /* Must be called whenever data changes */
-    private void callRedraw() {
-        invalidate();
-        requestLayout();
+    public String getData() {
+        return data;
     }
 
-    private void InitData() {
-        drawDimension.set(-1, -1);
-        calculatedMeasure = false;
-        maybeInitImage();
-        calculateMeasureAndRedraw();
+    public void setTextSize(float size) {
+        textView.setTextSize(size);
     }
 
-    // Do this once instead of every draw which is very slow
-    private void InitPaints() {
-        textPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        textPaint.setColor(defaultTextColor);
-        if (textHeight <  1) {
-            textHeight = textPaint.getTextSize();
-        }
-        textPaint.setTextSize(textHeight);
+    private void createTextView() {
+        textView = new TextView(myContext);
+        textView.setLayoutParams(generateDefaultLayoutParams());
+        this.addView(textView);
     }
 
-    public void WithData(String newData) {
-        if (newData.charAt(0) == DB_DrugModel.imageDelimiter) {
-            this.setIsImage(true);
-            newData = newData.substring(1);
-        } else {
-            this.setIsImage(false);
-        }
-        this.data = newData;
-        this.InitData();
-        this.maybeInitImage();
-    }
+    /*
+     * =============================================================================================
+     * =============================================================================================
+     *
+     * BE WARNED!
+     * Beyond this lies Lovecraftian graphical complications! Do not change! Unless you know what
+     * your doing!
+     * Break this, and the program WILL CRASH.
+     *
+     * =============================================================================================
+     * =============================================================================================
+     */
 
-    public void setIsImage(boolean b) {
-        this.isImage = b;
-    }
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        int count = getChildCount();
 
-    // Handles image name conversion
-    public void setData(String newData){
-        this.data = newData;
-        this.InitData();
-    }
+        int maxHeight = 0;
+        int maxWidth = 0;
 
-    public void setTextHeight(float height) {
-        textHeight = height;
-        calculateMeasureAndRedraw();
-    }
+        // Find out how big everyone wants to be
+        measureChildren(widthMeasureSpec, heightMeasureSpec);
 
-    // Returns if x is in [min, max]
-    private boolean inRange(int min, int x, int max) {
-        return x >= min && x <= max;
-    }
+        // Find rightmost and bottom-most child
+        for (int i = 0; i < count; i++) {
+            View child = getChildAt(i);
+            if (child.getVisibility() != GONE) {
+                int childRight;
+                int childBottom;
 
-    // Pass colors in as 0-255 returns true if successful
-    public boolean setTextColor(int a, int r, int g, int b) {
-        // Ensure that it is in the range
-        if (!(inRange(0, a, 255) && inRange(0, r, 255) && inRange(0, g, 255) && inRange(0, b, 255))) {
-            return false;
-        }
-        textPaint.setColor(Color.argb(a, r, g, b));
-        return true;
-    }
+                LinearLayout.LayoutParams lp
+                        = (LinearLayout.LayoutParams) child.getLayoutParams();
 
-    private void drawText(Canvas canvas) {
-        fullTextBounds = new Rect(textBounds.left, textBounds.top, textBounds.right, textBounds.bottom);
-        // Android is dumb and does not understand newlines, have to do this garbage instead.
-        Log.i("DEMOfTB", "Length " + textData.length);
-        // NOTE may be going one too far, like reading one past the
-        for (int i = 0; i < textData.length; i++) {
-            if (textData[i] == null) {
-                textData[i] = "ERROR: NULL TEXT IN ImageTextView.java.drawText";
-                continue;
+                childRight = child.getMeasuredWidth();
+                childBottom = child.getMeasuredHeight();
+
+                maxWidth = Math.max(maxWidth, childRight);
+                maxHeight = Math.max(maxHeight, childBottom);
             }
-            Log.i("DEMOfTB", textData[i]);
-            Dim dim = new Dim(textBounds.right-textBounds.left,textBounds.bottom-textBounds.top);
-            Log.i("DEMOdimDrT", "@ " + -textBounds.left + " " + -textBounds.top);
-            Log.i("DEMOdimDrT", "Canvas height " + canvas.getHeight() + " '" + textData[i] + "'");
-            canvas.drawText(
-                    textData[i],
-                    textBounds.left,
-                    this.fullLineHeight * i - textBounds.top,//textBounds.height() * i - textBounds.top,
-                    textPaint);
-
-            Log.i("DEMOfTB", "Before " + fullTextBounds.toString());
-            fullTextBounds.bottom += textBounds.height();
-            Log.i("DEMOfTB", "After " + fullTextBounds.toString());
-
-        }
-        fullTextBounds.bottom += 100;
-    }
-
-    private void drawImage(Canvas canvas, String text) {
-        if (bitmap == null) {
-            return;
         }
 
-        // Center the image in the given width
-        Dim imageOffset = measureDimension.getOtherInCenter(drawDimension);
-        Rect dst = Dim.toRect(imageOffset, drawDimension);
+        // Check against minimum height and width
+        maxHeight = Math.max(maxHeight, getSuggestedMinimumHeight());
+        maxWidth = Math.max(maxWidth, getSuggestedMinimumWidth());
 
-        // Since src is null, draws entire bitmap
-        canvas.drawBitmap(bitmap, null, dst, null);
+        setMeasuredDimension(resolveSizeAndState(maxWidth, widthMeasureSpec, 0),
+                resolveSizeAndState(maxHeight, heightMeasureSpec, 0));
     }
 
     @Override
-    protected void onDraw (Canvas canvas) {
-        super.onDraw(canvas); // Apparently draws the background
-        if(!calculatedMeasure) {
-            calculateMeasureAndRedraw();
-        }
-        Log.i("DEMOfTB", "IsImage " + Boolean.toString(isImage));
-        if (isImage) {
-            drawImage(canvas, data);
-        } else {
-            drawText(canvas);
-        }
+    protected void onLayout(boolean changed, int l, int t, int r, int b) {
+        layoutVertical(l, t, r, b);
     }
+    private int mGravity = Gravity.START | Gravity.TOP;
 
+    void layoutVertical(int left, int top, int right, int bottom) {
+        final int paddingLeft = 0;
 
-    private void calculateMeasureAndRedraw() {
-        calculateMeasure(-1, -1);
-        callRedraw();
-    }
+        int childTop;
+        int childLeft;
 
+        // Where right end of child should go
+        final int width = right - left;
+        int childRight = width;
 
-    // Ignores width and height if they are negative
-    private void calculateMeasure(int targetWidth, int targetHeight) {
-        if (isImage && bitmap == null) {
-            return;
-        }
-        if (!isImage && textPaint == null) {
-            InitPaints();
-        }
+        // Space available for child
+        int childSpace = width;
 
-        if (!isImage) {
-            /*
-             * Get width of text
-             * Store as old Data, have textData as well, so that can set properly
-             * Write substring to that point + \n
-             * Repeat until string empty
-             *
-             */
+        final int count = getVirtualChildCount();
 
-            float[] b = new float[3];
-            int start = 0;
-            int numChars = textPaint.breakText(data, true, (float) measureDimension.getWidth(), b);
-            Log.i("CalcMeTEST", "Setting '" + data + "' got " + numChars +" " + Arrays.toString(b));
-            String string = data;
-            String output = "";
-            StringBuilder stringBuilder = new StringBuilder();
+        final int majorGravity = mGravity & Gravity.VERTICAL_GRAVITY_MASK;
+        final int minorGravity = mGravity & Gravity.RELATIVE_HORIZONTAL_GRAVITY_MASK;
 
-            if (numChars != 0) {
-                while ((!string.isEmpty())) {
-                    Log.i("CalcMeTEST", "start = " + start + " a = " + numChars);
-                    Log.i("CalcMeTEST", "string " + string);
+        switch (majorGravity) {
+            case Gravity.BOTTOM:
+                // mTotalLength contains the padding already
+                childTop = bottom - top;
+                break;
 
-                    stringBuilder.append(string.substring(0, numChars));
-                    string = string.substring(numChars);
-                    Log.i("CalcMeTEST", "string " + string);
-                    stringBuilder.append("\n");
-                    // stringBuilder.append(data.substring(a + 1));
-                    // start += numChars;
-                    numChars = textPaint.breakText(string, true, (float) measureDimension.getWidth(), b);
-                }
-            } else {
-                stringBuilder.append(data);
-            }
+            // mTotalLength contains the padding already
+            case Gravity.CENTER_VERTICAL:
+                childTop = (bottom - top) / 2;
+                break;
 
-            output = stringBuilder.toString();
-
-            Log.i("CalcMeTEST", "\noutput = " + output);
-            textData = output.split("\n");
-            Log.i("CalcMeTEST", Arrays.toString(textData));
-
-            textPaint.getTextBounds(data, 0, data.length(), textBounds);
-            Paint.FontMetrics fontMetrics = new Paint.FontMetrics();
-            float linespacing = textPaint.getFontMetrics(fontMetrics);
-            this.fullLineHeight = fontMetrics.bottom - fontMetrics.top + fontMetrics.leading;
-            Log.i("ImgTxtView", "Testing stuff " + fontMetrics.bottom  + "top " + fontMetrics.top + " spacing:" + linespacing + " test " +fullLineHeight);
-
-
-            fullTextBounds.set(textBounds.left, textBounds.top, textBounds.right, textBounds.bottom);
-            fullTextBounds.bottom += textData.length * fullLineHeight;
-
-            Log.i("CalcMeTEST", textBounds.toString() + " " +fullTextBounds.toString());
-        }
-        Log.i("DEMOdimMe", textBounds.toString());
-
-        Log.i("DEMOdimMe", "drawDimWInt = " + this.drawDimension.getWInt() + " drawDimHInt = " + this.drawDimension.getHInt());
-
-        if (this.drawDimension.getWidthInt() < 0) {
-            if (isImage) {
-                drawDimension.setWidth(bitmap.getWidth());
-            } else {
-                //                Log.i("DEMOme", textBounds.toString());
-                drawDimension.setWidth(textBounds.right  - textBounds.left);
-            }
-        }
-
-        if (this.drawDimension.getHeight() < 0) {
-            if (isImage) {
-                drawDimension.setHeight(bitmap.getHeight());
-            } else {
-                // Since we want at least text height, ceiling the value
-                // Bottom - top since decreases going down
-                Log.i("DEMOdimA", "Setting width to " + textBounds.bottom + "-" + textBounds.top + "=" + (textBounds.bottom - textBounds.top));
-                drawDimension.setHeight(fullTextBounds.bottom - fullTextBounds.top);
-            }
-        }
-
-        if (isImage) {
-            Dim imageDim = new Dim(bitmap.getWidth(), bitmap.getHeight());
-            imageDim.shrinkWidthTo(measureDimension);
-            drawDimension.set(imageDim);
-        }
-
-        /*
-        // Do the scaling calculation
-        if (isImage) {
-            // Simply set the height to the height of the bitmap
-            float ratio = bitmap.getWidth() / this.viewWidth;
-            this.viewHeight = (int) Math.ceil(bitmap.getHeight() * ratio);
-        } else {
-        }
-        //*/
-
-        calculatedMeasure = true;
-    }
-
-    // This is a helper debug function. Does what it says on the tin
-    private String getNameOfMeasureSpecMode(int mode) {
-        switch(mode) {
-            case MeasureSpec.EXACTLY:
-                return "EXACTLY";
-            case MeasureSpec.AT_MOST:
-                return "AT_MOST";
-            case MeasureSpec.UNSPECIFIED:
-                return "UNSPECIFIED";
+            case Gravity.TOP:
             default:
-                return "ERROR: UNKNOWN mode = " + mode;
-        }
-    }
-
-
-    // This measures the contents so that it can be read properly
-    @Override
-    protected void onMeasure (int widthMeasureSpec, int heightMeasureSpec) {
-        // MeasureSpec is View.MeasureSpec
-        Log.i("DEMOme", MeasureSpec.toString(widthMeasureSpec) + " " + MeasureSpec.toString(heightMeasureSpec));
-        if(isImage){Log.i("DEMOmeme", MeasureSpec.toString(widthMeasureSpec) + " " + MeasureSpec.toString(heightMeasureSpec));}
-
-
-        int newWidth = MeasureSpec.getSize(widthMeasureSpec);
-        int newHeight = MeasureSpec.getSize(heightMeasureSpec);
-        int widthMode = MeasureSpec.getMode(widthMeasureSpec);
-        int heightMode = MeasureSpec.getMode(heightMeasureSpec);
-        measureDimension.set(newWidth, 999999);
-
-        // Rest of code assumes (widthMode = EXACTLY && heightMode == UNSPECIFIED) is true
-        // so check that it is
-        if (widthMode != MeasureSpec.EXACTLY) {
-            Log.w("ImgTxtView", "ImageTextView.onMeasure: expected width mode EXACTLY got "
-                    + getNameOfMeasureSpecMode(widthMode) + " with " + newWidth);
-
-            setMeasuredDimension(newWidth, 0);
-            return;
-        }
-        if (heightMode != MeasureSpec.UNSPECIFIED) {
-            Log.w("ImgTxtView", "ImageTextView.onMeasure: expected height mode Unspecified got "
-                    + getNameOfMeasureSpecMode(heightMode) + " with " + newHeight);
-            switch (heightMode) {
-                case MeasureSpec.AT_MOST:
-                    Log.i("ImgTxtView", "At most case");
-                    measureDimension.set(newWidth, newHeight);
-                    calculateMeasure(newWidth, -1);
-                    Log.i("ImgTxtView", "Calculated " + drawDimension.toString());
-                    int trueHeight = Math.min(drawDimension.getHeightInt(), newHeight);
-                    Log.i("ImgTxtView", "Setting to " + newWidth + " " + trueHeight);
-                    measureDimension.set(newWidth, trueHeight);
-
-                    setMeasuredDimension(newWidth, trueHeight);
-                    callRedraw();
-
-                    break;
-                case MeasureSpec.EXACTLY:
-                    Log.i("ImgTxtView", "exactly case");
-
-                    //setMeasuredDimension(newWidth, newHeight);
-                    measureDimension.set(newWidth, newHeight);
-                    calculateMeasure(newWidth, -1);
-                    Log.i("ImgTxtView", "Calculated " + drawDimension.toString());
-
-                    setMeasuredDimension(newWidth, newHeight);
-                    callRedraw();
-
-                    break;
-                default:
-                    setMeasuredDimension(0, 0);
-                    Log.w("ImgTxtView", "UNKOWN CASE!!! ");
-
-            }
-            return;
+                childTop = 0;
+                break;
         }
 
-        calculateMeasure(newWidth, -1);
-        Log.i("DEMOmei", "calc " + String.format("%d wide by %d tall", drawDimension.getWidthInt(), drawDimension.getHeightInt()));
-        // Scale height to maintain ratio with width, which will change to a known amount
-        /*
-        if (isImage) {
-           // viewHeight = (int) Math.ceil((double) (viewHeight * newWidth) / (double) viewWidth);
-        }
-        viewWidth = newWidth;
-        */
+        for (int i = 0; i < count; i++) {
+            final View child = getVirtualChildAt(i);
+            if (child == null) {
+                childTop += measureNullChild(i);
+            } else if (child.getVisibility() != GONE) {
+                final int childWidth = child.getMeasuredWidth();
+                final int childHeight = child.getMeasuredHeight();
 
-        Log.i("DEMOmei", "Ended up with " + String.format("%d wide by %d tall", drawDimension.getWidthInt(), drawDimension.getHeightInt()));
+                final LinearLayout.LayoutParams lp =
+                        (LinearLayout.LayoutParams) child.getLayoutParams();
 
-        // Must do this or get an error
-        Log.i("DEMOdimMe", drawDimension.getWidthInt() + " " + drawDimension.getHeightInt());
-
-        measureDimension.set(newWidth, drawDimension.getHeight());
-        setMeasuredDimension(measureDimension.getWidthInt(), measureDimension.getHeightInt());
-        callRedraw();
-    }
-
-    // Dimension class. Would use Rect but I don't like the implementation.
-    private static class Dim {
-        private double w;
-        private double h;
-
-        // Use -1 to specify that we don't care
-        public Dim() {
-            this.w = -1;
-            this.h = -1;
-        }
-
-        public Dim(int width, int height) {
-            this.w = (double) width;
-            this.h = (double) height;
-        }
-
-        public Dim(double width, double height) {
-            this.w = width;
-            this.h = height;
-        }
-
-        public double getWidth() {return w;}
-        public double getW() {return w;}
-        public double getHeight() {return h;}
-        public double getH() {return h;}
-        // Get but return ints
-        public int getWidthInt() {return (int) Math.ceil(this.w);}
-        public int getWInt() {return (int) Math.ceil(this.w);}
-        public int getHeightInt() {return (int) Math.ceil(this.h);}
-        public int getHInt() {return (int) Math.ceil(this.h);}
-
-        public void set(double width, double height) {this.w = width; this.h = height;}
-        public void set(Dim other) {this.w = other.w; this.h = other.h;}
-        public void setWidth(double width) {this.w = width;}
-        public void setW(double w) {this.w = w;}
-        public void setHeight(double height) {this.h = height;}
-        public void setH(double h) {this.h = h;}
-
-        @Override
-        public String toString() {
-            return String.format("(%f, %f)", w, h);
-        }
-
-        // Shrink selfs width to fit in the other dimension
-        public void shrinkWidthTo(Dim other) {
-            this.shrinkWidthTo(other.getWidth(), other.getHeight());
-        }
-
-        public void shrinkWidthTo(double otherWidth, double otherHeight) {
-            if (this.w < otherWidth) {
-                return;
-            }
-
-            String pString = "Start this=" + this.toString() + " other=" + (new Dim(otherWidth, otherHeight));
-
-            //double ratioW = this.w / otherWidth;
-
-            if (otherWidth != 0) {
-                h *= otherWidth / w;
-            }
-            w = otherWidth;
-
-            //h *= ratioW;
-            //w *= ratioW;
-            pString += " now=" + this.toString();
-            Log.i("DEMODKdim", pString);
-        }
-
-        // Shrink selfs width to fit in the other dimension
-        public void shrinkHeightTo(Dim other) {
-            this.shrinkHeightTo(other.getWidth(), other.getHeight());
-        }
-
-        public void shrinkHeightTo(double otherWidth, double otherHeight) {
-            if (otherHeight != 0) {
-                w = otherWidth * h / otherHeight;
-            }
-            h = otherHeight;
-        }
-
-        public void shrinkTo(Dim other) {
-            this.shrinkTo(other.getWidth(), other.getHeight());
-        }
-
-        public void shrinkTo(double otherWidth, double otherHeight) {
-            double ratioW = this.w / otherWidth;
-            double ratioH = this.h / otherHeight;
-
-            w *= ratioW;
-            h *= ratioH;
-
-        }
-
-        // Compares width, on tie compares height, if that ties returns a. Else returns dim with larger dim
-        public static Dim max(Dim a, Dim b) {
-            if (a.w == b.w) {
-                if (a.h >= b.h) {
-                    return a;
-                } else if (a.h < b.h) {
-                    return b;
+                int gravity = lp.gravity;
+                if (gravity < 0) {
+                    gravity = minorGravity;
                 }
-            } else if (a.w > b.w) {
-                return a;
-            }
-            // else a.w is less than b.w
-            return b;
-        }
+                final int layoutDirection = getLayoutDirection();
+                final int absoluteGravity = Gravity.getAbsoluteGravity(gravity, layoutDirection);
+                switch (absoluteGravity & Gravity.HORIZONTAL_GRAVITY_MASK) {
+                    case Gravity.CENTER_HORIZONTAL:
+                        childLeft = paddingLeft + ((childSpace - childWidth) / 2)
+                                + lp.leftMargin - lp.rightMargin;
+                        break;
 
-        // Just does width comparisons for now
-        public static Dim min(Dim a, Dim b) {
-            if (a.w == b.w) {
-                if (a.h <= b.h) {
-                    return a;
-                } else if (a.h < b.h) {
-                    return b;
+                    case Gravity.RIGHT:
+                        childLeft = childRight - childWidth - lp.rightMargin;
+                        break;
+
+                    case Gravity.LEFT:
+                    default:
+                        childLeft = paddingLeft + lp.leftMargin;
+                        break;
                 }
-            } else if (a.w < b.w) {
-                return a;
+
+                /*
+                if (LinearLayout.hasDividerBeforeChildAt(i)) {
+                    childTop += mDividerHeight;
+                }
+                */
+
+                //*
+                childTop += lp.topMargin;
+                setChildFrame(child, childLeft, childTop + getLocationOffset(child),
+                        childWidth, childHeight);
+                childTop += childHeight + lp.bottomMargin + getNextLocationOffset(child);
+
+                i += getChildrenSkipCount(child, i);
+                //*/
             }
-            // else a.w is less than b.w
-            return b;
-        }
-
-        // Line up the centers, so that the center of other is the same as the center of this.
-        // Returns the offset so that other is centered.
-        public Dim getOtherInCenter(Dim other) {
-            double width = (w - other.w) / 2.0;
-            double height = (h - other.h) / 2.0;
-
-            if (w < 0 || other.w < 0) {
-                width = -1;
-            }
-            if (h < 0 || other.h < 0) {
-                height = -1;
-            }
-
-            return new Dim(width, height);
-        }
-
-        public static Rect toRect(Dim offset, Dim size) {
-            return new Rect(offset.getWidthInt(), offset.getHeightInt(),
-                    offset.getWidthInt() + size.getWidthInt(), offset.getHeightInt() +size.getHeightInt());
         }
     }
 
-    public void setMaxDimensions(double width, double height) {
-        maxDimensions.set(width, height);
+    /**
+     * <p>Returns the view at the specified index. This method can be overridden
+     * to take into account virtual children. Refer to
+     * {@link android.widget.TableLayout} and {@link android.widget.TableRow}
+     * for an example.</p>
+     *
+     * @param index the child's index
+     * @return the child at the specified index, may be {@code null}
+     */
+    View getVirtualChildAt(int index) {
+        return getChildAt(index);
     }
 
-    public void setMinDimensions(double width, double height) {
-        minDimensions.set(width, height);
+    /**
+     * <p>Returns the virtual number of children. This number might be different
+     * than the actual number of children if the layout can hold virtual
+     * children. Refer to
+     * {@link android.widget.TableLayout} and {@link android.widget.TableRow}
+     * for an example.</p>
+     *
+     * @return the virtual number of children
+     */
+    int getVirtualChildCount() {
+        return getChildCount();
     }
 
-    public void setDrawDimensions(double width, double height) {
-        drawDimension.set(width, height);
+    int measureNullChild(int childIndex) {
+        return 0;
     }
 
-    public void setMeasureDimension(double width, double height) {
-        measureDimension.set(width, height);
+    private void setChildFrame(View child, int left, int top, int width, int height) {
+        child.layout(left, top, left + width, top + height);
     }
+
+    int getLocationOffset(View child) {
+        return 0;
+    }
+
+    int getNextLocationOffset(View child) {
+        return 0;
+    }
+
+    int getChildrenSkipCount(View child, int index) {
+        return 0;
+    }
+
+
+
+    public static final String bee = "abc defghijklm nopqrstuvxyz 0123 456789ABCDEFG HIJKMNLOPQRSTUVWXYZ!@#$%^&*()\n\tline 1\n\tline2\n\tline3";
+
+
+
 }

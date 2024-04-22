@@ -75,7 +75,7 @@ public class ActivityDrugInfoPage extends AppCompatActivity {
 
         // Bad but will work for now
         //treatmentTableImageTextView.setData("$1");
-        treatmentTableImageTextView.WithData("$1");
+        treatmentTableImageTextView.setData("$1");
 
 
         expandableListTitle = new ArrayList<>();
@@ -89,8 +89,6 @@ public class ActivityDrugInfoPage extends AppCompatActivity {
 
         Log.i("ELDS", expandableListTitle.toString());
         // End of stupidity
-
-
 
         expandableListAdapter = new CustomExpandableListAdapter
                 (this, expandableListTitle,expandableListDetail);

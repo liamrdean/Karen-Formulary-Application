@@ -2,7 +2,7 @@
 
     <!-- Only change layout_height if you want everything (Yes ALL ImageTextViews) to cause errors at runtime -->
     <!-- layout_height in com.example.karenformulary.ImageTextView MUST BE wrap_content to work -->
-    <com.example.karenformulary.TestClass
+    <com.example.karenformulary.ImageTextView
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:custom="http://schemas.android.com/apk/res-auto"
         android:id="@+id/expandedListItem"

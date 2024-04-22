@@ -1,19 +1,12 @@
 DRUG_NAME,DOSAGE_EN,DOSAGE_KA,DESCRIPTION_EN,DESCRIPTION_KA,NOTE_EN,FOOD_EN,BE_CAREFUL_EN,DO_NOT_GIVE_EN,SIDE_EFFECTS_EN,INTERACTIONS_EN,PREGNANCY_EN,TESTING_KA,FOOD_KA,
 Medication,DOSAGE,DOSAGE_KA,DESCRIPTION,DESCRIPTION_KA,Note,Food,Be Careful,Do not give,Side Effects,Interactions,Pregnancy,Text for testing Karen:ကရင်,Food in Karen (no internal data so should fallback to English),
-Acyclovir,1 tab = 200 or 400 or 800 mg ,Acyclovir dosage but in Karen ကရင်, "Anti-viral: to treat Herpes Virus Diseases (Herpes Simplex, Herpes Zoster).",Acyclovir description but in Karen, "Treatment need to be started very soon after the symptoms.
-If started later than 24 hours in Varicella or 72 hours in Herpes Zoster, the
-treatment does not work: do not give",Can be taken with or without food.,"High doses (800 mg 5 times a day) can give confusion and hallucinations:
-you need to let the patient know.",Kidney disease; dehydration; with Theophylline.,"Tirenedess, headache, rash, nausea, diarrhoea, vomiting.","If given together with Cotrimoxazole, Diclofenac, Gentamicin, 
-Ibuprofen, Indomethacin, Meloxicam: increased risk of kidney 
-toxicity.",Give only if necessary, "This should only appear in Acyclovir, when Karen (test ကရင်) is enabled!",
+Acyclovir,1 tab = 200 or 400 or 800 mg ,Acyclovir dosage but in Karen ကရင်, "Anti-viral: to treat Herpes Virus Diseases (Herpes Simplex, Herpes Zoster).",Acyclovir description but in Karen, "Treatment need to be started very soon after the symptoms. If started later than 24 hours in Varicella or 72 hours in Herpes Zoster, the treatment does not work: do not give",Can be taken with or without food.,"High doses (800 mg 5 times a day) can give confusion and hallucinations: you need to let the patient know.",Kidney disease; dehydration; with Theophylline.,"Tirenedess, headache, rash, nausea, diarrhoea, vomiting.","If given together with Cotrimoxazole, Diclofenac, Gentamicin, Ibuprofen, Indomethacin, Meloxicam: increased risk of kidney toxicity.",Give only if necessary, "This should only appear in Acyclovir, when Karen (test ကရင်) is enabled!",
 Aspirin,1 tab = 300 mg,Aspirin dosage but in Karen,To treat pain and inflammation.,Aspirin description but in Karen,Take with food or full glass of water to decrease stomach upset.,"Asthma, allergy, dehydration, gastric pain, G6PD deficiency,
 old people.","Gastric ulcer, Dengue Fever, children less than 16 years.","Gastric upset, bronchospasm.","- Aspirin increases effect of Phenytoin. 
 - Prednisolone and Dexamethasone increase risk of stomach and 
 intestinal bleeding).
 - Aspirin decreases effect of Spironolactone.",Do not give last month of pregnancy.,Do not give.,"This should only appear in Aspirin, when Karen (test ကရင်) is enabled!",
-Cefalexin,1 cap = 250 or 500 mg For UTI  prophylaxis (prevention) DOSE: 12.5 mg/kg at night Open 1 (250) caps and dilute powder with 5 cc of water ! 1 cc = 50 mg,Cefalexin dosage but in Karen,"Antibiotic for bacterial infections: skin and soft tissue infections, urine tract infections,
-urine tract infections prophylaxis (prevention), pneumonia.
-1st choice antibiotic for not-compicated Urinary Tract Infections.", Cefalexin description but in Karen,"- For simple UTI (lower UTI) give for 3 days.
+Cefalexin,1 cap = 250 or 500 mg For UTI  prophylaxis (prevention) DOSE: 12.5 mg/kg at night Open 1 (250) caps and dilute powder with 5 cc of water ! 1 cc = 50 mg,Cefalexin dosage but in Karen,"Antibiotic for bacterial infections: skin and soft tissue infections, urine tract infections, urine tract infections prophylaxis (prevention), pneumonia. 1st choice antibiotic for not-compicated Urinary Tract Infections.", Cefalexin description but in Karen,"- For simple UTI (lower UTI) give for 3 days.
 - In pregnancy give for 7 days.
 - For complicated UTI (pyelonephritis) give for 7-10 days.",Can be taken with food or without food.,"- Patients with epilepsy: high levels can increase risk of seizures.
 - Patients with kidney disease: decrease dose if kidney functions is 

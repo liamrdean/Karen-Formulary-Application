@@ -1,7 +1,6 @@
 package com.example.karenformulary;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -86,13 +85,14 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
 
         }
 
+        ImageTextView expandedListTextView = convertView.findViewById(R.id.expandedListItem);
+        //expandedListTextView.add();
 
-        TestClass expandedListTextView = convertView.findViewById(R.id.expandedListItem);
-        expandedListTextView.add();
+        expandedListTextView.setData(expandedListText);
 
         // Sets data, handles setting if this is an image
-        //expandedListTextView.WithData(expandedListText);
         //expandedListTextView.setBackgroundColor(Color.parseColor("#0000FF"));
+
         return convertView;
     }
 
