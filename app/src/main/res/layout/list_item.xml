@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:custom="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="8dp">
 
     <!-- Only change layout_height if you want everything (Yes ALL ImageTextViews) to cause errors at runtime -->
     <!-- layout_height in com.example.karenformulary.ImageTextView MUST BE wrap_content to work -->
-    <com.example.karenformulary.ImageTextView
+    <com.example.karenformulary.TestClass
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
         android:id="@+id/expandedListItem"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Text in list_item.xml"
         custom:isImage="false"
-        custom:data="PLACEHOLDER. If you are reading this an error has occurred. Please report it."/>
+        custom:data="PLACEHOLDER. If you are reading this an error has occurred. Please report it." />
 
-</RelativeLayout>
 
