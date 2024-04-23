@@ -79,6 +79,35 @@ public class ImageTextView extends View {
         return data != null;// && data.charAt(0) == '$';
     }
 
+    public static Bitmap getImageBitmap(String path) {
+        InputStream inStream = null;
+        Bitmap bitmap;
+        try {
+
+
+            StringBuilder filePathBuilder = new StringBuilder("Drug_Images/");
+            // Add drug name
+            // TODO Make the paths be friendly to all OS's
+            filePathBuilder.append(ActivityDrugInfoPage.drugName);
+            filePathBuilder.append("/");
+            // Add data
+            filePathBuilder.append(path);
+
+            // Grab the picture
+            filePathBuilder.append(".png");
+
+            Log.i("TESTimg", "opening = '" + filePathBuilder.toString());
+
+            inStream = ActivityMain.assetManager.open(filePathBuilder.toString());
+            Log.i("TESTimg", "path = '" + filePathBuilder.toString() + "' ?= " + Boolean.toString(inStream != null));
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
+        bitmap = BitmapFactory.decodeStream(inStream);
+        return bitmap;
+    }
+
     // If this should be an image, init it, else set bitmap to null
     private void maybeInitImage() {
         if (!isImage) {
