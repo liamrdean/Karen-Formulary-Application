@@ -82,7 +82,7 @@ public class ActivityDrugInfoPage extends AppCompatActivity {
         //treatmentTableImageTextView.setData("$1");
         //treatmentTableImageTextView.WithData("$1");
 
-        Bitmap bitmap = ImageTextView.getImageBitmap("2");
+        Bitmap bitmap = ImageTextView.getImageBitmap("1");
         if (bitmap != null) {
             imageView2.setImageBitmap(bitmap);
         } else {
@@ -107,8 +107,6 @@ public class ActivityDrugInfoPage extends AppCompatActivity {
 
         Log.i("ELDS", expandableListTitle.toString());
         // End of stupidity
-
-
 
         expandableListAdapter = new CustomExpandableListAdapter
                 (this, expandableListTitle,expandableListDetail);

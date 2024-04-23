@@ -1,0 +1,143 @@
+DRUG_NAME,DOSAGE_EN,DOSAGE_KA,DESCRIPTION_EN,DESCRIPTION_KA,NOTE_EN,FOOD_EN,BE_CAREFUL_EN,DO_NOT_GIVE_EN,SIDE_EFFECTS_EN,INTERACTIONS_EN,PREGANCY_EN,BREAST_FEEDING_EN,IMPORTANT_EN,NOTE_KA,FOOD_KA,BE_CAREFUL_KA,DO_NOT_GIVE_KA,SIDE_EFFECTS_KA,INTERACTIONS_KA,PREGANCY_KA,BREAST_FEEDING_KA,IMPORTANT_KA
+Medication,DOSAGE,DOSAGE_KA,DESCRIPTION,DESCRIPTION_KA,Note,Food,Be Careful,Do not give,Side Effects,Interactions,Pregancy,Breast Feeding,Important,မၤနီၣ်,တၢ်အီၣ်,ပလီၢ်သး,တဘၣ်ဟ့ၣ်,တၢ်ကဲထီၣ်ထွဲသ့,ကသံၣ်မၤတၢ်ကဒဲကဒဲ,ၦၤမိၢ်ဒၢ,မိၢ်လၢဒုးအီဖိနုၢ်ထ,
+Acyclovir,1 tab = 200 or 400 or 800 mg,၁ ဖျၢၣ်=၂၀၀ (မ့) ၄၀၀ (မ့) ၈၀၀ mg,"Anti-viral: to treat Herpes Virus Diseases (Herpes Simplex, Herpes Zoster).",ကသံၣ်မၤသံယုၢ်အ့ၣ်(၀ံၤ&ူစ်)ဃၢ်တၢ်ဆါတဖၣ် (ဟ့ဖၢၣ်စ်စ့ဖျဲၣ်၊ဟ့ဖၢၣ်စ်စီစ်ထၢၣ်)။,"Treatment need to be started very soon after the symptoms. 
+ If started later than 24 hours in Varicella or 72 hours in Herpes Zoster, the 
+ treatment does not work: do not give",Can be taken with or without food.,"High doses (800 mg 5 times a day) can give confusion and hallucinations:
+ you need to let the patient know.",Kidney disease; dehydration; with Theophylline.,"Tirenedess, headache, rash, nausea, diarrhoea, vomiting.","If given together with Cotrimoxazole, Diclofenac, Gentamicin, 
+ Ibuprofen, Indomethacin, Meloxicam: increased risk of kidney 
+ toxicity.",Give only if necessary,Can give,,"တၢ်ကဘၣ်ဟ့ၣ်ကသံၣ်တဘျီဃီဖဲတၢ်ဆါအပနီၣ်ဖျါထီၣ်အခါလီၤ။
+ တၢ်မ့ၢ်စးထီၣ်ဟ့ၣ်ကသံၣ်လၢ၂၄နၣ်&ံၣ်၀ံၤအလီၢ်ခံဖဲအဘၣ်၀ဲတၢ်ထီၣ်ထါမ့တမ့ၢ်လၢ၇၂နၣ်&ံၣ်
+ ၀ံၤအလီၢ်ခံဖဲအဘၣ်၀ဲယုၢ်အ့ၣ်(ဟၣ်စိၤစ်ထၢၣ်)၀ံၤအလီၢ်ခံကသံၣ်တမၤတၢ်မၤလၢၤဘၣ်=
+ တဘၣ်ဟ့ၣ်တဂ့ၤ။တၢ်အီၣ်=",အီၣ်ဒီးတၢ်အီၣ်သ့မ့တမ့ၢ်တအီၣ်ဒီးတၢ်အီၣ်ဘၣ်သ့၀ဲစ့ၢ်ကီးလီၤ။,"နကဘၣ်ဒုးသ့ၣ်ညါၦၤဆါတဖၣ်လၢ=တၢ်အီၣ်ကသံၣ်အါ (၈၀၀ ာါ လၢတနံၤယဲၢ်ဘျီ)
+ န့ၣ်မၤထၢမံထၢမၣ်ဒီးထံၣ်တမှံတၢ်သ့၀ဲလီၤ။",ကလ့ၢ်တၢ်ဆါ၊ တၢ်ထံသံးနိသံးလၢအအိၣ်၊ ဒီး (Theophylline) ။,လီၤဘှံးလီၤတီၤ၊ ခိၣ်သၣ်ဃံဆါ၊ လိၤဖှိၣ်ထီၣ်၊ သးကလဲၤ၊ အ့ၣ်လူ။ ဘှီး။,"နမ့ၢ်ဟ့ၣ်ဃုာ်တွဲဃုာ်ဒီးကသံၣ် (Cotrimoxazole), (Diclofenac),
+ (Gentamicin), (Ibuprofen), (Indomethacin), (Meloxicam) တဖၣ်အံၤန့ၣ်ကမၤဘၣ်ဒိအါထီၣ်၀ဲကလ့ၢ်တၢ်စုၣ်တၢ်ပျၢ်တဖၣ်လီၤ။",မ့ၢ်လိၣ်နီၢ်နီၢ်ဒီးဟ့ၣ်သ့။,ဟ့ၣ်သ့။,
+Aspirin,1 tab = 300 mg,၁ ဖျၢၣ် = ၃၀၀ mg,To treat pain and inflammation.,ကသံၣ်ကူစါတၢ်အဆါဒီးတၢ်ညီး။,,Take with food or full glass of water to decrease stomach upset.,"Asthma, allergy, dehydration, gastric pain, G6PD deficiency, 
+ old people.","Gastric ulcer, Dengue Fever, children less than 16 years.","Gastric upset, bronchospasm.","- Aspirin increases effect of Phenytoin. 
+ - Prednisolone and Dexamethasone increase risk of stomach and 
+ intestinal bleeding).
+ - Aspirin decreases effect of Spironolactone.",Do not give last month of pregnancy.,Do not give.,,,အီၣ်ဃုာ်ဒီးတၢ်အီၣ်မ့တမ့ၢ်ထံတခွးလၢကမၤလီၤစှၤ၀ဲတၢ်ဟၢဖၢဆါ။,"တၢ်သးဘံးတၢ်ဆါ၊ ဂာ်တဖီး၊ တၢ်ထံသံးနိသံး၊ကဖုဆါ၊
+ (ကၠံၤစံၣ်ဖံၤဒံၤ)လီၤထုး၊ ၦၤသးၦၢ်ဖးဒိၣ်။",ကဖုတၢ်ဆါ၊ ဒဲကံၢ်တိးကွ့တၢ်ဆါ ၊ဖိသၣ်စှၤန့ၢ်၁၆နံၣ်။,ကဖုဆါ၊ကသါဃံး၊ (ဘြိခိၤစဖၤ)။,"- (Aspirin) မၤအါထီၣ်ကသံၣ (Phenytoin) အသဟီၣ်။ -(Prednisolone) ဒီး (Dexamethasone) န့ၣ်မၤအါထီၣ်၀ဲတၢ်ကီတၢ်ခဲ
+ လၢသွံၣ်ယွၤလၢကဖုဒီးၦံာ်ပူၤသ့လီၤ။ - (Aspirin) မၤလီၤစှၤကသံၣ (Spironolactone) အသဟီၣ်နၣ့်လီၤ။",တဘၣ်ဟ့ၣ်ၦၤမိၢ်ဒၢအလီၢ်ခံကတၢၢ်တလါဘၣ်။,တဘၣ်ဟ့ၣ်ဘၣ်။,
+Cefalexin,1 cap = 250 or 500 mg For UTI prophylaxis (prevention) DOSE: 12.5 mg/kg at night Open 1 (250) caps and dilute powder with 5 cc of water ! 1 cc = 50 mg,၁ ဖျၢၣ် = ၂၅၀ (မ့) ၄၀၀ mg လၢတၢ်ဒီသဒၢဆံၣ်ကျိၤတၢ်ဃၢ်နုာ်တၢ်ဆါအဂီၢ် ဒိးစ်= ၁ kg နၢ့်ဟ့ၣ် ၁၂ႉ၅ mg လၢမုၢ်နၤခ အိးထီၣ်ကသံၣ်(၂၅၀)တဖျၢၣ်ဒီးကျဲၣ်ကျီအကမူၣ်ဒီးထံ၅စံၣ်စံၣ်တက့ၢ် -> ၁ cc = ၅၀ mg,"Antibiotic for bacterial infections: skin and soft tissue infections, urine tract infections,
+ urine tract infections prophylaxis (prevention), pneumonia.
+ 1st choice antibiotic for not-compicated Urinary Tract Infections.","ကသံၣ်မၤသံ(ဘၣ်ထံ&ံယၤ)ဃၢ်နုာ်တဖၣ်= ဖံးဘ့ၣ်ဒီးဘ့ၣ်ခိၣ်တၢ်ဃၢ်နုာ်၊ ဆံၣ်ကျိၤတၢ်ဃၢ်နုာ်၊
+ တၢ်ဒီသဒၢဆံၣ်ကျိၤတၢ်ဃၢ်နုာ်၊ ပသိၣ်တၢ်ဃၢ်နုာ်။
+ ဃုထၢကသံၣ်မၤသံတၢ်ဃၢ်အခီၣ်ထံးတခါလၢၦၤဆံၣ်ကျိၤတၢ်ဃၢ်နုာ်ဘၣ်ဆၣ်တၢ်ကီတၢ်ခဲတအိၣ်ဘၣ်။","- For simple UTI (lower UTI) give for 3 days. 
+ - In pregnancy give for 7 days.
+ - For complicated UTI (pyelonephritis) give for 7-10 days.",Can be taken with food or without food.,"- Patients with epilepsy: high levels can increase risk of seizures.
+ - Patients with kidney disease: decrease dose if kidney functions is 
+ not normal.
+ - Patients who had a rash or oedema after using Amoxicillin or 
+ Penicillin.",If history of severe rash using Ceftriaxone,"Rash, headache, feeling sick (nausea, diarrhoea, stomach pain).",Zinc can decrease absorption of Cefalexin. Do not give together,Can give,Can give,,"- ဆံၣ်ကျိၤတၢ်ဃၢ်နုာ်(ဆံၣ်ကျိၤတၢ်ဃၢ်နုာ်လၢဖီလာ်)ယိယိဖိန့ၣ်ဟ့ၣ်လၢ၃သီအတီၢ်ပူၤ။
+ - ၦၤမိၢ်ဒၢန့ၣ်ဟ့ၣ်အီၤနွံသီတက့ၢ်။
+ - ၦၤလၢအိၣ်ဒီးဆံၣကျိၤတၢ်ဃၢ်နုာ်တၢ်ဆါတၢ်ကီတၢ်ခဲ(ကလ့ၢ်ညီး)ဟ့ၣ်အီၤ ၇=၁၀
+ သီတက့ၢ်။",အီၣ်ဒီးတၢ်အီၣ်သ့မ့တမ့ၢ်တအီၣ်တၢ်အီၣ်ဘၣ်သ့၀ဲစ့ၢ်ကီးလီၤ။,"- ၦၤဆါလၢအအိၣ်ဒီးတၢ်ထီၣ်ထိးပျုၢ်တၢ်ဆါ။
+ - ကသံၣ်အဂံၢ်မ့ၢ်ဆူၣ်န့ၣ်မၤဘၣ်ဒိ၀ဲၦၤလၢအအိၣ်ဒီးတၢ်ထီၣ်တၢ်ဆါတဖၣ်။
+ - ၦၤလၢအိၣ်ဒီးကလ့ၢ်တၢ်ဆါဟ့ၣ်လီၤစှၤကသံၣ်ဒိးစ်ဖဲအကလ့ၢ်တမၤတၢ်ဂ့ၤ
+ ဂ့ၤဘၣ်တက့ၢ်။
+ - ၦၤဆါလၢမ့ၢ်အီ၀ဲကသံၣ (Amoxicillin) မ့ (Penicillin) တဖၣ်အံၤ၀ံၤန့ၣ်
+ အလိၤဖှိၣ်ထီၣ်မ့တမ့ၢ်ကဘု။",ၦၤလၢအီ၀ဲကသံၣ (Ceftriaxone) အံၤဒီးအလိၤထီၣ်နးနးကလဲာ် တဖၣ်။,"လိၤထီၣ်ဂီၤပြုထီၣ်=ခိၣ်ဆါ=တူၢ်ဘၣ်လၢဆိက့ (သးကလဲၤ၊ အ့ၣ်လူ၊
+ ဟၢဖၢဆါ)။","ကသံၣ (Zinc) န့ၣ်မၤလီၤစၢ်၀ (Cefalexin) အသဟီၣ်လီၤ။
+ တဘၣ်ဟ့ၣ်ဃုာ်တဂ့ၤ။",ဟ့ၣ်သ့။,ဟ့ၣ်သ့ၢ။,
+Cetirizine,1 tab = 10 mg,၁ ဖျၢၣ် = ၁၀ mg,"Anti-allergic which does not make people too sleepy.
+ For urticaria and allergic reactions (does not treat the cause, only the symptoms)","ကသံၣ်ကူစါ ဂာ်တဖီး လၢအတမၤမံခ့နၤဒိၣ်ဒိၣ်ဘၣ်။
+ တၢ်ဘ့ၣ်ပြုထီၣ်မဲာ်ညိးဒီးဂာ်တဖီးတၢ်ဒိဆၢက့ၤတၢ်
+ (တဘၣ်ကူစါယါဘျါလၢတၢ်ဆါအဂီၢ်ဘၣ်မ့ၢ်၀ဲဒၣ်လၢတၢ်ဆါအတၢ်ပနီၣ်အဂီၢ်လီၤ)။",,Can be taken with or without food,"Old people, people with liver and kidney diseases, epilepsy, people who
+ drink alcohol, people who work with machinery or driving.",,"Headache (especially in children), drowsiness, abdominal pain.",Alcohol increases drowsiness.,Give only if necessary,Give only if necessary,,,အီၣ်ဒီးတၢ်အီၣ်သ့မ့တမ့ၢ်တအီၣ်ဒီးတၢ်အီၣ်ဘၣ်သ့၀ဲစ့ၢ်ကီးလီၤ။,"ၦၤသူၣ်က့သးၦၢ်၊ ၦၤလၢအအိၣ်ဒီးသူၣ်တၢ်ဆါကလ့ၢ်တၢ်ဆါတဖၣ်၊ တၢ်ထီၣ်ထိးပျုၢ်
+ တၢ်ဆါ၊ ၦၤလၢသူတၢ်မူၤတၢ်ဘှီး၊ ၦၤလၢအမၤတၢ်လၢစဲးဖီကဟၣ်မ့တမ့ၢ်ၦၤနီကါ။",,ခိၣ်ဆါ(လီၤဆီဒၣ်တၢ်ဖိသၣ်တဖၣ်)၊ မိၣ်မံခ့သး၊ ဟၢဖၢဆါ။,တၢ်မူၤတၢ်ဘှီးန့ၣ်မၤအါထီၣ်၀ဲတၢ်မိၣ်မံခ့သး။,မ့ၢ်လိၣ်နီၢ်နီၢ်။,မ့ၢ်လိၣ်နီၢ်နီၢ်။,
+Enalapril,1 tab = 5 or 20 mg,၁ ဖျၢၣ် = ၅ (မ့) ၂၀ mg,"To treat high blood pressure, heart failure. If possible, ask a doctor for advice.","တၢ်ကူစါသွံၣ်တၢ်ဆီၣ်သနံးထီၣ်၊ သးဖျၢၣ်တမၤတၢ်မၤဘၣ်။
+ မ့ၢ်သ့နၢ့်ဃ့ကသံၣ်သ&ၣ်ဖးဒိၣ်အတၢ်ဟ့ၣ်ကူၣ်တက့ၢ်။","Can be given in combination with Amlodipine and
+ Hydrochlorothiazide.",Can take with or without food.,"If possible, avoid using in people with kidney problems",Together with Spironolactone (there is risk of high Potassium).,"Blood Pressure can decrease too much, kidney problems, dry 
+ cough, high Potassium.","- Aluminium decreases absorption of Enalapril.
+ - Alcohol, Atenonolol, Hydrochlorothiazide, Furosemide increase
+ effect.",Do not give.,Avoid during first month.,See Hydrochlorothiazide.,ဟ့ၣ်ဃုာ်ဒီးကသံၣ်ပာ်ဖှိၣ်ဃုာ် (Amlodipine) ဒီး (Hydrochlorothiazide)သ့။,အီၣ်ဒီးတၢ်အီၣ်သ့မ့တမ့ၢ်တအီၣ်ဒီးတၢ်အီၣ်ဘၣ်သ့၀ဲစ့ၢ်ကီးလီၤ။,မ့ၢ်သ့န့ၣ်တဘၣ်သူဃုာ်ဒီးၦၤဆါလၢအိၣ်ဒီးကလ့ၢ်တၢ်ကီတၢ်ခဲသ့ၣ်တဖၣ်။,ဟ့ၣ်ဃုာ်ဒီး (Spironolactone) တၢ်ဘၣ်ယိၣ်အိၣ်လၢ (Potassium)ကအါထီၣ်ဒိၣ်တလၢန့ၣ်လီၤ။,သွံၣ်အတၢ်ဆီၣ်သနံးကလီၤစှၤဒိၣ်တလၢ၊ ကလ့ၢ်တၢ်ကီတၢ်ခဲ၊ကိး ဃ့ထီ၊ (Potassium) အါထီၣ်။,"- (Aluminium) ထုးလီၤစှၤကသံၣ (Enalapril) အသဟီၣ်။ - (Alcohol, Atenonolol, Hydrochlorothiazide, Furosemide) မၤအါထီၣ်ကသံၣ် (Enalapril) အသဟီၣ်။",တဘၣ်ဟ့ၣ်ဘၣ်။,ဖိမ့ၢ်စှၤန ့ၢ်တလါဒုးအီၣ်တဂ့ၤ။,ကွၢ်လၢ (Hydrochlorothiazide) ။
+Fluoxetine,1 tab = 20 mg,၁ ဖျၢၣ် = ၂၀ mg,"Anti-depressant, generalised anxiety disorder and panic disorder.","ကသံၣ်မၤဘျါတၢ်သးဟးဂီၤတၢ်ဆါတၢ်သူၣ်ပိၢ်သး၀းလၢတဘၣ်လီၢ်ဘၣ်စးဒီးပျံၤတၢ်လၢတဘၣ်
+ လီၢ်ဘၣ် စး။","- To stop therapy, reduce slowly by 10 mg every 2 - 4 weeks.
+ - Patients may have more anxiety for the first 2 - 3 weeks after starting
+ the medication.",Can be taken with food or without food.,"- Heart disease, diabetes, epilepsy, gastro-intestinal bleeding.
+ - In young adult can cause suicidal thinking.
+ - Patients should not drive or operating machinery.","- With Amitryptiline; with Tramadol.
+ - To patients with not controlled epilepsy","- Diarrhoea, abdominal pain, nausea, constipation, gastric pain,
+ anxiety, convulsions, drowsiness, dizziness, dry mouth, dry eyes, 
+ headache, increased sweating, decreased libido.
+ - RARE SYNDROME: tremor, rigidity, tachycadia, high or low blood
+ pressure, diarrhoea, shivering, high temperature, agitation, confusion","- Alcohol: more risk of feeling sleepy.
+ - Carbamazepine, Phenobarbitone, Phenytoin: reduce effect of 
+ Fluoxetine.
+ - Fluoxetine decreases effect of Carbamazepine, 
+ Phenobarbitone, Phenytoin.",Give only if necessary,Give only if necessary,,"- လၢတၢ်ကပတုာ်ကသံၣ်အဂီၢ်၊မၤလီၤစှၤကသံၣ်ဒိးစ်ကယီကယီ၁၀ mg ၂=၄နွံ
+  တဘျီတက့ၢ်။
+ - ၦၤဆါအံၤကအိၣ်ဒီးတၢ်သူၣ်ပိၢ်သး၀းဒိၣ်ဒိၣ်သ့၀ဲဖဲစးထီၣ်အီၣ်၀ဲကသံၣ်လၢအခီၣ်ထံး
+ ၂=၃နွံလီၤ။",အီၣ်ဒီးတၢ်အီၣ်သ့မ့တမ့ၢ်တအီၣ်ဒီးတၢ်အီၣ်ဘၣ်သ့၀ဲစ့ၢ်ကီးလီၤ။,"- ၦၤလၢအိၣ်ဒီးသးတၢ်ဆါ၊ဆံၣ်ဆၢတၢ်ဆါ၊တၢ်ထီၣ်ထိးပျုၢ်တၢ်ဆါ။
+ - ၦံာ်သွံၣ်ယွၤ၊ၦၤသးစၢ်တဖၣ်အီၣ်သံလီၤအသးသ့၀ဲလီၤ။
+ - ၦၤဆါတဖၣ်တဘၣ်နီကါမ့တမ့ၢ်မၤစဲးဖီကဟၣ်အတၢ်မၤဘၣ်။","- ဃုာ်ဒီး(Amitryptiline)။ ဃုာ်ဒီး(Tramadol)။
+ - လၢၦၤဆါလၢအပၢၤဃာ်တၢ်ထီၣ်ထိးပျုၢ်တၢ်ဆါတန့ၢ်ဘၣ်တဖၣ်အအိၣ်တဂ့ၤ။","- တၢ်ဟၢဖၢလူ၊ တၢ်ဟၢဖၢဆါ၊ သးကလဲၤ၊ အ့ၣ်ကျၢၤ၊ကဖုဆါ၊
+ သူၣ်ပိၢ်သး၀းတၢ်ထီၣ်ကနိး၊ မိၣ်မံခ့သး၊ ခိၣ်မူၤ၊ ကိာ်ပူၤဃ့ထီ၊
+ မဲာ်ချံဃ့ထီခိၣ်ဆါမၤအါထီၣ်ကပၢၤ၊ မၤလီၤစှၤတၢ်သးကတၢ။
+ - တၢ်ဆါပနီၣ်လၢတညီနုၢ်ကဲထီၣ်သး=စုကနိး၊ ဆှိၣ်ထီၣ်၊ သးစံၣ်ချ့
+ သွံၣ်တၢ်ဆီၣ်သနံးထီၣ်မ့တမ့ၢ်စှၤလီၤ၊တၢ်အ့ၣ်လူ၊ တၢ်ဂၢၢ်ကနိး၊
+ တၢ်ကိၢ်ထီၣ်ဒိၣ်ဒိၣ်၊ ပတုာ်တၢ်ဟူးတၢ်ဂဲၤတန့ၢ်ဘၣ်၊ ထၢမံထၢမၣ်။","- တၢ်မူၤတၢ်ဘှီး=မၤလီၤမံခ့ကထုတၢ်အါထီၣ်။ - (Carbamazepine, Phenobarbitone, Phenytoin) မၤလီၤစှၤ (Fluoxetine) အသဟီၣ်။ - (Fluoxetine)မၤလီၤစှၤ (Carbamazepine, Phenobarbitone,
+ Phenytoin)အသဟီၣ်။",ဟ့ၣ်ဖဲမ့ၢ်လိၣ်နီၢ်နီၢ်။,ဟ့ၣ်ဖဲမ့ၢ်လိၣ်နီၢ်နီၢ်။,
+Gentamicin,1 amp = 2 cc = 80 mg,၁ ပလီ = ၂ ခခ = ၈၀ mg,"Antibiotic to use together with ampicillin for severe bacterial infections:
+ meningitis, sepsis, severe pneumonia, severe kidney infections, severe biliary-tract
+ infections, severe trauma.","ကသံၣ်မၤသံ (ဘၣ်ထံ&ံယၤ) ဃၢ်သူဃုာ်ဒီး (Ampicillin) လၢ (ဘၣ်ထံ&ံယၤ) ဃၢ်နုာ်လၢအနး၊
+ လၢခိၣ်နူာ်သလီ၊ လၢသွံၣ်ကျါ၊ လၢပသိၣ်လၢအနး၊ လၢကလ့ၢ်လၢအနး၊ လၢသဒံကျိၤလၢအနး၊
+ တၢ်ဘၣ်ဒိဘၣ်ထံးလၢအနး။","- If possible, calculate the dose by weight.
+ - Can use Ceftriaxone instead of Ampicillin+Gentamicin.
+ - Max duration 7 days.",,Kidney disease.,"If possible, do not give with Furosemide. If you have to, give
+ one drug in the morning and the other one in the evening.",Ear and kidney damage,,If possible avoid and use Ceftriaxone.,Can give,,"- မ့ၢ်သ့န့ၣ်ကဘၣ်ဒွး(ဒိးစ်) လၢၦၤဆါအကံလိအဖီခိၣ်။
+ - နသူကသံၣ် (Ceftriaxone) လၢ(Ampicillin+Gentamicin) အခၢၣ်စးသ့။
+ - ဟ့ၣ်အါကတၢၢ်၇သီ။",,ကလ့ၢ်တၢ်ဆါ။,"မ့ၢ်သ့တဘၣ်ဟ့ၣ်ဃုာ်ဒီး (Furosemide) ဘၣ်။ မၢ့်လိၣ်နီၢ်နီၢ်ဒီးဟ့ၣ်တမၠိ
+ လၢဂီၤခီဒီးအဂၤတမၠိလၢဟါခီ။",နၢ်ဒီးကလ့ၢ်ဟးဂီၤ။,,မ့ၢ်သ့ဟးဆှဲးဒီးသ (Ceftriaxone) တက့ၢ်။,ဟ့ၣ်သ့။,
+Ibuprofen,1 tab = 200 or 400 mg,၁ ဖျၢၣ် = ၂၀၀ (မ့) ၄၀၀ mg,"To treat pain, inflammation, fever with discomfort in children.",ကသံၣ်ကူစါတၢ်အဆါ၊ တၢ်ညီး၊ တၢ်ကိၢ်ထီၣ်ဃုာ်ဒီးအိၣ်တမုာ်သ့ၣ်တဖၣ်လၢဖိသၣ်။,"People’s bodies react in different ways to anti-inflammatories: one medicine 
+ can be good for one person but not for another. 
+  For example: one person can improve with Ibuprofen but not with Diclofenac; 
+  another can improve with Diclofenac but not with Ibuprofen; another can 
+  improve with Indomethacin and not with Diclofenac, etc. This means that if a 
+  person does not get better with one, you can try another one and then 
+  another one. Anti-inflammatories found in different clinics: Aspirin, Diclofenac, 
+  Ibuprofen, Indomethacin, Ketoprofen, Meloxicam, Naproxen.",Take with food or milk to avoid gastric upset,"Old people, kidney problems, asthma, heart problems.","Peptic ulcer (new and old); Dengue fever, together with Aspirin, 
+ allergy to Aspirin, kidney failure, severe heart failure, severe liver 
+ disease.","Stomach pain,peptic ulcers, kidney damage, rash, headache, 
+ dizziness, hearing problems; kidney failure.","- Ciprofloxacin and Norfloxacin: more risk of convulsions.
+ - Dexamethasone and Prednisolone (corticosteroid group): more risk 
+ of stomach bleeding.
+ - Furosemide and Hydrochlothiazide: more risk of kidney damage.
+ - Ibuprofen increases effects of Phenytoin.
+ - Ibuprofen decreases effects of Atenolol and Propanolol.",Do not give.,Give only if necessary,,"ၦၤကညီမိၢ်ၦၢ်န့ၣ်အံၤမၤဆၢ၀ဲကသံၣ်မၤဘျါတၢ်ညီးအံၤလၢကျဲအါဘိလီၤ။ကသံၣ်တခါန့ၣ်
+ ကဂ့ၤ၀ဲလၢၦၤတဂၤအဂီၢ်ဘၣ်ဆၣ်တဂ့ၤလၢၦၤအဂၤတဂၤအဂီၢ်သ့၀ဲလီၤ။ အဒိ=ၦၤတဂၤန့ၣ်အီၣ်၀ဲကသံၣ (Ibuprofen) ဒီးကိညၢ်လီၤ၀ဲဘၣ်ဆၣ်အီၣ်၀ဲ (Diclofenac) တကိညၢ်လီၤဘၣ်။ ၦၤအဂၤတဂၤန့ၣ်အီၣ်၀ဲ (Diclofenac) ဒီးကိညၢ်လီၤဘၣ်ဆၣ်မ့ၢ်အီၣ် (Ibuprofen) န့ၣ်တကိညၢ်လီၤဘၣ်။
+ ၦၤအဂၤတဂၤန့ၣ်အီၣ်၀ဲ (Indomethacin) ဒီးကိညၢ်လီၤဘၣ်ဆၣ်မ့ၢ်အီၣ် (Diclofenac) န့ၣ်တကိညၢ်လီၤဘၣ်။ လၢတၢ်န့ၣ်၊အဃိၦၤတဂၤအံၤအီၣ်၀ဲ
+ ကသံၣ်အံၤ မ့ၢ်တကိညၢ်လီၤဘၣ်ဒီဟ့ၣ်အီၤကသံၣ်အဂၤတခါ၀ံၤအဂၤတခါတက့ၢ်။
+ တၢ်မၤဘျါတၢ်ညီးအကသံၣ်လၢအိၣ်၀ဲဒၣ်လၢကသံၣ်ဒၢးတဖၣ်= (Aspirin)၊
+ (Diclofenac)၊(Ibuprofen)၊(Indomethacin)၊ (Ketoprofen)၊ (Meloxicam)၊
+ Naproxen။",အီၣ်ဃုာ်ဒီးတၢ်အီၣ်မ့တမ့ၢ်တၢ်နုၢ်ထံဒ်သိးတမၤဘၣ်ဒိကဖုဆါတဂ့ၤအဂီၢ်တက့ၢ်။,ၦၤသးၦၢ်ဖးဒိၣ်၊ ကလ့ၢ်တၢ်ဆါ၊ တၢ်သးဘံးတၢ်ဆါဒီးသးဖျၢၣ်တၢ်ဆါ။,ကဖုတၢ်ဆါ(အသီဒီးလီၢ်လံၤ)၊ ဒဲကံၢ်တိၤကွ့၊ တဘၣ်ဟ့ၣ်ဃုာ်ဒီး (Aspirin) တဂ့ၤ၊ၦၤလၢအတဖီးဒီး (Aspirin)၊ ကလ့ၢ်တမၤတၢ်မၤဘၣ်၊သးဖျၢၣ်တမၤတၢ်မၤဘၣ်အ နး၊ သူၣ်တၢ်ဆါလၢအနးနၣ့်လီၤ။,ဟၢဖၢဆါ၊ ကဖုတၢ်ဆါသ့ၣ်တဖၣ်၊ ကလ့ၢ်ဟးဂီၤ၊ လိၤဖှိၣ်ထီၣ်၊ ခိၣ်ဆါ၊ ခိၣ်မူၤ၊ နၣ်ဟူတၢ်တဂ့ၤဘၣ်၊ ကလ့ၢ်တမၤတၢ်မၤဘၣ်။,-(Ciprofloxacin)ဒီး(Norfloxacin)-တၢ်ဘၣ်ယိၣ်အါထီၣ်လၢတၢ်ထီၣ်တၢ်ဆါအဂီၢ်။ - (Dexamethasone)ဒီး(Prednisolone)-တၢ်လီၤဘၣ်ယိၣ်အါထီၣ်လၢကဖုသွံၣ်ယွၤဂီၢ။ - (Furosemide)ဒီး (Hydrochlothiazide) တၢ်လီၤဘၣ်ယိၣ်အါထီၣ်လၢကလ့ၢ်ဟးဂီၤသ့။ - (Ibuprofen) မၤအါထီၣ်ကသံၣ (Phenytoin) အသဟီၣ်လီၤ။ - (Ibuprofen) ထုးလီၤစှၤ (Atenolol) ဒီး (Propanolol) အသဟီၣ်လီၤ။,တဘၣ်ဟ့ၣ်ဘၣ်။,မ့ၢ်လိၢ်နီၢ်နီၢ်ဟ့ၣ်သ့။,
+Lidocaine,1 amp 1% = 1cc = 10 mg. 1 amp 2% = 1cc = 20 mg,၁ ပလီ ၁% = ၁ cc = ၁၀ mg ၁ ပလီ ၂% = ၁ cc = ၂၀ mg,For local anaesthesia.,ကသံၣ်မၤတီၢ်တုၤတၢ် (ထုံေဆး)။,,,"Epilepsy, severe shock, liver and kidney problems, pregnancy.",,,,Can give (but careful with high doses in last 3 months).,,,,,တၢ်ဆါပျုၢ်ထီး၊ သါပ့ၤနီၣ်သးသတူၢ်ကလာ်(&ှီၣ်)၊ သူၣ်ဒီးကလ့ၢ်တၢ်ကီတၢ်ခဲ၊ၦၤမိၢ်ဒၢ။,,,,ဟ့ၣ်သ့(ဘၣ်ဆၣ်ကဘၣ်ပလီၢ်သးလၢကသံၣ်အ(ဒိးစ်)ဒိၣ်ဖဲအလီၢ်ခံကတၢၢ်၃လါနၣ့်လီၤ)။,ဟ့ၣ်သ့။,
+Mebendazole,1 tab = 100 or 500 mg,၁ ဖျၢၣ် = ၁၀၀(မ့) ၅၀၀ mg,"Anti-worm (roundworms, hookworms, pinworms).
+ NOT effective for FLAT WORMS.","ကသံၣ်ထိးကလဲာ်(ထိးကလဲာ်အဖျၢၣ်၊ ထိးကလဲာ်ထးဘျး၊ ထိးကလဲာ်လုၣ်ဖျ ့)။
+ လၢထိးကလဲာ်အဘံၣ်ဂီၢ်တကဲဘျုးဘၣ်။",,"- Can be taken with food or without food.
+ - Tablets can be crushed and mixed with food.
+ - Tablets can be chewed or swallowed whole.",,,,,Do not give first 3 months.,Can give,,,"- အီၣ်ဒီးတၢ်အီၣ်သ့မ့တမ့ၢ်တအီၣ်ဒီးတၢ်အီၣ်ဘၣ်သ့၀ဲစ့ၢ်ကီးလီၤ။
+ - ကသံၣ်ဖျၢၣ်အံၤတၢ်မၤဘျဲးဒီးဃါဃုာ်လၢတၢ်အီၣ်ကျါသ့၀ဲလီၤ။
+ - ကသံၣ်ဖျၢၣ်အံၤတၢ်အ့ၣ်ဘျဲးအီၤမ့တမ့ၢ်ယုၢ်လီၤအီၤဒီတိၣ်သ့၀ဲလီၤ။",,,,,တဘၣ်ဟၣ့်ၦၤမိၢ်ဒၢလၢအဒၢထီၣ်သီသၢလါအတီၢ်ပူၤတဂ့ၤ။,ဟ့ၣ်သ့။,
+Prednisolone,1 tab = 5 mg,၁ ဖျၢၣ် = ၅ mg,"For severe allergic reaction, asthma, Nephrotic Syndrome, Rheumatic Fever.",တၢ်ဆါလၢဟဲကဲထီၣ်သးဒီးဂာ်တဖီးတၢ်ဒိဆၢက့ၤတၢ်လၢအနး၊ တၢ်သးဘံး၊ ကလ့ၢ်တၢ်ဆါ (Nephrotic Syndrome) ဒီး(&ူၢ်မဲၣ်တံၣ်)တၢ်ကိၢ်ထီၣ်။,"- Better to take it in the morning in a single dose after breakfast.
+ - Give Albendazole to prevent worm spread.
+ - Be sure patient does not have TB if giving long course (can make it worse).
+ - Do not stop suddenly if given for more than 3 weeks, but decrease slowly.",Take with food or milk or after meal to decrease gastric upset.,"Hypertension, heart failure, liver and kidney disease, diabetes, 
+ osteoporosis, glaucoma, epilepsy, peptic ulcer, hypothyroidism.",Peptic ulcer.,"In chronic use: 
+ Diabetes, osteoporosis, gastric upset, increased severity of
+ infections, candida, epilepsy, glaucoma, cataract, muscle 
+ weakness, bone fracture, tendon rupture, increased weight, 
+ irregular periods.","- NSAID (Ibuprofen, Indomethacin) and Aspirin: more risk of
+ ` bleeding from stomach and bowel.
+ - Prednisolone reduces effect of Anti-diabetics, Atenolol,
+ Propranolol, Furosemide, Hydochlorothiazide and Methyldopa","Can give max 40 mg OD for short courses
+ (up to 5 days).","Can give max 40 mg OD for short courses
+ (up to 5 days).",,"- အီလၢဂီၤခီတနံၤတဘျီနၢ့်ဂ့ၤဒိၣ်၀ဲလီၤ(အီၣ်ဂီၤခီတၢ်အီၣ်၀ံၤ)။
+ - ဟ့ၣ်ကသံၣ်ထိးကလဲၤ (Albendazole) လၢကဒီသဒၢဃာ်ထိးကလဲၤအါထီၣ်အဂီၢ်။ - မၤလီၤတံၢ်လၢၦၤဆါအံၤတဘၣ်အိၣ်ဒီး (ထံၣ်ဘံၣ်)ဘၣ်။ မ့ၢ်ဟ့ၣ်ကသံၣ်အီၣ်
+  အံၤလၢအယံာ်ဒီးတၢ်ဆါကနးထီၣ်လီၤ။
+ - မ့ၢ်ဟ့ၣ်အါနၢ့် ၃ နွံတဘၣ်ပတုာ်သတူၢ်ကလာ်တဂ့ၤဘၣ်ဆၣ်မၤလီၤစှၤလီၤ
+ ကယီကယီတက့ၢ်။",အီၣ်ဒီးတၢ်အီၣ်မ့တမ့ၢ်တၢ်နုၢ်ထံမ့တမ့ၢ်အီၣ်တၢ်အီၣ်၀ံၤအလီၢ်ခံဒ်သိးကမၤ,သွံၣ်တၢ်ဆီၣ်သနံးထီၣ်၊ သးတမၤတၢ်မၤဘၣ်၊ သူၣ်ဒီးကလ့ၢ်တၢ်ဆါ၊ ဆံၣ်ဆၢ တၢ်ဆါ၊ ဃံၦၢ်ဃံကၠီး(အီစတံအိဖိ&ိစံၣ်)၊ မဲာ်ချံပူၤတၢ်ဆီၣ်သနံးအါထီၣ် (ကျိခိၤမၣ်)၊ ထီးပျုၢ်တၢ်ဆါ၊ ကဖုပူၤလီၢ်ထီၣ်၊ (သါ&ီၣ်အံၣ်)မၤတၢ်မၤလီၤစှၤ။,ကဖုပူၤလီၢ်အိၣ်တၢ်ဆါ။,"သူအီၤလၢအယံာ်အထၢ
+ ဆံၣ်ဆၢတၢ်ဆါ၊ ဃံၦၢ်ဃံကၠီး(အီစတ့အိဖိ&ိစံၣ်)၊ ကဖုဆါ၊ လၢတၢ်ဃၢ်နုာ်ဃိတၢ်ဆါနးထီၣ်၊ ကုၤဃၢ်(ခါနဒံဒၤ)၊ ထီးပျုၢ်တၢ်ဆါ၊ မဲာ်ချံပူၤတၢ်ဆီၣ်သနံးအါထီၣ်(ကျိခိၤမၣ်)၊ မဲာ်ၦာ်ဖိထီၣ်၀ါ(ခဲထါ&ဲၣ်)၊ ယုၢ်ညၣ်အဂံၢ်စၢ်၊ ဃံကၢ်၊ထူၣ်ပျၢ်သ့ၣ်ဖး၊ ကံလိအါထီၣ်၊ လုၢ်လၢ်ဟဲတဘၣ်လီၢ်ဘၣ်စး။","- NSAID (Ibuprofen)၊ (Indomethacin) ဒီး (Aspirin) -ဟ့ၣ်ဂံၢ်ဟ့ၣ်ဘါသွံၣ်ယွၤလၢကဖုဒီးၦံၤဖိသ့ၣ်တဖၣ်နၣ့်လီၤ။ - (Prednisolone)မၤလီၤစှၤကသံၣ် .f (Anti-diabetics)၊ (Atenolol)၊
+ (Propranolol)၊ (Furosemide)၊ (Hydochlorothiazide)ဒီး (Methyldopa) အသဟီၣ်နၣ့်လီၤ။","ဟ့ၣ်သ့ကသံၣ်(အဒိးစ်)လၢအဒိၣ် ၄၀ mg ၊
+ တနံၤ၁ဘျီတၢ်ဆၢကတီၢ်လၢအဖုၣ် (တုၤ ၅ သီ)။","ဟ့ၣ်သ့ကသံၣ်(အဒိးစ်)လၢအဒိၣ် ၄၀ mg ၊
+ တနံၤ၁ဘျီတၢ်ဆၢကတီၢ်လၢအဖုၣ် (တုၤ ၅ သီ)။",
