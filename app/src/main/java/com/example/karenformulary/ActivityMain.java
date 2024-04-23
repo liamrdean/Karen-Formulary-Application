@@ -38,6 +38,16 @@ public class ActivityMain extends AppCompatActivity {
         Resources resources = this.getResources();
         assetManager = resources.getAssets();
         dbHelper = new DB_Helper(this);
+
+        if (!dbHelper.isInitalized) {
+            Log.i("DB_HELPER", "Attempting init from main");
+            dbHelper.init();
+
+            if (!dbHelper.isInitalized) {
+                Log.e("KaForm INIT", "DB_Helper failed to initalize");
+            }
+        }
+
         // Force dbHelper to call onCreate or onUpgrade
         dbHelper.getWritableDatabase().close();
 

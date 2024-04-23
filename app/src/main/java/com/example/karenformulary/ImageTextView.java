@@ -1,11 +1,17 @@
 package com.example.karenformulary;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import java.io.IOException;
+import java.io.InputStream;
 
 public class ImageTextView extends LinearLayout {
 
@@ -54,6 +60,12 @@ public class ImageTextView extends LinearLayout {
         createTextView();
     }
 
+    private void createTextView() {
+        textView = new TextView(myContext);
+        textView.setLayoutParams(generateDefaultLayoutParams());
+        this.addView(textView);
+    }
+
     public void setText(String text) {
         setData(text);
     }
@@ -72,12 +84,6 @@ public class ImageTextView extends LinearLayout {
 
     public void setTextSize(float size) {
         textView.setTextSize(size);
-    }
-
-    private void createTextView() {
-        textView = new TextView(myContext);
-        textView.setLayoutParams(generateDefaultLayoutParams());
-        this.addView(textView);
     }
 
     /*
