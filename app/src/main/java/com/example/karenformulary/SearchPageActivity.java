@@ -76,6 +76,14 @@ public class SearchPageActivity extends AppCompatActivity {
 	}
 
 	@Override
+	protected void onResume() {
+		super.onResume();
+		searchHelper.buildFromFile();
+	}
+
+
+
+	@Override
 	public boolean onSupportNavigateUp() {
 		finish();
 		return true;

@@ -2,10 +2,13 @@ package com.example.karenformulary;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.res.Resources;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -22,6 +25,7 @@ public class ActivityDrugInfoPage extends AppCompatActivity {
     TextView dosageTextView;
     TextView descriptionTextView;
     ImageTextView treatmentTableImageTextView;
+    ImageView imageView2;
 
     List<String> expandableListTitle;
     HashMap<String,List<String>> expandableListDetail;
@@ -34,7 +38,8 @@ public class ActivityDrugInfoPage extends AppCompatActivity {
         nameTextView = findViewById(R.id.txDrugName);
         dosageTextView = findViewById(R.id.txDosage);
         descriptionTextView = findViewById(R.id.txDrugDescription);
-        treatmentTableImageTextView = findViewById(R.id.imageTextViewTreatmentTable);
+        //treatmentTableImageTextView = findViewById(R.id.imageTextViewTreatmentTable);
+        imageView2 = findViewById(R.id.imageView2);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         // For now hard coded to Dihydrogen Monoxide
@@ -75,7 +80,20 @@ public class ActivityDrugInfoPage extends AppCompatActivity {
 
         // Bad but will work for now
         //treatmentTableImageTextView.setData("$1");
-        treatmentTableImageTextView.setData("$1");
+        //treatmentTableImageTextView.WithData("$1");
+
+        Bitmap bitmap = ImageTextView.getImageBitmap("1");
+        if (bitmap != null) {
+            imageView2.setImageBitmap(bitmap);
+        } else {
+            imageView2.setImageResource(R.drawable.test2);
+        }
+        int screen_width  = Resources.getSystem().getDisplayMetrics().widthPixels;
+        int width = imageView2.getDrawable().getIntrinsicWidth();
+        int height = imageView2.getDrawable().getIntrinsicHeight();
+        double scale = (double)(screen_width)/width;
+        int final_height = Math.toIntExact(Math.round(scale * height));
+        imageView2.getLayoutParams().height = final_height;
 
 
         expandableListTitle = new ArrayList<>();

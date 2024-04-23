@@ -15,7 +15,36 @@ public class ImageTextView extends LinearLayout {
     // The text/img path data
     private String data;
 
-    public ImageTextView(Context context) {
+    public static Bitmap getImageBitmap(String path) {
+        InputStream inStream = null;
+        Bitmap bitmap;
+        try {
+
+
+            StringBuilder filePathBuilder = new StringBuilder("Drug_Images/");
+            // Add drug name
+            // TODO Make the paths be friendly to all OS's
+            filePathBuilder.append(ActivityDrugInfoPage.drugName);
+            filePathBuilder.append("/");
+            // Add data
+            filePathBuilder.append(path);
+
+            // Grab the picture
+            filePathBuilder.append(".png");
+
+            Log.i("TESTimg", "opening = '" + filePathBuilder.toString());
+
+            inStream = ActivityMain.assetManager.open(filePathBuilder.toString());
+            Log.i("TESTimg", "path = '" + filePathBuilder.toString() + "' ?= " + Boolean.toString(inStream != null));
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
+        bitmap = BitmapFactory.decodeStream(inStream);
+        return bitmap;
+    }
+
+  public ImageTextView(Context context) {
         this(context, null);
     }
 
@@ -237,11 +266,4 @@ public class ImageTextView extends LinearLayout {
     int getChildrenSkipCount(View child, int index) {
         return 0;
     }
-
-
-
-    public static final String bee = "abc defghijklm nopqrstuvxyz 0123 456789ABCDEFG HIJKMNLOPQRSTUVWXYZ!@#$%^&*()\n\tline 1\n\tline2\n\tline3";
-
-
-
 }
