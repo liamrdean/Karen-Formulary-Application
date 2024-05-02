@@ -30,12 +30,20 @@ public class ImageTextView extends LinearLayout {
             StringBuilder filePathBuilder = new StringBuilder("Drug_Images/");
             // Add drug name
             // TODO Make the paths be friendly to all OS's
-            filePathBuilder.append(ActivityDrugInfoPage.drugName);
+            String friendlyPath = ActivityDrugInfoPage.drugName;
+            String badChars = "\\/:*?\"<>|";
+            for (int i = 0; i < badChars.length(); i++) {
+                friendlyPath = path.replace(badChars.charAt(i), '_');
+            }
+            friendlyPath.replace("./", "_/");
+            filePathBuilder.append(friendlyPath);
             filePathBuilder.append("/");
+
+
             // Add data
             filePathBuilder.append(path);
 
-            // Grab the picture
+            // Make it be the picture
             filePathBuilder.append(".png");
 
             Log.i("TESTimg", "opening = '" + filePathBuilder.toString());
