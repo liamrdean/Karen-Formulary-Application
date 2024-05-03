@@ -42,11 +42,12 @@
                 android:gravity="center"
                 android:text="DRUG DESCRIPTION PLACEHOLDER" />
 
-            <ImageView
-                android:id="@+id/imageView2"
+            <LinearLayout
+                android:id="@+id/imagesLinearLayout"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                custom:srcCompat="@drawable/placeholder" />
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                />
 
         <LinearLayout
             android:layout_width="match_parent"

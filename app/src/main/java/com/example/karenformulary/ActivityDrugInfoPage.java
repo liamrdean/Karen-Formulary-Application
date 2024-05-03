@@ -9,6 +9,7 @@ import android.util.Log;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -25,7 +26,7 @@ public class ActivityDrugInfoPage extends AppCompatActivity {
     TextView dosageTextView;
     TextView descriptionTextView;
     ImageTextView treatmentTableImageTextView;
-    ImageView imageView2;
+    LinearLayout imagesLinearLayout;
 
     List<String> expandableListTitle;
     HashMap<String,List<String>> expandableListDetail;
@@ -39,8 +40,9 @@ public class ActivityDrugInfoPage extends AppCompatActivity {
         dosageTextView = findViewById(R.id.txDosage);
         descriptionTextView = findViewById(R.id.txDrugDescription);
         //treatmentTableImageTextView = findViewById(R.id.imageTextViewTreatmentTable);
-        imageView2 = findViewById(R.id.imageView2);
+        imagesLinearLayout = findViewById(R.id.imagesLinearLayout);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         // For now hard coded to Dihydrogen Monoxide
         //drugName = "Dihydrogen Monoxide";
@@ -86,20 +88,33 @@ public class ActivityDrugInfoPage extends AppCompatActivity {
         }
         expandableListTitleSet.remove(DB_Helper.COL_DESCRIPTION_DISPLAY_STRING);
 
+        // Add an layout
+        // Add it here
 
-        // Bad but will work for now
-        Bitmap bitmap = ImageTextView.getImageBitmap("1");
-        if (bitmap != null) {
-            imageView2.setImageBitmap(bitmap);
-        } else {
-            imageView2.setImageResource(R.drawable.test2);
+
+        // Add all treatment tables to the thing
+        List<Bitmap> bitmaps = ImageTextView.getImageBitmaps();
+        int screen_width = Resources.getSystem().getDisplayMetrics().widthPixels;
+        for (Bitmap bitmap : bitmaps) {
+            Log.i("bm", bitmap.toString());
+
+            // Create an image view
+            ImageView imageView = new ImageView(this);
+            // Set the imageview bitmap
+            if (bitmap != null) {
+                imageView.setImageBitmap(bitmap);
+            } else {
+                imageView.setImageResource(R.drawable.test2);
+            }
+            int width = imageView.getDrawable().getIntrinsicWidth();
+            int height = imageView.getDrawable().getIntrinsicHeight();
+            double scale = (double) (screen_width) / width;
+            int final_height = Math.toIntExact(Math.round(scale * height));
+
+            // Add to the layout
+            imagesLinearLayout.addView(imageView);
+            imageView.getLayoutParams().height = final_height;
         }
-        int screen_width  = Resources.getSystem().getDisplayMetrics().widthPixels;
-        int width = imageView2.getDrawable().getIntrinsicWidth();
-        int height = imageView2.getDrawable().getIntrinsicHeight();
-        double scale = (double)(screen_width)/width;
-        int final_height = Math.toIntExact(Math.round(scale * height));
-        imageView2.getLayoutParams().height = final_height;
 
         expandableListTitle = new ArrayList<>();
         for (int i = 2; i < DB_Helper.sqlColStrings.size(); i++) {
