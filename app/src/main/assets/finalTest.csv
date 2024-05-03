@@ -1,0 +1,729 @@
+MEDICATION,DOSAGE_EN,DOSAGE_KA,DESCRIPTION_EN,DESCRIPTION_KA,NOTE_EN,FOOD_EN,BE_CAREFUL_EN,DO_NOT_GIVE_EN,SIDE_EFFECTS_EN,INTERACTIONS_EN,PREGANCY_EN,BREAST_FEEDING_EN,IMPORTANT_EN,LENGTH_OF_TREATMENT_EN,DOXY_AND_CHILDREN_EN,NOTE_KA,FOOD_KA,BE_CAREFUL_KA,DO_NOT_GIVE_KA,SIDE_EFFECTS_KA,INTERACTIONS_KA,PREGANCY_KA,BREAST_FEEDING_KA,IMPORTANT_KA,LENGTH_OF_TREATMENT_KA,DOXY_AND_CHILDREN_KA
+Medication,Dosage,Dosage,Description,Description,Note,Food,Be Careful,Do not give,Side Effects,Interactions,Pregancy,Breast Feeding,Important,Length of Treatment,Doxy and Children,မၤနီၣ်,တၢ်အီၣ်,ပလီၢ်သး,တဘၣ်ဟ့ၣ်,တၢ်ကဲထီၣ်ထွဲသ့,ကသံၣ်မၤတၢ်ကဒဲကဒဲ,ၦၤမိၢ်ဒၢ,မိၢ်လၢဒုးအီဖိနုၢ်ထ,အရ့ဒိၣ်,တၢ်ဟ့ၣ်ကသံၣ်အဆၢကတီၢ်ယံာ်,(Doxy) ဒီးဖိသၣ်
+Acyclovir,1 tab = 200 or 400 or 800 mg,၁ ဖျၢၣ်=၂၀၀ (မ့) ၄၀၀ (မ့) ၈၀၀ mg,"Anti-viral: to treat Herpes Virus Diseases (Herpes Simplex, Herpes Zoster).",ကသံၣ်မၤသံယုၢ်အ့ၣ်(၀ံၤရူစ်)ဃၢ်တၢ်ဆါတဖၣ် (ဟ့ဖၢၣ်စ်စ့ဖျဲၣ်၊ဟ့ဖၢၣ်စ်စီစ်ထၢၣ်)။,"Treatment need to be started very soon after the symptoms. 
+ If started later than 24 hours in Varicella or 72 hours in Herpes Zoster, the 
+ treatment does not work: do not give",Can be taken with or without food.,"High doses (800 mg 5 times a day) can give confusion and hallucinations:
+ you need to let the patient know.",Kidney disease; dehydration; with Theophylline.,"Tirenedess, headache, rash, nausea, diarrhoea, vomiting.","If given together with Cotrimoxazole, Diclofenac, Gentamicin, 
+ Ibuprofen, Indomethacin, Meloxicam: increased risk of kidney 
+ toxicity.",Give only if necessary,Can give,,,,"တၢ်ကဘၣ်ဟ့ၣ်ကသံၣ်တဘျီဃီဖဲတၢ်ဆါအပနီၣ်ဖျါထီၣ်အခါလီၤ။
+ တၢ်မ့ၢ်စးထီၣ်ဟ့ၣ်ကသံၣ်လၢ၂၄နၣ်ရံၣ်၀ံၤအလီၢ်ခံဖဲအဘၣ်၀ဲတၢ်ထီၣ်ထါမ့တမ့ၢ်လၢ၇၂နၣ်ရံၣ်
+ ၀ံၤအလီၢ်ခံဖဲအဘၣ်၀ဲယုၢ်အ့ၣ်(ဟၣ်စိၤစ်ထၢၣ်)၀ံၤအလီၢ်ခံကသံၣ်တမၤတၢ်မၤလၢၤဘၣ်=
+ တဘၣ်ဟ့ၣ်တဂ့ၤ။တၢ်အီၣ်=",အီၣ်ဒီးတၢ်အီၣ်သ့မ့တမ့ၢ်တအီၣ်ဒီးတၢ်အီၣ်ဘၣ်သ့၀ဲစ့ၢ်ကီးလီၤ။,"နကဘၣ်ဒုးသ့ၣ်ညါၦၤဆါတဖၣ်လၢ=တၢ်အီၣ်ကသံၣ်အါ (၈၀၀ ာါ လၢတနံၤယဲၢ်ဘျီ)
+ န့ၣ်မၤထၢမံထၢမၣ်ဒီးထံၣ်တမှံတၢ်သ့၀ဲလီၤ။",ကလ့ၢ်တၢ်ဆါ၊ တၢ်ထံသံးနိသံးလၢအအိၣ်၊ ဒီး (Theophylline) ။,လီၤဘှံးလီၤတီၤ၊ ခိၣ်သၣ်ဃံဆါ၊ လိၤဖှိၣ်ထီၣ်၊ သးကလဲၤ၊ အ့ၣ်လူ။ ဘှီး။,"နမ့ၢ်ဟ့ၣ်ဃုာ်တွဲဃုာ်ဒီးကသံၣ် (Cotrimoxazole), (Diclofenac),
+ (Gentamicin), (Ibuprofen), (Indomethacin), (Meloxicam) တဖၣ်အံၤန့ၣ်ကမၤဘၣ်ဒိအါထီၣ်၀ဲကလ့ၢ်တၢ်စုၣ်တၢ်ပျၢ်တဖၣ်လီၤ။",မ့ၢ်လိၣ်နီၢ်နီၢ်ဒီးဟ့ၣ်သ့။,ဟ့ၣ်သ့။,l,l,
+Adrenaline,"1:1,000 1 amp = 1 cc = 1 mg. Dose = 0.01 mg/kg (max 0.5 mg)",၁ ပလီ = ၁ cc =၁ mg,"To treat severe allergic reactions, anaphylactic shock. Can be used also in severe asthma",ကသံၣ်ကူစါလၢတၢ်ဆါတကလုာ်လၢအဟဲကဲထီၣ်သးလၢဂာ်တဖီးတၢ်ဒိဆၢက့ၤတၢ်၊ ဂာ်တဖီးဒီးတၢ်တမံၤမံၤ(ရှီၣ်)။ သူအီၤသ့လၢၦၤလၢအိၣ်ဒီးတၢ်သးဘံးတၢ်ဆါနးနးသ့ၣ်တဖၣ်။ ဒိးစ် = ၁ ုါ နၢ့်ဟ့ၣ် ၀ႉ၀၁ ာါ (ဒိၣ်ကတၢၢ် ၀ႉ၅ ာါ),"- Use 1 cc syringes, to be able to measure well.
+ - Give IM, not subcutaneously, for better absorption.
+ - For babies: dilute the dose with NSS 0.2 cc.
+ - You can repeat this dose several times at 5 minutes intervals, 
+ until blood pressure and pulse rate are back to normal.",,,,,,Give only if necessary,Can give,,,,"- တၢ်သူ (syringe) ၁ cc န့ၣ်မ့ၢ်ဒ်သိးတၢ်ထိၣ်ဒွးကွၢ်ကသံၣ်ကဘၣ်၀ဲဂ့ၤဂ့ၤ
+ အဂီၢ်လီၤ။
+ - ဆဲးကသံၣ်လၢညၣ်ကျါလၢကဟံးန့ၢ်တၢ်သဟီၣ်ဂ့ၤဒိၣ်နၢ့်ဒံး
+  ဟ့ၣ်လၢဘ့ၣ်ဖီလာ်(သိကျါ)လီၤ။
+ - လၢဖိသၣ်အီနုၢ်ဂီၢ် ကျဲၣ်ကျီကသံၣ်လၢ (NSS) ၀ႉ၂ cc ။
+ - မ့ၢ်လိၣ်ဟ့ၣ်ကသံၣ်လၢအသီတဘျီန့ၣ်တၢ်ဆၢကတီၢ်ကဘၣ်ယံၤ၀ဲ၅မံးနံး
+ တဘျီဘၣ်တဘျီအဘၢၣ်စၢၤတုၤလၢသွံၣ်တၢ်ဆီၣ်သနံးဒီးသွံၣ်စံၣ်ဖုက့ၤဘၣ်
+ လီၢ်ဘၣ်စး။",,,,,,မ့ၢ်လိၣ်နီၢ်နီၢ်ဒီးဟ့ၣ်သ့။,ဟ့ၣ်သ့။,,,
+Albendazole,1 tab = 200 mg,၁ ဖျၢၣ် = ၂၀၀ mg,"Anti worm (roundworms, pinworms, whipworms, hookworms).
+ NOT effective for FLAT worms (use Praziquantel or Niclosamide).
+ Can be used also for other worms infections, like Giardia, Cutaneous Larva Migrans,
+ Visceral Larva Migrans, Gnathostoma, Strongyloides, Neurocysticercosis.","ကသံၣ်ထိးကလဲာ်လၢ ထီးကလဲာ်ဖျၢၣ်၊ ထီးကလဲာ်ထးဘျး၊ ထီးကလဲာ်ပျံၤဖျ့၊ ထီးကလဲာ်နီၣ်ကွးသ့ၣ် တဖၣ်။
+ တမ့ၢ်လၢထိးကလဲာ်အဘံၣ်ဂီၢ်ဘၣ်။ ထိးကလဲာ်အဘံၣ်န့ၣ်ကဘၣ်သူကသံၣ် (Praziquantel) မ့တမ့ၢ် (Niclosamide) ။ သူသ့စ့ၢ်ကီးလၢထီးကလဲာ်တၢ်ဃၢ်နုာ်အဂၤတဖၣ် (ကၠၣ်ဒံယၣ်ဃၢ်)၊ထိးကလဲာ်လၢဟးလၢဖံးဘ့ၣ်လိၤ၊ ထိးကလဲာ်လၢဟးလၢမိၢ်ၦၢ်ပူၤ၊ ထိးကလဲာ်လၢဟးလၢတၢ်ကမဲာ်လိၤ၊ (စထြီးကၠံၣ်လီဒံၣ်ဃၢ်)၊ ထိးကလဲာ်နုာ်လၢခိၣ်နုာ်ပူၤအဂီၢ် (နယူၤရိၤစဲစထံစၢၤခိၤစံၣ်)။","- Common worms:
+ In heavy infections, repeat the dose after a few days - 1 week.
+ To prevent heavy loads, give every 4 - 6 months to everybody
+ in a community.
+ - Neurocysticercosis:
+ If you suspect Neurocysticercosis is better to refer to hospital
+ where they can do a CT scan to confirm diagnosis. 
+ It is advised to give in combination with Praziquantel. 
+ Start therapy with Prednisolone a few days before.","- Can be taken with or without food.
+ - If taken with fatty meal, absorption is increased by 5 times
+ - Tablets can be crushed and mixed with food.
+ - Tablets can be chewed or swallowed whole.",,,"Nausea, vomiting, abdominal pain.",,Do not give first 3 months.,Can give,,,,"- လၢထိးကလဲာ်အါကလုာ်တဖၣ်အဂီၢ် တၢ်ဃၢ်နုာ်အနးန့ၣ်ဟ့ၣ်ကဒါက့ၤကသံၣ်(ဒိးစ်)လၢစှၤသီ၀ံၤအ-လီၢ်ခံ-၁နွံ။ လၢတၢ်တြီဆၢဃာ်ထိးကလဲာ်အိၣ်အါဟ့ၣ်လီၤၦၤကညီလၢၦၤသ၀ီပူၤ ၄-၆လါ တဘျီကိးဂၤဒဲးထီဘိန့ၣ်တက့ၢ်။
+ - ထိးကလဲာ်နုာ်လၢခိၣ်နုာ်ပူၤအဂီၢ် (နယူၤရိၤစဲစထံစၢၤခိၤစံၣ်)- နမ့ၢ်ဆိကမိၣ်လၢအမ့ၢ်ထိးကလဲာ်နုာ်လၢခိၣ်နုာ်ပူၤန့ၣ်ဆှၢလၢတၢ်ဆါဟံၣ် ဒ်သိးကမၤလီၤတံၢ်၀ဲတၢ်ဆါလၢတၢ်ဒိစံထံစကဲတက့ၢ်။ အ၀ဲအံၤမ့ၢ်တၢ်ဟ့ၣ်ကူၣ်လၢနကဟ့ၣ်တွဲဃုာ်","- အီၣ်ဒီးတၢ်အီၣ်သ့မ့တမ့ၢ်တအီၣ်ဒီးတၢ်အီၣ်ဘၣ်သ့၀ဲစ့ၢ်ကီးလီၤ။
+ - တၢ်မ့ၢ်အီၣ်ဃုာ်အီၤဒီးတၢ်အီၣ်တၢ်အီလၢအသိအိၣ်န့ၣ်အ၀ဲကမၤတၢ်ဂ့ၤ၀ဲ ယဲၢ်ဘျီ။
+ - ကသံၣ်ဖျၢၣ်အံၤတၢ်မၤဘျဲးဒီးဃါဃုာ်ဒီးတၢ်အီၣ်သ့၀ဲလီၤ။
+ - ကသံၣ်ဖျၢၣ်အံၤတၢ်အ့ၣ်အီၣ်အီၤဒီးယုၢ်လီၤအီၤဒီဖျၢၣ်သ့၀ဲလီၤ။",,,သးကလဲၤ၊ ဘှီး၊ ဟၢဖၢဆါ။,,ဒၢထီၣ်သီတုၤ ၃လါန့ၣ်တဘၣ်ဟ့ၣ်ဘၣ်။,ဟ့ၣ်သ့။,,,
+Aluminium Hydroxide,1 tab = 500 mg,၁ ဖျၢၣ် = ၅၀၀ mg,To relieve gastric upset.,ကသံၣ်မၤကိၢ်ညၢ်ထီၣ်ကဖုဆါ။,"Aluminium will only help the symptoms, it will not cure the 
+ disease. The symptoms will continue to come back if the cause 
+ is not found and treated.",Take after meals and at bedtime.,,,"Constipation, nausea, vomiting.","Aluminium decreases absorption of: Ciprofloxacin,
+ Chloroquine, Doxycycline, Isoniazid, Norfloxacin, Phenytoin,
+ Rifampicin, Tetracycline.",Can give,Can give,,,,ကသံၣ် (အလူၢ်မံၣ်နံၣ်ယၣ်)နၣ့် မၤကိညၢ်လီၤတၢ်ဆါအပနီၣ်တဘျီဂီၢ်တမၤ ဘျါတၢ်ဆါဘၣ်မ့ၢ်တဒိးနၢ့်ဘၣ်တၢ်ကူစါယါဘျါလၢအဘၣ်ဒီးတၢ်ဆါ ကဟဲက့ၤဆါလၢအသီတဘျီလီၤ။,အီၣ်လၢအီၣ်တၢ်အီၣ်၀ံၤအလီၢ်ခံဒီးတချုးမံအဆၢကတီၢ်။,,,ဟၢဖၢကျၢၤ၊ သးကလဲၤ၊ ဘှီး။,"မၤလီၤစှၤကသံၣ်သ့ၣ်တဖၣ်အံၤ (Ciprofloxacin)၊ (Chloroquine)၊
+ (Doxycycline)၊(Isoniazid)၊ (Norfloxacin)၊ (Phenytoin)၊
+ (Rifampicin)၊ (Tetracycline) အသဟီၣ်။",ဟ့ၣ်သ့။,ဟ့ၣ်သ့။,,,
+Amitriptyline,1 tab = 10 or 25 or 50 mg,၁ ဖျၢၣ် = ၁၀ (မ့) ၂၅ (မ့) ၅၀ mg,Anti-depressant (second choice after Fluoxetine and Sertraline).,ကသံၣ်ကူစါတၢ်သးဟးဂီၤ(တၢ်ဃုထၢကျဲခံဘိတဘိဖဲဟ့ၣ်၀ (Fluoxetine) ဒီး (Sertraline) ၀ံၤအလီၢ်ခံ)။,"- Do not give many tablets to a patient if you can not supervise,
+ because taking an overdose of this medicine can cause death. 
+ - Try to follow the patient every week for the first month.
+ - To stop therapy, reduce slowly by 50 mg every 2 - 3 weeks.",Better to take with food to decrease gastric upset.,"Old people have more risk of side-effects; heart disease;
+ epilepsy, chronic constipation.","If patient is actively trying to kill himself; together with Co-Artem; 
+ together with Tramadol; to patients with heart disease","Sedation, feeling sleepy, abdominal pain, tiredeness, 
+ hypotension, oedema, palpitations, agitation, blurred vision, 
+ confusion, rash, constipation, urinary retention, dizziness, 
+ dry mouth, decreased libido.","- Alcohol: more risk of feeling sleepy.
+ - Carbamazepine, Phenobarbitone, Phenytoin: reduce effect of A.
+ - A. decreases effect of Carbamazepine, Phenobarbitone, 
+ Phenytoin.",Do not give.,Can give,,,,"- တဘၣ်ဟ့ၣ်ၦၤဆါတဖၣ်ကသံၣ်ဖျၢၣ်အံၤအါအါဖဲနကွၢ်ထွဲအီၤဖဲအအီၣ်ယုၢ်လီၤ ကသံၣ်အခါတသ့ဘၣ်တက့ၢ်ႉ ခီဖျိကသံၣ်အံၤတၢ်အီအီၤမ့ၢ်အါန့ၣ်ၦၤသံ၀ဲသ့။
+ - ရုာ်ကျဲးစၢးလူၤထွဲမၤလီၤတံၢ်ၦၤဆါတဖၣ်ကိးနွံဒဲးလၢတလါအတီၢ်ပူၤတက့ၢ်။
+ - လၢတၢ်မၤပတုာ်ကသံၣ်အံၤအဂီၢ်မၤလီၤစှၤအီၤကယီကယီလၢ ၅၀ mg T7လၢ၂-၃နွံတဘျီ။",ဂ့ၤလၢကဘၣ်အီၣ်ဃုာ်ဒီးတၢ်အီၣ်ဒ်သိးကမၤလီၤစှၤ၀ဲတၢ်ကဖုဆါအဂီၢ်လီၤ။,ၦၤသးၦၢ်တဖၣ်န့ၣ်ကန့ၢ်ဘၣ်တၢ်ကဲထီၣ်ထွဲအခံနးဒိၣ်၊ သးတၢ်ဆါ တၢ်ဆါထိးပျုၢ်၊ တၢ်ဟၢဖၢကျၢၤတၢ်ဆါလၢအယံာ်အထၢ။,တဘၣ်ဟ့ၣ်ၦၤဆါလၢအအဲၣ်ဒိးမၤသံလီၤသးတဖၣ်ဘၣ်၊ တဘၣ်ဟ့ၣ်ဃုာ်ဒီး (Co-Artem)၊ တဘၣ်ဟ့ၣ်ဃုာ်ဒီး (Tramadol)၊ တဘၣ်ဟ့ၣ်ၦၤဆါလၢအအိၣ်ဒီး သးတၢ်ဆါတဖၣ်ဘၣ်။,ကသံၣ်မံ၊ အဲၣ်ဒိးမံခ့၊ ဟၢဖၢဆါ၊ လီၤဘှံး၊ သွံၣ်တၢ်ဆီၣ်သနံးစှၤလီၤ၊ ကဘု၊ သးကနိး၊ ပတုာ်တၢ်ဟူးတၢ်ဂဲၤတန့ၢ်ဘၣ်၊ မဲာ်ကဒု၊ ထၢမံထၢမၣ်၊ လိၤဖှိၣ်ထီၣ်၊ ဟၢဖၢကျၢၤ၊ ဆံၣ်သံ၊ ခိၣ်မူၤ၊ ကိးပူၤဃ့ထီ၊ မၤလီၤစှၤတၢ်သးကတၢ။,"- တၢ်မူၤတၢ်ဘှီးမံခ့နးထီၣ်။ - (Carbamazepine)၊ (Phenobarbitone)၊ (Phenytoin) ကသံၣ်တဖၣ်အံၤ မၤလီၤစှၤ၀ဲ (Amitryptiline) အသဟီၣ်။ - (Amitryptiline)အံၤမၤလီၤစှၤ၀ဲကသံၣ် (Carbamazepine)၊
+ (Phenobarbitone)၊ (Phenytoin) တဖၣ်အံၤအသဟီၣ်။",တဘၣ်ဟ့ၣ်ဘၣ်။,ဟ့ၣ်သ့။,,,
+Amlodipine,1 tab = 5 mg or 10 mg,၁ ဖျၢၣ် = ၅ (မ့) ၁၀ mg,To treat High Blood Pressure (Hypertension),ကသံၣ်ကူစါသွံၣ်တၢ်ဆီၣ်သနံးထီၣ်။,"- Increase dose after 2 weeks in steps of 2.5 mg until BP is normal.
+ - Can be given in combination with Enalapril and
+ Hydrochlorothiazide.",Can be taken with or without food.,Old people.,"- If you hear a loud heart murmur (can not give in severe aortic 
+ stenosis): choose a different drug.
+ - Together with Mefloquine","Oedema, dizziness, headache, cramps.",Amytriptiline: increases risk of hypotension.,Only if necessary (2nd choice),Can give,See Hydrochlorothiazide.,,,- ၂နွံ၀ံၤအလီၢ်ခံန့ၣ်မၤအါထီၣ်ကသံၣ်အသဟီၣ်တုၤ၂ႉ၅ mg အပတီၢ်တုၤလၢ သွံၣ်တၢ်ဆီၣ်သနံးအိၣ်က့ၤဘၣ်လီၢ်ဘၣ်စးတက့ၢ်။ - ဟ့ၣ်တွဲဃုာ်ဒီးကသံၣ (Enalapril) ဒီး (Hydrochlorothiazide) တဖၣ်အံၤ သ့၀ဲလီၤ။,အီၣ်ဒီးတၢ်အီၣ်သ့မ့တမ့ၢ်တအီၣ်ဒီးတၢ်အီၣ်ဘၣ်သ့၀ဲစ့ၢ်ကီးလီၤ။,ၦၤသးၦၢ်။,"- ဖဲနနၣ်ဟူအသးဖျၢၣ်ဖူသီၣ်ဒိၣ်ဒိၣ် (တဘၣ်ဟ့ၣ်ၦၤလၢအအိၣ်ဒီး သးသွံၣ်ကျိၤအံၣ်
+ တၢ်ဆါလၢအနးတဖၣ်ဘၣ် - (အါအိထံၣ် စတဲနိစံၣ်) ဟ့ၣ်လၢကသံၣ်အဂၤ။
+ - ဃုာ်ဒီး (Mefloquine) တက့ၢ်။",ကဘု၊ ခိၣ်မူၤ၊ ခိၣ်ဆါ၊ ယုၢ်ထီၣ်။,-(Amytriptiline)မၤနးထီၣ်၀ဲၦၤလၢအိၣ်ဒီးသွံၣ်တၢ်ဆီၣ်သနံးစှၤလီၤ။,မ့ၢ်လိၣ်ဘၣ်နီၢ်ကီၢ်(တၢ်ဃုထၢကျဲခံဘိတဘိ)။,ဟ့ၣ်သ့။,ကွၢ်လၢ (Hydrochlorothiazide) ။,,
+Amoxicillin,1 caps = 250 or 500 mg,၁ ဖျၢၣ် = ၂၅၀ (မ့) ၅၀၀ mg,"Antibiotic for respiratory, urinary, intestinal, oral and skin bacterial infections.",ကသံၣ်မၤသံ(ဘၣ်ထံရံယၤ)ဃၢ်နုာ်- လၢကလံၤကျိၤ၊ ဆံၣ်ကျိၤ၊ ၦံာ်ဖိ၊တၢ်အီၣ်ကျိၤဒီးဖံးဘ့ၣ်တၢ်ဆါတဖၣ်။,"For how long to give depends on the severity of the disease: from 5 days
+ to several weeks.","- Can be taken with food or without food.
+ - For children can be mixed with milk, cold drink or juice.","History of allergy (Amoxicillin, Ampicillin, Penicillin, Cloxacillin).",,,,Can give,Can give,,,,တၢ်ဆၢကတီၢ်ယံၤလၢကဘၣ်ဟ့ၣ်ကသံၣ်နၣ့်ဒိသန့ၤထီၣ်သးလၢတၢ်ဆါအနးဒီးအတနး ဖီခိၣ်ဘၣ်ဟ့ၣ်၅သီတုၤလၢအါနွံနၣ့်လီၤ။,"- အီၣ်ဃုာ်ဒီးတၢ်အီၣ်မ့တမ့ၢ်တအီၣ်ဒီးတၢ်အီၣ်ဘၣ်သ့၀ဲလီၤ။
+ - လၢဖိသၣ်တဖၣ်အဂီၢ်န့ၣ်နကျဲၣ်ကျီဃုာ်ဒီးတၢ်နုၢ်ထံ၊ တၢ်ခုၣ်ထံမ့တမ့ၢ်တၢ်ဆံၣ်ထံသ့။","ၦၤလၢအဂာ်တဖီးလိာ်ဒီးကသံၣ် f (Amoxicillin)၊ (Ampicillin)၊ (Penicillin)၊
+ (Cloxacillin) သ့ၣ်တဖၣ်နၣ့်လီၤ။",,,,ဟ့ၣ်သ့။,ဟ့ၣ်သ့။,,,
+Ampicillin,1 vial = 1g.,၁ ပလီ = ၁ g,"Antibiotic to treat severe bacterial infections (usually used together with Gentamicin):meningitis, severe pneumonia, sepsis, severe bone infections, severe bowel infections,severe trauma. Reconstitute one vial with 4.6 cc of sterile water ! 1 cc = 200 mg. Dose for severe infections: 50 mg/kg",ကသံၣ်မၤသံ(ဘၣ်ထံရံယၤ)ဃၢ်နုာ်လၢအနးနးတဖၣ်၊ အါတက့ၢ်ဟ့ၣ်ဃုာ်ဒီး (Gentamicin) ခိၣ်နူာ် သလီတၢ်ဃၢ်နုာ်၊ ပသိၣ်တၢ်ဃၢ်နုာ်လၢအနး၊ တၢ်ဃၢ်နုာ်လၢသွံၣ်ကျါ၊ ဃံတၢ်ဃၢ်နုာ်လၢအနး၊ ၦံာ်တၢ်ဃၢ်နုာ်လၢအနး၊လၢတၢ်ဘၣ်ဒိဘၣ်ထံးလၢအနး။ ဒၢနုာ်ထံလၢတၢ်မၤသံအဃၢ်၀ံၤ ၄ႉ၆ cc လၢပလီပူၤ -> ၁ cc =၂၀၀ mg ကသံၣ်(ဒိးစ်)လၢတၢ်ဃၢ်နုာ်အနး ၁ kg နၢ့်ဟ့ၣ် ၅၀ mg,"- If possible, for children calculate by mg/kg.
+ - When patient is better, give half the dose.
+ - You can use Ceftriaxone instead of Ampicillin+Gentamicin",,,,,,Can give,Can give,,,,"- မၢ့်သ့လၢဖိသၣ်ဂီၢ်ဒွးနၣ့်အီၤကသံၣ် (mg) ဒီးအသယၢၢ် (kg) အဖီခိၣ်နၣ့်တက့ၢ်။
+ - ၦၤဆါတၢ်အိၣ်သးမ့ၢ်ဂ့ၤထီၣ်ဒီးဟ့ၣ်အီၤတ၀ာ်န့ၣ်တက့ၢ်။
+ - သူကသံၣ် (Ceftriaxone) သ့လၢကသံၣ် (Ampicillin)+(Gentamicin) အခၢၣ်စးနၣ့်လီၤ။",,,,,,ဟ့ၣ်သ့။,ဟ့ၣ်သ့။,,,
+Artemether - Lumefantrine ( MALARIA ),,,See MALARIA PROTOCOLS,ကွၢ်လၢ တၢ်ညၣ်ဂိၢ်ဃၢ်ကသံၣ်အကျိၤအကျဲ ။,,,,,,,,,,,,,,,,,,,,,,
+Artesunate ( MALARIA ),,,See MALARIA PROTOCOLS,ကွၢ်လၢ တၢ်ညၣ်ဂိၢ်ဃၢ်ကသံၣ်အကျိၤအကျဲ ။,,,,,,,,,,,,,,,,,,,,,,
+Aspirin,1 tab = 300 mg,၁ ဖျၢၣ် = ၃၀၀ mg,To treat pain and inflammation.,ကသံၣ်ကူစါတၢ်အဆါဒီးတၢ်ညီး။,,Take with food or full glass of water to decrease stomach upset.,"Asthma, allergy, dehydration, gastric pain, G6PD deficiency, 
+ old people.","Gastric ulcer, Dengue Fever, children less than 16 years.","Gastric upset, bronchospasm.","- Aspirin increases effect of Phenytoin. 
+ - Prednisolone and Dexamethasone increase risk of stomach and 
+ intestinal bleeding).
+ - Aspirin decreases effect of Spironolactone.",Do not give last month of pregnancy.,Do not give.,,,,,အီၣ်ဃုာ်ဒီးတၢ်အီၣ်မ့တမ့ၢ်ထံတခွးလၢကမၤလီၤစှၤ၀ဲတၢ်ဟၢဖၢဆါ။,"တၢ်သးဘံးတၢ်ဆါ၊ ဂာ်တဖီး၊ တၢ်ထံသံးနိသံး၊ကဖုဆါ၊
+ (ကၠံၤစံၣ်ဖံၤဒံၤ)လီၤထုး၊ ၦၤသးၦၢ်ဖးဒိၣ်။",ကဖုတၢ်ဆါ၊ ဒဲကံၢ်တိးကွ့တၢ်ဆါ ၊ဖိသၣ်စှၤန့ၢ်၁၆နံၣ်။,ကဖုဆါ၊ကသါဃံး၊ (ဘြိခိၤစဖၤ)။,"- (Aspirin) မၤအါထီၣ်ကသံၣ (Phenytoin) အသဟီၣ်။ -(Prednisolone) ဒီး (Dexamethasone) န့ၣ်မၤအါထီၣ်၀ဲတၢ်ကီတၢ်ခဲ
+ လၢသွံၣ်ယွၤလၢကဖုဒီးၦံာ်ပူၤသ့လီၤ။ - (Aspirin) မၤလီၤစှၤကသံၣ (Spironolactone) အသဟီၣ်နၣ့်လီၤ။",တဘၣ်ဟ့ၣ်ၦၤမိၢ်ဒၢအလီၢ်ခံကတၢၢ်တလါဘၣ်။,တဘၣ်ဟ့ၣ်ဘၣ်။,,,
+Atenolol,1 tab = 50 mg,၁ ဖျၢၣ် = ၅၀ mg,To treat High Blood Pressure,ကသံၣ်ကူစါသွံၣ်တၢ်ဆီၣ်သနံးထီၣ်,,Can be taken with or without food.,"Kidney diseases, unstable heart failure","Asthma, diabetes.","Nightmares, cold extremities, tiredeness, low blood pressure, 
+ dizziness.",,Give only if necessary,Can give,See Hydrochlorothiazide.,,,,အီၣ်ဒီးတၢ်အီၣ်သ့မ့တမ့ၢ်တအီၣ်ဒီးတၢ်အီၣ်ဘၣ်သ့၀ဲစ့ၢ်ကီးလီၤ။,ကလ့ၢ်တၢ်ဆါ၊ သးဖျၢၣ်တမၤတၢ်မၤဘၣ်။,တၢ်သးဘံးတၢ်ဆါဒီးဆံၣ်ဆၢတၢ်ဆါ။,တၢ်မံမီၢ်လၢအလီၤပျံၤလီၤဖုး(မံမီၢ်ထံၣ်သမှံတၢ်)၊ စုချံၣ်ခီၣ်ချံၣ်၊ လီၤဘှံး သွံၣ်တၢ်ဆီၣ်သနံးလီၤစှၤ၊ ခိၣ်မူၤ။,,မ့ၢ်သ့တဘၣ်ဟ့ၣ်တဂ့ၤ။,ဟ့ၣ်သ့။,ကွၢ်လၢ (Hydrochlorothiazide)။,,
+Atropine,1 amp = 1 cc = 6 mg,၁ ပလီ = ၁ cc = ၆ mg,To dry secretions before using ketamine.,တချူးလၢပသ (Ketamine) သူကသံၣ် (Atropine) လၢကမၤသူက့ၤခၣ်ထံ၊ခၣ်သဘွဲသ့ၣ်တဖၣ်။,"Many medics use Atropine for abdominal pain/spasms, but its
+ use for this problem is not recommended and its efficacy not 
+ sure.
+ It should not be used for abdominal pain.",,"Children and old people, gastro-oesophageal reflux, diarrhoea,
+ high blood pressure, fever.",,"Constipation, temporary slow heart rate, dilatation of the
+ pupils, pain in the eyes when looking at a light, dry mouth",,Give only if necessary,Give only if necessary,,,,"ကသံၣ်သရၣ်အါဂၤသူ၀ (Atropine) လၢဟၢဖၢဆါဂီၢ်ဘၣ်ဆၣ်ၦၤတတူၢ် လိာ်အီၤလၢ ကဘၣ်သူအီၤဘၣ်ဒီးတလီၤတံၢ်ဘၣ်နၣ့်လီၤ။
+ ကသံၣ်အံၤတဘၣ်သူအီၤလၢတၢ်ဟၢဖၢဆါအဂီၢ်ဘၣ်။",,ဖိသၣ်ဒီးသးၦၢ်ဖးဒိၣ်သ့ၣ်တဖၣ်၊ သးကိၢ်အူ၊ တၢ်အ့ၣ်လူတၢ်ဆါ၊ သွံၣ်တၢ်ဆီၣ်သနံးထီၣ်၊ တၢ်ကိၢ်ထီၣ်။,,ဟၢဖၢကျၢၤ၊ သးဖျၢၣ်ဖုလီၤကဘှၢတစိၢ်ဖိ၊ မၤလဲၢ်ထီၣ်မဲာ်သၦၤဖိ မ့ၢ်ကွၢ်တၢ်ကပီၤန့ၣ်မဲာ်ချံပူၤဆါ ကီာ်ပူၤဃ့ထီ။,,မ့ၢ်လိၣ်နီၢ်နီၢ်ဒီးဟ့ၣ်သ့။,မ့ၢ်လိၣ်နီၢ်နီၢ်ဒီးဟ့ၣ်သ့။,,,
+Azythromycin (double notes and double tables),1 tab = 250 mg,၁ ဖျၢၣ် = ၂၅၀ mg,"Antibiotic of the same group as Erythromycin.
+ More expensive, but more easy to use because is given once a day.
+ Useful to treat many bacterial infections: pneumonias, otitis, urethritis, tonsillitis,
+ pharingytis, cellulitis, whooping cough (pertussis), cholera, STIs (see p. 130)",မ့ၢ်ကသ့ၣ်မၤသံတၢ်ဃၢ်တကလုာ်ဃီဒီး (Erythromycin) လီ။ အၦ့ၤဒိၣ်၀ဲဘၣ်ဆၣ်တၢ်သူအီၤညီ၀ဲခီဖျိတၢ်ဘၣ်အီအီၤတနံၤတဘျီလီၤ။ ကဲဘျုး၀ဲအါမးလၢတၢ်မၤသံ (ဘၣ်ထံရံယၤ) ဃၢ်နုာ်တဖၣ်၊ ပသိၣ်တၢ်ဃၢ်နုာ်၊ နၢ်ပူၤတၢ်ဃၢ်နုာ်၊ ဆံၣ်ကျိၤတၢ်ဃၢ်နုာ်၊ခၣ်သံၣ်တၢ်ဃၢ်နုာ်၊ ကိာ်ယုၢ်ပူၤတၢ်ဃၢ်နုာ်၊တၢ်ကူးဖးထီ၊ဖံးဘ့ၣ်တၢ်ဃၢ်နုာ်လၢအနး၊ (ခီလီရၤ) တၢ်အ့ၣ်လူ၊ တၢ်ဃၢ်နုာ်ခီဖျိတၢ်မံဃုာ်လိာ်သး (ကွၢ်လၢကဘျံးပၤ-၁၃၀)။,"-For community-acquired pneumonia give together with Ceftriaxone. For severe cases continue treatment for 7-10 days. - Together with re-hydration fluids, Azythromycin can shorten the 
+ duration of diarrhoea and reduce the volume of stool losses.
+ - Can be used in Typhoid Fever if there is resistance to Ciprofloxacin.",Can be taken with of without food.,Heart disease.,"Heart failure, liver failure. With Aluminium and Artesunate.","Joint pain, dizziness, headache, numbness, vision problems, taste not 
+ normal, gas in bowel. Not common: oedema, chest pain.",Aluminium reduces absorption of Azythrom.: do not give together.,Can give,Can give,,,,"ကသံၣ်လၢၦၤတ၀ၢလၢမၤန့ၢ်၀ဲလၢတၢ်ပသိၣ်တၢ်ဃၢ်နုာ်အဂီၢ်တဖၣ်န့ၣ်ဟ့ၣ်ဃုာ်အီၤဒီး (Ceftriaxone) တက့ၢ်။ ၦၤလၢဆိက့၀ဲနးနးတဖၣ်န့ၣ်ဟ့ၣ်အါထီၣ်အီၤကသံၣ်၇သီ-၁၀သီအဂီၢ်။ - ဘၣ်ဟ့ၣ်ဃုာ်ဒီးကသံၣ်အံသၣ်ထံတဖၣ် (Azythromycin) န့ၣ်မၤလီၤဖုၣ်၀ဲတၢ်အ့ၣ်လူ အကတီၢ်သ့၀ဲဒီးမၤလီၤစှၤတၢ်အ့ၣ်လူလီၤသ့၀ဲလီၤ။
+ - သူ၀ဲလၢ(ထါဖၢၣ်)တၢ်လိၤကိၢ်သ့၀ဲဖဲအအီၣ်၀ဲ(Ciprofloxacin)တတဲာ်လၢၤဘၣ်အခါ။",အီၣ်ဃုာ်ဒီးတၢ်အီၣ်မ့တမ့ၢ်တအီၣ်ဒီးတၢ်အီၣ်ဘၣ်သ့၀ဲလီၤ။,သးတၢ်ဆါ။,သးတမၤတၢ်မၤဘၣ်၊ သူၣ်တမၤတၢ်မၤဘၣ်၊ဟ့ၣ်ဃုာ် (Aluminium)၊ (Artesunate)။,စုခီၣ်ကမဲာ်ဆါ၊ ခိၣ်မူၤ၊ ခိၣ်ဆါ၊ တီၤတုၤ၊ တၢ်ထံၣ်အတၢ်ဂ့ၢ်ကီ၊ အီၣ်တၢ်တ၀ံၣ်၊ ကလံၤကး။ တၢ်ကဘုဒီးသးနါၦၢ်ဆါတဖၣ်န့ၣ်တညီနုၢ်ကဲထီၣ်သးဘၣ်။,(Aluminium)န့ၣ်မၤလီၤစှၤ၀ဲ(Azythromycin) အသဟီၣ်လီၤ-တဘၣ်ဟ့ၣ်ဃုာ်တပူၤဃီဘၣ်။,ဟ့ၣ်သ့။,ဟ့ၣ်သ့။,,,
+Benzathine Penicillin,****Give divided in 2 injections of 1.2 million IU in 2 sites,ကဘၣ်နီၤဖးကသံၣ်လၢစရ့၂ဘိဒီးဆဲးကသံၣ် ၁၂၀၀၀၀၀ (၍္က) လၢတၢ်လီၢ်ခံတီၤ။,Antibiotic similar to Penicillin V and Amoxicillin.,ကသံၣ်မၤသံ (ဘၣ်ထံရံယၤ) ဃၢ်ဒ်သိး ဒီး (Penicillin) ဒီး (Amoxicillin) ။,,,,,,,,,,,,,,,,,,,,,,
+Benzyl Benzoate Lotion,,,To treat Lice and Scabies.,ကသံၣ်ပံာ်ထံကူစါသူၣ်ဒီးတၢ်သးဃ့အဂီၢ်။,,,,,,,,,,,,,,,,,,,,,,
+Buscopan (Hyoscine Butylbromide),1 vial = 1 cc = 20 mg,၁ ပလီ = ၁ cc = ၂၀ mg,"To relieve pain from muscular spasms of urinary tract and intestine/bowel
+ (kidney/liver colics).",ကသံၣ်မၤကိညၢ်လီၤက့ၤတၢ်အဆါလၢယုၢ်ညၣ်ဘံးအသးလၢဆံၣ်ကျိၤဒီးၦံာ်ဖိ (ကလ့ၢ်၊သူၣ်ကလံၤဆဲး)။,,Give with a full glass of water. Do not chew.,Old people; high blood pressure; diarrhoea.,,Constipation; urinary urgency and retention; dry mouth.,,Give only if necessary,Can give,,,,အီၣ်လီၤဒီးထံတခွး။ တဘၣ်အ့ၣ်ဘျဲးတဂ့ၤ။,,ၦၤသးၦၢ်ဖးဒိၣ်၊ သွံၣ်တၢ်ဆီၣ်သနံးထီၣ်၊ ဟၢဖၢလူ။,,ဟၢဖၢကျၢၤ၊ အဲၣ်ဒိးဆံၣ်ဆါဒီးဆံၣ်အိၣ်တၢ့်၊ ကိာ်ပူၤဃ့ထီ။,,မ့လိၣ်ဘၣ်နီၢ်နီၢ်ကဘၣ်သူ။ မ့တလိၣ်ဘၣ်တဘၣ်သူဘၣ်။,ဟ့ၣ်သ့။,,,
+Carbamazepine,1 tab = 200 mg. 1. Start with the lowest dose. 2. Increase with small dose every week until no more seizures.,"၁ ဖျၢၣ် = ၂၀၀ mg ၁ႉ စးထီၣ်အီၣ်ကသံၣ်(ဒိးစ်) လၢအစှၤကတၢၢ်။
+ ၂ႉ ကဘၣ်မၤအါထီၣ်ကသံၣ်(ဒိးစ်)တစဲးတစဲးတနွံတဘျီတုၤလၢအထီၣ်တအိၣ်လၢၤဘၣ်။","To treat epilepsy.
+  First choice for focal and general epilepsy","ကသံၣ်ကူစါထီးပျုၢ်တၢ်ဆါ။
+ ကသံၣ်လၢတၢ်သူစိအီၤလၢထီၣ်ဒီတဂၤဒီးထီၣ်တပၤမ့တမ့ၢ်ထီၣ်ထဲတၢ်လီၢ်တတီၤလၢမိၢ်ၦၢ်လိၤ။",,Give with food or full glass of water to decrease stomach upset.,"Heart disease, kidney disease, liver disease.",,"Nausea and vomiting, dizziness, drowsiness, headache, confusion,
+ vision problems (especially seing double), rash, blood disorders. 
+ Blurring of vision and dizziness are dose-related and will go away if
+ the dose is decreased or sometimes if time of taking the medication 
+ is changed.",,Do not give.,Can give,,,,,အီၣ်ဃုာ်ဒီးတၢ်အီၣ်မ့တမ့ၢ်ထံတခွးလၢကမၤလီၤစှၤ၀ဲတၢ်ဟၢဖၢဆါတက့ၢ်။,သးတၢ်ဆါ၊ ကလ့ၢ်တၢ်ဆဒီးသူၣ်တၢ်ဆါ။,,သးကလဲၤဒီးဘၣ်သးဘီှး ၊ ခိၣ်မူၤ၊ မိၣ်မံခ့သး၊ခိၣ်သၣ်ဃံဆါ၊ထၢမံထၢမၣ်၊ ထံၣ်တၢ်ခံကထၢ၊လိၤဖှိၣ်ထီၣ်ဒီးသွံၣ်တဘၣ်လီၢ်ဘၣ်စး။ ပမ့ၢ်မၤစှၤလီၤကသံၣ်(ဒိးစ်)မ့တမ့ၢ်ဆီတလဲတၢ်အီကသံၣ်အဆၢကတီၢ်န့ၣ် တၢ်ခိၣ်မူၤဒီးထံၣ်တၢ်တရှဲဘၣ်လီၤမၢ်သ့၀ဲန့ၣ်လီၤ။,,တဘၣ်ဟ့ၣ်ဘၣ်။,ဟ့ၣ်သ့။,,,
+Cefalexin,1 cap = 250 or 500 mg For UTI prophylaxis (prevention) DOSE: 12.5 mg/kg at night Open 1 (250) caps and dilute powder with 5 cc of water ! 1 cc = 50 mg,၁ ဖျၢၣ် = ၂၅၀ (မ့) ၄၀၀ mg လၢတၢ်ဒီသဒၢဆံၣ်ကျိၤတၢ်ဃၢ်နုာ်တၢ်ဆါအဂီၢ် ဒိးစ်= ၁ kg နၢ့်ဟ့ၣ် ၁၂ႉ၅ mg လၢမုၢ်နၤခ အိးထီၣ်ကသံၣ်(၂၅၀)တဖျၢၣ်ဒီးကျဲၣ်ကျီအကမူၣ်ဒီးထံ၅စံၣ်စံၣ်တက့ၢ် -> ၁ cc = ၅၀ mg,"Antibiotic for bacterial infections: skin and soft tissue infections, urine tract infections,
+ urine tract infections prophylaxis (prevention), pneumonia.
+ 1st choice antibiotic for not-compicated Urinary Tract Infections.","ကသံၣ်မၤသံ(ဘၣ်ထံရံယၤ)ဃၢ်နုာ်တဖၣ်= ဖံးဘ့ၣ်ဒီးဘ့ၣ်ခိၣ်တၢ်ဃၢ်နုာ်၊ ဆံၣ်ကျိၤတၢ်ဃၢ်နုာ်၊
+ တၢ်ဒီသဒၢဆံၣ်ကျိၤတၢ်ဃၢ်နုာ်၊ ပသိၣ်တၢ်ဃၢ်နုာ်။
+ ဃုထၢကသံၣ်မၤသံတၢ်ဃၢ်အခီၣ်ထံးတခါလၢၦၤဆံၣ်ကျိၤတၢ်ဃၢ်နုာ်ဘၣ်ဆၣ်တၢ်ကီတၢ်ခဲတအိၣ်ဘၣ်။","- For simple UTI (lower UTI) give for 3 days. 
+ - In pregnancy give for 7 days.
+ - For complicated UTI (pyelonephritis) give for 7-10 days.",Can be taken with food or without food.,"- Patients with epilepsy: high levels can increase risk of seizures.
+ - Patients with kidney disease: decrease dose if kidney functions is 
+ not normal.
+ - Patients who had a rash or oedema after using Amoxicillin or 
+ Penicillin.",If history of severe rash using Ceftriaxone,"Rash, headache, feeling sick (nausea, diarrhoea, stomach pain).",Zinc can decrease absorption of Cefalexin. Do not give together,Can give,Can give,,,,"- ဆံၣ်ကျိၤတၢ်ဃၢ်နုာ်(ဆံၣ်ကျိၤတၢ်ဃၢ်နုာ်လၢဖီလာ်)ယိယိဖိန့ၣ်ဟ့ၣ်လၢ၃သီအတီၢ်ပူၤ။
+ - ၦၤမိၢ်ဒၢန့ၣ်ဟ့ၣ်အီၤနွံသီတက့ၢ်။
+ - ၦၤလၢအိၣ်ဒီးဆံၣကျိၤတၢ်ဃၢ်နုာ်တၢ်ဆါတၢ်ကီတၢ်ခဲ(ကလ့ၢ်ညီး)ဟ့ၣ်အီၤ ၇=၁၀
+ သီတက့ၢ်။",အီၣ်ဒီးတၢ်အီၣ်သ့မ့တမ့ၢ်တအီၣ်တၢ်အီၣ်ဘၣ်သ့၀ဲစ့ၢ်ကီးလီၤ။,"- ၦၤဆါလၢအအိၣ်ဒီးတၢ်ထီၣ်ထိးပျုၢ်တၢ်ဆါ။
+ - ကသံၣ်အဂံၢ်မ့ၢ်ဆူၣ်န့ၣ်မၤဘၣ်ဒိ၀ဲၦၤလၢအအိၣ်ဒီးတၢ်ထီၣ်တၢ်ဆါတဖၣ်။
+ - ၦၤလၢအိၣ်ဒီးကလ့ၢ်တၢ်ဆါဟ့ၣ်လီၤစှၤကသံၣ်ဒိးစ်ဖဲအကလ့ၢ်တမၤတၢ်ဂ့ၤ
+ ဂ့ၤဘၣ်တက့ၢ်။
+ - ၦၤဆါလၢမ့ၢ်အီ၀ဲကသံၣ (Amoxicillin) မ့ (Penicillin) တဖၣ်အံၤ၀ံၤန့ၣ်
+ အလိၤဖှိၣ်ထီၣ်မ့တမ့ၢ်ကဘု။",ၦၤလၢအီ၀ဲကသံၣ (Ceftriaxone) အံၤဒီးအလိၤထီၣ်နးနးကလဲာ် တဖၣ်။,"လိၤထီၣ်ဂီၤပြုထီၣ်=ခိၣ်ဆါ=တူၢ်ဘၣ်လၢဆိက့ (သးကလဲၤ၊ အ့ၣ်လူ၊
+ ဟၢဖၢဆါ)။","ကသံၣ (Zinc) န့ၣ်မၤလီၤစၢ်၀ (Cefalexin) အသဟီၣ်လီၤ။
+ တဘၣ်ဟ့ၣ်ဃုာ်တဂ့ၤ။",ဟ့ၣ်သ့။,ဟ့ၣ်သ့ၢ။,,,
+"Ceftriaxone (Need to add notes to screenshots, rest are normal )",1 amp = 1 g. Reconstitute 1 vial with 9.6 cc of Sterile Water !10 cc: 1 cc = 100 mg,၁ ပလီ = ၁ g ဒၢနုာ်မူခိၣ်ထံ ၉ႉ၆ cc န့ၣ်အိၣ်၀ဲ ၁၀စံၣ်စံၣ်ႉ ၁၀ cc လီၤလၢ၀ဲ ၁၀၀ mg,Antibiotic for severe bacterial infections.Use as 1st choice. 2nd choice use Ampicillin + Gentamicin.,ကသံၣ်မၤသံ (ဘၣ်ထံရံယၤ) ဃၢ်နုာ်လၢအနးတဖၣ်။ သူကျဲအခီၣ်ထံးတဘိ ကျဲခံဘိတဘိန့ၣ်ဟ့ၣ် (Ampicillin) ဒီး (Gentamicin)။,,,Dehydration.,Neonates with jaundice (yellow eyes and skin).,"Diarrhoea, headache",,Can give.,Can give.,,,,,,တၢ်ထံသံးနိသံး။,ဖိသၣ်ညီနုၢ်အညၣ်ဘီ (မဲာ်ချံဘီဒီးဖံးဘ့ၣ်ထီၣ်ဘီ)။,ဟၢဖၢလူ၊ ခိၣ်ဆါ။,,ဟ့ၣ်သ့။,ဟ့ၣ်သ့။,,,
+Cetirizine,1 tab = 10 mg,၁ ဖျၢၣ် = ၁၀ mg,"Anti-allergic which does not make people too sleepy.
+ For urticaria and allergic reactions (does not treat the cause, only the symptoms)","ကသံၣ်ကူစါ ဂာ်တဖီး လၢအတမၤမံခ့နၤဒိၣ်ဒိၣ်ဘၣ်။
+ တၢ်ဘ့ၣ်ပြုထီၣ်မဲာ်ညိးဒီးဂာ်တဖီးတၢ်ဒိဆၢက့ၤတၢ်
+ (တဘၣ်ကူစါယါဘျါလၢတၢ်ဆါအဂီၢ်ဘၣ်မ့ၢ်၀ဲဒၣ်လၢတၢ်ဆါအတၢ်ပနီၣ်အဂီၢ်လီၤ)။",,Can be taken with or without food,"Old people, people with liver and kidney diseases, epilepsy, people who
+ drink alcohol, people who work with machinery or driving.",,"Headache (especially in children), drowsiness, abdominal pain.",Alcohol increases drowsiness.,Give only if necessary,Give only if necessary,,,,,အီၣ်ဒီးတၢ်အီၣ်သ့မ့တမ့ၢ်တအီၣ်ဒီးတၢ်အီၣ်ဘၣ်သ့၀ဲစ့ၢ်ကီးလီၤ။,"ၦၤသူၣ်က့သးၦၢ်၊ ၦၤလၢအအိၣ်ဒီးသူၣ်တၢ်ဆါကလ့ၢ်တၢ်ဆါတဖၣ်၊ တၢ်ထီၣ်ထိးပျုၢ်
+ တၢ်ဆါ၊ ၦၤလၢသူတၢ်မူၤတၢ်ဘှီး၊ ၦၤလၢအမၤတၢ်လၢစဲးဖီကဟၣ်မ့တမ့ၢ်ၦၤနီကါ။",,ခိၣ်ဆါ(လီၤဆီဒၣ်တၢ်ဖိသၣ်တဖၣ်)၊ မိၣ်မံခ့သး၊ ဟၢဖၢဆါ။,တၢ်မူၤတၢ်ဘှီးန့ၣ်မၤအါထီၣ်၀ဲတၢ်မိၣ်မံခ့သး။,မ့ၢ်လိၣ်နီၢ်နီၢ်။,မ့ၢ်လိၣ်နီၢ်နီၢ်။,,,
+Chloraphenicol,eye drops,ကသံၣ်စီၤ (ကၠီၤ)မဲာ,"Antibiotic to treat bacterial conjunctivitis or to prevent bacterial infections after eye
+ injuries.",ကသံၣ်မၤသံ (ဘၣ်ထံရံယၤ) ဃၢ်လၢအမ့ၢ် (ဘၣ်ထံရံယၤ) ဃၢ်နုာ်လၢမဲာ်ချံကိညါပူၤဒီးညိးထီၣ်အဂီၢ်၊ မဲာ်ချံညီးထီၣ်၊ (မ့) ဒီသဒၢတၢ်ဆါ (ဘၣ်ထံရံယၤ) ဃၢ်ဖဲမဲာ်ချံဘၣ်ဒိ၀ံၤလီၢ်ခံ။,,,,,,,,,,,,,,,,,,,,,,
+Chloroquine (MALARIA) ,,,See MALARIA PROTOCOLS,ကွၢ်လၢ တၢ်ညၣ်ဂိၢ်ဃၢ်ကသံၣ်အကျိၤအကျဲ ။,,,,,,,,,,,,,,,,,,,,,,
+Chlorpheniramine - ORAL,1 tab = 4 mg,၁ ဖျၢၣ် = ၄ mg,"For urticaria and allergic reactions (does not treat the cause, only the symptoms).",တၢ်ဘ့ၣ်ပြုထီၣ်မဲာ်ညိးဒီးဂာ်တဖီးဒီးလၢတၢ်တမံၤမံၤအပနီၣ်(တဘၣ်ကူစါယါဘျါလၢတၢ်ဆါအဂီၢ်ဘၣ်မ့ ၢ်၀ဲဒၣ်လၢတၢ်ဆါအတၢ်ပနီၣ်အဂီၢ်လီၤ)။,,Take with food or full glass of water to decrease stomach upset,See Cetirizine.,"Children with epilepsy, people who need to drive or to operate
+ machinery.","Drowsiness, headache, dry mouth, blurred vision, urinary 
+ retention",Alcohol increases drowsiness.,Give only if necessary,Give only if necessary,,,,,အီၣ်ဒီးတၢ်အီၣ်မ့တမ့ၢ်အီလီၤဒီးထံတခွးလၢကမၤလီၤစှၤတၢ်ဟၢဖၢဆါလီၤ။,ကွၢ်လၢ (Cetirizine) ။,ဖိသၣ်လၢအအိၣ်ဒီးတၢ်ထီၣ်ထိးပျုၢ်တၢ်ဆါ၊ ၦၤလၢအဘၣ်နီကါမ့တမ့ၢ် ကွၢ်ထွဲစဲးဖီကဟၣ်တဖၣ။်,မိၣ်မံခ့သး၊ ခိၣ်ဆါ၊ ကိာ်ပူၤဃ့ထီ၊ မဲာ်ကဒု၊ ဆံၣ်အိၣ်တ့ၢ်၊ ဆံၣ်တလဲၤဘၣ်။,တၢ်မူၤတၢ်ဘှီးန့ၣ်မၤအါထီၣ်၀ဲတၢ်မိၣ်မံခ့သး။,မ့ၢ်လိၣ်နီၢ်နီၢ်ဒီးဟ့ၣ်သ့။,မ့ၢ်လိၣ်နီၢ်နီၢ်ဒီးဟ့ၣ်သ့။,,,
+Chlorpheniramine - IV/IM,1 amp =1 cc = 10 mg,၁ ပလီ = ၁ cc = ၁၀ mg,"For emergency treatment of anaphylactic reactions (allergic shock) together with
+ Adrenaline. Give Adrenaline first!",ကသံၣ်ကူစါလၢတၢ်ဆါတကလုာ်လၢအဟဲကဲထီၣ်သးလၢ ဂာ်တဖီးတၢ်ဒိဆၢက့ၤတၢ် (ဂာ်တဖီးဒီးတၢ်တမံၤမံၤ(ရှီၣ်)၊ သူဃုာ်ဒီး ((Adrenaline)။ အဆိကတၢၢ်နၣ့်ဟ့ၣ်ကသံၣ်((Adrenaline)။,"Use 1 cc syringe if possible.
+ Give IV injection slowly, over 1 - 2 minutes.",,,,,,Can give,Can give,,,,"မ့ၢ်သ့သူ (syringe) ၁ cc ။
+ ဟ့ၣ်ကသံၣ်ဆဲးလၢသွံၣ်ကျိၤကယီကယီႉ အါနၣ့် ၁=၂ မံးနံးန့ၣ်တက့ၢ်။",,,,,,ဟ့ၣ်သ့။,ဟ့ၣ်သ့။,,,
+Ciprofloxacin,1 tab = 250 or 500 mg,၁ ဖျၢၣ် = ၂၅၀ (မ့) ၅၀၀ mg,Antibiotic to be used for specific bacterial infections.,ကသံၣ်မၤသံ(ဘၣ်ထံရံယၤ) ဃၢ်လၢကဘၣ်သူအီၤလၢ (ဘၣ်ထံရံယၤ) ဃၢ်နုာ်သ့ၣ်တဖၣ်။,"Can be useful also in: bone, joint and gastro-intestinal infections.","Good to give with food to decrease gastric upset, but do 
+ NOT give with milk or yogurt.","Epilepsy; G6PD deficiency, kidney failure, children, old people, liver 
+ disease, people with diabetes.","- NSAID (Ibuprofen, Indomethacin, Diclofenac...), 
+ Erythromycin, Amytriptiline.
+ - In people with heart failure, hypertension, old people 
+ (unless there is no other option).","Abdominal pain; dizziness; sleep disorders; convulsions;
+ jaundice. Not common: psychoses, photosensitivity. SEVERE: Tendinopathy and tendon rupture, peripheral neuropathy. 
+ Can be irreversible.","- Ferrous/Iron, Aluminium, Calcium and Zinc decrease
+ absorption of Ciprofloxacin and decrease effect: give at separate
+ times of the day (not together).
+ - People taking anti-diabetic drugs may lose control of blood sugar
+ when they take Ciprofloxacin.
+ - Prednisolone and Dexamethasone may increase risk of tendon
+ rupture.
+ - Ciprofloxacin may decrease effect of Phenytoin.",Do not give.,Do not give.,,,,သူအီၤသ့လၢဃံ၊ စုကမဲာ်ခီၣ်ကမဲာ်ဒီးကဖုဒီးၦံာ်တၢ်ဃၢ်နုာ်တဖၣ်။,ဂ့ၤလၢကဘၣ်အီၣ်ဃုာ်ဒီးတၢ်အီၣ်ဒ်သိးကမၤလီၤစှၤ၀ဲတၢ်ကဖုဆါဘၣ် ဆၣ်တဘၣ်အီၣ်ဃုာ်ဒီးတၢ်နုၢ်ထံမ့တမ့ၢ်တၢ်နုၢ်ထံဆံၣ်(ယိကၢၣ်)တဂ့ၤ။,ထိးပျုၢ်တၢ်ဆါ၊ (ကၠံၤစံၣ်ဖံၤဒံၤ)လီၤထုး၊ ကလ့ၢ်တမၤတၢ်မၤဘၣ်၊ ဖိသၣ်၊ ၦၤသးၦၢ်၊၊ သူၣ်တၢ်ဆါ၊ ၦၤလၢအိၣ်ဒီးဆံၣ်ဆၢတၢ်ဆါတဖၣ်။,"- NSAID ကရူၢ်တဖၣ (Ibuprofen၊ Indomethacin၊ Diclofenac)၊
+ (Erythromycin)၊ (Amytriptiline)။ - လၢၦၤအအိၣ်ဒီး သးဖျၢၣ်တမၤတၢ်မၤဘၣ်၊ သွံၣ်တၢ်ဆီၣ်သနံးထီၣ်၊ ၦၤသးၦၢ် (တၢ်ဃုထၢအဂၤမ့ၢ်တအိၣ်လၢၤဘၣ်ဒီးဟ့ၣ်သ့လီၤ)။",ဟၢဖၢဆါ၊ ခိၣ်မူၤ၊ မံတဘၣ်လီၢ်ဘၣ်စး၊ ထီၣ်၊ ဖံးဘ့ၣ်ဘီ၊ တဘျီတခီၣ်လီၤဂာ်ၦၤပျုၢ်၊ မုၢ်အီၣ်ဘ့ၣ်ကုညီ။ ထူၣ်ပျၢ်ညီးတၢ်ဆါဒီးထူၣ်ပျၢ်သ့ၣ်ဖး၊ စုခီၣ်ထူၣ်ပျၢ်ဟးဂီၤ။ တၢ်ဘှီက့ၤအီၤတန့ၢ်လၢၤဘၣ်ကဲထီၣ်၀ဲသ့လီၤ။,"- ကသံၣ် (Ferrous/Iron)၊ (Aluminium)၊ (Calcium) ဒီး (Zinc) ကထုးစှၤလီၤကသံၣ် (Ciprofloxacin) အသဟီၣ်တဘၣ်အီၣ်အီၤလၢ တၢ်ဆၢကတီၢ်တကတီၢ်ဃီပူၤဘၣ် (တမ့ၢ်တပူၤဃီဘၣ်)။
+ - ၦၤလၢအအီၣ်၀ဲကသံၣ်တြီဆၢဆံၣ်ဆၢတၢ်ဆါတဖၣ်န့ၣ်ဖဲအ၀ဲသ့ၣ်အီၣ်၀ဲ (Ciprofloxacin) ကသံၣ်အခါန့ၣ်ကသံၣ်အံၤတြီဆၢတၢ်ဆၢလၢသွံၣ်ကျါ တန့ၢ်ဂ့ၤဂ့ၤလၢၤဘၣ်။ - (Prednisolone) ဒီး (Dexamethasone) ကမၤအါထီၣ်၀ဲတၢ်ကီတၢ်ခဲ လၢထူၣ်ပျၢ်သ့ၣ်ဖးကျါလီၤ။ - (Ciprofloxacin) မၤလီၤစှၤ၀ဲ (Phenytoin) အသဟီၣ်လီၤ။",တဘၣ်ဟ့ၣ်ဘၣ်။,တဘၣ်ဟ့ၣ်ဘၣ်။,,,
+Clindamycin,1 cap = 150 or 300 mg,၁ ဖျၢၣ် = ၁၅၀ (မ့) ၃၀၀ mg,"Antibiotic for specific bacterial infections: bone and joints infections (osteomyelitis,
+ septic arthritis), diabetic foot, tooth infections.
+ Used in combination with Artesunate or Quinine for PF malaria (see pag. 175).","ကသံၣ်မၤသံ (ဘၣ်ထံရံယၤ) ဃၢ်လၢမၤသံ၀ဲ (ဘၣ်ထံရံယၤ) ဃၢ်နုာ်လီၤလီၤဆီဆီတဖၣ်၊
+ ဃံဒီးတၢ်အကမဲာ် တၢ်ဃၢ်နုာ် (တၢ်၀့ဖိးဃံ (ဃံပူၤ (ဘၣ်ထံရံယၤ) တၢ်ဃၢ်နုာ်၊
+ စုကမဲာ်ခီၣ်ကမဲာ်ပူၤတၢ်ဃၢ်နုာ်)၊ ခီၣ်ဆံၣ်ဆၢတၢ်ဆါ၊ မဲတၢ်ဃၢ်နုာ်။ ဟ့ၣ်ကသံၣ်ပာ်ဖှိၣ်ဃုာ်ဒီး (Artesunate) မ့တမ့ၢ် (Quinine) လၢ (PF) တၢ်ညၣ်ဂိၢ်ဃၢ်တၢ်ဆါအဂီၢ် တက့ၢ် (ကွၢ်လၢကဘျံးပၤ ၁၇၅)။","- Can be used in patients with sepsis in combination with Ceftriaxone if 
+ you do not have Metronidazole iv or oral .
+ - To use in Malaria treatment see: PF Malaria treatment","- Can be taken with or without food.
+ - Good to take with a full glass of water to avoid oesophageal upset.",Liver disease,Small children,"Diarrhoea (if severe STOP immediately), nausea, rash.",,Can give,Can give,,,,- ၦၤဆါလၢအအိၣ်ဒီးတၢ်ဃၢ်နုာ်လၢသွံၣ်တဖၣ်န့ၣ်တၢ်ဟ့ၣ်အီၤသ့၀ဲဃုာ်ဒီး (Ceftriaxone) ဖဲ (Metronidazole) ကသံၣ်ဆဲးမ့တမ့ၢ်ကသံၣ်အီၣ်တအိၣ်ဘၣ် အခါလီၤ။ - တၢ်မ့ၢ်သူအီၤလၢတၢ်ကူဆါတၢ်ညၣ်ဂိၢ်ဃၢ်အဂီၢ်န့ၣ်ကွၢ်လၢတၢ်ကူဆါတၢ်ညၣ်ဂိၢ် ဃၢ် (PF) အပူၤတက့ၢ်(ကဘျံးပၤ ၁၇၅)။,"- အီၣ်ဒီးတၢ်အီၣ်သ့မ့တမ့ၢ်တအီၣ်ဒီးတၢ်အီၣ်ဘၣ်သ့၀ဲစ့ၢ်ကီးလီၤ။
+ - ဂ့ၤလၢကဘၣ်အီၣ်လီၤဒီးထံတခွးလၢကိးယုၢ်ဘိတမုာ်ဘၣ်အဂီၢ်လီၤ။",သူၣ်တၢ်ဆါ။,ဖိသၣ်ဆံးတဖၣ်။,တၢ်ဟၢဖၢလူ(မ့ၢ်နးထီၣ်ဒီးပတုာ်ကသံၣ်တဘျီဃီ)၊ သးကလဲၤ၊ လိၤဖှိၣ်ထီၣ်။,,ဟ့ၣ်သ့။,ဟ့ၣ်သ့။,,,
+"Clindamicin with Artesunate (NOT APART OF DRUG LIST, POSSIBLY A DRUG GROUP)",,,See MALARIA PROTOCOLS,ကွၢ်လၢ တၢ်ညၣ်ဂိၢ်ဃၢ်ကသံၣ်အကျိၤအကျဲ ။,,,,,,,,,,,,,,,,,,,,,,
+Cloxacillin,1 caps = 250 mg,၁ ဖျၢၣ် = ၂၅၀ mg,"Antibiotic used in chronic bone and respiratory infections, together with Metronidazole
+ and Amoxicillin. Useful in skin infections.","ကသံၣ်မၤသံ (ဘၣ်ထံရံယၤ) ဃၢ်ဘၣ်တၢ်သူအီၤလၢဃံဒီးကလံၤကျိၤ တၢ်ဆါဃၢ်နုာ် လၢအယံာ်အထၢ သ့ၣ်တဖၣ်နၣ့်လီၤႉကသံၣ်၀ဲအံၤဘၣ်သူဃုာ်အီၤဒီး (Metronidazole) ဒီး (Amoxicillin)။
+ ကဲဘျုးလၢဖံးဘ့ၣ်တၢ်ဃၢ်နုာ်နၣ့်လီၤ။","In chronic bone and respiratory infections give for 4 - 8 weeks in
+ combination with Metronidazole and Amoxicillin.",Take 30 minutes before food.,,,"Jaundice, haemolytic anaemia.",,Can give,Can give,,,,ဃံတၢ်ဆါအယံာ်အထၢဒီးကလံာ်ကျိၤတၢ်ဆါဃၢ်နုာ်အဂီၢ်ဟ့ၣ် ၄-၈နွံဃုာ်ဒီးကသံၣ် (Metronidazole) ဒီး (Amoxicillin)။,အီကသံၣ်တချုးအီၣ်တၢ်အီၣ်တခီနၢ်ရံၣ်အမံးနံး၃၀။,,,ညၣ်ဘီတၢ်ဆါ၊ သွံၣ်ဂံၢ်စၢ်တၢ်ဆါကဲထီၣ်သးခီဖျိသွံၣ်ဂီၤဖျၢၣ်သ့ၣ်ဖး။,,ဟ့ၣ်သ့။,ဟ့ၣ်သ့။,,,
+Clotrimoxazole cream,,ကသံၣ်ဖ,"Anti-fungal. To treat skin ringworms.
+ Not very effective for scalp ringworm. Not effective for nail ringworm.",ကသံၣ်မၤသံကုၤဃၢ်နုာ်။ တၢ်မၤသံလၢဖံးဘ့ၣ်ခိၣ်တၢ်ဖှီတဖၣ်။ တဘၣ်လိာ်သးအါအါဒီးတၢ်ဖီှလၢခိၣ်ဘ့ၣ်လိၤဒီးတၢ်ဖှီစုမ့ၣ်လိၤတဖၣ်ဘၣ်။,,,,,,,,,,,,,,,,,,,,,,
+Co-amoxiclav,1 tab = 250(A)+125(C) or 500(A) + 125(C) or 875(A)+ 125(C) mg,၁ ဖျၢၣ် =၂၅၀(A) + ၁၂၅(C) မ့ ၅၀၀(A) + ၁၂၅(C) မ့ ၈၇၅(A) + ၁၂၅(C) mg,"Antibiotic for bacteria infections when Amoxicillin does not work: respiratory tract
+ infections, bone and joint infections, abdominal infections, cellulitis, tooth infections.",ကသံၣ်မၤသ (ဘၣ်ထံရံယၤ) ဃၢ်လၢမၤသ (ဘၣ်ထံရံယၤ) ဃၢ်နုာ်တဖၣ်ဖ (Amoxicillin) တမၤလၢၤတၢ်မၤအခါ- ကလံၤကျိၤတၢ်ဃၢ်နုာ်၊ ဃံဒီးစုကမဲာ်ခီၣ်ကမဲာ်တၢ်ဃၢ်နုာ်၊ ဟၢဖၢပူၤတၢ်ဃၢ်နုာ်၊ ဖံးဘ့ၣ်တၢ်ဃၢ်နုာ်တၢ်ဆါ၊ မဲဃၢ်တၢ်ဆါ။,,Better to take with food to decrease stomach upset.,"- Liver damage is more common using Co-amoxiclav than Amoxicillin 
+ alone. 
+ - Do not give therapy for longer than 14 days if possible.
+ - Stop if signs of liver damage (jaundice).",Liver disease.,Diarrhoea can be more severe than with Amoxicillin alone.,,Can give,Can give,,,,,ဂ့ၤလၢကဘၣ်အီၣ်ဃုာ်ဒီးတၢ်အီၣ်ဒ်သိးကမၤလီၤစှၤတၢ်ဟၢဖၢဆါလီၤ။,"- နမ့ၢ်အီၣ်၀ဲ (Co-amoxiclav) န့ၣ်ကမၤဘၣ်ဒိနသူၣ်အါန့ၢ်ဒံးဖဲနအီၣ်ထဲ (Amoxicillin)တခါဧိၤလီၤ။
+ - မ့ၢ်သ့န့ၣ်တဘၣ်ဟ့ၣ်အီၤအါန့ၢ်တဆံလွံၢ်သီတဂ့ၤ။
+ - ပတုာ်ကွံာ်ကသံၣ်အီၣ်အံၤဖဲၦၤဆါအံၤတၢ်ပနီၣ်ဖျါလၢအသူၣ်ဘၣ်ဒိ(လီၤဘီ)။",သူၣ်တၢ်ဆါ။,ကအ့ၣ်လူ၀ဲနးဒိၣ်ထီၣ်၀ဲဖဲတၢ်ဟ့ၣ်အီၣ်အီၤထဲ (Amoxicillin) တခါဧိၤအခါလီၤ။,,ဟ့ၣ်သ့။,ဟ့ၣ်သ့။,,,
+Co-trimoxazole,1 tab = 480 mg. (= TRIMETHOPRIM 80 mg + SULFAMETHOXAZOLE 400 mg),၁ ဖျၢၣ် = ၄၈၀ mg (= TRIMETHOPRIM 80 mg + SULFAMETHOXAZOLE 400 mg),"Antibiotic for respiratory infections, skin bacterial infections, cellulitis, ear infections,
+ animal bite infections, pneumonias in chronic pulmonary disease, proSTATitis, septic
+ arthritis, diabetes foot infections, bone infections (in combination with Doxycycline)
+ You can use to treat acute Pneumonia, but if no improvement in 2 days, switch to
+ Amoxicillin",ကသံၣ်မၤသ (ဘၣ်ထံရံယၤ) ဃၢ်လၢကလံၤကျိၤ= ဖံးဘ့ၣ်ခိၣ်၊ ဖံးဘ့ၣ်ပူၤ၊ နၢ်ပူၤ၊ တၢ်ဖိဃၢ်အ့ၣ်၊ ပသိၣ်ကသါဃံးတၢ်ဆါလၢအယံာ်အထၢ၊ ပိာ်ခွါဆှိးထံအချံ၊ စုကမဲာ်ခီၣ်ကမဲာ်၊ ခီၣ်ဆံၣ်ဆၢ၊ ဃံ (ဟ့ၣ်ဃုာ်ဒီး (Doxycycline))။ နသူလၢပသိၣ်တၢ်ဃၢ်နုာ်သတူၢ်ကလာ်အဂီၢ်သ့၀ဲလီၤ၊ဘၣ်ဆၣ်ဖဲ၂သီအတီၢ်ပူၤမ့ၢ်တဂ့ၤထီၣ်ဘၣ်နၢ့်ဆီတလဲ လၢကသံၣ် (Amoxicillin) ။,,"- Can take with or without food.
+ - Give with at least one full glass of water.",Asthma; G6PD deficiency.,Blood disorders; liver or kidney failure; < 6 weeks of age.,"Headache, liver damage, blood disorders, renal disorders, 
+ pancreatitis.",Cotrimoxazole increases effect of Phenytoin.,Do not give.,Be careful if the newborn baby has jaundice.,NO TREATMENT TABLE,Length of treatment: - For proSTATitis: 4 – 6 weeks.- For septic arthritis: 4 tablets BID for 3 - 4 weeks.,,,"- အီၣ်ဒီးတၢ်အီၣ်သ့မ့တမ့ၢ်တအီၣ်ဒီးတၢ်အီၣ်ဘၣ်သ့၀ဲစ့ၢ်ကီးလီၤ။
+ - ကဘၣ်အီလီၤဒီးထံတခွးလီၤ။",တၢ်သးဘံးတၢ်ဆါ၊ (ကၠံၤစံၣ်ဖံၤဒံၤ)လီၤထုး။,သွံၣ်တဘၣ်လီၢ်ဘၣ်စး၊ သူၣ်တမၤတၢ်မၤဘၣ်၊ ကလ့ၢ်တမၤတၢ်မၤဘၣ်၊ သးနံၣ်လၢစှၤနၢ့်၆နွံဖီလာ်။,ခိၣ်ဆါ၊ သူၣ်ဟးဂီၤ၊ သွံၣ်တဘၣ်လီၢ်ဘၣ်စး၊ ကလ့ၢ်တဘၣ်လီၢ်ဘၣ်စးဒီး က၀ၢ်ညီးထီၣ်။,(Cotrimoxazole) ကမၤအါထီၣ်ကသံၣ် (Phenytoin) အသဟီၣ်။,တဘၣ်ဟ့ၣ်ဘၣ်။,ကဘၣ်အိၣ်ဒီးတၢ်ပလီၢ်ပဒီဖဲဖိသၣ်အိၣ်ဖျဲၣ်သီဖံးမ့ၢ်လီၤဘီအခါ။,,"- လၢ ပိာ်ခွါဆှိးထံအချံတၢ်ဃၢ်နုာ်အဂီၢ်- ၄-၆နွံ။
+ - စုကမဲာ်ခီၣ်ကမဲာ် ဘၣ်ထံရံယၤ ဃၢ်နုာ်- ၄ဖျၢၣ် BID လၢ၃=၄နွံ
+ အတီၢ်ပူၤတက့ၢ်။",
+Dapsone (G6PD ),,,See DRUGS AND G6PD DEFICIENCY,ကွၢ်လၢ ကသံၣ်တဖၣ်ဒီး(ကၠံၤစံၣ်ဖံၤဒံၤ)လီၤထုးတဖၣ ။,,,,,,,,,,,,,,,,,,,,,,
+Dexamethasone,1 amp = 1cc = 4 mg,၁ ပလီ = ၁ cc = ၄ mg,Anti inflammatory: for severe allergic reactions / shock. Also for lungs’ maturation of foetus when mother has premature labour (28-34 weeks):,ကသံၣ်ကူစါတၢ်ညီး-ကသံၣ်ကူစါလၢတၢ်ဆါတကလုာ်လၢအဟဲကဲထီၣ်သးလၢဂာ်တဖီးတၢ်ဒိဆၢက့ၤတၢ်၊ ဂာ်တဖီးဒီးတၢ်တမံၤမံၤ(ရှီၣ်)။ ဖဲမိၢ်ဟၢဖၢဆါဘၣ်ဆၣ်အလါတၦဲၤဒံးဘၣ်န့ၣ် (၂၈=၃၄နွံ) ဖိသၣ်လၢအတအိၣ်ဖျဲၣ်ဒ်ဘၣ်အပသိၣ် ကၦၢ်ထီၣ်၀ဲအဂီၢ်။,See Prednisolone.,See Prednisolone.,See Prednisolone.,See Prednisolone.,See Prednisolone.,See Prednisolone.,Give only if necessary,Give only if necessary,,,,ကွၢ်လၢ (Prednisolone)။,,ကွၢ်လၢ (Prednisolone)။,ကွၢ်လၢ (Prednisolone)။,ကွၢ်လၢ (Prednisolone)။,ကွၢ်လၢ (Prednisolone)။,မ့ၢ်လိၣ်နီၢ်နီၢ်ဒီးဟ့ၣ်သ့။,မ့ၢ်လိၣ်နီၢ်နီၢ်ဒီးဟ့ၣ်သ့။,,,
+Dextrose 50%,1 amp = 20cc,၁ ပလီ = ၂၀ cc,Concentrated glucose solution to use to treat very low blood sugar levels,မ့ၢ်၀ဲအံသၣ်ဆၢထံလၢအသဟီၣ်အါအါ လၢၦၤအံသၣ်ဆၢလၢသွံၣ်ပူၤလီၤစှၤဒိၣ်ဒိၣ်အဂီၢ်။,"- It is irritant to veins: give via a large vein and use a large canula.
+ - For CHILDREN is better to use 5cc / kg of a 10%dextrose solution, if 
+ available.",,,,,,,,,,,"- တၢ်ထံအံၤကမၤညီးထီၣ်သွံၣ်က့ၤကျိၤ၊ဟ့ၣ်ခီဖျိလၢသွံၣ်ကျိၤအဒိၣ်ဒီးထး (canula) လၢအဒိၣ်။
+ - လၢဖိသၣ်အဂီၢ်သူအံသၣ်ဆၢထံလၢအသဟီၣ်စှၤတစဲး (10% dextrose solution) ဒီး ၁ kg နၢ့်ဟ့ၣ် ၅ cc နၣ့်ဂ့ၤဒိၣ်နၣ့်လီၤ။",,,,,,,,,,
+"Diazepam (MULTIPLE NOTES, NEED TO FIGURE OUT HOW TO DISPLAY)","tab, 1 amp = 2 cc = 10 mg (0.2cc = 1mg)",ဖျၢၣ် ၁ ပလီ = ၂ cc = ၁၀ mg (၀ႉ၂ cc = ၁ mg),"There are NO indications for use of oral diazepam outside hospital.People can become addicted after only 2 weeks of use.Diazepam tablets should NOT be used outside hospital. To stop acute fitting (= seizures, convulsions).","ကသံၣ် (Diazepam) လၢအအီၣ်နၢ့်တဘၣ်သူလၢတၢ်ဆါဟံၣ်ချၢဘၣ်။
+ ၦၤသူ၂ နွံလီၢ်ခံန့ၣ်ကဲထီၣ်ဒ်ၦၤ(စွဲ)တၢ်မူးတၢ်ဘှီးသ့လီၤ။
+ ကသံၣ် (Diazepam) တကြၢးသူအီၤလၢတၢ်ဆါဟံၣ်ချၢဘၣ်။ တၢ်မၤပတုာ်တၢ်ထီၣ်သတူၢ်ကလာ် (တၢ်ထီၣ်=တၢ်ထီၣ်ကနိးနးနးကလဲာ်)။","If possible, calculate dose by kg.
+ Give injection over 3 - 5 minutes.If you can not find a vein, you can use Diazepam per rectum (PR)TO GIVE PR:
+ • Insert the syringe (without needle!) into rectum 4 - 5 cm and inject.
+ • Hold buttocks together for a few minutes.
+ Can give a 3rd dose after 10 more minutes if still having seizures.",,,,,,,,,,,"မ့ၢ်သ့နၢ့်ဂံၢ်ဒွးကသံၣ်(ဒိးစ်)လၢကံလိအဖီခိၣ်တက့ၢ်။
+ ဟ့ၣ်ကသံၣ်ဆဲးလၢအယံာ်နၢ့် ၃=၅ မံးနံးတက့ၢ်။ ဃုသွံၣ်ကျိၤမ့ၢ်တထံၣ်ဘၣ်န့ၣ် နဒၢနုာ် (Diazepam) ထံလၢခံပူၤသ့၀ဲန့ၣ်လီၤ ကဘၣ်ဟ့ၣ်ကသံၣ်ထံလၢခံပူၤ
+ • ဒၢနူာ်လီၤ (syringe) (တအိၣ်ဒီးထးဘၣ်)လၢခံပူၤခိၣ်ထီးဖဲအယီာ်ဒ်စုမုၢ်အဆၣ်တဘိ ၄-၅ cm ဒီးဆဲးလီၤ။
+ • ဖီၣ်ဃာ်(မၤတံၢ်)ခံကိၢ်လၢစှၤမံးနံးအတီၢ်ပူၤ။ အမံးနံး၁၀အလီၢ်ခံမ့ၢ်တကိညၢ်လီၤဘၣ်န့ၣ်ဟ့ၣ်ကသံၣ်၃ဘျီတဘျီသ့။",,,,,,,,,,
+Diclofenac,1 tab = 25 or 50 or 75 mg,၁ ဖျၢၣ် =၂၅ (မ့) ၅၀ (မ့) ၇၅ mg,To treat pain and inflammation.,ကသံၣ်ကူစါတၢ်အဆါဒီးတၢ်ညီး။,See Ibuprofen.,See Ibuprofen.,See Ibuprofen.,See Ibuprofen.,See Ibuprofen.,See Ibuprofen.,Do not give.,Do not give.,,,,ကွၢ်လၢ (Ibuprofen)။,ကွၢ်လၢ (Ibuprofen)။,ကွၢ်လၢ (Ibuprofen)။,ကွၢ်လၢ (Ibuprofen)။,ကွၢ်လၢ (Ibuprofen)။,ကွၢ်လၢ (Ibuprofen)။,တဘၣ်ဟ့ၣ်ဘၣ်။,တဘၣ်ဟ့ၣ်ဘၣ်။,,,
+"Dihydroartemisinin+Piperaquine (DP) (NOT APART OF DRUG LIST, MALARIA GROUP)",,,See MALARIA PROTOCOLS,ကွၢ်လၢ တၢ်ညၣ်ဂိၢ်ဃၢ်ကသံၣ်အကျိၤအကျဲ ။,,,,,,,,,,,,,,,,,,,,,,
+"Doxycycline Another double drug, with two displays",1 caps = 100 mg,၁ ဖျၢၣ် = ၁၀၀ mg,"Antibiotic useful for many infections.Can be used in combination to treat malaria (see Malaria Protocol pag. 173).1. Respiratory infections, Urine tract infections, Sinusitis, Oral infections,
+  Leptospirosis, Scrub Typhus, Sexually Transmitted Diseases and Pelvic
+  Inflammatory Disease (see p. 130), Syphilis, Filariasis, Animal bites, Cellulitis,
+  Chronic pulmonary disease, ear infections, chronic gums infections, bone
+  infections2. Cholera - Together with re-hydration fluids, Doxycycline can shorten the duration
+ of thediarrhoea and reduce the volume of stool losses","ကသံၣ်မၤသံ (ဘၣ်ထံရံယၤ) ဃၢ်လၢကဲဘျုးလၢတၢ်ဃၢ်နုာ်တၢ်ဆါအါကလုာ်ဂီၢ်။ သူသ့ဃုာ်ဒီးကသံၣ်အဂၤလၢယါဘျါတၢ်ညၣ်ဂိၢ်ဃၢ်နၣ့်လီၤ (ကွၢ်လၢတၢ်ညၣ်ဂိၢ်ဃၢ်တၢ်ဆါအလံာ်နဲၣ်ကျဲ ကဘျံးပၤ ၁၇၃)။ ၁ႉ တၢ်ဃၢ်နုာ်လၢကလံၤကျိၤ၊ ဆံၣ်ကျိၤတၢ်ဃၢ်နုာ်၊နါဒ့ပူၤညီး၊ တၢ်ဆါဘၣ်ကူဘၣ်ဂာ်လၢကိာ်ပူၤ၊
+ လဲးပထိၣ်စပံရိစံး၊ (Scrub Typhus) ၊ တၢ်ဆါဃၢ်ဟဲကဲထီၣ်သးတၢ်မံဃုာ်လိာ်သး ခံကွီၢ်ညိးတၢ်ဆါ(ကွၢ်လၢကဘျံးပၤ ၁၃၀)၊ (ဆဲဖံးလံၣ်)၊ကဆီခီၣ် တၢ်ဆါ (ဖံလၤရါစံၣ်) တၢ်ဖိဃၢ်အ့ၣ်တၢ်ဆါ၊ ဖံးဘ့ၣ်တၢ်ဆါ၊ ပသိၣ်ကသါဃံးတၢ်ဆါလၢအယံာ်အထၢ၊ နၢ်ပူၤတၢ်ဃၢ်နုာ် မဲကူာ်ဆါလၢအယံာ်အထၢ၊ ဃံတၢ်ဃၢ်နုာ် ၂ႉ(ခီလီရၤ) တၢ်အ့ၣ်လူ= ဘၣ်ဟ့ၣ်ဃုာ်ဒီးအံသၣ်ထံ (Doxycycline) rRvDRpSR0Jw>fth.fvl
+  tq>uwD>foh'D;rRvDRpSR0Jth.ftoH;u.foh0JvDR?","If you suspect Scrub Typhus, can give also to pregnant women. 
+ But if you have available, use Azythromycin.","- Better to give with food or milk to decrease gastric upset. 
+ - Give with a full cup of water.
+ - Have the patient sit upright for at least 30 minutes after taking 
+ the capsules.",Liver disease.,Children < 8 years (except if there is no other option).,"- Nausea/gastric pain, vomiting. 
+ - If patient starts to have a bad headache or vision problems: 
+ stop the drug.","- Aluminium, Iron and Zinc decrease absorption of 
+ Doxycycline.
+ - Carbamazepine and Phenobarbitone decrease effect of 
+ Doxycycline","- Do not give. 
+ - Exception: Scrub Typhus.",Give only if necessary,NEEDS MORE COLLUMS FOR EXTRA INFO,"- Pneumonias, animal bites, cellulitis : 1 - 2 weeks
+ - Scrub typhus, ear infections, mouth infections,
+ sinusitis, urine infections: 5 - 7 days
+ - Bone infections (together with Cotrimoxazole): 8 weeks
+ - Leptospirosis 1 week
+ - Early syphilis: 2 weeks
+ - Late syphilis 4 weeks
+ - Filariasis 6 - 8 weeks","For a long time it has been advised not to use Doxycycline in
+ children less than 8 years of age as it was thought it could
+ cause discoloration of teeth and incomplete tooth
+ development.
+ However new studies have showed that these side-effects are
+ linked especially to Tetracyclines and not to Doxyxycline.
+ If no other therapy is available",နမ့ၢ်ဆိကမိၣ်လၢ (Scrub Typhus) နဟ့ၣ်ၦၤမိၢ်ဒၢစ့ၢ်ကီးသ့၀ဲလီၤ။ ဘၣ်ဆၣ်နတၢ်မ့ၢ်အိၣ်န့ၣ်ဟ့ၣ (Azythromycin) တက့ၢ်။,"- ဂ့ၤလၢကဘၣ်အီၣ်ဒီးတၢ်အီၣ်မ့တမ့ၢ်တၢ်နုၢ်ထံဒ်သိးကမၤလီၤစှၤ၀ဲကဖုဆါ။
+ - အီအီၤဒီးထံတခွး။
+ - မၢၦၤဆါအံၤဆ့ၣ်နီၤဘျၢဘျၢလၢအမံးနံး၃၀အတီၢ်ပူၤဖဲအအီၣ်ကသံၣ်အံၤ၀ံၤ အခါတက့ၢ်။",သူၣ်တၢ်ဆါ။,ဖိသၣ်စှၤနၢ့်ဒံး ၈ နံၣ် (တၢ်ဃုထၢအဂၤမ့ၢ်တအိၣ်ဘၣ်ဒီးဟ့ၣ်သ့လီၤ)။,"- သးကလဲၤ၊ကဖုဆါ၊ ဘှီး။
+ - ၦၤဆါခိၣ်သးဃံမ့ၢ်စးထီၣ်ဆါနးနး(မ့)ထံၣ်တၢ်မ့ၢ်လီၤကဒုးနၢ့် - ပတုာ်ကသံၣ်အံၤတက့ၢ်။",- (Aluminium)၊ (Iron) ဒီး (Zinc) ထုးလီၤစှၤ (Doxycycline) အသဟီၣ်။ - (Carbamazepine) ဒီး (Phenobarbitone) မၤလီၤစှၤ (Doxycycline)အသဟီၣ်နၢ့်လီၤ။,"- တဘၣ်ဟ့ၣ်ဘၣ်။
+ - နဟ့ၣ်သ့ဖဲၦၤမိၢ်ဒၢအံၤမ့ၢ်ဘၣ် (Scrub Typhus) အခါ။",မ့ၢ်လိၣ်န့ၣ်ဟ့ၣ်သ့လီၤ။,,"- ပသိၣ်တၢ်ဃၢ်နုာ်၊တၢ်ဖိဃၢ်အ့ၣ်၊ဖံးဘ့ၣ်တၢ်ဃၢ်နုာ် ၁-၂ နွံ
+ - (Scrub Typhus)၊ နၢ်ပူၤတၢ်ဃၢ်နုာ်၊ကိးပူၤတၢ်ဃၢ်နုာ်၊
+ နါဒ့ပူၤတၢ်ဃၢ်နုာ်၊ဆံၣ်ကျိၤပူၤတၢ်ဃၢ်နုာ် ၅-၇ နံၤ
+ - ဃံပူၤတၢ်ဃၢ်နုာ်(ဟ့ၣ်ဃုာ်ဒီး Cotrimoxazole) ၈ နွံ
+ - လဲးပထိၣ်စပံရိစံး ၁ နွံ
+ - (ဆဲဖံးလံၣ်) လၢအဆိ ၂ နွံ
+ - (ဆဲဖံးလံၣ်) လၢစဲာ်ခံ ၄ နွံ
+ - ကဆီခီၣ်တၢ်ဆါ (ဖံလၤရါစံၣ်) ၆-၈ နွံ",တၢ်တဘၣ်ဟ့ၣ် (Doxycycline) အံၤလၢဖိသၣ်လၢအနံၣ်စှၤန့ၢ်ဃီးနံၣ်ဆူ အဖီလာ်ဘၣ်တၢ်အံၤမ့ၢ် တၢ်ဟ့ၣ်ကူၣ်ဟ့ၣ်ဖးယံၤလံလီၤႉ တၢ်အံၤၦၤဆိမိၣ် လၢကဆီတလဲကွံာ် မဲအလွဲၢ်ဒီးမဲတဖၣ်တဒိၣ်ထီၣ်ထီထီၣ်၀ဲဂ့ၤဂ့ၤဘၣ်လီၤ။ ဒ်လဲၣ်ဂ့ၤၦၤမၤလိန့ၢ်တၢ်အသီတဖၣ်တဲ၀ဲလၢတၢ်ကဲထီၣ်သးတၢ်ပိာ်ထွဲအံၤ လီၤဆီဒၣ်တၢ်ဘၣ်ထွဲ၀ဲလၢ (Tetracyclines) လီၤတမ့ၢ် (Doxycycline) ဘၣ်။ ကသံၣ်အဂၤမ့ၢ်တအိၣ်ဘၣ်ဒီးဟ့ၣ (Doxycycline) အံၤဆူဖိသၣ် လၢစှၤန့ၢ်ဃီးနံၣ် ဆူအဖီလာ်သ့၀ဲလီၤ။
+Doxycycline with Aresunate (Malaria),,,See MALARIA PROTOCOLS,ကွၢ်လၢ တၢ်ညၣ်ဂိၢ်ဃၢ်ကသံၣ်အကျိၤအကျဲ ။,,,,,,,,,,,,,,,,,,,,,,
+Enalapril,1 tab = 5 or 20 mg,၁ ဖျၢၣ် = ၅ (မ့) ၂၀ mg,"To treat high blood pressure, heart failure. If possible, ask a doctor for advice.","တၢ်ကူစါသွံၣ်တၢ်ဆီၣ်သနံးထီၣ်၊ သးဖျၢၣ်တမၤတၢ်မၤဘၣ်။
+ မ့ၢ်သ့နၢ့်ဃ့ကသံၣ်သရၣ်ဖးဒိၣ်အတၢ်ဟ့ၣ်ကူၣ်တက့ၢ်။","Can be given in combination with Amlodipine and
+ Hydrochlorothiazide.",Can take with or without food.,"If possible, avoid using in people with kidney problems",Together with Spironolactone (there is risk of high Potassium).,"Blood Pressure can decrease too much, kidney problems, dry 
+ cough, high Potassium.","- Aluminium decreases absorption of Enalapril.
+ - Alcohol, Atenonolol, Hydrochlorothiazide, Furosemide increase
+ effect.",Do not give.,Avoid during first month.,See Hydrochlorothiazide.,,,ဟ့ၣ်ဃုာ်ဒီးကသံၣ်ပာ်ဖှိၣ်ဃုာ် (Amlodipine) ဒီး (Hydrochlorothiazide)သ့။,အီၣ်ဒီးတၢ်အီၣ်သ့မ့တမ့ၢ်တအီၣ်ဒီးတၢ်အီၣ်ဘၣ်သ့၀ဲစ့ၢ်ကီးလီၤ။,မ့ၢ်သ့န့ၣ်တဘၣ်သူဃုာ်ဒီးၦၤဆါလၢအိၣ်ဒီးကလ့ၢ်တၢ်ကီတၢ်ခဲသ့ၣ်တဖၣ်။,ဟ့ၣ်ဃုာ်ဒီး (Spironolactone) တၢ်ဘၣ်ယိၣ်အိၣ်လၢ (Potassium)ကအါထီၣ်ဒိၣ်တလၢန့ၣ်လီၤ။,သွံၣ်အတၢ်ဆီၣ်သနံးကလီၤစှၤဒိၣ်တလၢ၊ ကလ့ၢ်တၢ်ကီတၢ်ခဲ၊ကိး ဃ့ထီ၊ (Potassium) အါထီၣ်။,"- (Aluminium) ထုးလီၤစှၤကသံၣ (Enalapril) အသဟီၣ်။ - (Alcohol, Atenonolol, Hydrochlorothiazide, Furosemide) မၤအါထီၣ်ကသံၣ် (Enalapril) အသဟီၣ်။",တဘၣ်ဟ့ၣ်ဘၣ်။,ဖိမ့ၢ်စှၤန ့ၢ်တလါဒုးအီၣ်တဂ့ၤ။,ကွၢ်လၢ (Hydrochlorothiazide) ။,,
+Ergometrine,,,"See DRUGS USED FOR POST PARTUM HAEMORRAGE (PPH)
+ and MISSED or INCOMPLETE ABORTION",ကွၢ်လၢ ကသံၣ်လၢတၢ်သူအီၤလၢ အိၣ်ဖျဲၣ်၀ံၤသွံၣ်လူ ဒီး ဖိသၣ်ဟးဂီၤလၢဒၢလီၢ်ပူၤ(ဟုးဟးဂီၤ) မ့ မိၢ်ဒၢဟုးလီၤဖှံၣ်တ၀ာ်။,,,,,,,,,,,,,,,,,,,,,,
+Erythromycin,,၁ ဖျၢၣ် = ၂၅၀ mg,,"ကသံၣ်မၤသံ (ဘၣ်ထံရံယၤ) ဃၢ်လၢကလံၤကျိၤဒီးကိာ်ပူၤတၢ်ပူၤလီၢ်ထီၣ်၊ ဖံးဘ့ၣ်တၢ်ဃၢ်နုာ်ဒီး
+ တၢ်ဃၢ်နုာ်ခီဖျိတၢ်မံဃုာ်လိာ်သး။
+ ၦၤဆါလၢအတဖီးဒီး ; (Penicillin/Amoxicillin) သ့ၣ်တဖၣ်သူက့ၤကသံၣ် (Erythromycin) န့ၣ်တက့ၢ်။",,"Can take with or without food.
+ But if possible take after food to decrease stomach upset.",Liver disease and kidney disease.,,"Nausea, diarrhoea, rashes.",,Can give,Can give,,,,,အီၣ်ဒီးတၢ်အီၣ်သ့မ့တမ့ၢ်တအီၣ်ဒီးတၢ်အီၣ်ဘၣ်သ့၀ဲစ့ၢ်ကီးလီၤ။ ဘၣ်ဆၣ်မ့ၢ်သ့န့ၣ်အီလီၤအီၤလၢအီၣ်တၢ်အီၣ်၀ံၤအလီၢ်ခံဒ်သိးကမၤလီၤစှၤ တၢ်ဟၢဖၢဆါလီၤ။,သူၣ်တၢ်ဆါဒီးကလ့ၢ်တၢ်ဆါ။,,သးကလဲၤ၊ ဟၢဖၢလူ၊ လိၤဖှိၣ်ထီၣ်။,,ဟ့ၣ်သ့။,ဟ့ၣ်သ့။,,,
+"Ferrous Iron, Ferrous Sulphate, Ferrous Fumarate. (NEED SCREENSHOT FOR EXTRA FIELDS)","FERROUS SULFATE (F/S) - 200 mg tab = ELEMENTAL IRON ~40 mg. FERROUS FUMARATE (F/F)-100 mg tab = ELEMENTAL IRON ~ 33 mg There is evidence now suggesting that high doses might give the
+ opposite result: instead of increasing iron levels in the blood, high doses
+ decrease iron absorption and increase side effects without improving the
+ anaemia.
+ - A small dose given once a day is better absorbed and gives less
+ side effects that a higher dose taken 3 times a day","FERROUS SULFATE (F/S) - 200 mg tab =ELEMENTAL IRON ~40 mg
+ FERROUS FUMARATE (F/F)-100 mg tab =ELEMENTAL IRON ~ 33 mg (၁)ဒိးစ် 
+ - ခဲအံၤန့ၣ်တၢ်ပနီၣ်အုၣ်ကီၤသးအိၣ်၀ဲလၢတၢ်မ့ၢ်ဟ့ၣ်၀ဲကသံၣ်ဒိးစ်မ့ၢ်အါန့ၣ်ကမၤအါ ထီၣ်၀ဲတၢ်ထီဒါတၢ်ကဲထီၣ်သး လၢကဘၣ်မၤအါထီၣ်၀ဲထးသဟီၣ်လၢသွံၣ်ကျါ၊ တၢ်သူကသံၣ်ဒိးစ်မ့ၢ်အါန့ၣ်မၤလီၤစှၤ၀ဲထးထုးတၢ်သဟီၣ်ဒီးမၤအါထီၣ်၀ဲတၢ်ကဲထီၣ် ပိာ်ထွဲအခံဒီးတမၤစၢၤ၀ဲတၢ်သွံၣ်စှၤတၢ်ဆါဘၣ်လီၤ။
+ - တၢ်ဟ့ၣ်ကသံၣ်ဒိးစ်လၢအစှၤလၢတနံၤတဘျီန့ၣ်ကထုးန့ၢ်ကသံၣ်သဟီၣ်ဂ့ၤဒိၣ်၀ဲဒီး တၢ်ကဲထီၣ်ပိာ်ထွဲအခံကစှၤန့ၢ်ဒံးတၢ်ဟ့ၣ်ကသံၣ်ဒိးစ်အါလၢတၢ်ဘၣ်အီၣ်အီၤတနံၤ သၢဘျီန့ၣ်လီၤ။",For treatment and prevention of anaemia.,ကသံၣ်ကူဆါယါဘျါဒီးဒီသဒၢသွံၣ်ဂံၢ်စၢ်တၢ်ဆါ။,"These guidelines are for a population where the prevalence of anaemia
+ is > 40%, as in Karen State and many parts of Burma. - Tell the people that stool will become dark in colour There are different Iron Salts (Sulphate, Fumarate,
+ Gluconate) which contain different quantity of Elemental
+ Iron. The most commonly used are tablets of Ferrous
+ Sulphate or Multi-vitamins containing Ferrous Fumarate
+ (like Foli C or FBC or Obimin, etc.).","In theory it is better to take on empty stomach. But many people get
+ stomach upset and stop taking treatment. If stomach upset, take with
+ food. Do not give with milk or yogurt","If a child swallows many tablets the child can die.
+ Keep the tablets away from children.",,Often stomach pain if taken BID or TID; constipation.,"- Ferrous decreases absorption of Ciprofloxacin and Doxycycline.
+ - Ferrous decreases effect of Methyldopa.",,,NEEDS MORE COLLUMS FOR EXTRA INFO,"Alternate-day dosing (or Monday, Wednesday, Friday if it is
+ easier to remember) has been shown to result in greater
+ absorption of iron and less side-effects. It is good to tell
+ patients to take iron like this. But if you think that the
+ patients will not remember, tell them to take tablets
+ every day 3) FOR HOW LONG - For Prevention: 3 consecutive months in a year.
+ - For Treatment: 3 months are needed to get Haemoglobin
+ to normal levels, 3 months to rebuild the iron stores in the
+ liver: total 6 months.",,"(၄) ထးလၢအသဟီၣ်ဆူၣ်= ထးကသံၣ်တဖၣ်န့ၣ်အိၣ်၀ဲအါကလုာ် (Sulphate, Fumarate,
+ Gluconate)လၢအပၣ်ဃုာ်၀ဲဒီးထးသဟီၣ်လၢအလီၤဆီလိာ်အသး န့ၣ်လီၤ။ တၢ်ညီနုၢ်သူ၀ဲအါန့ၣ်မ့ၢ်(Ferrous Sulphate) ကသံၣ်ဖျၢၣ် မ့တမ့ၢ် (Multi-vitamins)လၢအပၣ်ဃုာ်၀ဲဒီး(Ferrous Sulphate) လီၤ (ဒ်သိးFoli Cမ့တမ့ၢ်FBC မ့တမ့ၢ်Obimin…)။ လံာ်တၢ်နဲၣ်ကျဲအံၤမ့ၢ်၀ဲလၢၦၤနီၢ်ဂံၢ်လၢအိၣ်ဒီးတၢ်သွံၣ်ဂံၢ်စၢ်တၢ်ဆါလၢတၢ်လီၢ်သကုၤ ဆးဒးအါန့ၢ်မျးကယၤ ၄၀လၢကညီကီၢ်စဲၣ်ဒီးတၢ်လီၢ်အါတီၤလၢကီၢ်ပယီၤအပူၤ။ တဲဘၣ်ၦၤကညီလၢအ့ၣ်အလွဲၢ်ကထီၣ်သူ။",လၢလံာ်နဲၣ်ကျဲအပူၤန့ၣ်တၢ်ဘၣ်အီၣ်အီၤဖဲဟၢဖၢပူၤတၢ်အီၣ်တအိၣ်နီတမံၤ ဘၣ်အခါ။ ဘၣ်ဆၣ်ၦၤအါဂၤန့ၣ်အဟၢဖၢဆါဒီးပတုာ်ကွံာ်၀ဲကသံၣ်အံၤလီၤႉဟၢဖၢမ့ၢ်ဆါန့ၣ်အီၣ်ဒီး တၢ်အီၣ်တက့ၢ်။ တဘၣ်အီၣ်ဃုာ်ဒီးတၢ်နုၢ်ထံမ့တမ့ၢ်တၢနုၢ်ထံဆံၣ်(ယိကၢၣ်)ဘၣ်။,ဖိသၣ်အီၣ်ကသံၣ်မ့ၢ်အါနၢ့်တၢ်ပာ်ပနီၣ်ဒီးသံသ့။ ပာ်ကသံၣ်လၢအိၣ်ယံၤဒီးဖိသၣ်နၣ့်တက့ၢ်။,,ညီနုၢ်တၢ်မ့ၢ်အီၣ် BID (မ့) TID ဒုးကဲထီၣ်ကဖုဆါ၊ ဟၢဖၢကျၢၤလီၤ။,"-ထးထုးလီၤစှၤက့ၤ (Ciprofloxacin) ဒီး (Doxycycline) အသဟီၣ်နၣ့်လီၤ။
+ - ထးထုးလီၤစှၤ (Methyldopa) အသဟီၣ်နၣ့်လီၤ။",,,,"(၂) ၦဲၤဘျီလဲၣ်- တနံၤအဘျီအဒိးစ်(မ့တမ့ၢ်မုၢ်တနံၤ၊ မုၢ်သၢနံၤ၊မုၢ်ယဲၢ်နံၤဖဲနမ့ၢ်သ့ၣ်နီၣ် အီၤညီ၀ဲအဂီၢ်) တၢ်အံၤပာ်ဖျါ၀ဲတၢ်အစၢလၢအဂ့ၤဒိၣ်လၢအထုးန့ၢ်ထး သဟီၣ်ဒီးတၢ်ကဲထီၣ်ပိာ်ထွဲအခံန့ၣ်စှၤ၀ဲလီၤ။ တၢ်အံၤဂ့ၤဒိၣ်မးလၢ ၦၤဆါတဖၣ်ကအီၣ်၀ဲထးကသံၣ်ဒ်အံၤလီၤ။ဘၣ်ဆၣ်ဒီးနမ့ၢ်သးအုးလၢ ၦၤဆါအံၤကသါပ့ၤနီၣ်၀ဲ န့ၣ်မၢအအီၣ်၀ဲကသံၣ်အံၤကိးနံၤဒဲးတက့ၢ်။ (၃)လၢအဆၢကတီၢ်ယံာ်ထဲလဲၣ်
+ -တၢ်တြီဆၢ-လၢတနံၣ်အတီၢ်ပူၤန့ၣ်ဟ့ၣ်ပိာ်ထွဲအီၤလၢ၃လါအတီၢ်ပူၤ။
+ - တၢ်ကူစါယါဘျါ- လၢ၃လါအတီၢ်ပူၤနၢ့် (ံေနာသါူသဘငည) ဟံမိကျိ ဘံန်ကဘၣ်က့ၤဘၣ်လီၢ်ဘၣ်ဆး၊ လၢအဂၤ၃လါနၢ့်ကဘၣ်သူၣ်ထီၣ်ထး အဆီဒီးပာ်ဖှိၣ်လၢသူၣ်ပူၤနၣ့်လီၤ (ခဲလၢၤ ၆ လါနၣ့်လီၤ)။",
+Fluconazole,1 cap = 50 or 150 or 200 mg,၁ ဖျၢၣ် = ၅၀ (မ့) ၁၅၀ (မ့)၂၀၀mg,Anti-fungal.,ကသံၣ်မၤသံကုၤဃၢ်။,,Can take with or without food.,"- Liver and kidney disease.
+ - Avoid using with other drugs that can damage the liver.",,"Headache, rash (stop treatment).",,Can give,Can give,,,,,အီၣ်ဒီးတၢ်အီၣ်သ့မ့တမ့ၢ်တအီၣ်ဒီးတၢ်အီၣ်ဘၣ်သ့၀ဲစ့ၢ်ကီးလီၤ။,"- သူၣ်တၢ်ဆါဒီးကလ့ၢ်တၢ်ဆါ။
+ - တဘၣ်သူဃုာ်ဒီးကသံၣ်အဂုာ်အဂၤလၢအမၤဟးဂီၤသူၣ်သ့တဂ့ၤ။",,ခိၣ်ဆါ၊ လိၤဖှိၣ်ထီၣ် (ကဘၣ်ပတုာ်ကသံၣ်)။,,ဟ့ၣ်သ့။,ဟ့ၣ်သ့။,,,
+Fluoxetine,1 tab = 20 mg,၁ ဖျၢၣ် = ၂၀ mg,"Anti-depressant, generalised anxiety disorder and panic disorder.","ကသံၣ်မၤဘျါတၢ်သးဟးဂီၤတၢ်ဆါတၢ်သူၣ်ပိၢ်သး၀းလၢတဘၣ်လီၢ်ဘၣ်စးဒီးပျံၤတၢ်လၢတဘၣ်
+ လီၢ်ဘၣ် စး။","- To stop therapy, reduce slowly by 10 mg every 2 - 4 weeks.
+ - Patients may have more anxiety for the first 2 - 3 weeks after starting
+ the medication.",Can be taken with food or without food.,"- Heart disease, diabetes, epilepsy, gastro-intestinal bleeding.
+ - In young adult can cause suicidal thinking.
+ - Patients should not drive or operating machinery.","- With Amitryptiline; with Tramadol.
+ - To patients with not controlled epilepsy","- Diarrhoea, abdominal pain, nausea, constipation, gastric pain,
+ anxiety, convulsions, drowsiness, dizziness, dry mouth, dry eyes, 
+ headache, increased sweating, decreased libido.
+ - RARE SYNDROME: tremor, rigidity, tachycadia, high or low blood
+ pressure, diarrhoea, shivering, high temperature, agitation, confusion","- Alcohol: more risk of feeling sleepy.
+ - Carbamazepine, Phenobarbitone, Phenytoin: reduce effect of 
+ Fluoxetine.
+ - Fluoxetine decreases effect of Carbamazepine, 
+ Phenobarbitone, Phenytoin.",Give only if necessary,Give only if necessary,,,,"- လၢတၢ်ကပတုာ်ကသံၣ်အဂီၢ်၊မၤလီၤစှၤကသံၣ်ဒိးစ်ကယီကယီ၁၀ mg ၂=၄နွံ
+  တဘျီတက့ၢ်။
+ - ၦၤဆါအံၤကအိၣ်ဒီးတၢ်သူၣ်ပိၢ်သး၀းဒိၣ်ဒိၣ်သ့၀ဲဖဲစးထီၣ်အီၣ်၀ဲကသံၣ်လၢအခီၣ်ထံး
+ ၂=၃နွံလီၤ။",အီၣ်ဒီးတၢ်အီၣ်သ့မ့တမ့ၢ်တအီၣ်ဒီးတၢ်အီၣ်ဘၣ်သ့၀ဲစ့ၢ်ကီးလီၤ။,"- ၦၤလၢအိၣ်ဒီးသးတၢ်ဆါ၊ဆံၣ်ဆၢတၢ်ဆါ၊တၢ်ထီၣ်ထိးပျုၢ်တၢ်ဆါ။
+ - ၦံာ်သွံၣ်ယွၤ၊ၦၤသးစၢ်တဖၣ်အီၣ်သံလီၤအသးသ့၀ဲလီၤ။
+ - ၦၤဆါတဖၣ်တဘၣ်နီကါမ့တမ့ၢ်မၤစဲးဖီကဟၣ်အတၢ်မၤဘၣ်။","- ဃုာ်ဒီး(Amitryptiline)။ ဃုာ်ဒီး(Tramadol)။
+ - လၢၦၤဆါလၢအပၢၤဃာ်တၢ်ထီၣ်ထိးပျုၢ်တၢ်ဆါတန့ၢ်ဘၣ်တဖၣ်အအိၣ်တဂ့ၤ။","- တၢ်ဟၢဖၢလူ၊ တၢ်ဟၢဖၢဆါ၊ သးကလဲၤ၊ အ့ၣ်ကျၢၤ၊ကဖုဆါ၊
+ သူၣ်ပိၢ်သး၀းတၢ်ထီၣ်ကနိး၊ မိၣ်မံခ့သး၊ ခိၣ်မူၤ၊ ကိာ်ပူၤဃ့ထီ၊
+ မဲာ်ချံဃ့ထီခိၣ်ဆါမၤအါထီၣ်ကပၢၤ၊ မၤလီၤစှၤတၢ်သးကတၢ။
+ - တၢ်ဆါပနီၣ်လၢတညီနုၢ်ကဲထီၣ်သး=စုကနိး၊ ဆှိၣ်ထီၣ်၊ သးစံၣ်ချ့
+ သွံၣ်တၢ်ဆီၣ်သနံးထီၣ်မ့တမ့ၢ်စှၤလီၤ၊တၢ်အ့ၣ်လူ၊ တၢ်ဂၢၢ်ကနိး၊
+ တၢ်ကိၢ်ထီၣ်ဒိၣ်ဒိၣ်၊ ပတုာ်တၢ်ဟူးတၢ်ဂဲၤတန့ၢ်ဘၣ်၊ ထၢမံထၢမၣ်။","- တၢ်မူၤတၢ်ဘှီး=မၤလီၤမံခ့ကထုတၢ်အါထီၣ်။ - (Carbamazepine, Phenobarbitone, Phenytoin) မၤလီၤစှၤ (Fluoxetine) အသဟီၣ်။ - (Fluoxetine)မၤလီၤစှၤ (Carbamazepine, Phenobarbitone,
+ Phenytoin)အသဟီၣ်။",ဟ့ၣ်ဖဲမ့ၢ်လိၣ်နီၢ်နီၢ်။,ဟ့ၣ်ဖဲမ့ၢ်လိၣ်နီၢ်နီၢ်။,,,
+Folic Acid,1 tab = 5 mg,၁ ဖျၢၣ် = ၅ mg,,,,Can take with or without food.,,,,,,,,,,,အီၣ်ဒီးတၢ်အီၣ်သ့မ့တမ့ၢ်တအီၣ်ဒီးတၢ်အီၣ်ဘၣ်သ့၀ဲစ့ၢ်ကီးလီၤ။,,,,,,,,,
+Furosemide PO,1 tab = 20 or 40 mg,၁ ဖျၢၣ် =၂၀ (မ့) ၄၀ mg,"Diuretic.
+  For early phase of nephrotic syndrome, for chronic heart failure.","ကသံၣ်လၢဒုးဟးထီၣ်ဆံၣ်။
+ ယါဘျါကလ့ၢ်တၢ်ဆါ (nephrotic syndrome) လၢအဆိကတၢၢ်အပတီၢ် ဒီးသးဖျၢၣ်တမၤတၢ်မၤဘၣ်လၢအယံၤအထၢ။",,Can take with or without food.,"Old people, low blood pressure, gout, diabetes.",Dehydration.,"Low Sodium and low Potassium, low blood pressure, 
+ high glucose.",,Do not give to treat high blood pressure (use Methyldopa).,Can give,,,,,အီၣ်ဒီးတၢ်အီၣ်သ့မ့တမ့ၢ်တအီၣ်ဒီးတၢ်အီၣ်ဘၣ်သ့၀ဲစ့ၢ်ကီးလီၤ။,ၦၤသးၦၢ်ဖးဒိၣ်၊ သွံၣ်တၢ်ဆီၣ်သနံးလီၤစှၤ၊ ဃံဆၢညီးတၢ်ဆါ (ေလးဖက်နာ)တၢ်ဆါ၊ ဆံၣ်ဆၢတၢ်ဆါ။,ထံသံးနိသံး။,(Sodium) စှၤလီၤ၊ (Potassium) စှၤလီၤ၊ သွံၣ်တၢ်ဆီၣ်သနံးလီၤစှၤ၊ အံသၣ်ဆၢဒးအါထီၣ်။,,လၢအိၣ်ဒီးသွံၣ်ဆီၣ်သနံးဒိၣ်ဒိၣ်နၣ့်တဘၣ်ဟ့ၣ်တဂ့ၤ (သူ Methyldopa)။,ဟ့ၣ်သ့။,,,
+Furosemide IV,1 amp = 2 cc = 20 mg,၁ ပလီ = ၂ cc ] ၂၀ mg,"Diuretic.
+  Emergency treatment for patients in pulmonary oedema (acute heart failure)
+ and very high blood pressure (>220/120).","ကသံၣ်လၢဒုးဟးထီၣ်ဆံၣ်။
+ တၢ်ကူဆါယါဘျါအဆိအခ့လျၢၦၤဆါအိၣ်ဒီးပသိၣ်ထံနုာ်(သးဖျၢၣ်တမၤတၢ်မၤဘၣ်သတူၢ်ကလာ်) ဒီးသွံၣ်တၢ်ဆီၣ်သနံးလၢအအါ(အါနၢ့်၂၂၀ / ၁၂၀)။",Repeat after 1 - 2 hours if not improving.,,"Old people, low blood pressure, gout, diabetes","Dehydration, to treat high blood pressure in pregnancy (use
+ Labetalol or Hydralazine).","Low Sodium and low Potassium, low blood pressure, 
+ high glucose.",,Give only if necessary,Can give,,,,မ့ၢ်တကိညၢ်လီၤဘၣ်နၢ့် ၁-၂နၣ်ရံၣ်အတီၢ်ပူၤဟ့ၣ်ကဒီးအသီတဘျီ။,,ၦၤသးၦၢ်ဖးဒိၣ်၊ သွံၣ်တၢ်ဆီၣ်သနံးလီၤစှၤ၊ ခီၣ်မုၢ်ဆၢညီး(ေလးဖက်နာ) တၢ်ဆါ၊ ဆံၣ်ဆၢတၢ်ဆါ။,"ထံသံးနိသံး၊ ၦၤမိၢ်ဒၢလၢအိၣ်ဒီးသွံၣ်ဆီၣ်သနံးဒိၣ်ဒိၣ် - သူ (Labetalol)
+ မ့ (Hydralazine)။",(Sodium) စှၤလီၤ၊ (Potassium) စှၤလီၤ၊ သွံၣ်တၢ်ဆီၣ်သနံးလီၤစှၤ၊ အံသၣ်ဆၢဒးအါထီၣ်။,,ဟ့ၣ်ဖဲမ့ၢ်လိၣ်နီၢ်နီၢ်။,ဟ့ၣ်သ့။,,,
+Gentamicin,1 amp = 2 cc = 80 mg,၁ ပလီ = ၂ ခခ = ၈၀ mg,"Antibiotic to use together with ampicillin for severe bacterial infections:
+ meningitis, sepsis, severe pneumonia, severe kidney infections, severe biliary-tract
+ infections, severe trauma.","ကသံၣ်မၤသံ (ဘၣ်ထံရံယၤ) ဃၢ်သူဃုာ်ဒီး (Ampicillin) လၢ (ဘၣ်ထံရံယၤ) ဃၢ်နုာ်လၢအနး၊
+ လၢခိၣ်နူာ်သလီ၊ လၢသွံၣ်ကျါ၊ လၢပသိၣ်လၢအနး၊ လၢကလ့ၢ်လၢအနး၊ လၢသဒံကျိၤလၢအနး၊
+ တၢ်ဘၣ်ဒိဘၣ်ထံးလၢအနး။","- If possible, calculate the dose by weight.
+ - Can use Ceftriaxone instead of Ampicillin+Gentamicin.
+ - Max duration 7 days.",,Kidney disease.,"If possible, do not give with Furosemide. If you have to, give
+ one drug in the morning and the other one in the evening.",Ear and kidney damage,,If possible avoid and use Ceftriaxone.,Can give,,,,"- မ့ၢ်သ့န့ၣ်ကဘၣ်ဒွး(ဒိးစ်) လၢၦၤဆါအကံလိအဖီခိၣ်။
+ - နသူကသံၣ် (Ceftriaxone) လၢ(Ampicillin+Gentamicin) အခၢၣ်စးသ့။
+ - ဟ့ၣ်အါကတၢၢ်၇သီ။",,ကလ့ၢ်တၢ်ဆါ။,"မ့ၢ်သ့တဘၣ်ဟ့ၣ်ဃုာ်ဒီး (Furosemide) ဘၣ်။ မၢ့်လိၣ်နီၢ်နီၢ်ဒီးဟ့ၣ်တမၠိ
+ လၢဂီၤခီဒီးအဂၤတမၠိလၢဟါခီ။",နၢ်ဒီးကလ့ၢ်ဟးဂီၤ။,,မ့ၢ်သ့ဟးဆှဲးဒီးသ (Ceftriaxone) တက့ၢ်။,ဟ့ၣ်သ့။,,,
+Gentamicin Eye Drops,Eye Drops,ကသံၣ်စီၤ (ကၠီၤ)မဲာ်,"Antibiotic drops.
+ To treat bacterial conjunctivitis or to prevent bacterial infections after eye injuries.","ကသံၣ်ကၠီၤမဲာ်မၤသံ (ဘၣ်ထံရံယၤ) ဃၢ်တၢ်သူအီၤလၢမဲာ်ချံတၢ်ဃၢ်နုာ်(မ့)လၢတၢ်ဒီသဒၢဃာ်
+ တၢ်ဃၢ်ဖဲမဲာ်ချံဘၣ်ဒိ၀ံၤလီၢ်ခံ။","CHILD and ADULT At the beginning 1 drop every 2 hours, after improvement QID. 
+ Continue for 48 hours after healing.",,,,,,,,,,,ဖိသၣ် ဒီး ၦၤနီၢ်ဒိၣ် = စးထီၣ်ဟ့ၣ် တတိၣ်လၢ၂ နၢ်ရံၣ်တဘျီ၊ မ့ၢ်ကိၢ်ညၢ်လီၤဒီး တနံၤ ၄ဘျီ၊ မ့ၢ်ဘျါ၀ံၤလီၢ်ခံဆဲးသူအီၤ ၄၈ နၣ်ရံၣ် (၂ သီ)။,,,,,,,,,,
+Gliclazide,1 tab = 40 mg,၁ ဖျၢၣ် =၄၀ mg,"To treat Diabetes Type 2. Alone or in combination with Metformin when this one alone
+ can not control blood sugar levels.",ကသံၣ်ကူစါဆံၣ်ဆၢတၢ်ဆါခံကလုာ်တကလုာ်၊တၢ်ဟ့ၣ်ကသံၣ် (Gliclazide) ထဲတခါမ့တမ့ၢ်ဟ့ၣ်ကသံၣ် ဃုာ်ဒီး (Metformin) ဖဲကသံၣ် (Gliclazide) တခါအံၤတြီဆၢ၀ဲအံသၣ်ဆၢလၢသွံၣ်ကျါတန့ၢ်လၢၤဘၣ်အခါ။,"Teach patients to recognise symptoms of low blood sugar 
+ (sweating, weak, confusion, nightmares) and take fruit or food 
+ or sugar to raise blood sugar. If having low blood sugar 
+ frequently, reduce dose of Gliclazide.","- Take with meals at same time every day. 
+ - If people eat less or do not eat, tell them not to take the
+ medicine that day.","Old people can get more easily in hypoglycaemia (very low
+ sugar); G6PD deficiency","In people with heart disease who are taking Atenolol or
+ Propranolol or other drugs of the same family (Beta-blockers)","Low blood sugar, high blood pressure, headache, dizziness
+ diarrhoea, back and joint pain, viral infections, bronchitis.","- Gliclazide can increase toxic effect of Alcohol.
+ - Atenolol and Ciprofloxacin can increase risk of 
+ hypoglycaemia.
+ - Hydrochlorothiazide may decrease effect of Gliclazide",Do not give.,"Can give, but mother needs to be careful not to go into 
+ hypoglycaemia.","Start with 40 mg to be taken with breakfast.
+ If blood sugar still high, increase by 40 mg every 2 weeks.
+ Stop increasing dose as soon as blood sugar level is normal.
+ Maximum dose 160 mg BID.",,,မၤလိၦၤဆါလၢကမၤနီၣ်၀ဲသွံၣ်အံသၣ်ဆၢစှၤတၢ်ဆါပနီၣ်တဖၣ်(ကပၢၤထီၣ် လီၤဘှံး၊ထၢမံထၢမၣ်၊မံမီၢ်ပျီၢ်သီတၢ်)ဘၣ်အီၣ်တၢ်သူတၢ်သၣ်မ့တမ့ၢ်တၢ် အီၣ်တၢ်အီမ့တမ့ၢ်အံသၣ်ဆၢလၢကမၤအါထီၣ်၀ဲတၢ်ဆၢလၢသွံၣ်ကျါလီၤ။ မ့ၢ်အိၣ်ဒီးသွံၣ်အံသၣ်ဆၢလီၤစှၤ၀ဲခဲအံၤခဲအံၤန့ၣ်၊မၤလီၤစှၤ (Gliclazide) ဒိးစ်။,"- အီၣ်ဃုာ်ဒီးတၢ်အီၣ်တဘျီဃီဒီးလၢကိးနံၤဒဲးလီၤ။
+ - မ့မ့ၢ်ၦၤလၢအအီၣ်တၢ်စှၤဒီးတအီၣ်တၢ်ဘၣ်န့ၣ်- တဲဘၣ်အ၀ဲသ့ၣ်လၢတၢ် တနံၤန့ၣ်တဘၣ်အီၣ်ကသံၣ်တဂ့ၤ။",ၦၤသးၦၢ်တဖၣ်န့ၣ်အံသၣ်ဆၢလၢအသွံၣ်ကျါလီၤ၀ဲချ့သဒံးသ့၀ဲလီၤ၊ (ကၠံၤစံၣ်ဖံၤဒံၤ)လီၤထုး။,တဘၣ်ဟ့ၣ်ၦၤလၢအိၣ်ဒီးသးတၢ်ဆါလၢအီၣ်၀ဲ (Atenolol) မ့တမ့ၢ် (Propranolol) ဒီးမ့တမ့ၢ်ကသံၣ်အဂၤလၢအမ့ၢ်တကလုာ်ဃီဒီး (Betablockers) အံၤတက့ၢ်။,"အံသၣ်ဆၢစှၤလၢသွံၣ်ကျါ၊ သွံၣ်တၢ်ဆီၣ်သနံးထီၣ်၊ ခိၣ်ဆါ၊ ခိၣ်မူၤ၊
+ ဟၢဖၢလူချၢဃံဒီးစုခီၣ်ကမဲာ်ဆါ၊ (viral)တၢ်ဃၢ်နုာ်၊ကလံၤကျိၤညီး။","- (Gliclazide) န့ၣ်မၤအါထီၣ်၀ဲတၢ်မူၤတၢ်ဘှီးတၢ်စုၣ်တၢ်ပျၢ်သ့၀ဲလီၤ။
+ - (Atenolol) ဒီး (Ciprofloxacin) မၤအါထီၣ်၀ဲတၢ်ကီတၢ်ခဲလၢ တၢ်ဆၢစှၤလၢသွံၣ်ကျိၤပူၤသ့လီၤ။
+ - (Hydrochlorothiazide) မၤလီၤစှၤ၀ဲ (Gliclazide) အသဟီၣ်သ့၀ဲလီၤ။",တဘၣ်ဟ့ၣ်ဘၣ်။,ဟ့ၣ်သ့၊ဘၣ်ဆၣ်မိၢ်တဖၣ်န့ၣ်ကဘၣ်ပလီၢ်သးလၢအသွံၣ်န့ၣ်တဘၣ်ကဲ ထီၣ်၀ဲတၢ်ဆၢစှၤလၢသွံၣ်ကျိၤပူၤဘၣ်လီၤ။,"စးထီၣ်ဟ့ၣ် ၄၀ mg အီၣ်ဃုာ်ဒီးဂီၤခီတၢ်အီၣ်တက့ၢ်။
+ ဖဲအံသၣ်ဆၢလၢသွံၣ်ကျါမ့ၢ်အိၣ်အါဒံးန့ၣ်- ဟ့ၣ်အါထီၣ်ကသံၣ် ၄၀ mg လၢခံနွံတဘျီ။ အံသၣ်ဆၢလၢသွံၣ်ကျါမ့ၢ်လီၤအိၣ်ဒ်အညီနုၢ်အသိးဒီးတဘၣ်မၤအါထီၣ်ကသံၣ်ဒိးစ်လၢၤဘၣ်။
+ ဒိးစ်အဒိၣ်ကတၢၢ်၁၆၀ mg တနံၤခံဘျီ။",,
+Glipizide,1 tab = 5 mg,၁ ဖျၢၣ် =၅ mg,"To treat Diabetes Type 2. Alone or in combination with Metformin when this one alone
+ can not control blood sugar levels.",ကသံၣ်ကူစါဆံၣ်ဆၢတၢ်ဆါခံကလုာ်တကလုာ်ႉတၢ်ဟ့ၣ်ကသံၣ် (Glipizide) ထဲတခါမ့တမ့ၢ်ဟ့ၣ်ကသံၣ် ဃုာ်ဒီး (Metformin) ဖဲကသံၣ် (Glipizide) တခါအံၤတြီဆၢ၀ဲအံသၣ်ဆၢလၢသွံၣ်ကျါတန့ၢ်လၢၤဘၣ်အခါ။,"- If glucose still high with maximum dose, check if the patient is 
+ following a sugar free diet and if he is taking the drugs correctly. 
+ If yes, switch to Metformin or add Metformin. 
+ If already done, if possible send to specialist.
+ - Teach patients to recognise symptoms of low blood sugar 
+ (sweating, weak, confusion, nightmares) and take fruit or food 
+ or sugar to raise blood sugar. If having low blood sugar 
+ often, reduce dose of Glipizide.","- Take 30 minutes BEFORE meal.
+ - If people one day eat less than normal or do not eat one meal, tell
+ them not to take the medicine that day.","- Liver disease, alcohol use, G6PD deficiency.
+ - Old people can get more easily in hypoglycaemia (very low sugar).",See Gliclazide,"Low blood sugar, gastric upset, diarrhoea, dizziness, tremor.",See Gliclazide,Do not give.,"Can give, but mother needs to be careful not to go into 
+ hypoglycaemia.","Start with 2.5 mg to be taken 30 minutes before breakfast.
+ If blood sugar still high, increase by 2.5 mg every 2 weeks.
+ Stop increasing dose as soon as blood sugar level is normal.
+ Maximum dose 10 mg BID",,,"- ဖဲတၢ်ဟ့ၣ် ဒိးစ်အါကတၢၢ် ဒီးတၢ်ဆၢအံၤအိၣ်မ့ၢ်အါန့ၣ်သမံသမိးကွၢ်မ့ၢ်ၦၤဆါ မၤပိာ်၀ဲတၢ်အီၣ်စှၤလီၤအံသၣ်ဆၢအကျဲအံၤဧါသမံသမိး ကွၢ်မ့ၢ်ၦၤဆါအံၤအီ ကသံၣ် ဘၣ်တဘၣ်တက့ၢ်။
+ မ့ၢ်ဘၣ်န့ၣ်- ဆီတလဲက့ၤလၢ(Metformin)မ့တမ့ၢ်ဟ့ၣ်အါထီၣ်(Metformin)။ နမၤအီၤမ့ၢ်၀ံၤလံဒီးမ့ၢ်သ့န့ၣ်ဆှၢဘၣ်လၢၦၤစဲာ်နီၢ်လၢအကူစါဘၣ်ထွဲဒီး တၢ်ဆါအံၤတက့ၢ်။
+ - မၤလိၦၤဆါလၢကမၤနီၣ်၀ဲသွံၣ်အံသၣ်ဆၢစှၤတၢ်ဆါပနီၣ်တဖၣ်(ကပၢၤထီၣ်၊ လီၤဘှံး၊ထၢမံထၢမၣ်၊မံမီၢ်ပျီၢ်သီတၢ်)ဘၣ်အီၣ်တၢ်သူတၢ်သၣ်မ့တမ့ၢ်တၢ်အီၣ် တၢ်အီမ့တမ့ၢ်အံသၣ်ဆၢလၢကမၤအါထီၣ်၀ဲတၢ်ဆၢလၢသွံၣ်ကျါလီၤ။ မ့ၢ်အိၣ်ဒီး သွံၣ်အံသၣ်ဆၢလီၤစှၤ၀ဲခဲအံၤခဲအံၤန့ၣ်၊မၤလီၤစှၤ (Glipizide) ဒိးစ်တက့ၢ်။","- တချုးအီၣ်တၢ်အီၣ်အမံးနံး၃၀။
+ - မ့မ့ၢ်ၦၤလၢအအီၣ်တၢ်စှၤဒီးတအီၣ်တၢ်ဘၣ်န့ၣ်-တဲဘၣ်အ၀ဲသ့ၣ်လၢတၢ်တနံၤန့ၣ် တဘၣ်အီၣ်ကသံၣ်ဘၣ်တက့ၢ်။","- သူၣ်တၢ်ဆါ၊ၦၤသူတၢ်မူၤတၢ်ဘှီး၊ (ကၠံၤစံၣ်ဖံၤဒံၤ)လီၤထုး။
+ - ၦၤသးၦၢ်န့ၣ်အံသၣ်ဆၢလၢသွံၣ်အကျါလီၤစှၤ၀ဲသတူၢ်က လာ်သ့၀ဲလီၤ။",ကွၢ်လၢ (Gliclazide)။,အံသၣ်ဆၢလၢသွံၣ်ကျါစှၤ၊ ကဖုဆါ၊ ဟၢဖၢလူ၊ ခိၣ်မူၤ၊ ဖံးဘ့ၣ်ကနိး။,ကွၢ်လၢ (Gliclazide)။,တဘၣ်ဟ့ၣ်ဘၣ်။,ဟ့ၣ်သ့ဘၣ်ဆၣ်မိၢ်တဖၣ်န့ၣ်ကဘၣ်ပလီၢ်သးလၢအသွံၣ်န့ၣ်တဘၣ်ကဲ ထီၣ်၀ဲတၢ်ဆၢစှၤလၢသွံၣ်ကျိၤပူၤဘၣ်လီၤ။,"စးထီၣ်ဟ့ၣ်၂ႉ၅ mg တချုးလၢအီၣ်ဂီၤခီတၢ်အီၣ်ဒံးဘၣ်အမံးနံး၃၀အတီၢ်ပူၤတက့ၢ်။ ဖဲအံသၣ်ဆၢလၢသွံၣ်ကျါမ့ၢ်အိၣ်အါဒံးန့ၣ်-ဟ့ၣ်အါထီၣ်ကသံၣ်၂ႉ၅ mg လၢခံနွံတဘျီ။
+  အံသၣ်ဆၢလၢသွံၣ်ကျါမ့ၢ်လီၤအိၣ်ဒ်အညီနုၢ်အသိးဒီးတဘၣ်မၤအါထီၣ်ကသံၣ်ဒိးစ်လၢၤဘၣ်။
+  ဒိးစ်အဒိၣ်ကတၢၢ်၁၀ mg တနံၤခံဘျီ။",,
+Griseofulvin,1 tab = 500 mg,၁ ဖျၢၣ် = ၅၀၀ mg,"Anti-fungal. To treat ringworm of the scalp and generalised ringworm of the skin in children and adults over 50 years. (To treat localised ringworm of skin, use Clotrimazole cream).","ကသံၣ်မၤသံကုၤဃၢ်။
+ လၢတၢ်ကူစါတၢ်ဖှီအိၣ်လၢခိၣ်လိၤဒီးတၢ်ဖှီလၢညီနုၢ်ကဲထီၣ်သးလၢဖိသၣ်ဖံးဘ့ၣ်လိၤဒီးၦၤနီၢ်ဒိၣ်လၢအါန့ၢ် အနံၣ်၅၀။
+ (လၢတၢ်ကူစါတၢ်ဖှီဘ့ၣ်ကုအဂီၢ်သူကသံၣ်ဖူ Clotrimazole ကက့ၢ်)။",,"Give after meals (if possible with some fat, like oil, to
+ increase absorption).",,"- Adults (both men and women should not take it - it
+ can cause birth defects).
+ - Severe liver disease.",Headache; dizziness; blood disorders.,,Do not give.,Do not give.,,,,,အီလၢအီၣ်တၢ်အီၣ်၀ံၤ (မ့ၢ်သ့န့ၣ်အီၣ်ဃုာ်ဒီးတၢ်သိ၊တၢ်အီၣ်လၢ ပၣ်ဃုာ်ဒီးသိဒ်သိးတၢ်စူၢ်ထီၣ်ကသံၣ်သဟီၣ်ဂ့ၤထီၣ်ဂီၢ်)။,,"- ၦၤနီၢ်ဒိၣ်(ပိာ်မုၣ်မ့ၢ်ဂ့ၤပိာ်ခွါမ့ၢ်ဂ့ၤန့ၣ်တဘၣ်အီၣ်ကသံၣ်အံၤဘၣ်- မ့ၢ်ဟံဖိတၢ်ဘၣ်ယိာ်အိၣ်လၢအက့ၢ်အဂီၢ်တလၢၦဲၤဘၣ်သ့လီၤ)။
+ - သူၣ်တၢ်ဆါလၢနးနး။",ခိၣ်ဆါ၊ ခိၣ်မူၤ၊ သွံၣ်တဘၣ်လီၢ်ဘၣ်စး။,,တဘၣ်ဟ့ၣ်ဘၣ်။,တဘၣ်ဟ့ၣ်ဘၣ်။,,,
+Hydrochlorothiazide,1 tab = 50 mg,၁ ဖျၢၣ် = ၅၀ mg,To treat high blood pressure. Start treatment only if BP > 160/110 on at least 3 checks over several weeks and if youcan follow the patient with supply of drugs (it is a chronic disease!). Start treatment immediately only if BP > 220/120.,"ကသံၣ်ကူစါသွံၣ်တၢ်ဆီၣ်သနံးထီၣ်။ စးထီၣ်တၢ်ကူစါယါဘျါ ဖဲ (BP) မ့ၢ်အိၣ်အါနၢ့်၁၆၀၊၁၁၀ (> ၁၆၀၊၁၁၀) အစှၤကတၢၢ်နၢ့်မၤကွၢ်
+ ၃ဘျီအါနွံဒီးမ့ၢ်သ့န့ၣ်လူၤကွၢ်ထွဲၦၤဆါဃုာ်ဒီးကသံၣ်(မ့ၢ်လၢတၢ်ဆါအယံာ်အထၢ)။ စးထီၣ်ဟ့ၣ်ကသံၣ်တဘျီဃီဖဲ (BP) မ့ၢ်အိၣ်အါနၢ့် (အါနၢ့်၂၂၀ ၊ ၁၂၀)။","- Doses higher than 25 mg usually are not more effective and 
+ give more side-effects.
+ - Give in the morning to avoid passing urine at night",Can take with or without food.,"Diabetes, gout, kidney diseases, malnutrition,liver disease, 
+ Systemic Lupus Erythematosus.",Severe liver disease.,,"- Alcohol, Furosemide, Prednisolone increase effect of 
+ Hydroclorothiazide.
+ - Carbamazepine, Prednisolone: more risk of low sodium.
+ - Ibuprofen, Indomethacin, etc.: more risk of kidney damage,
+ and less diuretic effect.
+ - Hydroclorothiazide decreases effect of Anti-diabetic drugs.
+ - Hydroclorothiazide increases concentration of Fluconazole.",Do not give: use Methyldopa.,Can give,"Start on a drug to treat high blood pressure only after patient has tried
+ for 1- 2 months to have a healthy lifestyle with regular exercise and a
+ healthy diet: reduce intake of salt, alcohol, coffee, sugary drinks; stop
+ or reduce smoking and reduce weight if overweight.
+ - When starting therapy explain that the tablets have to be taken
+ longterm. If the patients stop taking the tablets when they feel better,
+ the blood pressure will go up again.
+ - The tablets do NOT CURE the high blood pressure, but only
+ CONTROL.
+ - If possible, check Creatinine before starting and then every year.",,,"- မ့ၢ်ဟ့ၣ်ကသံၣ်(ဒိးစ်)မၢ့်အါနၢ့် (၂၅ mg) အါတက့ၢ်တကဲဘျုး လၢၤဘၣ် ဒီးဟ့ၣ်အါထီၣ်ကသံၣ်တၢ်မၤအၢနၣ့်လီၤ။
+ - တၢ်ကဘၣ်အီၣ်အီၤဂီၤဒံးသိးသုတဆံၣ်ဆါလၢမုၢ်နၤခီတဂ့ၤအဂီၢ်လီၤ။",အီၣ်ဒီးတၢ်အီၣ်သ့မ့တမ့ၢ်တအီၣ်ဒီးတၢ်အီၣ်ဘၣ်သ့၀ဲစ့ၢ်ကီးလီၤ။,ဆံၣ်ဆၢတၢ်ဆါ၊ ဃံဆၢညီးတၢ်ဆါ၊ ကလ့ၢ်တၢ်ဆါတဖၣ်၊ တၢ်အီၣ်လီၤထုး၊ သူၣ်တၢ်ဆါ။ (စံၣ်စတဲမံၣ် လူဖူၣ်စ အ့ရံၤသၢၤမၤထိစူၤစ) တၢ်ဆါ။,သူၣ်တၢ်ဆါလၢအနး။,(Potassium) စှၤလီၤ၊ (Sodium) စှၤလီၤ၊ သွံၣ်တၢ်ဆီၣ်သနံးလီၤစှၤ၊ အံသၣ်ဆၢဒးအါထီၣ်၊ (uric acid) အါထီၣ်၊ ဃံဆၢညီးတၢ်ဆါ။,"- သံး၊ (Furosemide)၊ (Prednisolone) မၤအါထီၣ်ကသံၣ် (Hydroclorothiazide) အသဟီၣ်။
+ - (Carbamazepine)၊ (Prednisolone) တၢ်လီၤဘၣ်ယိာ်အါထီၣ်လၢ (Sodium) လီၤစှၤ။
+ - (Ibuprofen)၊ (Indomethacin)… တၢ်ဘၣ်ယိၣ်အိၣ်အါလၢကလ့ၢ် ဟးဂီၤ၊ ကသံၣ်ဆံၣ်မၤတၢ်လီၤစှၤ။
+ - (Hydroclorothiazide) မၤလီၤစှၤကသံၣ်ဆံၣ်ဆၢအသဟီၣ်နၣ့်လီၤ။
+ - (Hydroclorothiazide) မၤအါထီၣ်ကသံၣ် (Fluconazole) အဂံၢ်ဘါလီၤ။",တဘၣ်ဟ့ၣ်ဘၣ်၊ သူ (Methyldopa) သ့၀ဲလီၤ။,ဟ့ၣ်သ့။,"- စးထီၣ်ဟ့ၣ်ကသံၣ်ကူစါသွံၣ်တၢ်ဆီၣ်သနံးထီၣ်တၢ်ဆါဖဲၦၤဆါအံၤမၤထွဲ၀ဲလၢ ကအိၣ်မူလၢတၢ်အိၣ်ဆူၣ်ချ့အကျဲ၊ဟူးဂဲၤန့ၢ်ထီဘိဒီးအီၣ်တၢ်အီၣ်လၢအန့ၢ်ဂံၢ်န့ၢ်ဘါ၊ အီၣ်လီၤစှၤအံသၣ်၊ တၢ်မူၤတၢ်ဘှီး၊ ခီဖံၣ်(coffee)၊ တၢ်ထံလၢအံသၣ်ဆၢအါ၊ ပတုာ်မ့တမ့ၢ်မၤလီၤစှၤတၢ်အီမီာ်ဒီးမ့ၢ်ဘီၣ်တလၢန့ၣ်မၤလီၤစှၤနီၢ်ကစၢ်တယၢၢ် လၢ၁-၂လါ အတီၢ်ပူၤ၀ံၤ၀ဲအခါတက့ၢ်။
+ - ဖဲနစးထီၣ်ဟ့ၣ်ကသံၣ်အခါန့ၣ်နကဘၣ်ရှဲပၠးလၢကသံၣ်အံၤတၢ်ဘၣ်အီၣ်အီၤလၢ တၢ်ဆၢကတီၢ်ဖးယံာ်အတီၢ်ပူၤလီၤ။အ၀ဲသ့ၣ်အိၣ်မ့ၢ်မုာ်ထီၣ်က့ၤဒီးတအီလၢၤ ကသံၣ်ဘၣ်န့ၣ်၊သွံၣ်ထီၣ်တၢ်ဆါအံၤကကဲထီၣ်ကဒီးအသးလီၤ။
+ - ကသံၣ်အံၤတမၤဘျါ၀ဲသွံၣ်ထီၣ်တၢ်ဆါဘၣ်၊ဘၣ်ဆၣ်သနာ်က့ပၢၤဃာ်၀ဲတၢ်ဆါလီၤ။
+ - မ့ၢ်သ့န့ၣ်၊မၤကွၢ်(Creatinine)တချုးစးထီၣ်ဟ့ၣ်ကသံၣ်ဒီးဟ့ၣ်၀ံၤကိးနံၣ်ဒဲးတက့ၢ။",,
+Ibuprofen,1 tab = 200 or 400 mg,၁ ဖျၢၣ် = ၂၀၀ (မ့) ၄၀၀ mg,"To treat pain, inflammation, fever with discomfort in children.",ကသံၣ်ကူစါတၢ်အဆါ၊ တၢ်ညီး၊ တၢ်ကိၢ်ထီၣ်ဃုာ်ဒီးအိၣ်တမုာ်သ့ၣ်တဖၣ်လၢဖိသၣ်။,"People’s bodies react in different ways to anti-inflammatories: one medicine 
+ can be good for one person but not for another. 
+  For example: one person can improve with Ibuprofen but not with Diclofenac; 
+  another can improve with Diclofenac but not with Ibuprofen; another can 
+  improve with Indomethacin and not with Diclofenac, etc. This means that if a 
+  person does not get better with one, you can try another one and then 
+  another one. Anti-inflammatories found in different clinics: Aspirin, Diclofenac, 
+  Ibuprofen, Indomethacin, Ketoprofen, Meloxicam, Naproxen.",Take with food or milk to avoid gastric upset,"Old people, kidney problems, asthma, heart problems.","Peptic ulcer (new and old); Dengue fever, together with Aspirin, 
+ allergy to Aspirin, kidney failure, severe heart failure, severe liver 
+ disease.","Stomach pain,peptic ulcers, kidney damage, rash, headache, 
+ dizziness, hearing problems; kidney failure.","- Ciprofloxacin and Norfloxacin: more risk of convulsions.
+ - Dexamethasone and Prednisolone (corticosteroid group): more risk 
+ of stomach bleeding.
+ - Furosemide and Hydrochlothiazide: more risk of kidney damage.
+ - Ibuprofen increases effects of Phenytoin.
+ - Ibuprofen decreases effects of Atenolol and Propanolol.",Do not give.,Give only if necessary,,,,"ၦၤကညီမိၢ်ၦၢ်န့ၣ်အံၤမၤဆၢ၀ဲကသံၣ်မၤဘျါတၢ်ညီးအံၤလၢကျဲအါဘိလီၤ။ကသံၣ်တခါန့ၣ်
+ ကဂ့ၤ၀ဲလၢၦၤတဂၤအဂီၢ်ဘၣ်ဆၣ်တဂ့ၤလၢၦၤအဂၤတဂၤအဂီၢ်သ့၀ဲလီၤ။ အဒိ=ၦၤတဂၤန့ၣ်အီၣ်၀ဲကသံၣ (Ibuprofen) ဒီးကိညၢ်လီၤ၀ဲဘၣ်ဆၣ်အီၣ်၀ဲ (Diclofenac) တကိညၢ်လီၤဘၣ်။ ၦၤအဂၤတဂၤန့ၣ်အီၣ်၀ဲ (Diclofenac) ဒီးကိညၢ်လီၤဘၣ်ဆၣ်မ့ၢ်အီၣ် (Ibuprofen) န့ၣ်တကိညၢ်လီၤဘၣ်။
+ ၦၤအဂၤတဂၤန့ၣ်အီၣ်၀ဲ (Indomethacin) ဒီးကိညၢ်လီၤဘၣ်ဆၣ်မ့ၢ်အီၣ် (Diclofenac) န့ၣ်တကိညၢ်လီၤဘၣ်။ လၢတၢ်န့ၣ်၊အဃိၦၤတဂၤအံၤအီၣ်၀ဲ
+ ကသံၣ်အံၤ မ့ၢ်တကိညၢ်လီၤဘၣ်ဒီဟ့ၣ်အီၤကသံၣ်အဂၤတခါ၀ံၤအဂၤတခါတက့ၢ်။
+ တၢ်မၤဘျါတၢ်ညီးအကသံၣ်လၢအိၣ်၀ဲဒၣ်လၢကသံၣ်ဒၢးတဖၣ်= (Aspirin)၊
+ (Diclofenac)၊(Ibuprofen)၊(Indomethacin)၊ (Ketoprofen)၊ (Meloxicam)၊
+ Naproxen။",အီၣ်ဃုာ်ဒီးတၢ်အီၣ်မ့တမ့ၢ်တၢ်နုၢ်ထံဒ်သိးတမၤဘၣ်ဒိကဖုဆါတဂ့ၤအဂီၢ်တက့ၢ်။,ၦၤသးၦၢ်ဖးဒိၣ်၊ ကလ့ၢ်တၢ်ဆါ၊ တၢ်သးဘံးတၢ်ဆါဒီးသးဖျၢၣ်တၢ်ဆါ။,ကဖုတၢ်ဆါ(အသီဒီးလီၢ်လံၤ)၊ ဒဲကံၢ်တိၤကွ့၊ တဘၣ်ဟ့ၣ်ဃုာ်ဒီး (Aspirin) တဂ့ၤ၊ၦၤလၢအတဖီးဒီး (Aspirin)၊ ကလ့ၢ်တမၤတၢ်မၤဘၣ်၊သးဖျၢၣ်တမၤတၢ်မၤဘၣ်အ နး၊ သူၣ်တၢ်ဆါလၢအနးနၣ့်လီၤ။,ဟၢဖၢဆါ၊ ကဖုတၢ်ဆါသ့ၣ်တဖၣ်၊ ကလ့ၢ်ဟးဂီၤ၊ လိၤဖှိၣ်ထီၣ်၊ ခိၣ်ဆါ၊ ခိၣ်မူၤ၊ နၣ်ဟူတၢ်တဂ့ၤဘၣ်၊ ကလ့ၢ်တမၤတၢ်မၤဘၣ်။,-(Ciprofloxacin)ဒီး(Norfloxacin)-တၢ်ဘၣ်ယိၣ်အါထီၣ်လၢတၢ်ထီၣ်တၢ်ဆါအဂီၢ်။ - (Dexamethasone)ဒီး(Prednisolone)-တၢ်လီၤဘၣ်ယိၣ်အါထီၣ်လၢကဖုသွံၣ်ယွၤဂီၢ။ - (Furosemide)ဒီး (Hydrochlothiazide) တၢ်လီၤဘၣ်ယိၣ်အါထီၣ်လၢကလ့ၢ်ဟးဂီၤသ့။ - (Ibuprofen) မၤအါထီၣ်ကသံၣ (Phenytoin) အသဟီၣ်လီၤ။ - (Ibuprofen) ထုးလီၤစှၤ (Atenolol) ဒီး (Propanolol) အသဟီၣ်လီၤ။,တဘၣ်ဟ့ၣ်ဘၣ်။,မ့ၢ်လိၢ်နီၢ်နီၢ်ဟ့ၣ်သ့။,,,
+Indomethacin,1 tab = 25 mg,၁ ဖျၢၣ် = ၂၅ mg,To treat pain and inflammation.,ကသံၣ်ကူစါတၢ်အဆါဒီးတၢ်ညီး။,See Ibuprofen.,See Ibuprofen.,"See Ibuprofen. 
+ Also epilepsy, psychiatric problems.",See Ibuprofen.,See Ibuprofen.,See Ibuprofen.,Do not give.,Give only if necessary,,,,ကွၢ်လၢ (Ibuprofen)။,ကွၢ်လၢ (Ibuprofen)။,ကွၢ်လၢ (Ibuprofen)။ တၢ်ဆါလၢအိၣ်ဒီးတၢ်ဆါပျုၢ်ထိး၊ သးအတၢ်ဆိကမိၢ်တၢ်ဆါ။,ကွၢ်လၢ (Ibuprofen)။,ကွၢ်လၢ (Ibuprofen)။,ကွၢ်လၢ (Ibuprofen)။,တဘၣ်ဟ့ၣ်ဘၣ်။,မ့ၢ်လိၢ်နီၢ်နီၢ်ဟ့ၣ်သ့။,,,
+Itraconazole,1 tab = 100 or 200 mg,၁ ဖျၢၣ် = ၁၀၀ (မ့) ၂၀၀ mg,Anti-fungal used for difficult fungal infections.,ကသံၣ်မၤသံကုၤဃၢ်လၢဘၣ်တၢ်သူအီၤလၢကုၤဃၢ်နုာ်လၢကူစါဘၣ်ကီတဖၣ်။,"If possible, consult with a doctor before starting Itraconazole.","- Take tablets after a full meal.
+ - Swallow the tablets whole: do not chew, break or crush","Kidney disease, heart failure.","With Carbamazepine, Dexamethasone, Domperidone,
+ Phenobarbitone, Phenytoin, Prednisolone, Rifampicin.","Diarrhoea, nausea, headache, heart failure, rash, vomiting,
+ constipation, loss of hair, peripheral neuropathy","- Aluminium and Omeprazole decrease absorption of Itraconazole:
+ take Itraconazole 2 hrs before or 1 hr after taking these drugs.
+ - Sodium Valproate can increase liver toxicity.",Do not give.,Do not give.,,,,မ့ၢ်သ့န့ၣ်တဲသကိးတၢ်ဒီးကသံၣ်သရၣ်ဖးဒိၣ်တချုးနစးထီၣ်ဟ့ၣ်အီၤ (Itraconazole) ဒံးဘၣ်အခါတက့ၢ်။,"- ကသံၣ်အံၤဘၣ်တၢ်အီၣ်အီၤလၢအီၣ်တၢ်အီၣ်၀ံၤအခါလီၤ။
+ - အီယုၢ်လီၤအီၤဒီဖျၢၣ်တက့ၢ်တဘၣ်အ့ၣ်ဘျဲး၊မၤသ့ၣ်ဖးမ့တမ့ၢ်မၤလီၤကမူၣ်အီၤတဂ့ၤ။",ကလ့ၢ်တၢ်ဆါ၊သးဖျၢၣ်တမၤတၢ်မၤဘၣ်။,"ဃုာ်ဒီး (Carbamazepine)၊ (Dexamethasone)၊(Domperidone)၊
+ (Phenobarbitone)၊ (Phenytoin)၊ (Prednisolone)၊(Rifampicin) ဘၣ်။",တၢ်အ့ၣ်လူ၊ သးကလဲၤ၊ ခိၣ်ဆါ၊သးတၢ်ဆါ၊ ဖှိၣ်ဂီၤထီၣ်၊ ဘှီး၊ ဟၢဖၢကျၢၤ၊ ခိၣ်ဆူၣ်လီၤထဲး၊ စုခီၣ်ထူၣ်ပျၢ်ဟးဂီၤ (တၢ်အ့ၣ်စူၢ်အ့ၣ်ထီ၊တီၤတုၤလၢစုဒီးခီၣ်)။,"- (Aluminium) ဒီး (Omeprazole) မၤစှၤလီၤ၀ဲ (Itraconazole) အသဟီၣ်လီၤ တချုးလၢအီၣ် (Aluminium) ဒီး (Omeprazole) ခံနၣ်ရံၣ်အမဲာ်ညါမ့တမ့ၢ် တနၣ်ရံၣ်အလီၢ်ခံ၀ံၤမၣ်အီၣ် (Itraconazole) တက့ၢ်။
+ - (Sodium Valproate) အံၤမၤအါထီၣ်၀ဲသူၣ်တၢ်စုၣ်တၢ်ပျၢ်သ့၀ဲလီၤ။",တဘၣ်ဟ့ၣ်ဘၣ်။,တဘၣ်ဟ့ၣ်ဘၣ်။,,,
+Ivermectin,1 tab = 3 or 6 mg,၁ ဖျၢၣ် = ၃ (မ့) ၆ mg,"Anti worm used to treat Scabies, Larva migrans, Strongyloides. Very useful also to treat lice.",ကသံၣ်ထိးကလဲၤလၢဘၣ်တၢ်ကူစါ၀ဲတၢ်သးဃ့ဒီးထိးကလဲာ်လၢဟးလၢဖံးဘ့ၣ်လိၤ၊ ထိးကလဲာ်လၢဟးလၢမိၢ်ၦၢ်ပူၤ၊(စထြီးကၠံၣ်လီဒံၣ်ဃၢ်)။ တၢ်အံၤကဲဘျုးစ့ၢ်ကီး၀ဲလၢတၢ်ကူစါသူၣ်လီၤ။,It is also effective against lice and roundworms.,Take on empty stomach with water,Asthma,,"Dizziness, chest discomfort, peeling of skin, rash, fever.",,Do not give.,Do not give.,,,,ကသံၣ်၀ဲအံၤမၤသံစ့ၢ်ကီးသူၣ်ဒီးထိးကလဲၤဖျၢၣ်သ့ၣ်တဖၣ်လီၤ။,အီၣ်လၢဟၢဖၢလီၤကအိဒီးထံတခွး။,တၢ်သးဘံးတၢ်ဆါ။,,ခိၣ်မူၤ၊ သးနါၦၢ်ဘၣ်တမုာ်ဘၣ်၊ ဖံးဘ့ၣ်လီၤအီးသး၊ လိၤဖှိၣ်ထီၣ်၊တၢ်ကိၢ်ထီၣ်။,,တဘၣ်ဟ့ၣ်ဘၣ်။,တဘၣ်ဟ့ၣ်ဘၣ်။,,,
+Ketamine,1 amp = 10cc = 500mg,၁ ပလီ = ၁၀ cc = ၅၀၀ mg,,,"- Before Ketamine, give Atropine to decrease secretions.
+ - Use it on empty stomach.
+ - Check concentration of vial before use.
+ - Can give Diazepam IV 0.05 - 0.1 mg/kg (separate syringe) to
+ decrease anxiety upon wakening and reduce muscle contractions.",,,"High blood pressure, Eclampsia, Stroke","Increased secretions, high blood pressure, low blood pressure, 
+ stop breathing, slow pulse, fast pulse, involuntary muscle 
+ movements, temporary hallucinations and nightmares, double 
+ vision.",,"- Use only if you have received training in anaesthesia.
+ - Be careful with high doses last 3 months of pregnancy",Can give,,,,"- တချုးဟ့ၣ်ကသံၣ် (Ketamine) ဒံးဘၣ်န့ၣ်ဟ့ၣ် (Atropine)လၢကမၤလီၤစှၤ ခၣ်ထံတက့ၢ်။
+ - သူလၢဟၢဖၢလီၤကအိအဆၢကတီၢ်။
+ - တချုးလၢသူနၢ့်သမံသမိးကွၢ်ကသံၣ်ပလီအဂံၢ်နၢ့်တက့ၢ်။
+ - ဟ့ၣ်ကသံၣ် (Diazepam) အဆဲးသ့ ၁ kg နၢ့်၀ႉ၀၅=၀ႉ၁ mg (သူစရ့လီၤဆီ) လၢကမၤလီၤစၢ်တၢ်ပျံၤတၢ်ဖုးဒီးမၤလီၤစှၤယုၢ်ညၣ်ထီၣ်ရှိၣ်သ့ၣ်တဖၣ်တက့ၢ်။",,,သွံၣ်တၢ်ဆီၣ်သနံးထီၣ်၊ (အဲချါစံၣ်ယါ)၊ ကလံၤဖၠး။,မၤအါထီၣ်ခၣ်ထံ၊ သွံၣ်တၢ်ဆီၣ်သနံးထီၣ်၊ သွံၣ်တၢ်ဆီၣ်သနံးစှၤလီၤ၊ ကသါပတုာ်၊ သွံၣ်ဖုကဘဲး၊ သွံၣ်ဖုချ့ထီၣ်၊မၤပတုာ်ထူၣ်ပျၢ်အတၢ်ဟူး တၢ်ဂဲၤ၊ တနၢ့်ဘၣ်၊ ထံၣ်တမှံတၢ်ဒီးမံမီၢ်တၢ်တမုာ်တစိၢ်တလီၢ်၊ ထံၣ်တၢ်ခံကထြၢ။,,"- သူသ့ဖဲလၢၦၤလၢထီၣ်ဘၣ်တၢ်မၤလိဘၣ်ဃးကသံၣ်တီၤတုၤလီၤ။
+ - ကဘၣ်ပလီၢ်သးလၢကသံၣ်(ဒိးစ်)ဒိၣ်ဖဲအလီၢ်ခံကတၢၢ် ၃လါနၣ့်လီၤ။",ဟ့ၣ်သ့။,,,
+Lidocaine,1 amp 1% = 1cc = 10 mg. 1 amp 2% = 1cc = 20 mg,၁ ပလီ ၁% = ၁ cc = ၁၀ mg ၁ ပလီ ၂% = ၁ cc = ၂၀ mg,For local anaesthesia.,ကသံၣ်မၤတီၢ်တုၤတၢ် (ထုံေဆး)။,,,"Epilepsy, severe shock, liver and kidney problems, pregnancy.",,,,Can give (but careful with high doses in last 3 months).,,,,,,,တၢ်ဆါပျုၢ်ထီး၊ သါပ့ၤနီၣ်သးသတူၢ်ကလာ်(ရှီၣ်)၊ သူၣ်ဒီးကလ့ၢ်တၢ်ကီတၢ်ခဲ၊ၦၤမိၢ်ဒၢ။,,,,ဟ့ၣ်သ့(ဘၣ်ဆၣ်ကဘၣ်ပလီၢ်သးလၢကသံၣ်အ(ဒိးစ်)ဒိၣ်ဖဲအလီၢ်ခံကတၢၢ်၃လါနၣ့်လီၤ)။,ဟ့ၣ်သ့။,,,
+Lidocaine + Adrenaline,1 vial 1% = 1cc = 10 mg. 1 vial 2% = 1cc = 20 mg.,"၁ပလီ ၁% = ၁ cc = ၁၀ mg
+ ၁ပလီ ၂% = ၁ cc = ၂၀ mg",For local anaesthesia.,ကသံၣ်မၤတီၢ်တုၤတၢ် (ထုံေဆး)။,"Lidocaine + Adrenaline effect with last longer than Lidocaine 
+ alone.",,"Epilepsy, severe shock, liver and kidney problems,
+ pregnancy.",,,,Can give (but careful with high doses in last 3 months).,Can give,,,,ဟ့ၣ်ဃုာ် (Lidocaine) + (Adrenaline) ခံခါနၢ့်အမၤတၢ်ယံၤထၢနၢ့်ဒံး ဟ့ၣ် (Lidocaine) တခါနၣ့်လီၤ။,,"တၢ်ဆါပျုၢ်ထီး၊ သါပ့ၤနီၣ်သးသတူၢ်ကလာ်(ရှီၣ်)၊ ၊ သူၣ်ဒီးကလ့ၢ်တၢ်ဆါ၊
+ မိၢ်ဒၢသ့ၣ်တဖၣ်။",,,,ဟ့ၣ်သ့(ဘၣ်ဆၣ်ကဘၣ်ပလီၢ်သးလၢကသံၣ်အ(ဒိးစ်)ဒိၣ်ဖဲအလီၢ်ခံကတၢၢ် ၃လါနၣ့်လီၤ)။,ဟ့ၣ်သ့။,,,
+Loratadine,1 tab = 10 mg,၁ ဖျၢၣ် = ၁၀ mg,"Anti-allergic which does not make people too sleepy. For urticaria and allergic reactions (does not treat the cause, only the symptoms)",ကသံၣ်ကူစါ ဂာ်တဖီး လၢအတမၤမံခ့နၤဒိၣ်ဒိၣ်ဘၣ်။ တၢ်ဘ့ၣ်ပြုထီၣ်မဲာ်ညိးဒီးဂာ်တဖီးတၢ်ဒိဆၢက့ၤတၢ်(တဘၣ်ကူစါယါဘျါလၢတၢ်ဆါအဂီၢ်ဘၣ်မ့ၢ်၀ဲဒၣ်လ ၢတၢ်ဆါအတၢ်ပနီၣ်အဂီၢ်လီၤ)။,,Can be taken with food or without food.,"Old people, people with epilepsy, people drinking alcohol.",,"Headache, drowsiness, abdominal pain, agitation.",,Can give,Give only if necessary,,,,,အီၣ်ဒီးတၢ်အီၣ်သ့မ့တမ့ၢ်တအီၣ်ဒီးတၢ်အီၣ်ဘၣ်သ့၀ဲစ့ၢ်ကီးလီၤ။,ၦၤသးၦၢ်၊ ၦၤလၢအိၣ်ဒိးတၢ်ထီၣ်ထိးပျူၢ်တၢ်ဆါ၊ ၦၤလၢအသူတၢ်မူၤတၢ်ဘှီး။,,ခိၣ်ဆါ၊ မိၣ်မံခ့သး၊ ဟၢဖၢဆါ၊ ပတုာ်တၢ်ဟူးတၢ်ဂဲၤတန့ၢ်ဘၣ်။,,ဟ့ၣ်သ့။,မ့ၢ်လိၣ်နီၢ်နီၢ်ဒီးဟ့ၣ်သ့။,,,
+Mebendazole,1 tab = 100 or 500 mg,၁ ဖျၢၣ် = ၁၀၀(မ့) ၅၀၀ mg,"Anti-worm (roundworms, hookworms, pinworms).
+ NOT effective for FLAT WORMS.","ကသံၣ်ထိးကလဲာ်(ထိးကလဲာ်အဖျၢၣ်၊ ထိးကလဲာ်ထးဘျး၊ ထိးကလဲာ်လုၣ်ဖျ ့)။
+ လၢထိးကလဲာ်အဘံၣ်ဂီၢ်တကဲဘျုးဘၣ်။","- Can be taken with food or without food.
+ - Tablets can be crushed and mixed with food.
+ - Tablets can be chewed or swallowed whole.",,,,,,Do not give first 3 months.,Can give,,,,,"- အီၣ်ဒီးတၢ်အီၣ်သ့မ့တမ့ၢ်တအီၣ်ဒီးတၢ်အီၣ်ဘၣ်သ့၀ဲစ့ၢ်ကီးလီၤ။
+ - ကသံၣ်ဖျၢၣ်အံၤတၢ်မၤဘျဲးဒီးဃါဃုာ်လၢတၢ်အီၣ်ကျါသ့၀ဲလီၤ။
+ - ကသံၣ်ဖျၢၣ်အံၤတၢ်အ့ၣ်ဘျဲးအီၤမ့တမ့ၢ်ယုၢ်လီၤအီၤဒီတိၣ်သ့၀ဲလီၤ။",,,,,တဘၣ်ဟၣ့်ၦၤမိၢ်ဒၢလၢအဒၢထီၣ်သီသၢလါအတီၢ်ပူၤတဂ့ၤ။,ဟ့ၣ်သ့။,,,
+Mefloquine (NOT APART OF DRUG LIST),,,See MALARIA PROTOCOLS,ကွၢ်လၢ တၢ်ညၣ်ဂိၢ်ဃၢ်ကသံၣ်အကျိၤအကျဲ ။,,,,,,,,,,,,,,,,,,,,,,
+Meloxicam,1 tab = 7.5 or 15 mg,၁ ဖျၢၣ် = ၇ႉ၅ (မ့) ၁၅ mg,To treat pain and inflammation.,ကသံၣ်ကူစါတၢ်အဆါဒီးတၢ်ညီး။,See Ibuprofen.,See Ibuprofen.,See Ibuprofen.,See Ibuprofen.,See Ibuprofen.,See Ibuprofen.,Do not give.,Do not give.,,,,ကွၢ်လၢ (Ibuprofen)။,ကွၢ်လၢ (Ibuprofen)။,ကွၢ်လၢ (Ibuprofen)။,ကွၢ်လၢ (Ibuprofen)။,ကွၢ်လၢ (Ibuprofen)။,ကွၢ်လၢ (Ibuprofen)။,တဘၣ်ဟ့ၣ်ဘၣ်။,တဘၣ်ဟ့ၣ်ဘၣ်။,,,
+Metformin,1 tab = 500 or 750 or 850 or 1000 mg,၁ ဖျၢၣ် = ၅၀၀(မ့) ၇၅၀ (မ့) ၈၅၀ (မ့) ၁၀၀၀ mg,"First choice drug to treat Diabetes Type 2 and Diabetes which develops during
+  pregnancy.
+  Alone or in combination with other anti-diabetic drugs (Glipizide or Gliclazide).",တၢ်ဟ့ၣ်ကသံၣ်ကျဲအခီၣ်ထံးတဘိလၢတၢ်ယါဘျါ၀ဲဆံၣ်ဆၢတၢ်ဆါခံကလုာ်တကလုာ်ဒီးဆံၣ်ဆၢတၢ် ဆါလၢအအါထီၣ်၀ဲဖဲၦၤဒၢအဆၢကတီၢ်။ ဟ့ၣ်ထဲတခါဧိၤမ့တမ့ၢ်ဟ့ၣ်ကသံၣ်ပာ်ဖှိၣ်ဃုာ်ဒီး ကသံၣ်မၤဘျါဆံၣ်ဆၢတၢ်ဆါအဂၤတဖၣ်တက့ၢ် (Glipizide) မ့တမ့ၢ် (Gliclazide)။,"- Start with 500 mg to be taken with breakfast. 
+ - If blood sugar is still high after 2 weeks, increase by 500 mg 
+ every 2 weeks. 
+ - Stop increasing as soon as blood sugar level is normal.
+ - Maximum dose 1000 mg BID.",,"- STOP if nausea, vomiting and diarrhoea.
+ - STOP if patient dehydrated (careful in old people).",Kidney disease.,"Heart palpitations, low blood sugar, decreased absorption of 
+ B12",High alcohol intake can give severe syndrome(lactic acidosis).,Can give,Can give,"Start with 500 mg to be taken with breakfast.
+  If blood sugar still high, increase by 500 mg / day every 2 weeks.
+  Stop increasing dose as soon as blood sugar level is normal.
+  Maximum dose 2000 mg (2 g) BID.",,,"- စးထီၣ်ဟ့ၣ် ၅၀၀mg လၢကဘၣ်အီၣ်ဃုာ်ဒီးဂီၤခီတၢ်အီၣ်။
+ - ခံနံွ၀ံၤအလီၢ်ခံလၢသွံၣ်ကျါအံ သၣ်ဆၢမ့ၢ်အိၣ်အါဒံးန့ၣ်၊ဟ့ၣ်အါထီၣ်န့ၢ် အီၤ ၅၀၀mg လၢခံနွံတဘျီ။
+ - ဖဲအံသၣ်ဆၢလၢသွံၣ်ကျါအံၤက့ၤအိၣ်က့ၤဒ်အညီနုၢ်အသိးအခါန့ၣ်တဘၣ်မၤ အါထီၣ်ကသံၣ်ဒိးစ်လၢၤဘၣ်။
+ - ကသံၣ်ဒိးစ်အအါကတၢၢ်န့ၣ် ၁၀၀၀mg ၁နံၤခံဘျီ။",,"- သးမ့ၢ်ကလဲၤ၊ဘှီးဒီးဟၢဖၢလူန့ၣ်တဘၣ်အီၣ်လၢၤတဂ့ၤ။
+ - ၦၤဆါတဖၣ်အထံသံးနိသံးမ့ၢ်အိၣ်ထီၣ်န့ၣ်တဘၣ်အီၣ်လၢၤတဂ့ၤ (ကဘၣ်ပလီၢ်သးလၢၦၤသးၦၢ်တဖၣ်လီၤ)။",ကလ့ၢ်တၢ်ဆါ။,သးကနိး၊အံသၣ်ဆၢလီၤစှၤလၢသွံၣ်ကျါ၊မၤလီၤစှၤ (B12) အတၢ်ထုးန့ၢ် ကသံၣ်သဟီၣ်။,တၢ်အီ၀ဲတၢ်မူၤတၢ်ဘှီးမ့ၢ်အါန့ၣ်ကမၤနးထီၣ်၀ဲတၢ်ဆါအပနီၣ် (လဲၣ်ထံၣ် အစံၤဒိစံၣ်)။,ဟ့ၣ်သ့။,ဟ့ၣ်သ့။,စးထီၣ်ဟ့ၣ် ၅၀၀ mg အီၣ်ဃုာ်ဒီးဂီၤခီတၢ်အီၣ်တက့ၢ်။ ဖဲအံသၣ်ဆၢလၢသွံၣ်ကျါမ့ၢ်အိၣ်အါဒံးန့ၣ်-ဟ့ၣ်အါထီၣ်ကသံၣ် ၅၀၀ mg ၁နံၤဂီၢ်လၢခံနွံတဘျီ။ အံသၣ်ဆၢလၢသွံၣ်ကျါမ့ၢ်လီၤအိၣ်ဒ်အညီနုၢ်အသိးဒီးတဘၣ်မၤအါထီၣ်ကသံၣ်ဒိးစ်လၢၤဘၣ်။ ဒိးစ်အဒိၣ်ကတၢၢ်၂၀၀၀ mg (၂ g) တနံၤခံဘျီ။,,
+Methyldopa,,,To treat hypertension during pregnancy.,ကသံၣ်ကူစါၦၤမုၣ်ၦၢ်ဒၢလၢအိၣ်ဒီးသွံၣ်တၢ်ဆီၣ်သနံးထီၣ်သ့ၣ်တဖၣ်နၣ့်လီၤ။,,Can be taken with or without food.,,"Depression, active liver disease.","Dry mouth, stomatitis (mouth infection), oedema, nightmares, 
+ jaundice, anaemia.","- Alcohol, Propranolol and Anti-hypertensives increase effect of 
+ Methyldopa.
+ - NSAID (Ibuprofen, etc), Prednisolone, Ferrous, Combined Oral 
+ Contraceptives decrease effect of Methyldopa.",Can give,Can give,,,,,အီၣ်ဒီးတၢ်အီၣ်သ့မ့တမ့ၢ်တအီၣ်ဒီးတၢ်အီၣ်ဘၣ်သ့၀ဲစ့ၢ်ကီးလီၤ။,,ၦၤလၢအိၣ်ဒီးတၢ်သးဟးဂီၤ ၊ သူၣ်တၢ်ဆါဟဲကဲထီၣ်သး။,"ကီာ်ပူၤဃ့ထီ၊ ကီာ်ပူၤတၢ်ဃၢ်နုာ်၊ ကဘု၊ မံမီၢ်ပျီၢ်သီတၢ်၊ ညၣ်ဘီ၊
+ သွံၣ်ဂံၢ်စၢ်။","(Alcohol) ၊(Propranolol) ဒီးကသံၣ်မၤကိညၢ်လီၤသွံၣ်တၢ်ဆီၣ်ကနံးထီၣ်
+ မၤအါထီၣ်ကသံၣ် (Methyldopa) အသဟီၣ်ဒီး။. NSAID (Ibuprofen…)၊(Prednisolone)၊ ထး၊ ကသံၣ်ဟုးစၢ်လၢ
+ အအီသ့ၣ်တဖၣ် မၤစှၤလီၤကသံၣ (Methyldopa) အသဟီၣ်နၣ့်လီၤ။",ဟ့ၣ်သ့။,ဟ့ၣ်သ့။,,,
+Metoclopramide- Tab (Bad symbols in food_KA),1 tab = 10 mg,၁ ဖျၢၣ် = ၁၀ mg,Anti-vomiting. Anti-nausea. For migraine together with anti-pain. For vertigo.,"ကသံၣ်မၤပတုာ်တၢ်ဘှီး။ မၤပတုာ်တၢ်သးကလဲၤ။ တၢ်ခိၣ်ဆါဆဲးထူ (မါကြ့)န့ၣ်ဟ့ၣ်ဃုာ်ကသံၣ်
+ မၤကိညၢ်တၢ်ဆါ။ တၢ်ခိၣ်မူၤမဲာ်ခံး(ဖၢၤထံၤကိၤ)။",,Take half hour before food and at bedtime.,"Use only for a few days. 
+ Using longer than 10 weeks can cause a serious movement 
+ disorder.","- Patients with epilepsy.
+ - If you suspect bowel obstruction.","Drowsiness, feeling tired, feeling restless, heart failure, rash,
+ confusion.",,Can use if severe vomiting and nausea,Give only if necessary,,,,,"အီအီၤလၢတချုးအီၣ်တၢ်အီၣ်ဘၣ်တခီနၣ် ရံ ၣ်အတီၢ်ပူၤဒီး
+ တချုးမံအဆၢကတီၢ်တက့ၢ်။","ကဘၣ်တၢ်သူလၢစှၤသီအတီၢ်ပူၤလီၤ။
+ တၢ်သူအီၤမ့ၢ်အါန့ၢ်အနွံတဆံန့ၣ်ကဒုးအိၣ်ထီၣ်၀ဲ မိၢ်ၦၢ်တၢ်ဟူးတၢ်ဂဲၤတၢ်
+ ကီတၢ်ခဲလီၤ။",ၦၤဆါလၢအအိၣ်ဒီးတၢ်ထီၣ်ထိးပျုၢ်တၢ်ဆါ။. ဖဲနမ့ၢ်ဆိကမိၣ်လၢမ့ၢ်၀ဲၦံာ်အံၤဘံးတံၢ်သးအခါ။.,"မိၣ်မံခ့သး၊ လီၤဘှံး၊ ပတုာ်တၢ်ဟူးတၢ်ဂဲၤတန့ၢ်ဘၣ်၊ သးဖျၢၣ်တမၤတၢ်မၤ၊
+ လိၤဖှိၣ်ထီၣ်၊ ထၢမံထၢမၣ်။",,မ့ၢ်ဘှီးဒီးသးကလဲၤနးနးကလဲာ်န့ၣ်တၢ်သူအီၤသ့၀ဲလီၤ။,မ့ၢ်လိၣ်နၢ့်ဟ့ၣ်သ့လီၤ။,,,
+Metoclopramide- IV (Bad symbols in side_effects_KA),1 amp = 2cc = 10mg,၁ ပလီ = ၂ cc = ၁၀ mg,Anti-vomiting. To use only for severe vomiting.,ကသံၣ်လၢအမၤပတုာ်တၢ်ဘီှး- သူအီၤလၢတၢ်ဘီှးလၢအနး။,Give only if vomiting is severe.,,"Children < 10 kg, old people, asthma, epilepsy, liver disease","Kidney disease, gastro-intestinal obstruction, haemorrhage.","Muscle spasms, also of eye muscles (side effects stop within
+ 24 of stopping the drug).",,"Give ONLY if really needed. 
+ Try to avoid.",Give ONLY if really needed,,,,ဟ့ၣ်သ့ဖဲလၢဘီှးနးနး။,,"ဖိသၣ်စှၤနၢ့် ၁၀ ကံလိ၊ ၦၤသးၦၢ်၊ သးဘံးတၢ်ဆါ၊ ထိးပျုၢ်တၢ်ဆါ၊
+ သူၣ်တၢ်ဆါ။",ကလ့ၢ်တၢ်ဆါ၊ၦံာ်ဖးဒိၣ်ဘံးတံာ် ၊ သွံၣ်ဃီၢ်တၢ်ဆါ၊ (သွံၣ်လီၤလူ)။,"ညၣ်ထူၣ်လီၤဆံး(ထူး)ဃုာ်ဒီးမဲာ်ဘ့ၣ်ထူၣ်
+ (တၢ်သ့ၣ်တဖၣ်အံၤကလီၤမၢ်ကွံာ်၀ဲဖဲတၢ်ပတုာ်ကသံၣ်၂၄နၣ်ရံၣ်၀ံၤလီၢ်ခံ)။",,"မ့ၢ်လိၣ်နီၢ်နီၢ်ဒီးဟ့ၣ်သ့လီၤ။
+ ကျဲးစၢးဟးဆှဲး။",မ့ၢ်လိၣ်နီၢ်နီၢ်ဒီးဟ့ၣ်သ့။,,,
+Metronidazole (NEED SCREENSHOT FOR EXTRA INFO) Des_KA has bad symbols,1 tab = 200 mg,၁ ဖျၢၣ = ၂၀၀ mg,Antibiotic.,ကသံၣ်မၤသံ (ဘၣ်ထံရံယၤ) ဃၢ်။,,Take with food to decrease gastric upset.,If alcohol taken together can give bad reaction,,Unpleasant taste; stomach ache; headache; jaundice.,Metronidazole increases effect of Phenytoin.,Do not give high doses.,Can give,,,,,အီၣ်ဃုာ်ဒီးတၢ်အီၣ်လၢကမၤလီၤစှၤ၀ဲတၢ်ကဖုဆါ။,မ့ၢ်အီဃုာ်ဒီးသံးနၢ့် ကတူၢ်ဘၣ်တၢ်နးနးနၣ့်လီၤ။,,ကီာ်ပူၤတ၀ံၣ်ဘၣ်၊ ဟၢဖၢဆါ၊ ခိၣ်သၣ်ဃံဆါဒီးညၣ်လီၤဘီ။,(Metronidazole) နၢ့်မၤအါထီၣ် (Phenytoin) အသဟီၣ်နၣ့်လီၤ။,တဘၣ်ဟ့ၣ်ကသံၣ်(ဒိးစ်)လၢအဒိၣ်နၢ့်တဂ့ၤ။,ဟ့ၣ်သ့။,,,
+Misoprostol (See section),,,"See DRUGS USED FOR POST PARTUM HAEMORRAGE (PPH)
+ and MISSED or INCOMPLETE ABORTION",ကွၢ်လၢ ကသံၣ်လၢတၢ်သူအီၤလၢ အိၣ်ဖျဲၣ်၀ံၤသွံၣ်လူ ဒီး ဖိသၣ်ဟးဂီၤလၢဒၢလီၢ်ပူၤ(ဟုးဟးဂီၤ) မ့ မိၢ်ဒၢဟုးလီၤဖှံၣ်တ၀ာ်။,,,,,,,,,,,,,,,,,,,,,,
+Nitrofurantoin (G6PD),,,See DRUGS AND G6PD DEFICIENCY,ကွၢ်လၢ ကသံၣ်တဖၣ်ဒီး(ကၠံၤစံၣ်ဖံၤဒံၤ)လီၤထုးတဖၣ ။,,,,,,,,,,,,,,,,,,,,,,
+Norfloxacin (G6PD),,,See DRUGS AND G6PD DEFICIENCY,ကွၢ်လၢ ကသံၣ်တဖၣ်ဒီး(ကၠံၤစံၣ်ဖံၤဒံၤ)လီၤထုးတဖၣ ။,,,,,,,,,,,,,,,,,,,,,,
+Ofloxacin (G6PD),,,See DRUGS AND G6PD DEFICIENCY,ကွၢ်လၢ ကသံၣ်တဖၣ်ဒီး(ကၠံၤစံၣ်ဖံၤဒံၤ)လီၤထုးတဖၣ ။,,,,,,,,,,,,,,,,,,,,,,
+Omeprazole,1 tab = 20 mg,၁ ဖျၢၣ် = ၂၀ mg,"To treat severe gastritis, peptic ulcer and oesophageal reflux.",ကသံၣ်ကူစါကဖုညီးထီၣ်၊ကဖုပူၤလီၢ်ထီၣ်ဒီးအဲးစ့းဟဲထီၣ်လၢတၢ်အီၣ်ကျိၤ (oesophageal reflux) ။,"- Most of the patients with peptic ulcer will be better after 4 weeks with 20 mg
+ once a day, but some patients will require double dose and 8 weeks
+ treatment.
+ - Some patients with oesophageal reflux might need up to 12 weeks
+ treatment.
+ - Stop anti-inflammatories drugs.
+ - If a person need chronic therapy with antiinflammatory drugs, can give
+ together all the time to prevent ulcer.
+ - If used for 8 weeks or more, do not stop suddenly, but step down slowly, to 
+ avoid worsening of the symptoms.","- Take in the morning, 30 minutes before breakfast.
+ - If taken twice a day, take second dose 30 minutes before
+ dinner or before going to bed. 
+ - Do not chew or crush.
+ - Avoid spicy food.","- Liver disease.
+ - If possible do not give to patients older than 65 years.","Together with Cimetidine or Ranitidine. If you need to give
+ together, give one in the morning and the other in the evening.","- Abdominal pain, headache, rash, diarrhoea.
+ - Sometimes agitation, dizziness, fatigue, itchy body.",,Can give,Can give,,,,"ၦၤဆါအါတက့ၢ်န့ၣ်လၢအိၣ်ဒီးကဖုတၢ်ဆါနၢ့်ကကိညၢ်ထီၣ်က့ၤဒီးကသံၣ်(ဒိးစ်)၂၀ mg တနံၤတဘျီဖဲ၄နွံ၀ံၤအလီၢ်ခံနၣ့်လီၤ၊ ဘၣ်ဆၣ်ဒီးၦၤဆါတနီၤနီၤနၣ့်လိၣ်ဘၣ်လၢကဘၣ်အီ အါထီၣ်ကသံၣ်(ဒိးစ်)အါထီၣ်ခံဆးဒီးလၢတၢ်ဆၢကတီၢ်ဃီးနွံနၣ့်လီၤ။. ၦၤဆါတနီၤလၢအိၣ်ဒီးအဲးစ့းဟဲထီၣ်လၢတၢ်အီၣ်ကျိၤ (oesophagealreflux) နၣ့်ဘၣ်သ့ၣ်သ့ၣ်လိၣ်အီအါထီၣ်ကသံၣ် တုၤ ၁၂နွံနၣ့်လီၤ။. ပတုာ်ကွံာ်ကသံၣ်မၤဘျါတၢ်ညိးတၢ်ဆါတဖၣ်တက့ၢ်။. ၦၤလၢအလိၣ်အီ၀ဲကသံၣ်မၤဘျါတၢ်ညိးလၢအယံာ်အထၢတဖၣ်န့ၣ်။
+ နဟ့ၣ်ဃုာ်အီၤသ့၀ဲထီဘိလၢကတြီဃာ်၀ဲ တၢ်ပူၤလီၢ်ကဲထီၣ်သးအဂီၢ်လီၤ။. တၢ်မ့ၢ်အီအီၤလၢဃီးနွံမ့တမ့ၢ်အါန့ၢ်ဒံးန့ၣ်တဘၣ်ပတုာ်အီၤတဘျီဃီတဂ့ၤ
+ ဘၣ်ဆၣ်မၤလီၤစှၤအီၤကယီကယီလၢကဟးဆှဲး၀ဲတၢ်ဆါပနီၣ်နးထီၣ်
+ အဂီၢ်လီၤ။.","အီၣ်လၢဂီၤခီ၊တချုးအီၣ်ဂီၤခီတၢ်အီၣ်ဘၣ်အမံးနံး၃၀အတီၢ်ပူၤ။. တၢ်မ့ၢ်အီၣ်အီၤတနံၤခံဘျီန့ၣ်လၢခံဘျီတဘျီန့ၣ်အီၣ်လီၤအီၤလၢတချုးအီၣ်
+ ဟါခီတၢ်အီၣ်ဘၣ်အမံးနံး၃၀အတီၢ်ပူၤမ့တမ့ၢ်တချုးမံဒံးဘၣ်အခါတက့ၢ်။. တဘၣ်အ့ၣ်ဘျဲးမ့တမ့ၢ်မၤဘျဲးအီၤတဂ့ၤ။. တဘၣ်အီၣ်တၢ်အီၣ်အဟဲအဟီတဖၣ်တဂ့ၤ။.","သူၣ်တၢ်ဆါ။. မ့ၢ်သ့န့ၣ်တဘၣ်ဟ့ၣ်ကသံၣ်အံၤလၢၦၤဆါလၢအသးနံၣ်အါန့ၢ်အနံၣ် ၆၅
+ ဆူအဖီခိၣ်တဂ့ၤ။","ဟ့ၣ်ဃုာ်ဒီး (Cimetidine) မ့တမ့ၢ် (Ranitidine) တဂ့ၤ။
+ နမ့ၢ်ဘၣ်ဟ့ၣ်တပူၤဃီန့ၣ်ဟ့ၣ်အီၤလၢဂီၤတဖျၢၣ်ဒီးဟါတဖျၢၣ်တက့ၢ်။.",ဟၢဖၢဆါ၊ ခိၣ်ဆါ၊ လိၤဖှိၣ်ထီၣ်၊ ဟၢဖၢလူ။. တဘျီတခီၣ် ပတုာ်တၢ်ဟူးတၢ်ဂဲၤတန့ၢ်ဘၣ်၊ခိၣ်မူၤ၊ လီၤဘှံးဒီးလိၤသး။.,,ဟ့ၣ်သ့။,ဟ့ၣ်သ့။,,,
+Oral Rehydration Solution (NEED SCREENSHOT FOR EXTRA INFO ),,,To treat de-hydration in patients with diarrhoea.,ကသံၣ်ကူစါလၢၦၤဆါလၢအ့ၣ်လူအိၣ်ဒီးတၢ်ထံသံးနိသံး။,"Continue breast-feeding.
+ - Give solution slowly and often using a cup also for children.
+ - If patient vomits, wait 10 minutes and then start again.",,,,,,,,,,,ဆဲးဒုးအီၣ်ဖိနုၢ်ထံတက့ၢ်။. ဟ့ၣ်ဒုးအီတၢ်ထံကယီကယီဒီးဒုးအီစ့ၢ်ကီးဖိသၣ်လၢထံခွးပူၤခဲအံၤခဲအံၤတက့ၢ်။. ၦၤဆါမ့ၢ်ဘှီးနၢ့်အိၣ်ခီးအမံးနံး၁၀ ၀ံၤဒီးဟ့ၣ်ဒုးအီလၢအသီတဘျီ။.,,,,,,,,,,
+Oxytocin (NOT APART OF DRUG LIST),,,"See DRUGS USED FOR POST PARTUM HAEMORRAGE (PPH)
+ and MISSED or INCOMPLETE ABORTION",ကွၢ်လၢ ကသံၣ်လၢတၢ်သူအီၤလၢ အိၣ်ဖျဲၣ်၀ံၤသွံၣ်လူ ဒီး ဖိသၣ်ဟးဂီၤလၢဒၢလီၢ်ပူၤ(ဟုးဟးဂီၤ) မ့ မိၢ်ဒၢဟုးလီၤဖှံၣ်တ၀ာ်။,,,,,,,,,,,,,,,,,,,,,,
+Paracetamol - Oral (Bad symbols in Note_KA),1 tab = 500 mg,၁ ဖျၢၣ် = ၅၀၀ mg,To treat pain and fever.,ကသံၣ်ကူစါတၢ်အဆါဒီးတၢ်ကိၢ်ထီၣ်။,"- If possible calculate by kg.
+ - It can be given every 4 hours, but never give more than Max. dose",Can be taken with or without food.,"Alcoholism; jaundice. 
+ Liver and kidney disease: do not give high doses.",,"Not common: rash, blood disorders. 
+ Liver damage if over dosage",,Can give,Can give,Max dose has been changed from 4 g / day to 3 g / day.,,,"မ့ၢ်သ့န့ၣ်ထိၣ်ဒွးဒီးအတယၢၢ်ဃၢကံလိ။. ဟ့ၣ်အီၤ ၄နၣ်ရံၣ် ၁ဘျီကိးဆၢကတီၢ်ဒဲးသ့လီၤဘၣ်ဆၣ်တဘၣ်ဟ့ၣ်အါနၢ့်ကသံၣ်
+ (ဒိးစ်) အါကတၢၢ်န့ၣ်တဂ့ၤ။.",အီၣ်ဒီးတၢ်အီၣ်သ့မ့တမ့ၢ်တအီၣ်ဒီးတၢ်အီၣ်ဘၣ်သ့၀ဲစ့ၢ်ကီးလီၤ။,"ၦၤစွဲသံးဖိ၊ ညၣ်ဘီတၢ်ဆါ။
+ သူၣ်ဒီးကလ့ၢ်တၢ်ဆါ- တဘၣ်ဟ့ၣ်ကသံၣ်(ဒိးစ်) အဒိၣ်။",,"တဘျီတခီၣ်- လိၤဖှိၣ်ထီၣ်၊ သွံၣ်ထံတဘၣ်လီၢ်ဘၣ်ဆးဘၣ်။
+ ဟ့ၣ်ကသံၣ်အါနၢ့်တၢ်ပာ်ပနီၣ်ဃာ်ကသံၣ်(ဒိးစ်)နၣ့်သူၣ်ဟးဂီၤ၀ဲလီၤ။",,ဟ့ၣ်သ့။,ဟ့ၣ်သ့။,ဒိးစ်အါကတၢၢ် ၄ g န့ၣ်ဘၣ်တၢ်တၢ်ဆီတလဲက့ၤအီၤလၢ ၃ g တနံၤဂီၢ်။,,
+PARACETAMOL - IM,1 amp = 2cc = 300 mg,၁ ပလီ = ၂ cc = ၃၀၀ mg,Anti-fever when patient is unconscious.,ကသံၣ်ကူစါၦၤဆါတၢ်ကိၢ်ထီၣ်ဖဲအသါပ့ၤနီၣ်သးအခါ(အီၣ်အီတၢ်တသ့ဘၣ်အဃိ)။,,,See Paracetamol oral.,,See Paracetamol oral.,,Can give,Can give,,,,,,ကွၢ်လၢ (Paracetamol) အအီလၢတၢ်ဖီခိၣ်အသိး။,,ကွၢ်လၢ (Paracetamol) အအီလၢတၢ်ဖီခိၣ်အသိး။,,ဟ့ၣ်သ့။,ဟ့ၣ်သ့။,,,
+"Penicillin V (Des_KA, Note_KA has some odd symbols)",1 tab = 250 mg,၁ ဖျၢၣ = ၂၅၀mg,"Antibiotic for bacterial infections, usually now replaced by Amoxicillin.
+ Useful in Rheumatic Fever treatment and to prevent getting Rheumatic Fever again.","ကသံၣ်မၤသံ (ဘၣ်ထံရံယၤ) ဃၢ်၊ ခဲအံၤလၢအလီၢ်နၢ့်တၢ်သူ (Amoxicillin) လီၤ။
+ ကဲဘျုးလၢကူစါ (ရူၣ်မဲၣ်တံၢ်)တၢ်ကိၢ်ထီၣ်ဒီးတၢ်တြီဆၢဃာ်(ရူၣ်မဲၣ်တံၢ်)တၢ်ကိၢ်ထီၣ်သုတကဲထီၣ်လၢ
+ အသီတဘျီတဂ့ၤ။",Take 6 hourly (also during the night).,Take with water on empty stomach (better absorption).,"- History of allergy (Penicillin, Amoxicillin, Cloxacillin). 
+ - In patient with asthma.",,"Diarrhoea, nausea, vomiting. Severe allergic reactions.",,Can give,Can give,,,,ဘၣ်အီဃုနၣ်ရံၣ်တဘျီ(ပၣ်ဃုာ်ဒီးမုၢ်နၤခီ)။,အီလီၤဒီးထံတခွးလၢဟၢဖၢလီၤကအိခါ(ဟံးန့ၢ်ကသံၣ်သဟီၣ်ဂ့ၤဒိၣ်ထီၣ်)။,လၢအပူၤကွံာ်တဖီးဒီးကသံၣ် (Penicillin) ၊ (Amoxicillin) ၊ (Cloxacillin) ၊၊. ၦၤဆါလၢအိၣ်ဒီးတၢ်သးဘံးတၢ်ဆါ။,,ဟၢဖၢလူ၊သးကလဲၤ၊ဘှီး၊ဂာ်တဖီးတၢ်ဒိဆၢက့ၤတၢ်လၢအနး။,,ဟ့ၣ်သ့။,ဟ့ၣ်သ့။,,,
+Phenobarbitone (NEED SCREENSHOT FOR EXTRA INFO),1 tab = 60 mg,၁ ဖျၢၣ် = ၆၀ mg,To treat epilepsy.,ကသံၣ်ကူစါထိးပျုၢ်တၢ်ဆါ(ထီၣ်ဒီတဂၤဒီးထီၣ်တပၤမ့တမ့ၢ်ထီၣ်ထဲတၢ်လီၢ်တတီၤလၢမိၢ်ၦၢ်လိၤ)။,"- If still having seizures with maximum dose, need to change drug.
+ - Patients should continue to take it all the time. If no seizures in 2 
+ years time, then you can try to slowly reduce and stop.
+ - If patient starts having seizures again, Phen. has to be started again.
+ - Never stop suddenly, always decrease slowly.
+ - In long term therapy, consider giving Calcium and vit. D.","- Can take with or without food.
+ - Increase intake of food rich in Calcium.",Children and old people; alcohol abuse; liver and kidney disease.,Severe liver disease.,"Hepatitis, low blood pressure, drowsiness, sleepiness, hyperactivity, 
+ poor memory; hallucinations.","- Alcohol increases sleepiness.
+ - Phenobarbitone decreases effect of Doxycycline, Metronidazole, 
+ Combined Oral Contraceptives (COC), Depo.","- Benefits usually greater than risks. 
+ - Consult with a doctor if possible.","- Benefits usually greater than risks. 
+ - Consult with a doctor if possible.
+ - Baby can become drowsy.",,,,"ၦၤဆါအံၤအီၣ်၀ဲဒိးစ်အအါကတၢၢ်လံဘၣ်ဆၣ်မ့ၢ်ထီၣ်ဒံးန့ၣ်၊ ဘၣ်ဆီတလဲက့ၤကသံၣ်. ၦၤဆါကဘၣ်ဆဲးအီၣ်ကသံၣ်ထီဘိလီၤႉလၢ၂နံၣ်အတီၢ်ပူၤတၢ်ထီၣ်မ့ၢ်တအိၣ်လၢၤဘၣ်
+ န့ၣ်၊ နမၤစှၤလီၤကသံၣ်ကယီကယီဒီးပတုာ်န့ၢ်အီၤသ့လီၤ။. မ့ၢ်ထီၣ်လၢအသီတဘျီဒၣ်လဲာ်ကဘၣ်စးထီၣ်ဒုးအီလၢအသီတဘျီ။. တဘၣ်ပတုာ်သတူၢ်ကလာ်တဂ့ၤႉ မၤစှၤလီၤကသံၣ်ကယီကယီနၣ့်တက့ၢ်။. လၢတၢ်ဟ့ၣ်ကသံၣ်အယံာ်တထၢအဂီၢ်န့ၣ်၊ဟ့ၣ်ဃုာ်ဒီး (Calcium) ဒီး (vit. D) တက့ၢ်။.",အီၣ်ဒီးတၢ်အီၣ်သ့မ့တမ့ၢ်တအီၣ်ဒီးတၢ်အီၣ်ဘၣ်သ့၀ဲစ့ၢ်ကီးလီၤ။. အီၣ်အါထီၣ်တၢ်အီၣ်လၢအအိၣ်ဒီး (Calcium) အါအါတက့ၢ်။.,ဖိသၣ်ဒီးသးၦၢ်ဖးဒိၣ်၊ ၦၤစွဲသံး၊ သူၣ်ဒီးကလ့ၢ်တၢ်ဆါ။,သူၣ်တၢ်ဆါလၢအနး။,"သူၣ်ညီးတၢ်ဆါ၊ သွံၣ်တၢ်ဆီၣ်သနံးလီၤ၊ မိၣ်မံခ့သး၊ မံခ့၊ နီၢ်ခိဟူးဂဲၤအါထီၣ်၊
+ ခိၣ်နုာ်တမၤတၢ်ဘၣ်၊ ထံၣ်ကမွံတၢ်။",မ့ၢ်အီသံးနၣ့်ဘၣ်သးမံခ့အါထီၣ်။. (Phenobarbitone) မၤလီၤစှၤကသံၣ် (Doxycycline) ၊ (Metronidazole) ဒီးကသံၣ်ဟုးစၢ်လၢအအီဒီးအဆဲးတဖၣ်အသဟီၣ်နၣ့်လီၤ။.,အါတက့ၢ်တၢ်အဘျုးအိၣ်အါန့ၢ်ဒံးတၢ်လီၤဘၣ်ယိၣ်လီၤ။. မ့ၢ်သ့ဃ့တၢ်ဟ့ၣ်ကူၣ်ဒီးကသံၣ်သရၣ်ဖးဒိၣ်တက့ၢ်။.,အါတက့ၢ်တၢ်အဘျုးအိၣ်အါန့ၢ်ဒံးတၢ်လီၤဘၣ်ယိၣ်လီၤ။. မ့ၢ်သ့ဃ့တၢ်ဟ့ၣ်ကူၣ်ဒီးကသံၣ်သရၣ်ဖးဒိၣ်တက့ၢ်။. ဖိသၣ်လီၤကထုသ့၀ဲလီၤ။.,,,
+Phenytoin (SCREENSHOTS NEED TO BE ADJUSTED),1 tab = 100 mg,၁ ဖျၢၣ် = ၁၀၀ mg,To treat epilepsy (general and focal ).,ကသံၣ်ကူစါယါဘျါထိးပျုၢ်တၢ်ဆါ(ထီၣ်ဒီတဂၤဒီးထီၣ်တပၤမ့တမ့ၢ်ထီၣ်ထဲတၢ်လီၢ်တတီၤလၢမိၢ်ၦၢ်လိၤ)။,"- If possible check drug blood levels every 6 months, as good levels
+ and toxic levels are very near.
+ - Give B1,6,12 tablets to prevent disease of the peripheral nerves.
+ - Very important to tell patients to clean well their gums and teeth 2-3
+ times a day.",Better to take on empty stomach.,G6PD deficiency,"- With Co-artem (Phenytoin decreases effect), Sertraline.
+ - If heart rate is < 50/min.","Swollen gums, peripheral neuropathy (damage to peripheral
+ nerves with tingling and numbness), rash, acne, anaemia, difficult
+ sleeping, twitching.
+ Toxic: double vision, tremor,difficulty speaking, confusion,
+ changes in behaviour, walking with legs apart (ataxia).","- Phenytoin decreases effect of Amlodipine, Albendazole, Doxycycline, Dexamethasone, Prednisolone, Itraconazole, Praziquantel.
+ - Ciprofloxacin can increase or decrease effects of Phenytoin.
+ - Fluconazole can increase effects of Phenytoin.
+ - Isoniazid and Metronidazole can increase risk of peripheral 
+ neuropathy.
+ - Rifampicin can decrease effects of Phenytoin.",Do not give.,Can give,,,,"မ့ၢ်သ့န့ၣ်မၤကွၢ်ကသံၣ်သဟီၣ်လၢအအိၣ်လၢသွံၣ်ကျါဃုလါတဘျီတက့ၢ်ကသံၣ်သ
+ ဟီၣ်လၢအအိၣ်လၢသွံၣ်ကျါမ့ၢ်အါန့ၣ်ကဲထီၣ်တၢ်စုၣ်တၢ်ပျၢ်သ့၀ဲလီၤ။. ဟ့ၣ်ကသံၣ် (B1,6,12) တဖၣ်အံၤလၢကဒီသဒၢ၀ဲစုခီၣ်ထူၣ်ပျၢ်ဟးဂီၤတၢ်ဆါဂီၢ်။. အရ့ဒိၣ်ကတၢၢ်လၢကဘၣ်တဲၦၤဆါတဖၣ်လၢကမၤကဆှီမဲကူာ်ဒီး
+ မဲတဖၣ်တနံၤ၂-၃ဘျီ၊",ဂ့ၤဒိၣ်လၢကဘၣ်အီၣ်လၢဟၢဖၢပူၤတၢ်တအိၣ်နီတမံၤဘၣ်အခါလီၤ။,(ကၠံၤစံၣ်ဖံၤဒံၤ)လီၤထုး။,မ့ၢ်အီၣ်ဃုာ် (Co-artem) န့ၣ် (Phenytoin အသဟီၣ်ကလီၤစှၤ၀ဲ)၊ (Sertraline) ။. ဖဲသးဖျၢၣ်ဟူး၀းပနီၣ်အိၣ်စှၤန့ၢ်၅၀လၢတမံးနံးအတီၢ်ပူၤ။,"မဲကူာ်ညိးထီၣ်၊စုခီၣ်ထူၣ်ပျၢ်ဟးဂီၤ၊ လိၤဖှိၣ်ထီၣ်၊တၢ်ဖိသွံထီၣ်၊သွံၣ်ဂံၢ်စၢ်တၢ်ဆါ၊
+ မံတန့ၢ်၊ ထူၣ်ထုးပျၢ်ထုး။
+ အစုၣ်အပျၢ်- ထံၣ်တၢ်ခံကထြၢ၊ဖံးဘ့ၣ်ကနိး၊တဲတၢ်တထီၣ်ထၢမံထၢမၣ်၊
+ တၢ်ပာ်သူၣ်ပာ်သးဆီတလဲ၊ဟးတဂၢၢ်တကျၢၤလၢၤဘၣ်(အါထါစံၤယၤ)။",(Phenytoin) န့ၣ်မၤလီၤစှၤ၀ဲ (Amlodipine)၊(Albendazole)၊(Doxycycline)၊(Dexamethasone)၊(Prednisolone)၊(Itraconazole)၊(Praziquantel) အသဟီၣ်။. (Ciprofloxacin) မၤအါထီၣ်မ့တမ့ၢ်မၤလီၤစှၤ (Phenytoin) အသဟီၣ်သ့လီၤ။. (Fluconazole)မၤအါထီၣ်၀ဲ (Phenytoin) အသဟီၣ်သ့၀ဲလီၤ။. (Isoniazid) ဒီး (Metronidazole) မၤနးထီၣ်၀ဲစုခီၣ်ထူၣ်ပျၢ်ဟးဂီၤတၢ်ဆါသ့၀ဲ။. (Rifampicin) မၤလီၤစှၤ၀ဲ (Phenytoin) အသဟီၣ်သ့၀ဲလီၤ။.,တဘၣ်ဟ့ၣ်ဘၣ်။,ဟ့ၣ်သ့။,,,
+Praziquantel,1 tab = 600 mg,၁ ဖျၢၣ = ၆၀၀ mg,Anti-worm effective for flat worms and flukes,ကသံၣ်ထိးကလဲာ်ဘံၣ်ဒီးထိးကလဲာ် (flukes) ။,,"- Take with water during meals. Do not chew to avoid bitter
+ taste.
+ - Tablets can be crushed and mixed with food or liquid.",,,"Nausea, fatigue, dizziness, abdominal discomfort.",,Do not give first 3 months.,Can give,,,,,"အီၣ်ဃုာ်ဒီးထံဖဲအီၣ်တၢ်အီၣ်အခါ။တဘၣ်အ့ၣ်ဘျဲးအီၤဘၣ်ဒ်သိးနကိာ်ပူၤတ
+ ခၣ်ဘၣ်။. ကသံၣ်ဖျၢၣ်အံၤတၢ်မၤလီၤဘျဲးဒီးဃါဃုာ်ဒီးတၢ်အီၣ်မ့တမ့ၢ်တၢ်ထံသ့
+ ၀ဲလီၤ။",,,သးကလဲၤ၊ လီၤဘှံးလီၤတီၤ၊ ခိၣ်မူၤ ၊ဟၢဖၢတမုာ်ဘၣ်နၣ့်လီၤ။,,ဒၢထီၣ်သီ၃လါတဘၣ်ဟ့ၣ်ဘၣ်။,ဟ့ၣ်သ့။,,,
+Prednisolone (SOME SYMBOLS WERE NOT WORKING FOR THE KA_DESCRIPTION),1 tab = 5 mg,၁ ဖျၢၣ = ၅ mg,"For severe allergic reaction, asthma, Nephrotic Syndrome, Rheumatic Fever.",တၢ်ဆါလၢဟဲကဲထီၣ်သးဒီးဂာ်တဖီးတၢ်ဒိဆၢက့ၤတၢ်လၢအနး၊ တၢ်သးဘံး၊ ကလ့ၢ်တၢ်ဆါ (Nephrotic Syndrome) ဒီး (,"- Better to take it in the morning in a single dose after breakfast.
+ - Give Albendazole to prevent worm spread.
+ - Be sure patient does not have TB if giving long course (can make it worse).
+ - Do not stop suddenly if given for more than 3 weeks, but decrease slowly.",Take with food or milk or after meal to decrease gastric upset.,"Hypertension, heart failure, liver and kidney disease, diabetes, 
+ osteoporosis, glaucoma, epilepsy, peptic ulcer, hypothyroidism.",Peptic ulcer.,"In chronic use: 
+ Diabetes, osteoporosis, gastric upset, increased severity of
+ infections, candida, epilepsy, glaucoma, cataract, muscle 
+ weakness, bone fracture, tendon rupture, increased weight, 
+ irregular periods.","- NSAID (Ibuprofen, Indomethacin) and Aspirin: more risk of
+ ` bleeding from stomach and bowel.
+ - Prednisolone reduces effect of Anti-diabetics, Atenolol,
+ Propranolol, Furosemide, Hydochlorothiazide and Methyldopa","Can give max 40 mg OD for short courses
+ (up to 5 days).","Can give max 40 mg OD for short courses
+ (up to 5 days).",,,,"အီလၢဂီၤခီတနံၤတဘျီနၢ့်ဂ့ၤဒိၣ်၀ဲလီၤ(အီၣ်ဂီၤခီတၢ်အီၣ်၀ံၤ)။. ဟ့ၣ်ကသံၣ်ထိးကလဲၤ (Albendazole) လၢကဒီသဒၢဃာ်ထိးကလဲၤအါထီၣ်အဂီၢ်။. မၤလီၤတံၢ်လၢၦၤဆါအံၤတဘၣ်အိၣ်ဒီး (ထံၣ်ဘံၣ်)ဘၣ်။ မ့ၢ်ဟ့ၣ်ကသံၣ်အီၣ်
+ အံၤလၢအယံာ်ဒီးတၢ်ဆါကနးထီၣ်လီၤ။. မ့ၢ်ဟ့ၣ်အါနၢ့် ၃ နွံတဘၣ်ပတုာ်သတူၢ်ကလာ်တဂ့ၤဘၣ်ဆၣ်မၤလီၤစှၤလီၤ
+ ကယီကယီတက့ၢ်။","အီၣ်ဒီးတၢ်အီၣ်မ့တမ့ၢ်တၢ်နုၢ်ထံမ့တမ့ၢ်အီၣ်တၢ်အီၣ်၀ံၤအလီၢ်ခံဒ်သိးကမၤ
+ လီၤစှၤ၀ဲတၢ်ကဖုဆါအဂီၢ်လီၤ။","သွံၣ်တၢ်ဆီၣ်သနံးထီၣ်၊ သးတမၤတၢ်မၤဘၣ်၊ သူၣ်ဒီးကလ့ၢ်တၢ်ဆါ၊ ဆံၣ်ဆၢ
+ တၢ်ဆါ၊ ဃံၦၢ်ဃံကၠီး(အီစတံအိဖိရိစံၣ်)၊ မဲာ်ချံပူၤတၢ်ဆီၣ်သနံးအါထီၣ်
+ (ကျိခိၤမၣ်)၊ ထီးပျုၢ်တၢ်ဆါ၊ ကဖုပူၤလီၢ်ထီၣ်၊ (သါရီၣ်အံၣ်)မၤတၢ်မၤလီၤစှၤ။",ကဖုပူၤလီၢ်အိၣ်တၢ်ဆါ။,"သူအီၤလၢအယံာ်အထၢ
+ ဆံၣ်ဆၢတၢ်ဆါ၊ ဃံၦၢ်ဃံကၠီး(အီစတ့အိဖိရိစံၣ်)၊ ကဖုဆါ၊
+ လၢတၢ်ဃၢ်နုာ်ဃိတၢ်ဆါနးထီၣ်၊ ကုၤဃၢ်(ခါနဒံဒၤ)၊ ထီးပျုၢ်တၢ်ဆါ၊
+ မဲာ်ချံပူၤတၢ်ဆီၣ်သနံးအါထီၣ်(ကျိခိၤမၣ်)၊ မဲာ်ၦာ်ဖိထီၣ်၀ါ(ခဲထါရဲၣ်)၊
+ ယုၢ်ညၣ်အဂံၢ်စၢ်၊ ဃံကၢ်၊ထူၣ်ပျၢ်သ့ၣ်ဖး၊ ကံလိအါထီၣ်၊
+ လုၢ်လၢ်ဟဲတဘၣ်လီၢ်ဘၣ်စး။",NSAID (Ibuprofen)၊ (Indomethacin) ဒီး (Aspirin) - ဟ့ၣ်ဂံၢ်ဟ့ၣ်ဘါသွံၣ်ယွၤလၢကဖုဒီးၦံၤဖိသ့ၣ်တဖၣ်နၣ့်လီၤ။. (Prednisolone) မၤလီၤစှၤကသံၣ် (Anti-diabetics)၊ (Atenolol)၊(Propranolol)၊ (Furosemide)၊(Hydochlorothiazide) ဒီး (Methyldopa) အသဟီၣ်နၣ့်လီၤ။,"ဟ့ၣ်သ့ကသံၣ်(အဒိးစ်)လၢအဒိၣ် ၄၀ mg ၊
+ တနံၤ၁ဘျီတၢ်ဆၢကတီၢ်လၢအဖုၣ် (တုၤ ၅ သီ)။",,,,
+"Primaquine (NO TREATMENT TABLE, NO NOTES ETC, MIGHT WANT TO GET ONE???)",,,See MALARIA PROTOCOLS,ကွၢ်လၢ တၢ်ညၣ်ဂိၢ်ဃၢ်ကသံၣ်အကျိၤအကျဲ ။,,,,,,,,,,,,,,,,,,,,,,
+"Quinine (NOT ON DRUG LIST, APART OF MALARIA)",,,See MALARIA PROTOCOLS,ကွၢ်လၢ တၢ်ညၣ်ဂိၢ်ဃၢ်ကသံၣ်အကျိၤအကျဲ ။,,,,,,,,,,,,,,,,,,,,,,
+Sertraline,1 tab = 50 mg,၁ ဖျၢၣ် = ၅၀ mg,"Anti-depressant, generalised anxiety disorder and panic disorder; post-traumatic stress
+ disorder.","ကသံၣ်မၤဘျါတၢ်သးဟးဂီၤတၢ်ဆါတၢ်သူၣ်ပိၢ်သး၀းလၢတဘၣ်လီၢ်ဘၣ်စးဒီး
+ ပျံၤတၢ်လၢတဘၣ်လီၢ်ဘၣ်စး၊ ပျံၤတီၢ်တၢ်ခီဖျိထံၣ်ဘၣ်တၢ်ဘၣ်ဒိတမံၤမံၤ။","It can take 6 - 8 weeks for this drug to take full effect, but the side effects
+ appear in the first week of treatment. This must be explained carefully to the
+ patient and the family: in the first few weeks of treatment the patient may
+ feel worse and suicide risk is increased. To stop therapy, reduce slowly by 25 mg every 2 - 4 weeks.",Can be taken with or without food,"See Fluoxetine. 
+ Also Kidney disease","See Fluoxetine. 
+ Also liver disease.","See Fluoxetine. 
+ Also: aggression, hepatitis, hypertension, low blood sugar
+ (hypoglycaemia), jaundice, palpitations, numbness, ringing in
+ the ears (tinnitus).",See Fluoxetine,Can give,Can give,,,,"ကသံၣ်အံၤကမၤတၢ်လီၤတံၢ်လီၤဆဲးသ့၀ဲဖဲတၢ်အီၣ်အီၤ၆=၈နွံ၀ံၤအလီၢ်ခံ၊ဘၣ်ဆၣ်တၢ်ပိာ်
+ ထွဲထီၣ်အခံသ့သ့ၣ်တဖၣ်န့ၣ်ကစးထီၣ်ကဲထီၣ်သးသ့၀ဲဖဲတၢ်အီၣ်ကသံၣ်အခီၣ်ထံးစှၤနွံအ
+ တီၢ်ပူၤႉတၢ်အံၤတၢ်ကဘၣ်ရှဲပၠးအီၤလီၤတံၢ်လီၤဆဲးဆူၦၤဆါဒီးအဟံၣ်ဖိဃီဖိန့ၣ်လီၤ။
+ တၢ်အီကသံၣ်အခီၣ်ထံးစှၤနွံန့ၣ်ၦၤဆါတဖၣ်ကတူၢ်ဘၣ်၀ဲတမုာ်ဘၣ်ဒီးသးလၢအဲၣ်ဒိး
+ မၤသံလီၤသးကအါထီၣ်၀ဲလီၤ။. လၢတၢ်ပတုာ်ကွံာ်ကသံၣ်အံၤအဂီၢ်န့ၣ်၊မၤစှၤကသံၣ်အံၤကယီကယီ ၂၅ mg. လၢ၂-၄ နွံ တဘျီတက့ၢ်။",အီၣ်ဒီးတၢ်အီၣ်သ့မ့တမ့ၢ်တအီၣ်ဒီးတၢ်အီၣ်ဘၣ်သ့၀ဲစ့ၢ်ကီးလီၤ။,ကွၢ်လၢ(Fluoxetine) ။. ကလ့ၢ်တၢ်ဆါ။,ကွၢ်လၢ(Fluoxetine) ။. သူၣ်တၢ်ဆါ။,"ကွၢ်လၢ(Fluoxetine) ။. တၢ်ဃုအ့ၣ်လိာ်တၢ်၊ သူၣ်ညီး၊ သွံၣ်တၢ်ဆီၣ်သနံးထီၣ်၊ သွံၣ်ကျိၤတၢ်ဆၢစှၤ၊
+ ဘ့ၣ်ဘီ၊ သးကနိး၊ တီၤတုၤ၊ ကလံၤထီၣ်လၢနၢ်ပူၤ(ထံနံထူၤ)။",ကွၢ်လၢ(Fluoxetine) ။.,ဟ့ၣ်သ့။,ဟ့ၣ်သ့။,,,
+Silver Sulfadiazine,1% Cream,ကသံၣ်ဖူ ၁ %,For Burns.,လၢလိၤမ့ၣ်အူအီၣ်၊ဘၣ်ထံချီကိၢ်(မ့)တၢ်ကိၢ် (လီၤဘျူး)။,,,,Babies < 2 months.,,,,,,,,,,,ဖိသၣ်အသးစၢ်နၢ့် ၂ လါ။,,,,,,,
+Sodium Valproate,1 tab = 200 mg,၁ ဖျၢၣ် = ၂၀၀ mg,"To treat epilepsy (general and focal and absent seizures ).
+  First choice for absence seizures.","ကသံၣ်ကူစါထိးပျုၢ်တၢ်ဆါ(ထီၣ်ဒီတဂၤ၊ ထီၣ်တပၤမ့တမ့ၢ်ထီၣ်ထဲတၢ်လီၢ်တတီၤလၢမိၢ်ၦၢ်လိၤ၊
+ တၢ်ထီၣ် ဂၢၢ်တပၢၢ်တစိၢ်ဖိ)။
+ ကသံၣ်လၢတၢ်သူစိအီၤလၢတၢ်ထီၣ် ဂၢၢ်တပၢၢ်တစိၢ်ဖိဂီၢ်။","- To stop therapy, reduce slowly over 2 - 3 months.
+ - If possible check blood levels and liver function test regularly.",Better to take with food to avoid gastric upset.,Liver disease,"- Children < 3 years old: high risk of liver failure.
+ - Women 15 - 45 years who are not taking contraceptions (also 
+ if SINGLE!): Sodium Valproate can cause major malformations!","Headache, drowsiness, dizziness, difficult to sleep, nausea, 
+ gastric upset, vomiting, weight gain, low platelets, hair loss, 
+ tremor, double vision, blurred vision, hyperactivity, sleepiness, 
+ hearing loss, rash.","Cloxacillin, Doxycycline, Fluconazole, Isoniazid,Itraconazole,
+ Paracetamol increase risk of liver damage.",Do not give.,Do not give.,,,,"လၢတၢ်ကပတုာ်က့ၤတၢ်ဟ့ၣ်ကသံၣ်အဂီၢ်မၤလီၤစှၤအီၤကယီကယီလၢ
+ ၂-၃လါ တဘျီတက့ၢ်။. မ့ၢ်သ့န့ၣ်နကဘၣ်မၤကွၢ်ကသံၣ်အသဟီၣ်လၢသွံၣ်ကျါဒီးသူၣ်ကျါကိးဆၢကတီၢ်
+ ဒဲးတက့ၢ်။",ဂ့ၤလၢကဘၣ်အီၣ်ဒီးတၢ်အီၣ်ဒ်သိးတမၤဘၣ်ဒိကဖုဆါတဂ့ၤအဂီၢ်။,သူၣ်တၢ်ဆါ။,ဖိသၣ်လၢစှၤန့ၢ်၃နံၣ်၊တၢ်ဘၣ်ယိၣ်အါ၀ဲလၢသူၣ်တမၤတၢ်မၤဘၣ်။ ပိာ်မုၣ်၁၅-၄၅နံၣ်လၢအတအီၣ်၀ဲကသံၣ်ဒီသဒၢဟုးသး(နီၢ်သဘျ့စ့ၢ်ကီး) (Sodium Valproate) န့ၣ်ဒုးအိၣ်ထီၣ်၀ဲနီၢ်ခိက့ၢ်ဂီၤဟးဂီၤ၀ဲသ့လီၤ။,"ခိၣ်ဆါ၊ မံခ့လီၤကထု၊ ခိၣ်မူၤ၊မံတန့ၢ်၊ သးကလဲၤ၊ ကဖုဆါ၊ ဘှီး၊
+ တယၢၢ်ဃၢထီၣ်၊သွံၣ်(ဖျ့ၣ်တလဲၣ်)လီၤစှၤ၊ ခိၣ်ဆူၣ်လီၤထဲး၊ ဖံးဘ့ၣ်ကနိး၊
+ ထံၣ်တၢ်ခံကထြၢ၊ မဲာ်ကဒု၊ ဟူးဂဲၤအါ၊ မံခ့မံသပ့ၤ၊ နၢ်တအၢ၊ လိၤဖှိၣ်ထီၣ်။",(Cloxacillin) | (Doxycycline) (Fluconazole)(Isoniazid)(Itraconazole)(Paracetamol)မၤဟးဂီၤအါထီၣ်၀ဲသူၣ်။,တဘၣ်ဟ့ၣ်ဘၣ်။,တဘၣ်ဟ့ၣ်ဘၣ်။,,,
+Spironolactone,1 tcillab = 25 mg,၁ ဖျၢၣ် = ၂၅ mg,Diuretic.,ကသံၣ်လၢဒုးဟးထီၣ်ဆံၣ်။,,,Old people; liver and renal diseases.,High Potassium.,"Nausea, impotence, gynaecomastia (increase of breast size), 
+ irregular periods, feeling sleepy, headache, high Potassium.","- Indomethacin increases risk of high Potassium.
+ - Aspirin and Combined Oral Contraceptives increase diuretic 
+ effect.",Do not give.,Do not give.,,,,,,ၦၤသးၦၢ်၊ သူၣ်ဒီးကလ့ၢ်တၢ်ဆါ။,ၦၤလၢ (Potassium) အိၣ်အါ။,"သးကလဲၤ၊ ပိာ်ခွါဒံၣ်ဘိတရှိၣ်ထီၣ်လၢၤဘၣ်၊ နုၢ်ချံဒိၣ်ထီၣ်၊
+ သွံၣ်ထံဟဲတဘၣ်လီၢ်ဘၣ်ဆး၊ ဘၣ်သးမံ၊ ခိၣ်ဆါ၊ (Potassium) အါ။",(Indomethacin) မၤအါထီၣ်တၢ်ဘၣ်ယိၣ်လၢ (Potassium) အါအဂီၢ်။. (Aspirin) ဒီး ကသံၣ်ဟုးစှၤလၢအအီတဖၣ် မၤအါထီၣ်ဆံၣ်။,တဘၣ်ဟ့ၣ်ဘၣ်။,,,,
+Tafenoquine (g6dp defincency),,,See DRUGS AND G6PD DEFICIENCY,ကွၢ်လၢ ကသံၣ်တဖၣ်ဒီး(ကၠံၤစံၣ်ဖံၤဒံၤ)လီၤထုးတဖၣ ။,,,,,,,,,,,,,,,,,,,,,,
+Terramycin,Eye ointment,သိပံာ်လၢမဲာ်ချံဂီၢ်,"For trachoma, blepharitis.",မဲာ်ဖံးတၢ်ဃၢ်နုာ်တၢ်ဆါတဖၣ် (trachoma) ၊ (blepharitis) ၊၊,For trachoma use for 6 weeks.,,,,,,,,,,,မဲာ်ဖံးတၢ်ဆါအဂီၢ်သူအီၤ ၆ နွံဂီၢ်။,,,,,,,,,,
+Tramadol (GET NEW SCREENSHOT FOR TT Including text under),"1 caps = 50 mg. 1 amp = 2cc = 100mg. Dose may be repeated after 30 to 60 minutes, but do not give more than Max dose",၁ ဖျၢၣ် = ၅၀ mg. ၁ ပလီ = ၂ cc = ၁၀၀ mg.,For severe pain.,ကသံၣ်ကူစါတၢ်အဆါလၢအနး။,"Reduce dose in elderly, kidney and liver failure",,"Asthma, Chronic Obstructive Pulmonary Disease (COPD), 
+ hypotension, epilepsy.","Coma, acute respiratory depression (sudden difficulty in 
+ breathing), children.","Drowsiness, constipation, hypotension, dizziness, 
+ hallucinations.",,Do not give,Give only if necessary,,,,မၤလီၤစှၤကသံၣ်(ဒိးစ်)လၢၦၤသးၦၢ်၊ ကလ့ၢ်ဒီးသူၣ်တမၤတၢ်မၤဘၣ်။,,"တၢ်သးဘံး၊ ပသိၣ်ကသါဃံးတၢ်ဆါလၢအယံာ်အထၢ၊
+ သွံၣ်တၢ်ဆီၣ်သနံးစှၤလီၤ၊ ထီးပျူၢ်တၢ်ဆါ။",သါပ့ၢ်နီၣ်သး၊ ကသါကီခဲလၢသတူၢ်ကလာ်၊ ဖိသၣ်။,မိၣ်မံခ့သး၊ ဟၢဖၢကျၢၤ၊ သွံၣ်တၢ်ဆီၣ်သနံးစှၤလီၤ၊ ခိၣ်မူၤ၊ ထံၣ်တမှံတၢ်။,,တဘၣ်ဟ့ၣ်ဘၣ်။,မ့ၢ်လိၣ်နီၢ်နီၢ်ဟ့ၣ်သ့လီၤ။,,,
+Vitamin A (SCREENSHOTS NEED ADJUSTMENT FOR EXTRA INFO) NEED TO GET ALL INFO,"1 cap = 25,000 IU or 200,000 IU",၁ ဖျၢၣ = ၂၅၀၀၀ IU (မ့) ၂၀၀၀၀၀ IU,"To prevent and treat vitamin A deficiencies. 
+ For night vision, for stronger immunity of respiratory and gastrointestinal system,
+ for anaemia.","ကသံၣ်ဒီသဒၢဒီးကူစါတၢ်ဆါလၢ (ဘံၣ်တၤမံၣ်အ့ၣ်) လီၤထုးတဖၣ်။
+ လၢမုၢ်နၤခီတၢ်ထံၣ်ဂီၢ်၊လၢကမၤဆူၣ်ထီၣ်ကလံၤကျိၤဒီးၦံာ်ကဖုအကျိၤအကျဲအဂံၢ်တြီဆၢဂီၢ်၊
+ လၢသွံၣ်ဂံၢ် စၢ်ဂီၢ်။","Vitamin A capsules come in two sizes: 200,000 IU and 25,000 IU. 
+ Check carefully the strength of the capsules.",,Do not give more than recommended dose,,,,"Do not give high dose (can give 25,000 IU dose).",,,,,ကသံၣ်(၀ံၤတၤမံၤအ့ၣ်)အံၤတၢ်ထုးထီၣ်အီၤအိၣ်၂ကလုာ်- ၂၀၀၀၀၀ (IU) ဒီး၂၅၀၀၀ (IU) ။ သမံသမိးကွၢ်ကသံၣ်ဂံၢ်လီၤတံၢ်လီၤဆဲးလၢကသံၣ်အလိၤနၢ့်တက့ၢ်။,,တဘၣ်ဟ့ၣ်အါန့ၢ်တၢ်ပာ်ပနီၣ်ဃာ်တဂ့ၤ။,,,,,,,,
+Vitamin B1,1 tab = 10 or 100 mg. 1 amp = 2cc = 100 mg,၁ ဖျၢၣ် = ၁၀ (မ့) ၁၀၀ mg. ၁ ပလီ = ၂ cc = ၁၀၀ mg.,To prevent and treat Beri Beri.,ကသံၣ်ဒီသဒၢ၀ံၤတၤမ့ၤဘံၤ၀ါလီၤထုးဒီး (Beri Beri) ။,,,,,,,,,,,,,,,,,,,,,,
+Zinc,1 tab = 15 mg (elemental zinc),၁ ဖျၢၣ် = ၁၅ mg,To help recovery in children with acute watery diarrhoea.,မၤစၢၤမၤဘျါဖိသၣ်လၢအိၣ်ဒီးတၢ်အ့ၣ်လူသတူၢ်ကလာ်။,"In Thailand we find mostly Zinc Gluconate 105 mg, which contains 15 mg of 
+ elemental zinc.
+ For this reason the protocol of WHO (to give Elemental Zinc 10 mg OD to 
+ children < 6 months and 20 mg OD to children > 6 months) has been 
+ adapted",To take with food to decrease gastric upset.,,,,,,,,,,"လၢယိၤကီၢ်ပူၤအံၤပထံၣ်အါတက့ၢ် (Zinc Gluconate) ၁၀၅ mg ဒီး ၁၅ mg န့ၣ် ပၣ်ဃုာ်၀ဲဒီး (Elemental Zinc) လီၤ။
+ လၢတၢ်ဂ့ၢ်အံၤအဃိပဟံးန့ၢ်လၢဟီၣ် ခိၣ်ဒီဖျၢၣ်ဆူၣ်ချ့၀ဲၤကျိၤအကသံၣ်နဲၣ်ကျဲအပူၤ
+ (ကဘၣ်ဟ့ၣ် (Elemental Zinc) ၁၀ mg တနံၤတဘျီလၢဖိသၣ်စှၤန့ၢ်၆လါ ဒီး၂၀ mg တနံၤတဘျီလၢဖိသၣ်အါန့ၢ်၆လါ)လီၤ။",ကဘၣ်အီၣ်ဃုာ်ဒီးတၢ်အီၣ်လၢဒ်သိးကမၤလီၤစှၤ၀ဲကဖုဆါအဂီၢ်လီၤ။,,,,,,,,,
+Isoniazid (TB Drug),,,See DRUGS FOR THE TREATMENT OF NEW CASES OF TB,ကွၢ်လၢ ကသံၣ်ကူစါယါဘျါ(ထံၣ်ဘံၣ်)ဃၢ်လၢၦၤလၢအဘၣ်တၢ်ဆါအသီတဖၣ်အဂီၢ် ။,,,,,,,,,,,,,,,,,,,,,,
+Rifampicin (TB Drug),,,See DRUGS FOR THE TREATMENT OF NEW CASES OF TB,ကွၢ်လၢ ကသံၣ်ကူစါယါဘျါ(ထံၣ်ဘံၣ်)ဃၢ်လၢၦၤလၢအဘၣ်တၢ်ဆါအသီတဖၣ်အဂီၢ် ။,,,,,,,,,,,,,,,,,,,,,,
+Pyrazinamide (TB Drug),,,See DRUGS FOR THE TREATMENT OF NEW CASES OF TB,ကွၢ်လၢ ကသံၣ်ကူစါယါဘျါ(ထံၣ်ဘံၣ်)ဃၢ်လၢၦၤလၢအဘၣ်တၢ်ဆါအသီတဖၣ်အဂီၢ် ။,,,,,,,,,,,,,,,,,,,,,,
+Ethambutol (TB Drug),,,See DRUGS FOR THE TREATMENT OF NEW CASES OF TB,ကွၢ်လၢ ကသံၣ်ကူစါယါဘျါ(ထံၣ်ဘံၣ်)ဃၢ်လၢၦၤလၢအဘၣ်တၢ်ဆါအသီတဖၣ်အဂီၢ် ။,,,,,,,,,,,,,,,,,,,,,,

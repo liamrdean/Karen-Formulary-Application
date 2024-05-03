@@ -1,78 +1,51 @@
 package com.example.karenformulary;
 
-import java.util.ArrayList;
+import android.util.Log;
+
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
 public class ExpandableListDataPump {
 
-    public static HashMap<String , List<String>> getData() {
+    public static HashMap<String , List<String>> getData(String drugName) {
 
         HashMap<String, List<String>> expandableListDetail = new HashMap<>();
 
-        List<String> Note = new ArrayList<>();
-        Note.add("India");
-        Note.add("Pakistan");
-        Note.add("Australia");
-        Note.add("Viet Nam");
-        Note.add("South Africa");
+        // Procedural way of doing this
+        // For each header, add stuff as a list of strings returned from the drug model, if there is nothing else, do not deal with it
+        // Grab the drugs
+        List<DB_DrugModel> drugModels = ActivityMain.dbHelper.getDrugsByName(drugName);
 
-        List<String> Food = new ArrayList<>();
-        Food.add("Brazil");
-        Food.add("Spain");
-        Food.add("Germany");
-        Food.add("Netherlands");
-        Food.add("Italy");
+        if (drugModels == null || drugModels.size() == 0) {
+            Log.w("ListDataPump", "Drug model list is null or has no models!");
+        }
 
-        List<String> BeCareful = new ArrayList<>();
-        BeCareful.add("United States");
-        BeCareful.add("Spain");
-        BeCareful.add("Argentina");
-        BeCareful.add("France");
-        BeCareful.add("Russia");
+        if (drugModels.size() != 1) {
+            Log.w("ListDataPump", "Drug model does not have just 1 model, assuming 1st!");
+        }
 
-        List<String> DoNotGive = new ArrayList<>();
-        DoNotGive.add("United States");
-        DoNotGive.add("Spain");
-        DoNotGive.add("Argentina");
-        DoNotGive.add("France");
-        DoNotGive.add("Russia");
+        // Assume the first drug model
+        DB_DrugModel model = drugModels.get(0);
+        String[] columnsInModel = (String[]) model.getDataFields().toArray(new String[0]);
+        Arrays.sort(columnsInModel);
+        Log.i("ELDP", model.toString());
+        Log.i("ELDP", Arrays.toString(columnsInModel));
 
-        List<String> SideEffects = new ArrayList<>();
-        SideEffects.add("Spain");
-        SideEffects.add("Argentina");
-        SideEffects.add("France");
-        SideEffects.add("Russia");
+        for (String column : columnsInModel) {
+            Log.i("ELDP", column);
+            // Get the display name of the column / section / header whatever its called
+            String columnWithLanguage = DB_Helper.addCurrentLanguageSuffix(column);
+            String displayName = DB_Helper.drugDisplayHeaders.get(columnWithLanguage);
 
-        List<String> Interactions = new ArrayList<>();
-        Interactions.add("United States");
-        Interactions.add("Spain");
-        Interactions.add("Argentina");
-        Interactions.add("France");
-        Interactions.add("Russia");
+            // Get the contents of the column / section / header whatever its called
+            List<String> modelData = model.getData(column);
 
-        List<String> Pregnancy = new ArrayList<>();
-        Pregnancy.add("United States");
-        Pregnancy.add("Spain");
-        Pregnancy.add("Argentina");
-        Pregnancy.add("France");
-        Pregnancy.add("Russia");
 
-        List<String> BreastFeeding = new ArrayList<>();
-        BreastFeeding.add("United States");
-        BreastFeeding.add("Spain");
-        BreastFeeding.add("Argentina");
-        BreastFeeding.add("France");
-        BreastFeeding.add("Russia");
+            Log.i("ELDSinsert", column + " " + columnWithLanguage + " " + displayName + " " + modelData.toString());
+            expandableListDetail.put(displayName, modelData);
 
-        expandableListDetail.put("Note",Note);
-        expandableListDetail.put("Food",Food);
-        expandableListDetail.put("Be Careful",BeCareful);
-        expandableListDetail.put("Do Not Give",DoNotGive);
-        expandableListDetail.put("Side-Effects",SideEffects);
-        expandableListDetail.put("Interactions",Interactions);
-        expandableListDetail.put("Pregnancy",Pregnancy);
-        expandableListDetail.put("Breast Feeding",BreastFeeding);
+        }
 
         return expandableListDetail;
     }

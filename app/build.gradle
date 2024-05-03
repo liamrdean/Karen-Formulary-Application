@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.karenformulary"
-        minSdk 21
+        minSdk 23
         targetSdk 34
         versionCode 1
         versionName "1.0"
@@ -39,6 +39,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.2.1'
     implementation 'com.google.android.material:material:1.10.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.opencsv:opencsv:4.6'
     implementation 'com.github.mhiew:android-pdf-viewer:3.2.0-beta.1'
     implementation 'androidx.navigation:navigation-fragment:2.7.6'
     implementation 'androidx.navigation:navigation-ui:2.7.6'

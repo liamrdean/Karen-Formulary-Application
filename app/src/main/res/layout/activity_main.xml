@@ -18,28 +18,17 @@
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/appbackground" />
 
-    <SearchView
-        android:id="@+id/searchView"
-        android:layout_width="317dp"
-        android:layout_height="72dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.202" />
 
     <Button
         android:id="@+id/zscoreBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="144dp"
         android:text="Z-Scores"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchView"
-        app:layout_constraintVertical_bias="0.56" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/viewformularyBTN"
@@ -53,29 +42,29 @@
         app:layout_constraintTop_toBottomOf="@+id/zscoreBTN"
         app:layout_constraintVertical_bias="0.253" />
 
+
     <Switch
-        android:id="@+id/switch1"
-        android:layout_width="265dp"
-        android:layout_height="160dp"
-        android:text="English/ကညီကိျာ်"
+        android:id="@+id/langaugeSW"
+        android:layout_width="315dp"
+        android:layout_height="133dp"
+        android:text="English/ဆူ ကညီကျိာ၊"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.46" />
-
+        app:layout_constraintVertical_bias="0.33" />
 
     <Button
-        android:id="@+id/druginfopageBTN"
+        android:id="@+id/drugsearchBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Drug Info Page"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        android:text="Drug Search"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.953" />
+        app:layout_constraintTop_toBottomOf="@+id/langaugeSW"
+        app:layout_constraintVertical_bias="0.32" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
