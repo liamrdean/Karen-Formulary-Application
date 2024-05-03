@@ -45,9 +45,9 @@
 
     <Switch
         android:id="@+id/langaugeSW"
-        android:layout_width="265dp"
-        android:layout_height="160dp"
-        android:text="English/ၦၤသးၦၢ်ဖးဒိၣ်၊"
+        android:layout_width="315dp"
+        android:layout_height="133dp"
+        android:text="English/ဆူ ကညီကျိာ၊"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView"

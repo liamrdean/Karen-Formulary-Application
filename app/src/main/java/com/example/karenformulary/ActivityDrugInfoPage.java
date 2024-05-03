@@ -70,18 +70,24 @@ public class ActivityDrugInfoPage extends AppCompatActivity {
 
         // Place the dosage into the dosage text view (For now just grabs the first one)
         List<String> details = expandableListDetail.get(DB_Helper.COL_DOSAGE_DISPLAY_STRING);
-        dosageTextView.setText(details.get(0));
+        if (details != null && details.get(0) != null) {
+            dosageTextView.setText(details.get(0));
+        } else {
+            dosageTextView.setText("");
+        }
         expandableListTitleSet.remove(DB_Helper.COL_DOSAGE_DISPLAY_STRING);
 
         // Place the description into the description text view (For now just grabs the first one)
         details = expandableListDetail.get(DB_Helper.COL_DESCRIPTION_DISPLAY_STRING);
-        descriptionTextView.setText(details.get(0));
+        if (details != null && details.get(0) != null) {
+            descriptionTextView.setText(details.get(0));
+        } else {
+            descriptionTextView.setText("");
+        }
         expandableListTitleSet.remove(DB_Helper.COL_DESCRIPTION_DISPLAY_STRING);
 
-        // Bad but will work for now
-        //treatmentTableImageTextView.setData("$1");
-        //treatmentTableImageTextView.WithData("$1");
 
+        // Bad but will work for now
         Bitmap bitmap = ImageTextView.getImageBitmap("1");
         if (bitmap != null) {
             imageView2.setImageBitmap(bitmap);
@@ -94,7 +100,6 @@ public class ActivityDrugInfoPage extends AppCompatActivity {
         double scale = (double)(screen_width)/width;
         int final_height = Math.toIntExact(Math.round(scale * height));
         imageView2.getLayoutParams().height = final_height;
-
 
         expandableListTitle = new ArrayList<>();
         for (int i = 2; i < DB_Helper.sqlColStrings.size(); i++) {

@@ -38,7 +38,7 @@ public class DB_Helper extends SQLiteOpenHelper {
     public static String COL_NAME_STRING = "DRUG_NAME";
     public static final String COL_DOSAGE_DISPLAY_STRING = "DOSAGE";
     public static final String COL_DESCRIPTION_DISPLAY_STRING = "DESCRIPTION";
-    public static final String DRUG_CSV_FILE = "karenTest.csv";
+    public static final String DRUG_CSV_FILE = "finalTest.csv";
     // String constants _{EN|KA}\\z
     // Regex to get either _EN or _KA at the end of a string
     public static final String KAREN_SUFFIX = "_KA";
