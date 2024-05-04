@@ -21,7 +21,8 @@ public class ImageTextView extends LinearLayout {
     private TextView textView;
 
     // The text/img path data
-    private String data;
+    private String data_EN;
+    private String data_KA;
 
     // Return a list of bitmaps in the drug directory
     public static List<Bitmap> getImageBitmaps() {
@@ -126,19 +127,32 @@ public class ImageTextView extends LinearLayout {
     }
 
     public void setText(String text) {
-        setData(text);
-    }
-    int j = 0;
+        if (ActivityMain.isKaren) {
 
-    public void setData(String newData) {
-        data = newData;
+        }
+        //setData(text);
+    }
+
+    // Call on a language update
+    public void onLanguageUpdate() {
         if (textView != null) {
+            String data = getData();
             textView.setText(data);
         }
     }
 
+    public void setData(String newData_EN, String newData_KA) {
+        data_EN = newData_EN;
+        data_KA = newData_KA;
+        onLanguageUpdate();
+    }
+
     public String getData() {
-        return data;
+        return getData(ActivityMain.isKaren);
+    }
+
+    public String getData(boolean isKaren) {
+        return (isKaren) ? data_KA : data_EN;
     }
 
     public void setTextSize(float size) {

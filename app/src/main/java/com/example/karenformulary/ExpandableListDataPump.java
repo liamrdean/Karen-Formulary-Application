@@ -8,7 +8,7 @@ import java.util.List;
 
 public class ExpandableListDataPump {
 
-    public static HashMap<String , List<String>> getData(String drugName) {
+    public static HashMap<String , List<String>> getData(String drugName, boolean inKaren) {
 
         HashMap<String, List<String>> expandableListDetail = new HashMap<>();
 
@@ -35,11 +35,11 @@ public class ExpandableListDataPump {
         for (String column : columnsInModel) {
             Log.i("ELDP", column);
             // Get the display name of the column / section / header whatever its called
-            String columnWithLanguage = DB_Helper.addCurrentLanguageSuffix(column);
+            String columnWithLanguage = DB_Helper.addLanguageSuffix(column, inKaren);
             String displayName = DB_Helper.drugDisplayHeaders.get(columnWithLanguage);
 
             // Get the contents of the column / section / header whatever its called
-            List<String> modelData = model.getData(column);
+            List<String> modelData = model.getData(column, inKaren);
 
 
             Log.i("ELDSinsert", column + " " + columnWithLanguage + " " + displayName + " " + modelData.toString());

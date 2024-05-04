@@ -13,35 +13,67 @@ import java.util.List;
 
 public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
 
-    private Context mContext;
-    private List<String> expandableListTitle;
-    private HashMap<String, List<String>> expandableListDetail;
 
-    public CustomExpandableListAdapter(Context mContext, List<String> expandableListTitle, HashMap<String, List<String>> expandableListDetail) {
+
+
+
+
+    private Context mContext;
+    private List<String> expandableListTitle_EN;
+    private HashMap<String, List<String>> expandableListDetail_EN;
+    private List<String> expandableListTitle_KA;
+    private HashMap<String, List<String>> expandableListDetail_KA;
+
+
+    public CustomExpandableListAdapter(Context mContext, List<String> expandableListTitle_EN,
+                                       HashMap<String, List<String>> expandableListDetail_EN,
+                                       List<String> expandableListTitle_KA,
+                                       HashMap<String, List<String>> expandableListDetail_KA) {
+
         this.mContext = mContext;
-        this.expandableListTitle = expandableListTitle;
-        this.expandableListDetail = expandableListDetail;
+        this.expandableListTitle_EN = expandableListTitle_EN;
+        this.expandableListDetail_EN = expandableListDetail_EN;
+
+        this.expandableListTitle_KA = expandableListTitle_KA;
+        this.expandableListDetail_KA = expandableListDetail_KA;
     }
 
 
     @Override
     public int getGroupCount() {
-        return this.expandableListTitle.size();
+        return this.expandableListTitle_EN.size();
     }
 
     @Override
     public int getChildrenCount(int groupPosition) {
-        return this.expandableListDetail.get(this.expandableListTitle.get(groupPosition)).size();
+        return this.expandableListDetail_EN.get(this.expandableListTitle_EN.get(groupPosition)).size();
     }
 
     @Override
     public Object getGroup(int groupPosition) {
-        return this.expandableListTitle.get(groupPosition);
+        return getGroup(groupPosition, ActivityMain.isKaren);
+    }
+    public Object getGroup(int groupPosition, boolean isKaren) {
+        Log.i("DRUGJK", expandableListTitle_KA.toString() + " " + expandableListTitle_EN.toString());
+        if (isKaren) {
+            return this.expandableListTitle_KA.get(groupPosition);
+        } else {
+            return this.expandableListTitle_EN.get(groupPosition);
+        }
     }
 
     @Override
     public Object getChild(int groupPosition, int childPosition) {
-        return this.expandableListDetail.get(this.expandableListTitle.get(groupPosition)).get(childPosition);
+        // return this.expandableListDetail_EN.get(this.expandableListTitle_EN.get(groupPosition)).get(childPosition);
+        return getChild(groupPosition, childPosition, ActivityMain.isKaren);
+    }
+
+    public Object getChild(int groupPosition, int childPosition, boolean isKaren) {
+        if (isKaren) {
+            return this.expandableListDetail_KA.get(this.expandableListTitle_KA.get(groupPosition)).get(childPosition);
+        } else {
+            return this.expandableListDetail_EN.get(this.expandableListTitle_EN.get(groupPosition)).get(childPosition);
+        }
     }
 
     @Override
@@ -76,7 +108,9 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
     @Override
     public View getChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
         Log.i("DEMOC", String.format("Child %d %d", groupPosition, childPosition));
-        String expandedListText = (String) getChild(groupPosition,childPosition);
+        String expandedListText_EN = (String) getChild(groupPosition,childPosition, false);
+        String expandedListText_KA = (String) getChild(groupPosition,childPosition, true);
+
         if (convertView == null) {
 
             LayoutInflater inflater = (LayoutInflater)
@@ -88,7 +122,7 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
         ImageTextView expandedListTextView = convertView.findViewById(R.id.expandedListItem);
         //expandedListTextView.add();
 
-        expandedListTextView.setData(expandedListText);
+        expandedListTextView.setData(expandedListText_EN, expandedListText_KA);
 
         // Sets data, handles setting if this is an image
         //expandedListTextView.setBackgroundColor(Color.parseColor("#0000FF"));
