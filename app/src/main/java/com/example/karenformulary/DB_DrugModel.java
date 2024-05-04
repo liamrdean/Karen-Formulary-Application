@@ -111,7 +111,9 @@ public class DB_DrugModel {
 
     // Returns data in a list (Pre split to deal with images)
     // The key must be a String in DB_Helper.languageIndependentHeaders
-    public List<String> getData(String key) {
+
+
+    public List<String> getData(String key, boolean isKaren) {
         if (key.equals(DB_Helper.COL_NAME_STRING)) {
             // They are just asking for the name of this drug, return it.
             List<String> output = new ArrayList<>();
@@ -120,8 +122,8 @@ public class DB_DrugModel {
         }
 
 
-        HashMap<String, String> map = (ActivityMain.isKaren) ? tempnameinfoKA : tempnameinfoEN;
-        HashMap<String, String> other = (ActivityMain.isKaren) ? tempnameinfoEN : tempnameinfoKA;
+        HashMap<String, String> map = (isKaren) ? tempnameinfoKA : tempnameinfoEN;
+        HashMap<String, String> other = (isKaren) ? tempnameinfoEN : tempnameinfoKA;
         return getDataFromMap(key, map, other);
     }
 

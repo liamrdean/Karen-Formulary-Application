@@ -105,5 +105,7 @@ public class ActivityMain extends AppCompatActivity {
         }
 
         ActivityMain.isKaren = isChecked;
+
+        ActivityDrugInfoPage.onLanguageChange();
     }
 }

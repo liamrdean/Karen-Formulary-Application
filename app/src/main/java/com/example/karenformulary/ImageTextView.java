@@ -12,6 +12,8 @@ import android.widget.TextView;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ImageTextView extends LinearLayout {
 
@@ -19,7 +21,57 @@ public class ImageTextView extends LinearLayout {
     private TextView textView;
 
     // The text/img path data
-    private String data;
+    private String data_EN;
+    private String data_KA;
+
+    // Return a list of bitmaps in the drug directory
+    public static List<Bitmap> getImageBitmaps() {
+        try {
+
+            StringBuilder filePathBuilder = new StringBuilder("Drug_Images/");
+
+            // Get the drug name
+            String friendlyPath = ActivityDrugInfoPage.drugName;
+            String badChars = "\\/:*?\"<>|";
+            for (int i = 0; i < badChars.length(); i++) {
+                friendlyPath = friendlyPath.replace(badChars.charAt(i), '_');
+            }
+            friendlyPath.replace("./", "_/");
+
+            // Construct the drug image paths
+            filePathBuilder.append(friendlyPath);
+            String folderPath = filePathBuilder.toString();
+            String[] a = ActivityMain.assetManager.list(folderPath);
+
+            if (a == null || a.length == 0) {
+                Log.w("IMGS", "Nothing in the folder " + folderPath);
+                return null;
+            }
+
+            // For each file, try making it a bitmap, if that fails, don't make, if works, add
+            // to bitmaps
+            List<Bitmap> bitmaps = new ArrayList<Bitmap>();
+            InputStream inStream = null;
+            for (String s : a) {
+                Log.i("IMGS", "Trying img " + folderPath + "/" + s);
+
+                inStream = ActivityMain.assetManager.open(folderPath + "/" + s);
+                if (inStream != null) {
+                    Bitmap bitmap = BitmapFactory.decodeStream(inStream);
+                    if (bitmap != null) {
+                        Log.i("IMGS", "Adding img " + s);
+                        bitmaps.add(bitmap);
+                    }
+                }
+            }
+
+            return bitmaps;
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 
     public static Bitmap getImageBitmap(String path) {
         InputStream inStream = null;
@@ -33,7 +85,7 @@ public class ImageTextView extends LinearLayout {
             String friendlyPath = ActivityDrugInfoPage.drugName;
             String badChars = "\\/:*?\"<>|";
             for (int i = 0; i < badChars.length(); i++) {
-                friendlyPath = path.replace(badChars.charAt(i), '_');
+                friendlyPath = friendlyPath.replace(badChars.charAt(i), '_');
             }
             friendlyPath.replace("./", "_/");
             filePathBuilder.append(friendlyPath);
@@ -75,19 +127,32 @@ public class ImageTextView extends LinearLayout {
     }
 
     public void setText(String text) {
-        setData(text);
-    }
-    int j = 0;
+        if (ActivityMain.isKaren) {
 
-    public void setData(String newData) {
-        data = newData;
+        }
+        //setData(text);
+    }
+
+    // Call on a language update
+    public void onLanguageUpdate() {
         if (textView != null) {
+            String data = getData();
             textView.setText(data);
         }
     }
 
+    public void setData(String newData_EN, String newData_KA) {
+        data_EN = newData_EN;
+        data_KA = newData_KA;
+        onLanguageUpdate();
+    }
+
     public String getData() {
-        return data;
+        return getData(ActivityMain.isKaren);
+    }
+
+    public String getData(boolean isKaren) {
+        return (isKaren) ? data_KA : data_EN;
     }
 
     public void setTextSize(float size) {
