@@ -39,7 +39,7 @@ public class ImageTextView extends LinearLayout {
             friendlyPath.replace("./", "_/");
 
             // Construct the drug image paths
-            filePathBuilder.append(friendlyPath);
+            filePathBuilder.append(friendlyPath.toUpperCase());
             String folderPath = filePathBuilder.toString();
             String[] a = ActivityMain.assetManager.list(folderPath);
 

@@ -24,7 +24,7 @@ public class ActivityMain extends AppCompatActivity {
     Button drugsearchBTN;
     Button zscoreBTN;
     Button viewformularyBTN;
-    Switch languageSW;
+    static Switch languageSW;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,6 +84,7 @@ public class ActivityMain extends AppCompatActivity {
         });
 
         languageSW = (Switch)findViewById(R.id.langaugeSW);
+        languageSW.setChecked(isKaren);
         languageSW.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -105,7 +106,9 @@ public class ActivityMain extends AppCompatActivity {
         }
 
         ActivityMain.isKaren = isChecked;
-
+        if (languageSW != null) {
+            languageSW.setChecked(isKaren);
+        }
         ActivityDrugInfoPage.onLanguageChange();
     }
 }
