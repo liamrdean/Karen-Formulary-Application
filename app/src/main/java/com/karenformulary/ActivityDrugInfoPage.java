@@ -125,6 +125,9 @@ public class ActivityDrugInfoPage extends AppCompatActivity {
             // If there is a dosage, add it, else empty string
             String dosageText = (details != null && details.get(0) != null) ? details.get(0) : "";
             dosageTextView.setText(dosageText);
+        } else {
+            // No data, clear the text
+            dosageTextView.setText("");
         }
 
         Log.i("DRUG INFO DOSAGE", "details? " + (details != null));
@@ -142,6 +145,9 @@ public class ActivityDrugInfoPage extends AppCompatActivity {
         if (details != null) {
             String descriptionText = (details != null && details.get(0) != null) ? details.get(0) : "";
             descriptionTextView.setText(descriptionText);
+        } else {
+            // No data, clear the text
+            dosageTextView.setText("");
         }
     }
 
