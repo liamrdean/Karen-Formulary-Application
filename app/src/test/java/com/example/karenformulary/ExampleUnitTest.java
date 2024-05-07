@@ -1,4 +1,4 @@
-package com.example.karenformulary;
+package com.karenformulary;
 
 import org.junit.Test;
 
