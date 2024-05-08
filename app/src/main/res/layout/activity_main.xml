@@ -31,19 +31,18 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/drugsearchBTN"
-        app:layout_constraintVertical_bias="0.436" />
+        app:layout_constraintVertical_bias="0.301" />
 
     <Button
         android:id="@+id/viewformularyBTN"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="View FORMULARY"
+        android:layout_width="223dp"
+        android:layout_height="73dp"
+        android:text="View FORMULARY                             တၢ်ကွၢ်ကသံၣ်လံာ်နဲၣ်ကျဲအံၤ"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/zscoreBTN"
-        app:layout_constraintVertical_bias="0.143" />
+        app:layout_constraintVertical_bias="0.125" />
 
     <Switch
         android:id="@+id/langaugeSW"
@@ -59,15 +58,14 @@
 
     <Button
         android:id="@+id/drugsearchBTN"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Drug Search"
+        android:layout_width="189dp"
+        android:layout_height="69dp"
+        android:text="Drug Search                                    တၢ်ဃုကသံၣ်"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/langaugeSW"
-        app:layout_constraintVertical_bias="0.087" />
+        app:layout_constraintVertical_bias="0.036" />
 
     <TextView
         android:id="@+id/versionNum"
