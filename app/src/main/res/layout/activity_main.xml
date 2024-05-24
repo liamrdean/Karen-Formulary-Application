@@ -48,7 +48,7 @@
         android:id="@+id/langaugeSW"
         android:layout_width="315dp"
         android:layout_height="133dp"
-        android:text="English/ကညီကျိာ၊"
+        android:text="English/ကညီကျိာ်"
         android:fontFamily="@font/default_font_family"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
