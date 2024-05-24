@@ -26,6 +26,7 @@ public class ActivityMain extends AppCompatActivity {
     Button drugsearchBTN;
     Button zscoreBTN;
     Button viewformularyBTN;
+    Button drugsInPregnancy;
     static Switch languageSW;
 
     @Override
@@ -57,6 +58,8 @@ public class ActivityMain extends AppCompatActivity {
         // Force dbHelper to call onCreate or onUpgrade
         dbHelper.getWritableDatabase().close();
 
+
+        // DRUG SEARCH BUTTON
         drugsearchBTN = (Button)findViewById(R.id.drugsearchBTN);
         drugsearchBTN.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,6 +71,7 @@ public class ActivityMain extends AppCompatActivity {
             }
         });
 
+        // ZSCORE BUTTON
         zscoreBTN = (Button)findViewById(R.id.zscoreBTN);
         zscoreBTN.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,6 +83,8 @@ public class ActivityMain extends AppCompatActivity {
             }
         });
 
+
+        // Table of Contents Button
         viewformularyBTN = (Button)findViewById(R.id.viewformularyBTN);
         viewformularyBTN.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -89,6 +95,20 @@ public class ActivityMain extends AppCompatActivity {
             }
         });
 
+
+        // DRUGS IN PREGNANCY BUTTON
+        drugsInPregnancy = (Button) findViewById(R.id.drugsInPregnancy);
+        drugsInPregnancy.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ActivityMain.this, ActivityDrugsInPregnancy.class);
+                startActivity(intent);
+            }
+        });
+
+
+        // English Karen Switch Toggle
         languageSW = (Switch)findViewById(R.id.langaugeSW);
         languageSW.setChecked(isKaren);
         languageSW.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
