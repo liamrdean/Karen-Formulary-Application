@@ -30,7 +30,7 @@
                 android:layout_height="75dp"
                 android:layout_gravity="center"
                 android:fontFamily="@font/default_font_family"
-                android:text="English/ကညီကျိာ၊"
+                android:text="English/ကညီကျိာ်"
                 android:textSize="25dp" />
 
             <TextView
