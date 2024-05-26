@@ -12,14 +12,28 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">#4CAF50</item>
         <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/default_font_family</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="Theme.KarenFormulary.tesaasdtasa" parent="Theme.KarenFormulary">
+        <item name="android:textSize">1dp</item>
     </style>
 
     <style name="Theme.KarenFormulary.NoActionBar">
         <item name="windowActionBar">true</item>
         <item name="windowNoTitle">true</item>
+        <item name="android:fontFamily">@font/default_font_family</item>
+        <item name="android:textSize">13dp</item>
     </style>
 
-    <style name="Theme.KarenFormulary.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.KarenFormulary.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
+        <item name="android:textSize">13dp</item>
+        <item name="android:fontFamily">@font/default_font_family</item>
+    </style>
 
-    <style name="Theme.KarenFormulary.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="Theme.KarenFormulary.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" >
+        <item name="android:textSize">13dp</item>
+        <item name="android:fontFamily">@font/default_font_family</item>
+    </style>
 </resources>

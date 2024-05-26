@@ -29,8 +29,9 @@
                 android:layout_width="262dp"
                 android:layout_height="75dp"
                 android:layout_gravity="center"
-                android:text="English/ကညီကျိာ၊"
-                android:textSize="25sp" />
+                android:fontFamily="@font/default_font_family"
+                android:text="English/ကညီကျိာ်"
+                android:textSize="25dp" />
 
             <TextView
                 android:id="@+id/txDrugName"

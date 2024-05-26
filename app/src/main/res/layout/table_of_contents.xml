@@ -24,111 +24,109 @@
             android:id="@+id/fullPDF"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Essential Drug Formulary 2021 edition       ကသံၣ်လံာ်နဲၣ်ကျဲ" />
+            android:text="Essential Drug Formulary 2021 edition\nကသံၣ်လံာ်နဲၣ်ကျဲ" />
 
         <Button
             android:id="@+id/intro2021"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="INTRODUCTION TO 2021 EDITION                   ၂၀၂၁ ကသံၣ်လံာ်နဲၣ်ကျဲ" />
+            android:text="INTRODUCTION TO 2021 EDITION\n၂၀၂၁ ကသံၣ်လံာ်နဲၣ်ကျဲ" />
 
         <Button
             android:id="@+id/intro2013"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="INTRODUCTION TO 2013 EDITION                    ၂၀၁၃ ကသံၣ်လံာ်နဲၣ်ကျဲ" />
+            android:text="INTRODUCTION TO 2013 EDITION\n၂၀၁၃ ကသံၣ်လံာ်နဲၣ်ကျဲ" />
 
         <Button
             android:id="@+id/generalGuidelines"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="GENERAL GUIDELINES ON HOW TO USE THE FORMULARY                                                            တၢ်သိၣ်တၢ်သီလၢတၢ်ကဘၣ်သူလံာ်တၢ်နဲၣ်ကျဲအံၤဒ်လဲၣ်"       />
-
+            android:text="GENERAL GUIDELINES ON HOW TO USE THE FORMULARY\nတၢ်သိၣ်တၢ်သီလၢတၢ်ကဘၣ်သူလံာ်တၢ်နဲၣ်ကျဲအံၤဒ်လဲၣ်" />
 
         <Button
             android:id="@+id/drugsInPregnancy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="DRUGS IN PREGNANCY                                         ကသံၣ်သ့ၣ်တဖၣ်လၢၦၤမိၢ်ဒၢဂီၢ်" />
+            android:text="DRUGS IN PREGNANCY\nကသံၣ်သ့ၣ်တဖၣ်လၢၦၤမိၢ်ဒၢဂီၢ်" />
 
         <Button
             android:id="@+id/g6pd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="DRUGS AND G6PD DEFICIENCY                             ကသံၣ်ဒီး(ကၠံၤစံၣ်ဖံၤဒံၤ)လီၤထုးတဖၣ်" />
+            android:text="DRUGS AND G6PD DEFICIENCY\nကသံၣ်ဒီး(ကၠံၤစံၣ်ဖံၤဒံၤ)လီၤထုးတဖၣ်" />
 
         <Button
             android:id="@+id/drugListGroup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="DRUGS LIST BY GROUP                                         ကသံၣ်တဖၣ်ဘၣ်တၢ်ရဲၣ်လီၤအီၤလၢအကဂူၢ်" />
+            android:text="DRUGS LIST BY GROUP\nကသံၣ်တဖၣ်ဘၣ်တၢ်ရဲၣ်လီၤအီၤလၢအကဂူၢ်" />
 
         <Button
             android:id="@+id/aboutFerrous"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ABOUT FERROUS (IRON), VITAMINS AND MULTIVITAMINS                                                    ဘၣ်ဃးဒီးထး(Ferrous/Iron) ၀ံၤတၤမံၤဒီး၀ဲၤတၤမံၤပာ်ဖှိၣ်တဖၣ်" />
+            android:text="ABOUT FERROUS (IRON), VITAMINS AND MULTIVITAMINS\nဘၣ်ဃးဒီးထး(Ferrous/Iron) ၀ံၤတၤမံၤဒီး၀ဲၤတၤမံၤပာ်ဖှိၣ်တဖၣ်" />
 
         <Button
             android:id="@+id/comboTreatment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="COMBINATION TREATMENT FOR GENITO-URINARY DISEASES                                                             တၢ်ကူဆါယါဘျါကသံၣ်လၢဘၣ်တၢ်ပာ်ဖှိၣ်ဃုာ်အီၤလၢပိာ်မုၣ်ပိာ်ခွါက့ၢ်ဂီၤတၢ်ဆါတဖၣ်" />
+            android:text="COMBINATION TREATMENT FOR GENITO-URINARY DISEASES\nတၢ်ကူဆါယါဘျါကသံၣ်လၢဘၣ်တၢ်ပာ်ဖှိၣ်ဃုာ်အီၤလၢပိာ်မုၣ်ပိာ်ခွါက့ၢ်ဂီၤတၢ်ဆါတဖၣ်" />
 
         <Button
             android:id="@+id/pphDrugs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="DRUGS USED FOR POST PARTUM HAEMORRAGE (PPH) and MISSED or INCOMPLETE ABORTION    ကသံၣ်လၢတၢ်သူအီၤလၢအိၣ်ဖျဲၣ်၀ံၤသွံၣ်လူဒီးဖိသၣ်ဟးဂီၤလၢဒၢလီၢ်ပူၤ(ဟုးဟးဂီၤ) မ့ မိၢ်ဒၢဟုးလီၤဖှံၣ်တ၀ာ်" />
+            android:text="DRUGS USED FOR POST PARTUM HAEMORRAGE (PPH) and MISSED or INCOMPLETE ABORTION\nကသံၣ်လၢတၢ်သူအီၤလၢအိၣ်ဖျဲၣ်၀ံၤသွံၣ်လူဒီးဖိသၣ်ဟးဂီၤလၢဒၢလီၢ်ပူၤ(ဟုးဟးဂီၤ) မ့ မိၢ်ဒၢဟုးလီၤဖှံၣ်တ၀ာ်" />
 
         <Button
             android:id="@+id/aboutAntiRetroviral"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ABOUT ANTI-RETROVIRAL DRUGS                               ဘၣ်ဃးဒီး(အဲၤထံၤရံၤထြိၤ၀ံၤရၤ)ကသံၣ်တဖၣ " />
+            android:text="ABOUT ANTI-RETROVIRAL DRUGS\nဘၣ်ဃးဒီး(အဲၤထံၤရံၤထြိၤ၀ံၤရၤ)ကသံၣ်တဖၣ " />
 
         <Button
             android:id="@+id/comboAntibiotics"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="USE OF ANTIBIOTICS IN COMBINATION                      တၢ်သူ၀ဲကသံၣ်မၤသံ (ဘၣ်ထံရံယၤ) ဃၢ်တဖၣ်လၢအဘၣ်တၢ်ပာ်ဖှိၣ်ဃုာ်အီၤ" />
+            android:text="USE OF ANTIBIOTICS IN COMBINATION\nတၢ်သူ၀ဲကသံၣ်မၤသံ (ဘၣ်ထံရံယၤ) ဃၢ်တဖၣ်လၢအဘၣ်တၢ်ပာ်ဖှိၣ်ဃုာ်အီၤ" />
 
         <Button
             android:id="@+id/tbDrugs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="DRUGS FOR THE TREATMENT OF NEW CASES OF TB                                                                          ကသံၣ်ကူစါယါဘျါ(ထံၣ်ဘံၣ်)ဃၢ်လၢၦၤလၢအဘၣ်တၢ်ဆါအသီတဖၣ်အဂီၢ်" />
+            android:text="DRUGS FOR THE TREATMENT OF NEW CASES OF TB\nကသံၣ်ကူစါယါဘျါ(ထံၣ်ဘံၣ်)ဃၢ်လၢၦၤလၢအဘၣ်တၢ်ဆါအသီတဖၣ်အဂီၢ်" />
 
         <Button
             android:id="@+id/antiseptics"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ANTISEPTICS - DISINFECTANTS                           ကသံၣ်ထံမၤသံ(ဘၣ်ထံရံယၤ)ဒီး(၀ံၤရူစ်)ဃၢ်လၢဖုဒါခိၣ်ဒီးတၢ်ပီးတၢ်လီအကလုာ်ကလုာ်" />
+            android:text="ANTISEPTICS - DISINFECTANTS\nကသံၣ်ထံမၤသံ(ဘၣ်ထံရံယၤ)ဒီး(၀ံၤရူစ်)ဃၢ်လၢဖုဒါခိၣ်ဒီးတၢ်ပီးတၢ်လီအကလုာ်ကလုာ်" />
 
         <Button
             android:id="@+id/woundCare"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="WOUND CARE / ABSCESS CARE                            တၢ်ကွၢ်ထွဲတၢ်ပူၤလီၢ်၊တၢ်ကွၢ်ထွဲ တၢ်အဖံ(၀့ထီၣ်) တဖၣ်" />
+            android:text="WOUND CARE / ABSCESS CARE\nတၢ်ကွၢ်ထွဲတၢ်ပူၤလီၢ်၊တၢ်ကွၢ်ထွဲ တၢ်အဖံ(၀့ထီၣ်) တဖၣ်" />
 
         <Button
             android:id="@+id/ivFluids"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="IV FLUIDS                                                                ကသံၣ်လၢဘၣ်သွီလၢသွံၣ်ကျိၤ (အံသၣ်ထံတဖၣ်)" />
+            android:text="IV FLUIDS\nကသံၣ်လၢဘၣ်သွီလၢသွံၣ်ကျိၤ (အံသၣ်ထံတဖၣ်)" />
 
         <Button
             android:id="@+id/malaria"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="MALARIA PROTOCOLS                                                 တၢ်ညၣ်ဂိၢ်ဃၢ်ကသံၣ်အကျိၤအကျဲ" />
+            android:text="MALARIA PROTOCOLS\nတၢ်ညၣ်ဂိၢ်ဃၢ်ကသံၣ်အကျိၤအကျဲ" />
 
         <Button
             android:id="@+id/vaccination"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="VACCINATION SCHEDULE (Thailand, Burma)                    ကသံၣ်ဒီသဒၢအတၢ်ရဲၣ်တၢ်ကျဲၤ (ယိၤကီၢ် ၊ ပယီၤကီၢ်)" />
-
+            android:text="VACCINATION SCHEDULE (Thailand, Burma)\nကသံၣ်ဒီသဒၢအတၢ်ရဲၣ်တၢ်ကျဲၤ (ယိၤကီၢ် ၊ ပယီၤကီၢ်)" />
 
     </LinearLayout>
 </ScrollView>

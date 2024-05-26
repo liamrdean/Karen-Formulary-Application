@@ -9,6 +9,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="List Group"
-        android:textSize="24sp" />
+        android:textSize="24dp"
+        android:fontFamily="@font/default_font_family" />
 
 </RelativeLayout>
