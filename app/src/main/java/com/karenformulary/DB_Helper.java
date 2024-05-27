@@ -101,13 +101,13 @@ public class DB_Helper extends SQLiteOpenHelper {
         }
 
         if (database == null) {
-//            Log.i("DB_HELPER", "Calling on create, database is null");
+            // Log.i("DB_HELPER", "Calling on create, database is null");
             database = getWritableDatabase();
             this.onCreate(database);
         } // else { Log.i("DB_HELPER", "Not calling on create, database not null"); }
 
         if (!isInitalized) {
-//            Log.i("DB_HELPER", "Not initialized at end of constructor");
+            //  Log.i("DB_HELPER", "Not initialized at end of constructor");
             this.init();
         }
     }
@@ -152,7 +152,6 @@ public class DB_Helper extends SQLiteOpenHelper {
 
 
         // Process the name string
-        //COL_NAME_STRING = drugHeaders[0].trim();
         headerToIndex.put(COL_NAME_STRING, 1);
         sqlColStrings.add(COL_NAME_STRING);
         drugDisplayHeaders.put(COL_NAME_STRING, "ERROR: Display of the drug name column should never appear");
@@ -192,7 +191,6 @@ public class DB_Helper extends SQLiteOpenHelper {
         }
 
         languageIndependentHeaders = headerSet.toArray(new String[0]);
-
     }
 
 
@@ -285,10 +283,10 @@ public class DB_Helper extends SQLiteOpenHelper {
             loadCSV(this.database, csvReader);
 
         } catch (FileNotFoundException e) {
-            Log.w("DB_HELPER init:", "FileNotFoundException");
+            Log.e("DB_HELPER init:", "FileNotFoundException");
             e.printStackTrace();
         } catch (IOException e) {
-            Log.w("DB_HELPER init:", "IOException");
+            Log.e("DB_HELPER init:", "IOException");
             e.printStackTrace();
         }
 
@@ -425,7 +423,7 @@ public class DB_Helper extends SQLiteOpenHelper {
         if (input == null || input.length() == 0) { return null; }
 
         String nameQuery = "SELECT * FROM " + TABLE_ID_TO_DRUG + " WHERE " +
-                COL_NAME_STRING + " LIKE '%" + input + "%';";
+                COL_NAME_STRING + " LIKE '" + input + "';";
 
         return extractDrugModels(nameQuery);
     }
