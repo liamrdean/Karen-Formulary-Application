@@ -72,10 +72,9 @@ public class DB_Helper extends SQLiteOpenHelper {
         super(context, "drugDB", null, DB_Helper.DATABASE_VERSION);
         this.activityMain = (ActivityMain) context;
 
-        InputStream inStream;
-
 
         // Load the CSV headers
+        InputStream inStream;
         try {
             assert this.activityMain != null;
             Resources resources = this.activityMain.getResources();
@@ -96,14 +95,14 @@ public class DB_Helper extends SQLiteOpenHelper {
             e.printStackTrace();
         }
 
+        // Ensure database exists
         if (database == null) {
-            // Log.i("DB_HELPER", "Calling on create, database is null");
             database = getWritableDatabase();
             this.onCreate(database);
-        } // else { Log.i("DB_HELPER", "Not calling on create, database not null"); }
+        }
 
+        // Only initalize if needed
         if (!isInitalized) {
-            //  Log.i("DB_HELPER", "Not initialized at end of constructor");
             this.init();
         }
     }
@@ -146,7 +145,6 @@ public class DB_Helper extends SQLiteOpenHelper {
         sqlColStrings.add(COL_ID_STRING);
         drugDisplayHeaders.put(COL_ID_STRING, "ERROR: USER SHOULD NOT BE ABLE TO SEE DRUG ID");
 
-
         // Process the name string
         headerToIndex.put(COL_NAME_STRING, 1);
         sqlColStrings.add(COL_NAME_STRING);
@@ -172,37 +170,25 @@ public class DB_Helper extends SQLiteOpenHelper {
                     drugDisplayHeaders.put(s, "    " + displayHeader);
                 }
 
-                /*
-                // TEMP
-                String[] a = s.split(LANGUAGE_SUFFIX_REGEX);
-                if (a.length != 0) {
-                    headerSet.add(a[0]);
-                }
-                */
                 String noLanguage = this.removeLanguageSuffix(s);
                 if (noLanguage != null && !noLanguage.isEmpty()) {
                     headerSet.add(noLanguage);
                 }
             }
         }
-
         languageIndependentHeaders = headerSet.toArray(new String[0]);
     }
-
 
     // Load the data base from a much easier to manage csv file.
     // MUST BE CALLED AFTER OPENING A WRITABLE DATABASE OR IN onCreate()!
     private void loadCSV(SQLiteDatabase db, @NonNull CSVReader csvReader) throws IOException {
-//        Log.i("DEMOP", "Starting parse");
 
         // Load each line into the database
         String[] values;
         List<String> list = new ArrayList<>();
-//        Log.i("InTeam", "Testing " + Arrays.toString(dictonary));
 
         dictonary = null;
         while ((values = csvReader.readNext()) != null) {
-//            Log.i("DEMOP adding", Arrays.toString(values));
             ContentValues cv = new ContentValues(sqlColStrings.size() - 1);
 
             list.add(values[0].trim());
@@ -222,7 +208,6 @@ public class DB_Helper extends SQLiteOpenHelper {
 
         // Create the list of names
         dictonary = list.toArray(new String[0]);
-//        Log.i("InTeam", "Testing " + Arrays.toString(dictonary) + list.toString());
     }
 
     // Load the headers and necessary initialization information
@@ -233,17 +218,12 @@ public class DB_Helper extends SQLiteOpenHelper {
          *   Create the table(s) in the database
          *   Read the database and load it into the table(s)
          */
-
-//        Log.i("DB_HELPER REBOOT", "DB_Helper.init() called");
-
         if (this.database == null) {
-            //database = this.getWritableDatabase();
             Log.w("DB_HELPER", "this.database is null");
             return;
         }
 
         InputStream inStream;
-
         try {
             assert this.activityMain != null;
             Resources resources = this.activityMain.getResources();
@@ -257,7 +237,6 @@ public class DB_Helper extends SQLiteOpenHelper {
                 Log.w("DB_HELPER", "AssetManager is null");
                 return;
             }
-            Log.i("DB_HELPER", "Good resources");
 
             inStream = manager.open(Settings.DRUG_CSV_FILE);
             InputStreamReader inputCSVReader = new InputStreamReader(inStream);
@@ -269,6 +248,7 @@ public class DB_Helper extends SQLiteOpenHelper {
              */
             StringBuilder tableBuilder = new StringBuilder("CREATE TABLE IF NOT EXISTS " +
                     TABLE_ID_TO_DRUG + " (" + COL_ID_STRING + " INTEGER PRIMARY KEY AUTOINCREMENT");
+
             // Add the rest of the columns
             for (int i = 1; i < sqlColStrings.size(); i++) {
                 tableBuilder.append(", ").append(sqlColStrings.get(i)).append(" TEXT");
@@ -286,7 +266,6 @@ public class DB_Helper extends SQLiteOpenHelper {
             e.printStackTrace();
         }
 
-        Log.i("DB_HELPER", "Initalized succesfully");
         isInitalized = true;
     }
 
@@ -294,7 +273,6 @@ public class DB_Helper extends SQLiteOpenHelper {
     // There should only be code to create a new database.
     @Override
     public void onCreate(SQLiteDatabase db) {
-        Log.i("DB_HELPER", "onCreate has been called");
         this.database = db;
         if (!this.isInitalized) {
             init();
@@ -308,14 +286,12 @@ public class DB_Helper extends SQLiteOpenHelper {
      */
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
-        Log.i("DB_HELPER", "onUpgrade has been called");
         database = db;
         onCreate(db);
     }
 
     @Override
     public void onOpen(SQLiteDatabase db) {
-        Log.i("DB_HELPER", "onOpen called");
         database = db;
         if (!this.isInitalized) {
             init();
@@ -351,25 +327,20 @@ public class DB_Helper extends SQLiteOpenHelper {
         HashMap<String, String> infoEN = new HashMap<>();
         HashMap<String, String> infoKA = new HashMap<>();
 
+        // Insert data from cursor into the drug models
         for(; i < cursor.getColumnCount(); i++) {
             String s = cursor.getString(i);
             // Replace SQL delimited '%' ("[%]") with "%"
             s = s.replace("[%]", "%");
 
-//            Log.i("DEMOload",  i + "/" + cursor.getColumnCount() + "=" + s);
-//            Log.i("DEMOOO", Arrays.toString(sqlColStrings.toArray()));
-
             if (s != null && !s.isEmpty()) {
                 String colWithLang = sqlColStrings.get(i);
                 String col = removeLanguageSuffix(colWithLang);
-//                Log.i("DEMOload" + i, colWithLang + " " + Boolean.toString(colWithLang.endsWith(KAREN_SUFFIX)));
 
                 // Insert based on language
                 if (colWithLang.endsWith(KAREN_SUFFIX)) {
-//                    Log.i("DEMOload" + i, "KA add " + s);
                     infoKA.put(col, s);
                 } else {
-//                    Log.i("DEMOload" + i, "EN add " + s);
                     infoEN.put(col, s);
                 }
             }
@@ -381,7 +352,6 @@ public class DB_Helper extends SQLiteOpenHelper {
 
     // This will run the sql statement, then parse the results into the return List
     private List<DrugModel> extractDrugModels(String queryString) {
-//        Log.i("DB_DEMO", "Searching with query'" + queryString + "'");
         List<DrugModel> returnList = new ArrayList<>();
 
         // Read so that we don't mutex lock it
@@ -413,8 +383,7 @@ public class DB_Helper extends SQLiteOpenHelper {
         return i;
     }
 
-    // Return all drugs with names similar to input
-    ///  TEMP matching *input* (* is wildcard)
+    // Return all drugs with names matching input
     public List<DrugModel> getDrugsByName(String input) {
         if (input == null || input.length() == 0) { return null; }
 
