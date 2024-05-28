@@ -31,15 +31,12 @@ public class ActivityMain extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-
-
         super.onCreate(savedInstanceState);
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         setContentView(R.layout.activity_main);
 
         this.activityMain = this;
-
+        this.isKaren = Settings.defaultToKaren;
 
         Log.i("jklfdsa", "Getting resources");
         Resources resources = this.getResources();
