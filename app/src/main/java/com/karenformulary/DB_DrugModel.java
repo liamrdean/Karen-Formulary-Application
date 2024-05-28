@@ -17,19 +17,17 @@ import java.util.Set;
 public class DB_DrugModel {
     // For when we have not manually assigned an id
     public static final int blankId = -1;
-    // The string used to indicate the beginning and end of a image path
+
+    // Unused variables related to images
     public static final char imageDelimiter = '$';
     public static final String imageDelimiterRegex = "\\$";
 
+    /* Data for this DB_DrugModel */
     private int drugId;
     private String drugName;
-
-    /*
-    private DrugInfo infoEN;
-    private DrugInfo infoKA;
-    */
-    private HashMap<String, String> tempnameinfoEN;
-    private HashMap<String, String> tempnameinfoKA;
+    // The language specific data
+    private HashMap<String, String> infoEN;
+    private HashMap<String, String> infoKA;
 
     // Constructors
     public DB_DrugModel() {
@@ -43,18 +41,9 @@ public class DB_DrugModel {
     public DB_DrugModel(int drugId, String drugName, HashMap<String, String> infoEn, HashMap<String, String> infoKa) {
         this.drugId = drugId;
         this.drugName = drugName;
-        this.tempnameinfoEN = infoEn;
-        this.tempnameinfoKA = infoKa;
+        this.infoEN = infoEn;
+        this.infoKA = infoKa;
     }
-
-    /*
-    public DB_DrugModel(int drugId, String drugName, DrugInfo infoEN, DrugInfo infoKA) {
-        this.drugId = drugId;
-        this.drugName = drugName;
-        this.infoEN = infoEN;
-        this.infoKA = infoKA;
-    }
-    */
 
     // This is what gets called by the array list generator thing, so deal with it manually
     @Override
@@ -62,57 +51,21 @@ public class DB_DrugModel {
         // English
         return  "id = " + drugId + "\n" +
                 "name = '" + drugName + "'\n" +
-                "EN NAMES \n" + tempnameinfoEN.toString() + "\n" +
-                "KA NAMES \n" + tempnameinfoKA.toString() + "\n";
-
-//                this.getInfo(ActivityMain.isKaren).toString();
-
-        /* Legacy/default
-        return "DB_DrugModel{" +
-                "drugId=" + drugId +
-                ", drugName='" + drugName + '\'' +
-                ", description_English='" + description_English + '\'' +
-                ", description_Karen='" + description_Karen + '\'' +
-                '}';
-         */
+                "EN NAMES \n" + infoEN.toString() + "\n" +
+                "KA NAMES \n" + infoKA.toString() + "\n";
     }
 
-    // Just toString but new lines between items
-    /*
-    public String toStringVerbose() {
-        String out = "DB_DrugModel{\n" +
-                "  drugId=" + drugId + '\n' +
-                "  drugName='" + drugName + "\'\n"
-                +"\nEN:\n"
-                + infoEN.toString()
-                +"\nKA:\n"
-                + infoKA.toString();
-        out += '}';
-        return out;
-    }
-    */
-
-    // Getters and setters
-
-    /*
-    public DrugInfo getInfo(boolean inKaren) {
-        return (inKaren) ? infoKA : infoEN;
-    }
-    */
-
-
+    // Getters
     public Set<String> getDataFields() {
         Set<String> mergedSet = new HashSet<>();
-        mergedSet.addAll(tempnameinfoEN.keySet());
-        mergedSet.addAll(tempnameinfoKA.keySet());
+        mergedSet.addAll(infoEN.keySet());
+        mergedSet.addAll(infoKA.keySet());
 
         return mergedSet;
     }
 
     // Returns data in a list (Pre split to deal with images)
-    // The key must be a String in DB_Helper.languageIndependentHeaders
-
-
+    // The key MUST be a String in DB_Helper.languageIndependentHeaders
     public List<String> getData(String key, boolean isKaren) {
         if (key.equals(DB_Helper.COL_NAME_STRING)) {
             // They are just asking for the name of this drug, return it.
@@ -121,9 +74,8 @@ public class DB_DrugModel {
             return output;
         }
 
-
-        HashMap<String, String> map = (isKaren) ? tempnameinfoKA : tempnameinfoEN;
-        HashMap<String, String> other = (isKaren) ? tempnameinfoEN : tempnameinfoKA;
+        HashMap<String, String> map = (isKaren) ? infoKA : infoEN;
+        HashMap<String, String> other = (isKaren) ? infoEN : infoKA;
         return getDataFromMap(key, map, other);
     }
 
@@ -132,12 +84,14 @@ public class DB_DrugModel {
     // returns null if data is empty
     // splits the data with imageDelimiter
     private List<String> getDataFromMap(String key, HashMap<String, String> map, HashMap<String, String> other) {
-        String s;
+        String s;  // String representing data
 
+        // Get the data
         if (!map.containsKey(key)) {
             if (other.containsKey(key)) {
                 s = other.get(key);
-            } else {
+            } else {  // Key is not in this model, and is invalid.
+                Log.w("DrugModel", "Key " + key + " is not in either map!");
                 return null;
             }
         } else {
@@ -148,35 +102,29 @@ public class DB_DrugModel {
             return null;
         }
 
+        /* Process for images */
         String[] arr = s.split(imageDelimiterRegex);
 
-        // Since having $$ means that there is a null or empty entry in the array, remove those while adding to the list
+        // Since having $$ means that there is a null or empty entry in the array, remove those
+        // while adding the rest to the list
         List<String> list = new ArrayList<>();
         for (int i = 0; i < arr.length; i++) {
             String item = arr[i].trim();
 
-            if (item == null) {
-                Log.i("TESTaaa", "Arr[" + i + "] = " + item + " not null");
-            } else {
-                Log.i("TESTaaa", "Arr[" + i + "] = " + item + " " + Boolean.toString(item.isEmpty()) + " is null");
-            }
-
-            // This is an image
-            if (i % 2 == 1) {
-                item = "$" + item;
-            }
-
             if (item != null && !item.isEmpty()) {
+                /*
+                 * Unused code for dealing with images
+                // This is an image since text will always be text,image,text,image
+                if (i % 2 == 1) {
+                    item = imageDelimiter + item;
+                }
+                 */
+
                 list.add(item);
             }
-
-
         }
 
-        Log.i("ELDS", Arrays.toString(arr));
-        Log.i("TESTaaa", list.toString());
-
-        return list;//Arrays.asList(arr);
+        return list;
     }
 
 }
