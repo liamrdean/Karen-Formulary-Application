@@ -326,14 +326,14 @@ public class DB_Helper extends SQLiteOpenHelper {
      * Getters
      * ========================================================================================== */
 
-    public List<DB_DrugModel> getAllDrugs() {
+    public List<DrugModel> getAllDrugs() {
         // Get data from the database
         String queryString = "SELECT * FROM " + TABLE_ID_TO_DRUG;
         return extractDrugModels(queryString);
     }
 
     // Get the drugModel associated with the id
-    public List<DB_DrugModel> getDrugByID(int id) {
+    public List<DrugModel> getDrugByID(int id) {
         if (id < 0) { return null; }
 
         //select * from table where information
@@ -343,7 +343,7 @@ public class DB_Helper extends SQLiteOpenHelper {
         return extractDrugModels(idQuery);
     }
 
-    private DB_DrugModel fillInDrugModel(Cursor cursor) {
+    private DrugModel fillInDrugModel(Cursor cursor) {
         int i = 0;
         int drugId = cursor.getInt(i++);
         String drugName = cursor.getString(i++);
@@ -375,14 +375,14 @@ public class DB_Helper extends SQLiteOpenHelper {
             }
 
         }
-        DB_DrugModel drugModel = new DB_DrugModel(drugId, drugName, infoEN, infoKA);
+        DrugModel drugModel = new DrugModel(drugId, drugName, infoEN, infoKA);
         return drugModel;
     }
 
     // This will run the sql statement, then parse the results into the return List
-    private List<DB_DrugModel> extractDrugModels(String queryString) {
+    private List<DrugModel> extractDrugModels(String queryString) {
 //        Log.i("DB_DEMO", "Searching with query'" + queryString + "'");
-        List<DB_DrugModel> returnList = new ArrayList<>();
+        List<DrugModel> returnList = new ArrayList<>();
 
         // Read so that we don't mutex lock it
         SQLiteDatabase db = this.getReadableDatabase();
@@ -415,7 +415,7 @@ public class DB_Helper extends SQLiteOpenHelper {
 
     // Return all drugs with names similar to input
     ///  TEMP matching *input* (* is wildcard)
-    public List<DB_DrugModel> getDrugsByName(String input) {
+    public List<DrugModel> getDrugsByName(String input) {
         if (input == null || input.length() == 0) { return null; }
 
         String nameQuery = "SELECT * FROM " + TABLE_ID_TO_DRUG + " WHERE " +

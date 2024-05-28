@@ -15,7 +15,7 @@ public class ExpandableListDataPump {
         // Procedural way of doing this
         // For each header, add stuff as a list of strings returned from the drug model, if there is nothing else, do not deal with it
         // Grab the drugs
-        List<DB_DrugModel> drugModels = ActivityMain.dbHelper.getDrugsByName(drugName);
+        List<DrugModel> drugModels = ActivityMain.dbHelper.getDrugsByName(drugName);
 
         if (drugModels == null || drugModels.size() == 0) {
             Log.w("ListDataPump", "Drug model list is null or has no models!");
@@ -26,7 +26,7 @@ public class ExpandableListDataPump {
         }
 
         // Assume the first drug model
-        DB_DrugModel model = drugModels.get(0);
+        DrugModel model = drugModels.get(0);
         String[] columnsInModel = (String[]) model.getDataFields().toArray(new String[0]);
         Arrays.sort(columnsInModel);
         Log.i("ELDP", model.toString());

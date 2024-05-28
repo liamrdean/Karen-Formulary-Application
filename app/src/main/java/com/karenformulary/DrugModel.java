@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Set;
 
 // EN is short for English, KA is short for Karen
-public class DB_DrugModel {
+public class DrugModel {
     // For when we have not manually assigned an id
     public static final int blankId = -1;
 
@@ -22,7 +22,7 @@ public class DB_DrugModel {
     public static final char imageDelimiter = '$';
     public static final String imageDelimiterRegex = "\\$";
 
-    /* Data for this DB_DrugModel */
+    /* Data for this DrugModel */
     private int drugId;
     private String drugName;
     // The language specific data
@@ -30,15 +30,15 @@ public class DB_DrugModel {
     private HashMap<String, String> infoKA;
 
     // Constructors
-    public DB_DrugModel() {
+    public DrugModel() {
     }
 
-    public DB_DrugModel(String drugName) {
+    public DrugModel(String drugName) {
         this.drugId = blankId;
         this.drugName = drugName;
     }
 
-    public DB_DrugModel(int drugId, String drugName, HashMap<String, String> infoEn, HashMap<String, String> infoKa) {
+    public DrugModel(int drugId, String drugName, HashMap<String, String> infoEn, HashMap<String, String> infoKa) {
         this.drugId = drugId;
         this.drugName = drugName;
         this.infoEN = infoEn;
@@ -55,7 +55,11 @@ public class DB_DrugModel {
                 "KA NAMES \n" + infoKA.toString() + "\n";
     }
 
-    // Getters
+    /*
+     * Getters
+     */
+
+    // Return the combined key set of this DrugModel's hashmaps
     public Set<String> getDataFields() {
         Set<String> mergedSet = new HashSet<>();
         mergedSet.addAll(infoEN.keySet());
@@ -97,7 +101,6 @@ public class DB_DrugModel {
         } else {
              s = map.get(key);
         }
-
         if (s == null) {
             return null;
         }
@@ -112,13 +115,10 @@ public class DB_DrugModel {
             String item = arr[i].trim();
 
             if (item != null && !item.isEmpty()) {
-                /*
-                 * Unused code for dealing with images
                 // This is an image since text will always be text,image,text,image
                 if (i % 2 == 1) {
                     item = imageDelimiter + item;
                 }
-                 */
 
                 list.add(item);
             }
