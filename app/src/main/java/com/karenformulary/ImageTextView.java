@@ -32,7 +32,8 @@ public class ImageTextView extends LinearLayout {
             StringBuilder filePathBuilder = new StringBuilder("Drug_Images/");
 
             // Get the drug name
-            String friendlyPath = ActivityDrugInfoPage.drugName;
+            Log.i("IMG " + ActivityDrugInfoPage.drugName, '"' + ActivityDrugInfoPage.drugName + '"');
+            String friendlyPath = ActivityDrugInfoPage.drugName.trim();
             String badChars = "\\/:*?\"<>|";
             for (int i = 0; i < badChars.length(); i++) {
                 friendlyPath = friendlyPath.replace(badChars.charAt(i), '_');
@@ -42,7 +43,7 @@ public class ImageTextView extends LinearLayout {
             // Construct the drug image paths
             filePathBuilder.append(friendlyPath.toUpperCase());
             String folderPath = filePathBuilder.toString();
-            Log.i("IMGS", folderPath);
+            Log.i("IMGS", '"' + folderPath + '"');
             String[] a = ActivityMain.assetManager.list(folderPath);
 
             if (a == null || a.length == 0) {
