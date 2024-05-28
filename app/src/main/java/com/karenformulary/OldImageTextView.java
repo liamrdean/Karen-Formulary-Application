@@ -202,7 +202,7 @@ public class OldImageTextView extends View {
     }
 
     public void WithData(String newData) {
-        if (newData.charAt(0) == DB_DrugModel.imageDelimiter) {
+        if (newData.charAt(0) == DrugModel.imageDelimiter) {
             this.setIsImage(true);
             newData = newData.substring(1);
         } else {
