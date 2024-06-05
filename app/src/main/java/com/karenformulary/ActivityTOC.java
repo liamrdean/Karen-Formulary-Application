@@ -28,6 +28,7 @@ public class ActivityTOC extends AppCompatActivity {
     Button ivFluids;
     Button malaria;
     Button vaccination;
+    Button thankyou;
 
 
     @Override
@@ -236,6 +237,19 @@ public class ActivityTOC extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+        // VACCINATION SCHEDULE (Thailand, Burma)
+        thankyou = (Button) findViewById(R.id.thankyou);
+        thankyou.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ActivityTOC.this, ActivityThankyou.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 

@@ -99,6 +99,10 @@
             android:exported="false"
             android:label="VACCINATION SCHEDULE (Thailand, Burma)" />
         <activity
+            android:name=".ActivityThankyou"
+            android:exported="false"
+            android:label="WWU Team" />
+        <activity
             android:name=".ActivityDrugInfoPage"
             android:exported="false"
             android:label="Drug Information Page" />

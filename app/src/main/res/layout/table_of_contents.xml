@@ -128,5 +128,13 @@
             android:layout_height="wrap_content"
             android:text="VACCINATION SCHEDULE (Thailand, Burma)\nကသံၣ်ဒီသဒၢအတၢ်ရဲၣ်တၢ်ကျဲၤ (ယိၤကီၢ် ၊ ပယီၤကီၢ်)" />
 
+        <Button
+            android:id="@+id/thankyou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thank You from the WWU Team" />
+
+
+
     </LinearLayout>
 </ScrollView>
