@@ -30,8 +30,6 @@ public class DB_Helper extends SQLiteOpenHelper {
     public static String[] dictonary = new String[0];
 
     /* Constants */
-    // Change version only when you want the to overwrite previous versions.
-    public static final int DATABASE_VERSION = 1;
     public static final String TABLE_ID_TO_DRUG = "TABLE_ID_TO_DRUG";
     public static final String COL_ID_STRING = "DRUG_ID";
     public static String COL_NAME_STRING = "DRUG_NAME";
@@ -69,7 +67,7 @@ public class DB_Helper extends SQLiteOpenHelper {
 
     // ASSUMES THAT THIS IS CALLED FROM THE MAIN ACTIVITY
     public DB_Helper(@Nullable Context context) {
-        super(context, "drugDB", null, DB_Helper.DATABASE_VERSION);
+        super(context, "drugDB", null, Settings.DATABASE_VERSION);
         this.activityMain = (ActivityMain) context;
 
 

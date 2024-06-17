@@ -14,5 +14,8 @@ public class Settings {
      * The name of the csv file used for the drug database.
      * MUST INCLUDE THE FILE EXTENSION .csv
      */
-    public static final String DRUG_CSV_FILE = "finalTest.csv";
+    public static final String DRUG_CSV_FILE = "database.csv";
+
+    // Change version only when you want the to overwrite previous versions.
+    public static final int DATABASE_VERSION = 1;
 }
